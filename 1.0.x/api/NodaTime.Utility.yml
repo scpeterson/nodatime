@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: NodaTime.Utility
+  commentId: N:NodaTime.Utility
+  id: NodaTime.Utility
+  children:
+  - NodaTime.Utility.BclConversions
+  langs:
+  - csharp
+  - vb
+  name: NodaTime.Utility
+  nameWithType: NodaTime.Utility
+  fullName: NodaTime.Utility
+  type: Namespace
+  assemblies:
+  - NodaTime
+references:
+- uid: NodaTime.Utility.BclConversions
+  commentId: T:NodaTime.Utility.BclConversions
+  isExternal: false
+  name: BclConversions
+  nameWithType: BclConversions
+  fullName: NodaTime.Utility.BclConversions
+shouldSkipMarkup: true

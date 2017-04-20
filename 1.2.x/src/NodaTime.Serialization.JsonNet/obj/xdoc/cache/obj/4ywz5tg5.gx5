@@ -1,0 +1,3103 @@
+id: NodaTime.Serialization.JsonNet
+language: CSharp
+name:
+  Default: NodaTime.Serialization.JsonNet
+qualifiedName:
+  Default: NodaTime.Serialization.JsonNet
+type: Assembly
+modifiers: {}
+items:
+- id: NodaTime.Serialization.JsonNet
+  commentId: N:NodaTime.Serialization.JsonNet
+  language: CSharp
+  name:
+    CSharp: NodaTime.Serialization.JsonNet
+    VB: NodaTime.Serialization.JsonNet
+  nameWithType:
+    CSharp: NodaTime.Serialization.JsonNet
+    VB: NodaTime.Serialization.JsonNet
+  qualifiedName:
+    CSharp: NodaTime.Serialization.JsonNet
+    VB: NodaTime.Serialization.JsonNet
+  type: Namespace
+  assemblies:
+  - NodaTime.Serialization.JsonNet
+  modifiers: {}
+  items:
+  - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1
+    commentId: T:NodaTime.Serialization.JsonNet.NodaConverterBase`1
+    language: CSharp
+    name:
+      CSharp: NodaConverterBase<T>
+      VB: NodaConverterBase(Of T)
+    nameWithType:
+      CSharp: NodaConverterBase<T>
+      VB: NodaConverterBase(Of T)
+    qualifiedName:
+      CSharp: NodaTime.Serialization.JsonNet.NodaConverterBase<T>
+      VB: NodaTime.Serialization.JsonNet.NodaConverterBase(Of T)
+    type: Class
+    assemblies:
+    - NodaTime.Serialization.JsonNet
+    namespace: NodaTime.Serialization.JsonNet
+    source:
+      remote:
+        path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
+        branch: history
+        repo: https://github.com/nodatime/nodatime.git
+      id: NodaConverterBase
+      path: src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
+      startLine: 16
+    summary: "\nBase class for all the Json.NET converters which handle value types (which is most of them).\nThis deals handles all the boilerplate code dealing with nullity.\n"
+    example: []
+    syntax:
+      content:
+        CSharp: 'public abstract class NodaConverterBase<T> : JsonConverter'
+        VB: >-
+          Public MustInherit Class NodaConverterBase(Of T)
+
+              Inherits JsonConverter
+      typeParameters:
+      - id: T
+        description: The type to convert to/from JSON.
+    inheritance:
+    - System.Object
+    - Newtonsoft.Json.JsonConverter
+    inheritedMembers:
+    - Newtonsoft.Json.JsonConverter.GetSchema
+    - Newtonsoft.Json.JsonConverter.CanRead
+    - Newtonsoft.Json.JsonConverter.CanWrite
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - abstract
+      - class
+      VB:
+      - Public
+      - MustInherit
+      - Class
+    items:
+    - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.CanConvert(System.Type)
+      commentId: M:NodaTime.Serialization.JsonNet.NodaConverterBase`1.CanConvert(System.Type)
+      language: CSharp
+      name:
+        CSharp: CanConvert(Type)
+        VB: CanConvert(Type)
+      nameWithType:
+        CSharp: NodaConverterBase<T>.CanConvert(Type)
+        VB: NodaConverterBase(Of T).CanConvert(Type)
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.NodaConverterBase<T>.CanConvert(System.Type)
+        VB: NodaTime.Serialization.JsonNet.NodaConverterBase(Of T).CanConvert(System.Type)
+      type: Method
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: CanConvert
+        path: src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
+        startLine: 26
+      summary: "\nReturns whether or not this converter supports the given type.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public override bool CanConvert(Type objectType)
+          VB: Public Overrides Function CanConvert(objectType As Type) As Boolean
+        parameters:
+        - id: objectType
+          type: System.Type
+          description: The type to check for compatibility.
+        return:
+          type: System.Boolean
+          description: >-
+            True if the given type is supported by this converter (including the nullable form for
+
+            value types); false otherwise.
+      overload: NodaTime.Serialization.JsonNet.NodaConverterBase`1.CanConvert*
+      overridden: Newtonsoft.Json.JsonConverter.CanConvert(System.Type)
+      modifiers:
+        CSharp:
+        - public
+        - override
+        VB:
+        - Public
+        - Overrides
+    - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+      commentId: M:NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+      language: CSharp
+      name:
+        CSharp: ReadJson(JsonReader, Type, Object, JsonSerializer)
+        VB: ReadJson(JsonReader, Type, Object, JsonSerializer)
+      nameWithType:
+        CSharp: NodaConverterBase<T>.ReadJson(JsonReader, Type, Object, JsonSerializer)
+        VB: NodaConverterBase(Of T).ReadJson(JsonReader, Type, Object, JsonSerializer)
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.NodaConverterBase<T>.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+        VB: NodaTime.Serialization.JsonNet.NodaConverterBase(Of T).ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+      type: Method
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: ReadJson
+        path: src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
+        startLine: 40
+      summary: "\nConverts the JSON stored in a reader into the relevant Noda Time type.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+          VB: Public Overrides Function ReadJson(reader As JsonReader, objectType As Type, existingValue As Object, serializer As JsonSerializer) As Object
+        parameters:
+        - id: reader
+          type: Newtonsoft.Json.JsonReader
+          description: The Json.NET reader to read data from.
+        - id: objectType
+          type: System.Type
+          description: The type to convert the JSON to.
+        - id: existingValue
+          type: System.Object
+          description: An existing value; ignored by this converter.
+        - id: serializer
+          type: Newtonsoft.Json.JsonSerializer
+          description: A serializer to use for any embedded deserialization.
+        return:
+          type: System.Object
+          description: The deserialized value.
+      overload: NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJson*
+      overridden: Newtonsoft.Json.JsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+      exceptions:
+      - type: NodaTime.Utility.InvalidNodaDataException
+        commentId: T:NodaTime.Utility.InvalidNodaDataException
+        description: The JSON was invalid for this converter.
+      modifiers:
+        CSharp:
+        - public
+        - override
+        VB:
+        - Public
+        - Overrides
+    - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJsonImpl(Newtonsoft.Json.JsonReader,Newtonsoft.Json.JsonSerializer)
+      commentId: M:NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJsonImpl(Newtonsoft.Json.JsonReader,Newtonsoft.Json.JsonSerializer)
+      language: CSharp
+      name:
+        CSharp: ReadJsonImpl(JsonReader, JsonSerializer)
+        VB: ReadJsonImpl(JsonReader, JsonSerializer)
+      nameWithType:
+        CSharp: NodaConverterBase<T>.ReadJsonImpl(JsonReader, JsonSerializer)
+        VB: NodaConverterBase(Of T).ReadJsonImpl(JsonReader, JsonSerializer)
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.NodaConverterBase<T>.ReadJsonImpl(Newtonsoft.Json.JsonReader, Newtonsoft.Json.JsonSerializer)
+        VB: NodaTime.Serialization.JsonNet.NodaConverterBase(Of T).ReadJsonImpl(Newtonsoft.Json.JsonReader, Newtonsoft.Json.JsonSerializer)
+      type: Method
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: ReadJsonImpl
+        path: src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
+        startLine: 80
+      summary: "\nImplemented by concrete subclasses, this performs the final conversion from a non-null JSON value to\na value of type T.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: protected abstract T ReadJsonImpl(JsonReader reader, JsonSerializer serializer)
+          VB: Protected MustOverride Function ReadJsonImpl(reader As JsonReader, serializer As JsonSerializer) As T
+        parameters:
+        - id: reader
+          type: Newtonsoft.Json.JsonReader
+          description: The JSON reader to pull data from
+        - id: serializer
+          type: Newtonsoft.Json.JsonSerializer
+          description: The serializer to use for nested serialization
+        return:
+          type: '{T}'
+          description: The deserialized value of type T.
+      overload: NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJsonImpl*
+      modifiers:
+        CSharp:
+        - protected
+        - abstract
+        VB:
+        - Protected
+        - MustOverride
+    - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+      commentId: M:NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+      language: CSharp
+      name:
+        CSharp: WriteJson(JsonWriter, Object, JsonSerializer)
+        VB: WriteJson(JsonWriter, Object, JsonSerializer)
+      nameWithType:
+        CSharp: NodaConverterBase<T>.WriteJson(JsonWriter, Object, JsonSerializer)
+        VB: NodaConverterBase(Of T).WriteJson(JsonWriter, Object, JsonSerializer)
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.NodaConverterBase<T>.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+        VB: NodaTime.Serialization.JsonNet.NodaConverterBase(Of T).WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+      type: Method
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: WriteJson
+        path: src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
+        startLine: 88
+      summary: "\nWrites the given value to a Json.NET writer.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+          VB: Public Overrides Sub WriteJson(writer As JsonWriter, value As Object, serializer As JsonSerializer)
+        parameters:
+        - id: writer
+          type: Newtonsoft.Json.JsonWriter
+          description: The writer to write the JSON to.
+        - id: value
+          type: System.Object
+          description: The value to write.
+        - id: serializer
+          type: Newtonsoft.Json.JsonSerializer
+          description: The serializer to use for any embedded serialization.
+      overload: NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJson*
+      overridden: Newtonsoft.Json.JsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+      modifiers:
+        CSharp:
+        - public
+        - override
+        VB:
+        - Public
+        - Overrides
+    - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJsonImpl(Newtonsoft.Json.JsonWriter,`0,Newtonsoft.Json.JsonSerializer)
+      commentId: M:NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJsonImpl(Newtonsoft.Json.JsonWriter,`0,Newtonsoft.Json.JsonSerializer)
+      language: CSharp
+      name:
+        CSharp: WriteJsonImpl(JsonWriter, T, JsonSerializer)
+        VB: WriteJsonImpl(JsonWriter, T, JsonSerializer)
+      nameWithType:
+        CSharp: NodaConverterBase<T>.WriteJsonImpl(JsonWriter, T, JsonSerializer)
+        VB: NodaConverterBase(Of T).WriteJsonImpl(JsonWriter, T, JsonSerializer)
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.NodaConverterBase<T>.WriteJsonImpl(Newtonsoft.Json.JsonWriter, T, Newtonsoft.Json.JsonSerializer)
+        VB: NodaTime.Serialization.JsonNet.NodaConverterBase(Of T).WriteJsonImpl(Newtonsoft.Json.JsonWriter, T, Newtonsoft.Json.JsonSerializer)
+      type: Method
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: WriteJsonImpl
+        path: src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
+        startLine: 112
+      summary: "\nImplemented by concrete subclasses, this performs the final write operation for a non-null value of type T\nto JSON.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: protected abstract void WriteJsonImpl(JsonWriter writer, T value, JsonSerializer serializer)
+          VB: Protected MustOverride Sub WriteJsonImpl(writer As JsonWriter, value As T, serializer As JsonSerializer)
+        parameters:
+        - id: writer
+          type: Newtonsoft.Json.JsonWriter
+          description: The writer to write JSON data to
+        - id: value
+          type: '{T}'
+          description: The value to serializer
+        - id: serializer
+          type: Newtonsoft.Json.JsonSerializer
+          description: The serializer to use for nested serialization
+      overload: NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJsonImpl*
+      modifiers:
+        CSharp:
+        - protected
+        - abstract
+        VB:
+        - Protected
+        - MustOverride
+  - id: NodaTime.Serialization.JsonNet.NodaConverters
+    commentId: T:NodaTime.Serialization.JsonNet.NodaConverters
+    language: CSharp
+    name:
+      CSharp: NodaConverters
+      VB: NodaConverters
+    nameWithType:
+      CSharp: NodaConverters
+      VB: NodaConverters
+    qualifiedName:
+      CSharp: NodaTime.Serialization.JsonNet.NodaConverters
+      VB: NodaTime.Serialization.JsonNet.NodaConverters
+    type: Class
+    assemblies:
+    - NodaTime.Serialization.JsonNet
+    namespace: NodaTime.Serialization.JsonNet
+    source:
+      remote:
+        path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+        branch: history
+        repo: https://github.com/nodatime/nodatime.git
+      id: NodaConverters
+      path: src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+      startLine: 14
+    summary: "\nConvenience class to expose preconfigured converters for Noda Time types, and factory methods\nfor creating those which require parameters.\n"
+    example: []
+    syntax:
+      content:
+        CSharp: public static class NodaConverters
+        VB: Public Module NodaConverters
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - static
+      - class
+      VB:
+      - Public
+      - Module
+    items:
+    - id: NodaTime.Serialization.JsonNet.NodaConverters.InstantConverter
+      commentId: F:NodaTime.Serialization.JsonNet.NodaConverters.InstantConverter
+      language: CSharp
+      name:
+        CSharp: InstantConverter
+        VB: InstantConverter
+      nameWithType:
+        CSharp: NodaConverters.InstantConverter
+        VB: NodaConverters.InstantConverter
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.NodaConverters.InstantConverter
+        VB: NodaTime.Serialization.JsonNet.NodaConverters.InstantConverter
+      type: Field
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: InstantConverter
+        path: src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+        startLine: 20
+      summary: "\nConverter for instants, using the ISO-8601 date/time pattern, extended as required to accommodate milliseconds and ticks, and\nspecifying 'Z' at the end to show it's effectively in UTC.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static readonly JsonConverter InstantConverter
+          VB: Public Shared ReadOnly InstantConverter As JsonConverter
+        return:
+          type: Newtonsoft.Json.JsonConverter
+      modifiers:
+        CSharp:
+        - public
+        - static
+        - readonly
+        VB:
+        - Public
+        - Shared
+        - ReadOnly
+    - id: NodaTime.Serialization.JsonNet.NodaConverters.LocalDateConverter
+      commentId: F:NodaTime.Serialization.JsonNet.NodaConverters.LocalDateConverter
+      language: CSharp
+      name:
+        CSharp: LocalDateConverter
+        VB: LocalDateConverter
+      nameWithType:
+        CSharp: NodaConverters.LocalDateConverter
+        VB: NodaConverters.LocalDateConverter
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.NodaConverters.LocalDateConverter
+        VB: NodaTime.Serialization.JsonNet.NodaConverters.LocalDateConverter
+      type: Field
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: LocalDateConverter
+        path: src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+        startLine: 25
+      summary: "\nConverter for local dates, using the ISO-8601 date pattern.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static readonly JsonConverter LocalDateConverter
+          VB: Public Shared ReadOnly LocalDateConverter As JsonConverter
+        return:
+          type: Newtonsoft.Json.JsonConverter
+      modifiers:
+        CSharp:
+        - public
+        - static
+        - readonly
+        VB:
+        - Public
+        - Shared
+        - ReadOnly
+    - id: NodaTime.Serialization.JsonNet.NodaConverters.LocalDateTimeConverter
+      commentId: F:NodaTime.Serialization.JsonNet.NodaConverters.LocalDateTimeConverter
+      language: CSharp
+      name:
+        CSharp: LocalDateTimeConverter
+        VB: LocalDateTimeConverter
+      nameWithType:
+        CSharp: NodaConverters.LocalDateTimeConverter
+        VB: NodaConverters.LocalDateTimeConverter
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.NodaConverters.LocalDateTimeConverter
+        VB: NodaTime.Serialization.JsonNet.NodaConverters.LocalDateTimeConverter
+      type: Field
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: LocalDateTimeConverter
+        path: src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+        startLine: 32
+      summary: "\nConverter for local dates and times, using the ISO-8601 date/time pattern, extended as required to accommodate milliseconds and ticks.\nNo time zone designator is applied.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static readonly JsonConverter LocalDateTimeConverter
+          VB: Public Shared ReadOnly LocalDateTimeConverter As JsonConverter
+        return:
+          type: Newtonsoft.Json.JsonConverter
+      modifiers:
+        CSharp:
+        - public
+        - static
+        - readonly
+        VB:
+        - Public
+        - Shared
+        - ReadOnly
+    - id: NodaTime.Serialization.JsonNet.NodaConverters.LocalTimeConverter
+      commentId: F:NodaTime.Serialization.JsonNet.NodaConverters.LocalTimeConverter
+      language: CSharp
+      name:
+        CSharp: LocalTimeConverter
+        VB: LocalTimeConverter
+      nameWithType:
+        CSharp: NodaConverters.LocalTimeConverter
+        VB: NodaConverters.LocalTimeConverter
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.NodaConverters.LocalTimeConverter
+        VB: NodaTime.Serialization.JsonNet.NodaConverters.LocalTimeConverter
+      type: Field
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: LocalTimeConverter
+        path: src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+        startLine: 38
+      summary: "\nConverter for local times, using the ISO-8601 time pattern, extended as required to accommodate milliseconds and ticks.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static readonly JsonConverter LocalTimeConverter
+          VB: Public Shared ReadOnly LocalTimeConverter As JsonConverter
+        return:
+          type: Newtonsoft.Json.JsonConverter
+      modifiers:
+        CSharp:
+        - public
+        - static
+        - readonly
+        VB:
+        - Public
+        - Shared
+        - ReadOnly
+    - id: NodaTime.Serialization.JsonNet.NodaConverters.IntervalConverter
+      commentId: F:NodaTime.Serialization.JsonNet.NodaConverters.IntervalConverter
+      language: CSharp
+      name:
+        CSharp: IntervalConverter
+        VB: IntervalConverter
+      nameWithType:
+        CSharp: NodaConverters.IntervalConverter
+        VB: NodaConverters.IntervalConverter
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.NodaConverters.IntervalConverter
+        VB: NodaTime.Serialization.JsonNet.NodaConverters.IntervalConverter
+      type: Field
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: IntervalConverter
+        path: src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+        startLine: 43
+      summary: "\nConverter for intervals. This must be used in a serializer which also has an instant converter.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static readonly JsonConverter IntervalConverter
+          VB: Public Shared ReadOnly IntervalConverter As JsonConverter
+        return:
+          type: Newtonsoft.Json.JsonConverter
+      modifiers:
+        CSharp:
+        - public
+        - static
+        - readonly
+        VB:
+        - Public
+        - Shared
+        - ReadOnly
+    - id: NodaTime.Serialization.JsonNet.NodaConverters.OffsetConverter
+      commentId: F:NodaTime.Serialization.JsonNet.NodaConverters.OffsetConverter
+      language: CSharp
+      name:
+        CSharp: OffsetConverter
+        VB: OffsetConverter
+      nameWithType:
+        CSharp: NodaConverters.OffsetConverter
+        VB: NodaConverters.OffsetConverter
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.NodaConverters.OffsetConverter
+        VB: NodaTime.Serialization.JsonNet.NodaConverters.OffsetConverter
+      type: Field
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: OffsetConverter
+        path: src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+        startLine: 48
+      summary: "\nConverter for offsets.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static readonly JsonConverter OffsetConverter
+          VB: Public Shared ReadOnly OffsetConverter As JsonConverter
+        return:
+          type: Newtonsoft.Json.JsonConverter
+      modifiers:
+        CSharp:
+        - public
+        - static
+        - readonly
+        VB:
+        - Public
+        - Shared
+        - ReadOnly
+    - id: NodaTime.Serialization.JsonNet.NodaConverters.OffsetDateTimeConverter
+      commentId: F:NodaTime.Serialization.JsonNet.NodaConverters.OffsetDateTimeConverter
+      language: CSharp
+      name:
+        CSharp: OffsetDateTimeConverter
+        VB: OffsetDateTimeConverter
+      nameWithType:
+        CSharp: NodaConverters.OffsetDateTimeConverter
+        VB: NodaConverters.OffsetDateTimeConverter
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.NodaConverters.OffsetDateTimeConverter
+        VB: NodaTime.Serialization.JsonNet.NodaConverters.OffsetDateTimeConverter
+      type: Field
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: OffsetDateTimeConverter
+        path: src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+        startLine: 53
+      summary: "\nConverter for offset date/times.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static readonly JsonConverter OffsetDateTimeConverter
+          VB: Public Shared ReadOnly OffsetDateTimeConverter As JsonConverter
+        return:
+          type: Newtonsoft.Json.JsonConverter
+      modifiers:
+        CSharp:
+        - public
+        - static
+        - readonly
+        VB:
+        - Public
+        - Shared
+        - ReadOnly
+    - id: NodaTime.Serialization.JsonNet.NodaConverters.CreateZonedDateTimeConverter(NodaTime.IDateTimeZoneProvider)
+      commentId: M:NodaTime.Serialization.JsonNet.NodaConverters.CreateZonedDateTimeConverter(NodaTime.IDateTimeZoneProvider)
+      language: CSharp
+      name:
+        CSharp: CreateZonedDateTimeConverter(IDateTimeZoneProvider)
+        VB: CreateZonedDateTimeConverter(IDateTimeZoneProvider)
+      nameWithType:
+        CSharp: NodaConverters.CreateZonedDateTimeConverter(IDateTimeZoneProvider)
+        VB: NodaConverters.CreateZonedDateTimeConverter(IDateTimeZoneProvider)
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.NodaConverters.CreateZonedDateTimeConverter(NodaTime.IDateTimeZoneProvider)
+        VB: NodaTime.Serialization.JsonNet.NodaConverters.CreateZonedDateTimeConverter(NodaTime.IDateTimeZoneProvider)
+      type: Method
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: CreateZonedDateTimeConverter
+        path: src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+        startLine: 61
+      summary: "\nCreates a converter for zoned date/times, using the given time zone provider.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static JsonConverter CreateZonedDateTimeConverter(IDateTimeZoneProvider provider)
+          VB: Public Shared Function CreateZonedDateTimeConverter(provider As IDateTimeZoneProvider) As JsonConverter
+        parameters:
+        - id: provider
+          type: NodaTime.IDateTimeZoneProvider
+          description: The time zone provider to use when parsing.
+        return:
+          type: Newtonsoft.Json.JsonConverter
+          description: A converter to handle <xref href="NodaTime.ZonedDateTime" data-throw-if-not-resolved="false"></xref>.
+      overload: NodaTime.Serialization.JsonNet.NodaConverters.CreateZonedDateTimeConverter*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+      references:
+        NodaTime.ZonedDateTime: 
+    - id: NodaTime.Serialization.JsonNet.NodaConverters.CreateDateTimeZoneConverter(NodaTime.IDateTimeZoneProvider)
+      commentId: M:NodaTime.Serialization.JsonNet.NodaConverters.CreateDateTimeZoneConverter(NodaTime.IDateTimeZoneProvider)
+      language: CSharp
+      name:
+        CSharp: CreateDateTimeZoneConverter(IDateTimeZoneProvider)
+        VB: CreateDateTimeZoneConverter(IDateTimeZoneProvider)
+      nameWithType:
+        CSharp: NodaConverters.CreateDateTimeZoneConverter(IDateTimeZoneProvider)
+        VB: NodaConverters.CreateDateTimeZoneConverter(IDateTimeZoneProvider)
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.NodaConverters.CreateDateTimeZoneConverter(NodaTime.IDateTimeZoneProvider)
+        VB: NodaTime.Serialization.JsonNet.NodaConverters.CreateDateTimeZoneConverter(NodaTime.IDateTimeZoneProvider)
+      type: Method
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: CreateDateTimeZoneConverter
+        path: src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+        startLine: 73
+      summary: "\nCreates a converter for time zones, using the given provider.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static JsonConverter CreateDateTimeZoneConverter(IDateTimeZoneProvider provider)
+          VB: Public Shared Function CreateDateTimeZoneConverter(provider As IDateTimeZoneProvider) As JsonConverter
+        parameters:
+        - id: provider
+          type: NodaTime.IDateTimeZoneProvider
+          description: The time zone provider to use when parsing.
+        return:
+          type: Newtonsoft.Json.JsonConverter
+          description: A converter to handle <xref href="NodaTime.DateTimeZone" data-throw-if-not-resolved="false"></xref>.
+      overload: NodaTime.Serialization.JsonNet.NodaConverters.CreateDateTimeZoneConverter*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+      references:
+        NodaTime.DateTimeZone: 
+    - id: NodaTime.Serialization.JsonNet.NodaConverters.DurationConverter
+      commentId: F:NodaTime.Serialization.JsonNet.NodaConverters.DurationConverter
+      language: CSharp
+      name:
+        CSharp: DurationConverter
+        VB: DurationConverter
+      nameWithType:
+        CSharp: NodaConverters.DurationConverter
+        VB: NodaConverters.DurationConverter
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.NodaConverters.DurationConverter
+        VB: NodaTime.Serialization.JsonNet.NodaConverters.DurationConverter
+      type: Field
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: DurationConverter
+        path: src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+        startLine: 81
+      summary: "\nConverter for durations.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static readonly JsonConverter DurationConverter
+          VB: Public Shared ReadOnly DurationConverter As JsonConverter
+        return:
+          type: Newtonsoft.Json.JsonConverter
+      modifiers:
+        CSharp:
+        - public
+        - static
+        - readonly
+        VB:
+        - Public
+        - Shared
+        - ReadOnly
+    - id: NodaTime.Serialization.JsonNet.NodaConverters.RoundtripPeriodConverter
+      commentId: F:NodaTime.Serialization.JsonNet.NodaConverters.RoundtripPeriodConverter
+      language: CSharp
+      name:
+        CSharp: RoundtripPeriodConverter
+        VB: RoundtripPeriodConverter
+      nameWithType:
+        CSharp: NodaConverters.RoundtripPeriodConverter
+        VB: NodaConverters.RoundtripPeriodConverter
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.NodaConverters.RoundtripPeriodConverter
+        VB: NodaTime.Serialization.JsonNet.NodaConverters.RoundtripPeriodConverter
+      type: Field
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: RoundtripPeriodConverter
+        path: src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+        startLine: 87
+      summary: "\nRound-tripping converter for periods. Use this when you really want to preserve information,\nand don't need interoperability with systems expecting ISO.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static readonly JsonConverter RoundtripPeriodConverter
+          VB: Public Shared ReadOnly RoundtripPeriodConverter As JsonConverter
+        return:
+          type: Newtonsoft.Json.JsonConverter
+      modifiers:
+        CSharp:
+        - public
+        - static
+        - readonly
+        VB:
+        - Public
+        - Shared
+        - ReadOnly
+    - id: NodaTime.Serialization.JsonNet.NodaConverters.NormalizingIsoPeriodConverter
+      commentId: F:NodaTime.Serialization.JsonNet.NodaConverters.NormalizingIsoPeriodConverter
+      language: CSharp
+      name:
+        CSharp: NormalizingIsoPeriodConverter
+        VB: NormalizingIsoPeriodConverter
+      nameWithType:
+        CSharp: NodaConverters.NormalizingIsoPeriodConverter
+        VB: NodaConverters.NormalizingIsoPeriodConverter
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.NodaConverters.NormalizingIsoPeriodConverter
+        VB: NodaTime.Serialization.JsonNet.NodaConverters.NormalizingIsoPeriodConverter
+      type: Field
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: NormalizingIsoPeriodConverter
+        path: src/NodaTime.Serialization.JsonNet/NodaConverters.cs
+        startLine: 94
+      summary: "\nNormalizing ISO converter for periods. Use this when you want compatibility with systems expecting\nISO durations (~= Noda Time periods). However, note that Noda Time can have negative periods. Note that\nthis converter losees information - after serialization and deserialization, \"90 minutes\" will become \"an hour and 30 minutes\".\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static readonly JsonConverter NormalizingIsoPeriodConverter
+          VB: Public Shared ReadOnly NormalizingIsoPeriodConverter As JsonConverter
+        return:
+          type: Newtonsoft.Json.JsonConverter
+      modifiers:
+        CSharp:
+        - public
+        - static
+        - readonly
+        VB:
+        - Public
+        - Shared
+        - ReadOnly
+  - id: NodaTime.Serialization.JsonNet.Extensions
+    commentId: T:NodaTime.Serialization.JsonNet.Extensions
+    language: CSharp
+    name:
+      CSharp: Extensions
+      VB: Extensions
+    nameWithType:
+      CSharp: Extensions
+      VB: Extensions
+    qualifiedName:
+      CSharp: NodaTime.Serialization.JsonNet.Extensions
+      VB: NodaTime.Serialization.JsonNet.Extensions
+    type: Class
+    assemblies:
+    - NodaTime.Serialization.JsonNet
+    namespace: NodaTime.Serialization.JsonNet
+    source:
+      remote:
+        path: 1.2.x/src/NodaTime.Serialization.JsonNet/Extensions.cs
+        branch: history
+        repo: https://github.com/nodatime/nodatime.git
+      id: Extensions
+      path: src/NodaTime.Serialization.JsonNet/Extensions.cs
+      startLine: 12
+    summary: "\nStatic class containing extension methods to configure Json.NET for Noda Time types.\n"
+    example: []
+    syntax:
+      content:
+        CSharp: public static class Extensions
+        VB: Public Module Extensions
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - static
+      - class
+      VB:
+      - Public
+      - Module
+    items:
+    - isExtensionMethod: true
+      id: NodaTime.Serialization.JsonNet.Extensions.ConfigureForNodaTime(Newtonsoft.Json.JsonSerializerSettings,NodaTime.IDateTimeZoneProvider)
+      commentId: M:NodaTime.Serialization.JsonNet.Extensions.ConfigureForNodaTime(Newtonsoft.Json.JsonSerializerSettings,NodaTime.IDateTimeZoneProvider)
+      language: CSharp
+      name:
+        CSharp: ConfigureForNodaTime(JsonSerializerSettings, IDateTimeZoneProvider)
+        VB: ConfigureForNodaTime(JsonSerializerSettings, IDateTimeZoneProvider)
+      nameWithType:
+        CSharp: Extensions.ConfigureForNodaTime(JsonSerializerSettings, IDateTimeZoneProvider)
+        VB: Extensions.ConfigureForNodaTime(JsonSerializerSettings, IDateTimeZoneProvider)
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.Extensions.ConfigureForNodaTime(Newtonsoft.Json.JsonSerializerSettings, NodaTime.IDateTimeZoneProvider)
+        VB: NodaTime.Serialization.JsonNet.Extensions.ConfigureForNodaTime(Newtonsoft.Json.JsonSerializerSettings, NodaTime.IDateTimeZoneProvider)
+      type: Method
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/Extensions.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: ConfigureForNodaTime
+        path: src/NodaTime.Serialization.JsonNet/Extensions.cs
+        startLine: 20
+      summary: "\nConfigures Json.NET with everything required to properly serialize and deserialize NodaTime data types.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static JsonSerializerSettings ConfigureForNodaTime(this JsonSerializerSettings settings, IDateTimeZoneProvider provider)
+          VB: >-
+            <ExtensionAttribute>
+
+            Public Shared Function ConfigureForNodaTime(settings As JsonSerializerSettings, provider As IDateTimeZoneProvider) As JsonSerializerSettings
+        parameters:
+        - id: settings
+          type: Newtonsoft.Json.JsonSerializerSettings
+          description: The existing settings to add Noda Time converters to.
+        - id: provider
+          type: NodaTime.IDateTimeZoneProvider
+          description: The time zone provider to use when parsing time zones and zoned date/times.
+        return:
+          type: Newtonsoft.Json.JsonSerializerSettings
+          description: The original <span class="paramref">settings</span> value, for further chaining.
+      overload: NodaTime.Serialization.JsonNet.Extensions.ConfigureForNodaTime*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - isExtensionMethod: true
+      id: NodaTime.Serialization.JsonNet.Extensions.ConfigureForNodaTime(Newtonsoft.Json.JsonSerializer,NodaTime.IDateTimeZoneProvider)
+      commentId: M:NodaTime.Serialization.JsonNet.Extensions.ConfigureForNodaTime(Newtonsoft.Json.JsonSerializer,NodaTime.IDateTimeZoneProvider)
+      language: CSharp
+      name:
+        CSharp: ConfigureForNodaTime(JsonSerializer, IDateTimeZoneProvider)
+        VB: ConfigureForNodaTime(JsonSerializer, IDateTimeZoneProvider)
+      nameWithType:
+        CSharp: Extensions.ConfigureForNodaTime(JsonSerializer, IDateTimeZoneProvider)
+        VB: Extensions.ConfigureForNodaTime(JsonSerializer, IDateTimeZoneProvider)
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.Extensions.ConfigureForNodaTime(Newtonsoft.Json.JsonSerializer, NodaTime.IDateTimeZoneProvider)
+        VB: NodaTime.Serialization.JsonNet.Extensions.ConfigureForNodaTime(Newtonsoft.Json.JsonSerializer, NodaTime.IDateTimeZoneProvider)
+      type: Method
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/Extensions.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: ConfigureForNodaTime
+        path: src/NodaTime.Serialization.JsonNet/Extensions.cs
+        startLine: 56
+      summary: "\nConfigures Json.NET with everything required to properly serialize and deserialize NodaTime data types.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static JsonSerializer ConfigureForNodaTime(this JsonSerializer serializer, IDateTimeZoneProvider provider)
+          VB: >-
+            <ExtensionAttribute>
+
+            Public Shared Function ConfigureForNodaTime(serializer As JsonSerializer, provider As IDateTimeZoneProvider) As JsonSerializer
+        parameters:
+        - id: serializer
+          type: Newtonsoft.Json.JsonSerializer
+          description: The existing serializer to add Noda Time converters to.
+        - id: provider
+          type: NodaTime.IDateTimeZoneProvider
+          description: The time zone provider to use when parsing time zones and zoned date/times.
+        return:
+          type: Newtonsoft.Json.JsonSerializer
+          description: The original <span class="paramref">serializer</span> value, for further chaining.
+      overload: NodaTime.Serialization.JsonNet.Extensions.ConfigureForNodaTime*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+  - id: NodaTime.Serialization.JsonNet.NodaPatternConverter`1
+    commentId: T:NodaTime.Serialization.JsonNet.NodaPatternConverter`1
+    language: CSharp
+    name:
+      CSharp: NodaPatternConverter<T>
+      VB: NodaPatternConverter(Of T)
+    nameWithType:
+      CSharp: NodaPatternConverter<T>
+      VB: NodaPatternConverter(Of T)
+    qualifiedName:
+      CSharp: NodaTime.Serialization.JsonNet.NodaPatternConverter<T>
+      VB: NodaTime.Serialization.JsonNet.NodaPatternConverter(Of T)
+    type: Class
+    assemblies:
+    - NodaTime.Serialization.JsonNet
+    namespace: NodaTime.Serialization.JsonNet
+    source:
+      remote:
+        path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaPatternConverter.cs
+        branch: history
+        repo: https://github.com/nodatime/nodatime.git
+      id: NodaPatternConverter
+      path: src/NodaTime.Serialization.JsonNet/NodaPatternConverter.cs
+      startLine: 17
+    summary: "\nA JSON converter for types which can be represented by a single string value, parsed or formatted\nfrom an <xref href=\"NodaTime.Text.IPattern%601\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+    example: []
+    syntax:
+      content:
+        CSharp: 'public sealed class NodaPatternConverter<T> : NodaConverterBase<T>'
+        VB: >-
+          Public NotInheritable Class NodaPatternConverter(Of T)
+
+              Inherits NodaConverterBase(Of T)
+      typeParameters:
+      - id: T
+        description: The type to convert to/from JSON.
+    inheritance:
+    - System.Object
+    - Newtonsoft.Json.JsonConverter
+    - NodaTime.Serialization.JsonNet.NodaConverterBase{{T}}
+    inheritedMembers:
+    - NodaTime.Serialization.JsonNet.NodaConverterBase{{T}}.CanConvert(System.Type)
+    - NodaTime.Serialization.JsonNet.NodaConverterBase{{T}}.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+    - NodaTime.Serialization.JsonNet.NodaConverterBase{{T}}.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+    - Newtonsoft.Json.JsonConverter.GetSchema
+    - Newtonsoft.Json.JsonConverter.CanRead
+    - Newtonsoft.Json.JsonConverter.CanWrite
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - sealed
+      - class
+      VB:
+      - Public
+      - NotInheritable
+      - Class
+    items:
+    - id: NodaTime.Serialization.JsonNet.NodaPatternConverter`1.#ctor(NodaTime.Text.IPattern{`0})
+      commentId: M:NodaTime.Serialization.JsonNet.NodaPatternConverter`1.#ctor(NodaTime.Text.IPattern{`0})
+      language: CSharp
+      name:
+        CSharp: NodaPatternConverter(IPattern<T>)
+        VB: NodaPatternConverter(IPattern(Of T))
+      nameWithType:
+        CSharp: NodaPatternConverter<T>.NodaPatternConverter(IPattern<T>)
+        VB: NodaPatternConverter(Of T).NodaPatternConverter(IPattern(Of T))
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.NodaPatternConverter<T>.NodaPatternConverter(NodaTime.Text.IPattern<T>)
+        VB: NodaTime.Serialization.JsonNet.NodaPatternConverter(Of T).NodaPatternConverter(NodaTime.Text.IPattern(Of T))
+      type: Constructor
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaPatternConverter.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: .ctor
+        path: src/NodaTime.Serialization.JsonNet/NodaPatternConverter.cs
+        startLine: 27
+      summary: "\nCreates a new instance with a pattern and no validator.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public NodaPatternConverter(IPattern<T> pattern)
+          VB: Public Sub New(pattern As IPattern(Of T))
+        parameters:
+        - id: pattern
+          type: NodaTime.Text.IPattern{{T}}
+          description: The pattern to use for parsing and formatting.
+      overload: NodaTime.Serialization.JsonNet.NodaPatternConverter`1.#ctor*
+      exceptions:
+      - type: System.ArgumentNullException
+        commentId: T:System.ArgumentNullException
+        description: <span class="paramref">pattern</span> is null.
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NodaTime.Serialization.JsonNet.NodaPatternConverter`1.#ctor(NodaTime.Text.IPattern{`0},System.Action{`0})
+      commentId: M:NodaTime.Serialization.JsonNet.NodaPatternConverter`1.#ctor(NodaTime.Text.IPattern{`0},System.Action{`0})
+      language: CSharp
+      name:
+        CSharp: NodaPatternConverter(IPattern<T>, Action<T>)
+        VB: NodaPatternConverter(IPattern(Of T), Action(Of T))
+      nameWithType:
+        CSharp: NodaPatternConverter<T>.NodaPatternConverter(IPattern<T>, Action<T>)
+        VB: NodaPatternConverter(Of T).NodaPatternConverter(IPattern(Of T), Action(Of T))
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.NodaPatternConverter<T>.NodaPatternConverter(NodaTime.Text.IPattern<T>, System.Action<T>)
+        VB: NodaTime.Serialization.JsonNet.NodaPatternConverter(Of T).NodaPatternConverter(NodaTime.Text.IPattern(Of T), System.Action(Of T))
+      type: Constructor
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaPatternConverter.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: .ctor
+        path: src/NodaTime.Serialization.JsonNet/NodaPatternConverter.cs
+        startLine: 38
+      summary: "\nCreates a new instance with a pattern and an optional validator. The validator will be called before each\nvalue is written, and may throw an exception to indicate that the value cannot be serialized.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public NodaPatternConverter(IPattern<T> pattern, Action<T> validator)
+          VB: Public Sub New(pattern As IPattern(Of T), validator As Action(Of T))
+        parameters:
+        - id: pattern
+          type: NodaTime.Text.IPattern{{T}}
+          description: The pattern to use for parsing and formatting.
+        - id: validator
+          type: System.Action{{T}}
+          description: The validator to call before writing values. May be null, indicating that no validation is required.
+      overload: NodaTime.Serialization.JsonNet.NodaPatternConverter`1.#ctor*
+      exceptions:
+      - type: System.ArgumentNullException
+        commentId: T:System.ArgumentNullException
+        description: <span class="paramref">pattern</span> is null.
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NodaTime.Serialization.JsonNet.NodaPatternConverter`1.ReadJsonImpl(Newtonsoft.Json.JsonReader,Newtonsoft.Json.JsonSerializer)
+      commentId: M:NodaTime.Serialization.JsonNet.NodaPatternConverter`1.ReadJsonImpl(Newtonsoft.Json.JsonReader,Newtonsoft.Json.JsonSerializer)
+      language: CSharp
+      name:
+        CSharp: ReadJsonImpl(JsonReader, JsonSerializer)
+        VB: ReadJsonImpl(JsonReader, JsonSerializer)
+      nameWithType:
+        CSharp: NodaPatternConverter<T>.ReadJsonImpl(JsonReader, JsonSerializer)
+        VB: NodaPatternConverter(Of T).ReadJsonImpl(JsonReader, JsonSerializer)
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.NodaPatternConverter<T>.ReadJsonImpl(Newtonsoft.Json.JsonReader, Newtonsoft.Json.JsonSerializer)
+        VB: NodaTime.Serialization.JsonNet.NodaPatternConverter(Of T).ReadJsonImpl(Newtonsoft.Json.JsonReader, Newtonsoft.Json.JsonSerializer)
+      type: Method
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaPatternConverter.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: ReadJsonImpl
+        path: src/NodaTime.Serialization.JsonNet/NodaPatternConverter.cs
+        startLine: 57
+      summary: "\nImplemented by concrete subclasses, this performs the final conversion from a non-null JSON value to\na value of type T.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: protected override T ReadJsonImpl(JsonReader reader, JsonSerializer serializer)
+          VB: Protected Overrides Function ReadJsonImpl(reader As JsonReader, serializer As JsonSerializer) As T
+        parameters:
+        - id: reader
+          type: Newtonsoft.Json.JsonReader
+          description: The JSON reader to pull data from
+        - id: serializer
+          type: Newtonsoft.Json.JsonSerializer
+          description: The serializer to use for nested serialization
+        return:
+          type: '{T}'
+          description: The deserialized value of type T.
+      overload: NodaTime.Serialization.JsonNet.NodaPatternConverter`1.ReadJsonImpl*
+      overridden: NodaTime.Serialization.JsonNet.NodaConverterBase{{T}}.ReadJsonImpl(Newtonsoft.Json.JsonReader,Newtonsoft.Json.JsonSerializer)
+      modifiers:
+        CSharp:
+        - protected
+        - override
+        VB:
+        - Protected
+        - Overrides
+    - id: NodaTime.Serialization.JsonNet.NodaPatternConverter`1.WriteJsonImpl(Newtonsoft.Json.JsonWriter,`0,Newtonsoft.Json.JsonSerializer)
+      commentId: M:NodaTime.Serialization.JsonNet.NodaPatternConverter`1.WriteJsonImpl(Newtonsoft.Json.JsonWriter,`0,Newtonsoft.Json.JsonSerializer)
+      language: CSharp
+      name:
+        CSharp: WriteJsonImpl(JsonWriter, T, JsonSerializer)
+        VB: WriteJsonImpl(JsonWriter, T, JsonSerializer)
+      nameWithType:
+        CSharp: NodaPatternConverter<T>.WriteJsonImpl(JsonWriter, T, JsonSerializer)
+        VB: NodaPatternConverter(Of T).WriteJsonImpl(JsonWriter, T, JsonSerializer)
+      qualifiedName:
+        CSharp: NodaTime.Serialization.JsonNet.NodaPatternConverter<T>.WriteJsonImpl(Newtonsoft.Json.JsonWriter, T, Newtonsoft.Json.JsonSerializer)
+        VB: NodaTime.Serialization.JsonNet.NodaPatternConverter(Of T).WriteJsonImpl(Newtonsoft.Json.JsonWriter, T, Newtonsoft.Json.JsonSerializer)
+      type: Method
+      assemblies:
+      - NodaTime.Serialization.JsonNet
+      namespace: NodaTime.Serialization.JsonNet
+      source:
+        remote:
+          path: 1.2.x/src/NodaTime.Serialization.JsonNet/NodaPatternConverter.cs
+          branch: history
+          repo: https://github.com/nodatime/nodatime.git
+        id: WriteJsonImpl
+        path: src/NodaTime.Serialization.JsonNet/NodaPatternConverter.cs
+        startLine: 76
+      summary: "\nWrites the formatted value to the writer.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: protected override void WriteJsonImpl(JsonWriter writer, T value, JsonSerializer serializer)
+          VB: Protected Overrides Sub WriteJsonImpl(writer As JsonWriter, value As T, serializer As JsonSerializer)
+        parameters:
+        - id: writer
+          type: Newtonsoft.Json.JsonWriter
+          description: The writer to write JSON data to
+        - id: value
+          type: '{T}'
+          description: The value to serializer
+        - id: serializer
+          type: Newtonsoft.Json.JsonSerializer
+          description: The serializer to use for nested serialization
+      overload: NodaTime.Serialization.JsonNet.NodaPatternConverter`1.WriteJsonImpl*
+      overridden: NodaTime.Serialization.JsonNet.NodaConverterBase{{T}}.WriteJsonImpl(Newtonsoft.Json.JsonWriter,{T},Newtonsoft.Json.JsonSerializer)
+      modifiers:
+        CSharp:
+        - protected
+        - override
+        VB:
+        - Protected
+        - Overrides
+    references:
+      NodaTime.Text.IPattern`1: 
+references:
+  Newtonsoft.Json:
+    name:
+      CSharp:
+      - name: Newtonsoft.Json
+        nameWithType: Newtonsoft.Json
+        qualifiedName: Newtonsoft.Json
+      VB:
+      - name: Newtonsoft.Json
+        nameWithType: Newtonsoft.Json
+        qualifiedName: Newtonsoft.Json
+    isDefinition: true
+    commentId: N:Newtonsoft.Json
+  Newtonsoft.Json.JsonConverter:
+    name:
+      CSharp:
+      - id: Newtonsoft.Json.JsonConverter
+        name: JsonConverter
+        nameWithType: JsonConverter
+        qualifiedName: Newtonsoft.Json.JsonConverter
+        isExternal: true
+      VB:
+      - id: Newtonsoft.Json.JsonConverter
+        name: JsonConverter
+        nameWithType: JsonConverter
+        qualifiedName: Newtonsoft.Json.JsonConverter
+        isExternal: true
+    isDefinition: true
+    parent: Newtonsoft.Json
+    commentId: T:Newtonsoft.Json.JsonConverter
+  Newtonsoft.Json.JsonConverter.GetSchema:
+    name:
+      CSharp:
+      - id: Newtonsoft.Json.JsonConverter.GetSchema
+        name: GetSchema
+        nameWithType: JsonConverter.GetSchema
+        qualifiedName: Newtonsoft.Json.JsonConverter.GetSchema
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: Newtonsoft.Json.JsonConverter.GetSchema
+        name: GetSchema
+        nameWithType: JsonConverter.GetSchema
+        qualifiedName: Newtonsoft.Json.JsonConverter.GetSchema
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: Newtonsoft.Json.JsonConverter
+    commentId: M:Newtonsoft.Json.JsonConverter.GetSchema
+  Newtonsoft.Json.JsonConverter.CanRead:
+    name:
+      CSharp:
+      - id: Newtonsoft.Json.JsonConverter.CanRead
+        name: CanRead
+        nameWithType: JsonConverter.CanRead
+        qualifiedName: Newtonsoft.Json.JsonConverter.CanRead
+        isExternal: true
+      VB:
+      - id: Newtonsoft.Json.JsonConverter.CanRead
+        name: CanRead
+        nameWithType: JsonConverter.CanRead
+        qualifiedName: Newtonsoft.Json.JsonConverter.CanRead
+        isExternal: true
+    isDefinition: true
+    parent: Newtonsoft.Json.JsonConverter
+    commentId: P:Newtonsoft.Json.JsonConverter.CanRead
+  Newtonsoft.Json.JsonConverter.CanWrite:
+    name:
+      CSharp:
+      - id: Newtonsoft.Json.JsonConverter.CanWrite
+        name: CanWrite
+        nameWithType: JsonConverter.CanWrite
+        qualifiedName: Newtonsoft.Json.JsonConverter.CanWrite
+        isExternal: true
+      VB:
+      - id: Newtonsoft.Json.JsonConverter.CanWrite
+        name: CanWrite
+        nameWithType: JsonConverter.CanWrite
+        qualifiedName: Newtonsoft.Json.JsonConverter.CanWrite
+        isExternal: true
+    isDefinition: true
+    parent: Newtonsoft.Json.JsonConverter
+    commentId: P:Newtonsoft.Json.JsonConverter.CanWrite
+  System:
+    name:
+      CSharp:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+      VB:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+    isDefinition: true
+    commentId: N:System
+  System.Object:
+    name:
+      CSharp:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      VB:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Object
+  System.Object.ToString:
+    name:
+      CSharp:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ToString
+  System.Object.Equals(System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object)
+  System.Object.Equals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object,System.Object)
+  System.Object.ReferenceEquals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  System.Object.GetHashCode:
+    name:
+      CSharp:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetHashCode
+  System.Object.GetType:
+    name:
+      CSharp:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetType
+  System.Object.MemberwiseClone:
+    name:
+      CSharp:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.MemberwiseClone
+  System.Boolean:
+    name:
+      CSharp:
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+      VB:
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Boolean
+  System.Type:
+    name:
+      CSharp:
+      - id: System.Type
+        name: Type
+        nameWithType: Type
+        qualifiedName: System.Type
+        isExternal: true
+      VB:
+      - id: System.Type
+        name: Type
+        nameWithType: Type
+        qualifiedName: System.Type
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Type
+  Newtonsoft.Json.JsonConverter.CanConvert(System.Type):
+    name:
+      CSharp:
+      - id: Newtonsoft.Json.JsonConverter.CanConvert(System.Type)
+        name: CanConvert
+        nameWithType: JsonConverter.CanConvert
+        qualifiedName: Newtonsoft.Json.JsonConverter.CanConvert
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Type
+        name: Type
+        nameWithType: Type
+        qualifiedName: System.Type
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: Newtonsoft.Json.JsonConverter.CanConvert(System.Type)
+        name: CanConvert
+        nameWithType: JsonConverter.CanConvert
+        qualifiedName: Newtonsoft.Json.JsonConverter.CanConvert
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Type
+        name: Type
+        nameWithType: Type
+        qualifiedName: System.Type
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: Newtonsoft.Json.JsonConverter
+    commentId: M:Newtonsoft.Json.JsonConverter.CanConvert(System.Type)
+  NodaTime.Serialization.JsonNet.NodaConverterBase`1.CanConvert*:
+    name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.CanConvert*
+        name: CanConvert
+        nameWithType: NodaConverterBase<T>.CanConvert
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase<T>.CanConvert
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.CanConvert*
+        name: CanConvert
+        nameWithType: NodaConverterBase(Of T).CanConvert
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase(Of T).CanConvert
+    isDefinition: true
+    commentId: Overload:NodaTime.Serialization.JsonNet.NodaConverterBase`1.CanConvert
+  NodaTime.Utility.InvalidNodaDataException:
+    commentId: T:NodaTime.Utility.InvalidNodaDataException
+  Newtonsoft.Json.JsonReader:
+    name:
+      CSharp:
+      - id: Newtonsoft.Json.JsonReader
+        name: JsonReader
+        nameWithType: JsonReader
+        qualifiedName: Newtonsoft.Json.JsonReader
+        isExternal: true
+      VB:
+      - id: Newtonsoft.Json.JsonReader
+        name: JsonReader
+        nameWithType: JsonReader
+        qualifiedName: Newtonsoft.Json.JsonReader
+        isExternal: true
+    isDefinition: true
+    parent: Newtonsoft.Json
+    commentId: T:Newtonsoft.Json.JsonReader
+  Newtonsoft.Json.JsonSerializer:
+    name:
+      CSharp:
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+      VB:
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+    isDefinition: true
+    parent: Newtonsoft.Json
+    commentId: T:Newtonsoft.Json.JsonSerializer
+  Newtonsoft.Json.JsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer):
+    name:
+      CSharp:
+      - id: Newtonsoft.Json.JsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+        name: ReadJson
+        nameWithType: JsonConverter.ReadJson
+        qualifiedName: Newtonsoft.Json.JsonConverter.ReadJson
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Newtonsoft.Json.JsonReader
+        name: JsonReader
+        nameWithType: JsonReader
+        qualifiedName: Newtonsoft.Json.JsonReader
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Type
+        name: Type
+        nameWithType: Type
+        qualifiedName: System.Type
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: Newtonsoft.Json.JsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+        name: ReadJson
+        nameWithType: JsonConverter.ReadJson
+        qualifiedName: Newtonsoft.Json.JsonConverter.ReadJson
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Newtonsoft.Json.JsonReader
+        name: JsonReader
+        nameWithType: JsonReader
+        qualifiedName: Newtonsoft.Json.JsonReader
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Type
+        name: Type
+        nameWithType: Type
+        qualifiedName: System.Type
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: Newtonsoft.Json.JsonConverter
+    commentId: M:Newtonsoft.Json.JsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJson*:
+    name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJson*
+        name: ReadJson
+        nameWithType: NodaConverterBase<T>.ReadJson
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase<T>.ReadJson
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJson*
+        name: ReadJson
+        nameWithType: NodaConverterBase(Of T).ReadJson
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase(Of T).ReadJson
+    isDefinition: true
+    commentId: Overload:NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJson
+  T:
+    name:
+      CSharp:
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      VB:
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+    isDefinition: true
+  '{T}':
+    name:
+      CSharp:
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      VB:
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+    isDefinition: false
+    definition: T
+    commentId: '!:T'
+  NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJsonImpl*:
+    name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJsonImpl*
+        name: ReadJsonImpl
+        nameWithType: NodaConverterBase<T>.ReadJsonImpl
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase<T>.ReadJsonImpl
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJsonImpl*
+        name: ReadJsonImpl
+        nameWithType: NodaConverterBase(Of T).ReadJsonImpl
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase(Of T).ReadJsonImpl
+    isDefinition: true
+    commentId: Overload:NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJsonImpl
+  Newtonsoft.Json.JsonWriter:
+    name:
+      CSharp:
+      - id: Newtonsoft.Json.JsonWriter
+        name: JsonWriter
+        nameWithType: JsonWriter
+        qualifiedName: Newtonsoft.Json.JsonWriter
+        isExternal: true
+      VB:
+      - id: Newtonsoft.Json.JsonWriter
+        name: JsonWriter
+        nameWithType: JsonWriter
+        qualifiedName: Newtonsoft.Json.JsonWriter
+        isExternal: true
+    isDefinition: true
+    parent: Newtonsoft.Json
+    commentId: T:Newtonsoft.Json.JsonWriter
+  Newtonsoft.Json.JsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer):
+    name:
+      CSharp:
+      - id: Newtonsoft.Json.JsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+        name: WriteJson
+        nameWithType: JsonConverter.WriteJson
+        qualifiedName: Newtonsoft.Json.JsonConverter.WriteJson
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Newtonsoft.Json.JsonWriter
+        name: JsonWriter
+        nameWithType: JsonWriter
+        qualifiedName: Newtonsoft.Json.JsonWriter
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: Newtonsoft.Json.JsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+        name: WriteJson
+        nameWithType: JsonConverter.WriteJson
+        qualifiedName: Newtonsoft.Json.JsonConverter.WriteJson
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Newtonsoft.Json.JsonWriter
+        name: JsonWriter
+        nameWithType: JsonWriter
+        qualifiedName: Newtonsoft.Json.JsonWriter
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: Newtonsoft.Json.JsonConverter
+    commentId: M:Newtonsoft.Json.JsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJson*:
+    name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJson*
+        name: WriteJson
+        nameWithType: NodaConverterBase<T>.WriteJson
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase<T>.WriteJson
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJson*
+        name: WriteJson
+        nameWithType: NodaConverterBase(Of T).WriteJson
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase(Of T).WriteJson
+    isDefinition: true
+    commentId: Overload:NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJson
+  NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJsonImpl*:
+    name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJsonImpl*
+        name: WriteJsonImpl
+        nameWithType: NodaConverterBase<T>.WriteJsonImpl
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase<T>.WriteJsonImpl
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJsonImpl*
+        name: WriteJsonImpl
+        nameWithType: NodaConverterBase(Of T).WriteJsonImpl
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase(Of T).WriteJsonImpl
+    isDefinition: true
+    commentId: Overload:NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJsonImpl
+  NodaTime.Serialization.JsonNet.NodaConverterBase`1:
+    name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1
+        name: NodaConverterBase
+        nameWithType: NodaConverterBase
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1
+        name: NodaConverterBase
+        nameWithType: NodaConverterBase
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:NodaTime.Serialization.JsonNet.NodaConverterBase`1
+  NodaTime.ZonedDateTime:
+    commentId: T:NodaTime.ZonedDateTime
+  NodaTime:
+    name:
+      CSharp:
+      - name: NodaTime
+        nameWithType: NodaTime
+        qualifiedName: NodaTime
+      VB:
+      - name: NodaTime
+        nameWithType: NodaTime
+        qualifiedName: NodaTime
+    isDefinition: true
+    commentId: N:NodaTime
+  NodaTime.IDateTimeZoneProvider:
+    name:
+      CSharp:
+      - id: NodaTime.IDateTimeZoneProvider
+        name: IDateTimeZoneProvider
+        nameWithType: IDateTimeZoneProvider
+        qualifiedName: NodaTime.IDateTimeZoneProvider
+      VB:
+      - id: NodaTime.IDateTimeZoneProvider
+        name: IDateTimeZoneProvider
+        nameWithType: IDateTimeZoneProvider
+        qualifiedName: NodaTime.IDateTimeZoneProvider
+    isDefinition: true
+    parent: NodaTime
+    commentId: T:NodaTime.IDateTimeZoneProvider
+  NodaTime.Serialization.JsonNet.NodaConverters.CreateZonedDateTimeConverter*:
+    name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaConverters.CreateZonedDateTimeConverter*
+        name: CreateZonedDateTimeConverter
+        nameWithType: NodaConverters.CreateZonedDateTimeConverter
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverters.CreateZonedDateTimeConverter
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaConverters.CreateZonedDateTimeConverter*
+        name: CreateZonedDateTimeConverter
+        nameWithType: NodaConverters.CreateZonedDateTimeConverter
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverters.CreateZonedDateTimeConverter
+    isDefinition: true
+    commentId: Overload:NodaTime.Serialization.JsonNet.NodaConverters.CreateZonedDateTimeConverter
+  NodaTime.DateTimeZone:
+    commentId: T:NodaTime.DateTimeZone
+  NodaTime.Serialization.JsonNet.NodaConverters.CreateDateTimeZoneConverter*:
+    name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaConverters.CreateDateTimeZoneConverter*
+        name: CreateDateTimeZoneConverter
+        nameWithType: NodaConverters.CreateDateTimeZoneConverter
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverters.CreateDateTimeZoneConverter
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaConverters.CreateDateTimeZoneConverter*
+        name: CreateDateTimeZoneConverter
+        nameWithType: NodaConverters.CreateDateTimeZoneConverter
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverters.CreateDateTimeZoneConverter
+    isDefinition: true
+    commentId: Overload:NodaTime.Serialization.JsonNet.NodaConverters.CreateDateTimeZoneConverter
+  NodaTime.Serialization.JsonNet.NodaConverters:
+    name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaConverters
+        name: NodaConverters
+        nameWithType: NodaConverters
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverters
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaConverters
+        name: NodaConverters
+        nameWithType: NodaConverters
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverters
+    isDefinition: true
+    commentId: T:NodaTime.Serialization.JsonNet.NodaConverters
+  Newtonsoft.Json.JsonSerializerSettings:
+    name:
+      CSharp:
+      - id: Newtonsoft.Json.JsonSerializerSettings
+        name: JsonSerializerSettings
+        nameWithType: JsonSerializerSettings
+        qualifiedName: Newtonsoft.Json.JsonSerializerSettings
+        isExternal: true
+      VB:
+      - id: Newtonsoft.Json.JsonSerializerSettings
+        name: JsonSerializerSettings
+        nameWithType: JsonSerializerSettings
+        qualifiedName: Newtonsoft.Json.JsonSerializerSettings
+        isExternal: true
+    isDefinition: true
+    parent: Newtonsoft.Json
+    commentId: T:Newtonsoft.Json.JsonSerializerSettings
+  NodaTime.Serialization.JsonNet.Extensions.ConfigureForNodaTime*:
+    name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.Extensions.ConfigureForNodaTime*
+        name: ConfigureForNodaTime
+        nameWithType: Extensions.ConfigureForNodaTime
+        qualifiedName: NodaTime.Serialization.JsonNet.Extensions.ConfigureForNodaTime
+      VB:
+      - id: NodaTime.Serialization.JsonNet.Extensions.ConfigureForNodaTime*
+        name: ConfigureForNodaTime
+        nameWithType: Extensions.ConfigureForNodaTime
+        qualifiedName: NodaTime.Serialization.JsonNet.Extensions.ConfigureForNodaTime
+    isDefinition: true
+    commentId: Overload:NodaTime.Serialization.JsonNet.Extensions.ConfigureForNodaTime
+  NodaTime.Serialization.JsonNet.Extensions:
+    name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.Extensions
+        name: Extensions
+        nameWithType: Extensions
+        qualifiedName: NodaTime.Serialization.JsonNet.Extensions
+      VB:
+      - id: NodaTime.Serialization.JsonNet.Extensions
+        name: Extensions
+        nameWithType: Extensions
+        qualifiedName: NodaTime.Serialization.JsonNet.Extensions
+    isDefinition: true
+    commentId: T:NodaTime.Serialization.JsonNet.Extensions
+  NodaTime.Text.IPattern`1:
+    name:
+      CSharp:
+      - id: NodaTime.Text.IPattern`1
+        name: IPattern
+        nameWithType: IPattern
+        qualifiedName: NodaTime.Text.IPattern
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: NodaTime.Text.IPattern`1
+        name: IPattern
+        nameWithType: IPattern
+        qualifiedName: NodaTime.Text.IPattern
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:NodaTime.Text.IPattern`1
+  NodaTime.Serialization.JsonNet:
+    name:
+      CSharp:
+      - name: NodaTime.Serialization.JsonNet
+        nameWithType: NodaTime.Serialization.JsonNet
+        qualifiedName: NodaTime.Serialization.JsonNet
+      VB:
+      - name: NodaTime.Serialization.JsonNet
+        nameWithType: NodaTime.Serialization.JsonNet
+        qualifiedName: NodaTime.Serialization.JsonNet
+    isDefinition: true
+    commentId: N:NodaTime.Serialization.JsonNet
+  NodaTime.Serialization.JsonNet.NodaConverterBase{{T}}:
+    name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1
+        name: NodaConverterBase
+        nameWithType: NodaConverterBase
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1
+        name: NodaConverterBase
+        nameWithType: NodaConverterBase
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: NodaTime.Serialization.JsonNet.NodaConverterBase`1
+    parent: NodaTime.Serialization.JsonNet
+    commentId: T:NodaTime.Serialization.JsonNet.NodaConverterBase{`0}
+  NodaTime.Serialization.JsonNet.NodaConverterBase`1.CanConvert(System.Type):
+    name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.CanConvert(System.Type)
+        name: CanConvert
+        nameWithType: NodaConverterBase<T>.CanConvert
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase<T>.CanConvert
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Type
+        name: Type
+        nameWithType: Type
+        qualifiedName: System.Type
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.CanConvert(System.Type)
+        name: CanConvert
+        nameWithType: NodaConverterBase(Of T).CanConvert
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase(Of T).CanConvert
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Type
+        name: Type
+        nameWithType: Type
+        qualifiedName: System.Type
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:NodaTime.Serialization.JsonNet.NodaConverterBase`1.CanConvert(System.Type)
+  NodaTime.Serialization.JsonNet.NodaConverterBase{{T}}.CanConvert(System.Type):
+    name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.CanConvert(System.Type)
+        name: CanConvert
+        nameWithType: NodaConverterBase<T>.CanConvert
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase<T>.CanConvert
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Type
+        name: Type
+        nameWithType: Type
+        qualifiedName: System.Type
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.CanConvert(System.Type)
+        name: CanConvert
+        nameWithType: NodaConverterBase(Of T).CanConvert
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase(Of T).CanConvert
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Type
+        name: Type
+        nameWithType: Type
+        qualifiedName: System.Type
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: NodaTime.Serialization.JsonNet.NodaConverterBase`1.CanConvert(System.Type)
+    parent: NodaTime.Serialization.JsonNet.NodaConverterBase{{T}}
+    commentId: M:NodaTime.Serialization.JsonNet.NodaConverterBase{`0}.CanConvert(System.Type)
+  ? NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  : name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+        name: ReadJson
+        nameWithType: NodaConverterBase<T>.ReadJson
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase<T>.ReadJson
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Newtonsoft.Json.JsonReader
+        name: JsonReader
+        nameWithType: JsonReader
+        qualifiedName: Newtonsoft.Json.JsonReader
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Type
+        name: Type
+        nameWithType: Type
+        qualifiedName: System.Type
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+        name: ReadJson
+        nameWithType: NodaConverterBase(Of T).ReadJson
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase(Of T).ReadJson
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Newtonsoft.Json.JsonReader
+        name: JsonReader
+        nameWithType: JsonReader
+        qualifiedName: Newtonsoft.Json.JsonReader
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Type
+        name: Type
+        nameWithType: Type
+        qualifiedName: System.Type
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  ? NodaTime.Serialization.JsonNet.NodaConverterBase{{T}}.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  : name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+        name: ReadJson
+        nameWithType: NodaConverterBase<T>.ReadJson
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase<T>.ReadJson
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Newtonsoft.Json.JsonReader
+        name: JsonReader
+        nameWithType: JsonReader
+        qualifiedName: Newtonsoft.Json.JsonReader
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Type
+        name: Type
+        nameWithType: Type
+        qualifiedName: System.Type
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+        name: ReadJson
+        nameWithType: NodaConverterBase(Of T).ReadJson
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase(Of T).ReadJson
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Newtonsoft.Json.JsonReader
+        name: JsonReader
+        nameWithType: JsonReader
+        qualifiedName: Newtonsoft.Json.JsonReader
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Type
+        name: Type
+        nameWithType: Type
+        qualifiedName: System.Type
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+    parent: NodaTime.Serialization.JsonNet.NodaConverterBase{{T}}
+    commentId: M:NodaTime.Serialization.JsonNet.NodaConverterBase{`0}.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  ? NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  : name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+        name: WriteJson
+        nameWithType: NodaConverterBase<T>.WriteJson
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase<T>.WriteJson
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Newtonsoft.Json.JsonWriter
+        name: JsonWriter
+        nameWithType: JsonWriter
+        qualifiedName: Newtonsoft.Json.JsonWriter
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+        name: WriteJson
+        nameWithType: NodaConverterBase(Of T).WriteJson
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase(Of T).WriteJson
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Newtonsoft.Json.JsonWriter
+        name: JsonWriter
+        nameWithType: JsonWriter
+        qualifiedName: Newtonsoft.Json.JsonWriter
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  ? NodaTime.Serialization.JsonNet.NodaConverterBase{{T}}.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  : name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+        name: WriteJson
+        nameWithType: NodaConverterBase<T>.WriteJson
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase<T>.WriteJson
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Newtonsoft.Json.JsonWriter
+        name: JsonWriter
+        nameWithType: JsonWriter
+        qualifiedName: Newtonsoft.Json.JsonWriter
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+        name: WriteJson
+        nameWithType: NodaConverterBase(Of T).WriteJson
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase(Of T).WriteJson
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Newtonsoft.Json.JsonWriter
+        name: JsonWriter
+        nameWithType: JsonWriter
+        qualifiedName: Newtonsoft.Json.JsonWriter
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+    parent: NodaTime.Serialization.JsonNet.NodaConverterBase{{T}}
+    commentId: M:NodaTime.Serialization.JsonNet.NodaConverterBase{`0}.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  System.ArgumentNullException:
+    commentId: T:System.ArgumentNullException
+  NodaTime.Text:
+    name:
+      CSharp:
+      - name: NodaTime.Text
+        nameWithType: NodaTime.Text
+        qualifiedName: NodaTime.Text
+      VB:
+      - name: NodaTime.Text
+        nameWithType: NodaTime.Text
+        qualifiedName: NodaTime.Text
+    isDefinition: true
+    commentId: N:NodaTime.Text
+  NodaTime.Text.IPattern{{T}}:
+    name:
+      CSharp:
+      - id: NodaTime.Text.IPattern`1
+        name: IPattern
+        nameWithType: IPattern
+        qualifiedName: NodaTime.Text.IPattern
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: NodaTime.Text.IPattern`1
+        name: IPattern
+        nameWithType: IPattern
+        qualifiedName: NodaTime.Text.IPattern
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: NodaTime.Text.IPattern`1
+    parent: NodaTime.Text
+    commentId: T:NodaTime.Text.IPattern{`0}
+  NodaTime.Serialization.JsonNet.NodaPatternConverter`1.#ctor*:
+    name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaPatternConverter`1.#ctor*
+        name: NodaPatternConverter
+        nameWithType: NodaPatternConverter<T>.NodaPatternConverter
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaPatternConverter<T>.NodaPatternConverter
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaPatternConverter`1.#ctor*
+        name: NodaPatternConverter
+        nameWithType: NodaPatternConverter(Of T).NodaPatternConverter
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaPatternConverter(Of T).NodaPatternConverter
+    isDefinition: true
+    commentId: Overload:NodaTime.Serialization.JsonNet.NodaPatternConverter`1.#ctor
+  System.Action`1:
+    name:
+      CSharp:
+      - id: System.Action`1
+        name: Action
+        nameWithType: Action
+        qualifiedName: System.Action
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Action`1
+        name: Action
+        nameWithType: Action
+        qualifiedName: System.Action
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:System.Action`1
+  System.Action{{T}}:
+    name:
+      CSharp:
+      - id: System.Action`1
+        name: Action
+        nameWithType: Action
+        qualifiedName: System.Action
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Action`1
+        name: Action
+        nameWithType: Action
+        qualifiedName: System.Action
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Action`1
+    parent: System
+    commentId: T:System.Action{`0}
+  NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJsonImpl(Newtonsoft.Json.JsonReader,Newtonsoft.Json.JsonSerializer):
+    name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJsonImpl(Newtonsoft.Json.JsonReader,Newtonsoft.Json.JsonSerializer)
+        name: ReadJsonImpl
+        nameWithType: NodaConverterBase<T>.ReadJsonImpl
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase<T>.ReadJsonImpl
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Newtonsoft.Json.JsonReader
+        name: JsonReader
+        nameWithType: JsonReader
+        qualifiedName: Newtonsoft.Json.JsonReader
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJsonImpl(Newtonsoft.Json.JsonReader,Newtonsoft.Json.JsonSerializer)
+        name: ReadJsonImpl
+        nameWithType: NodaConverterBase(Of T).ReadJsonImpl
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase(Of T).ReadJsonImpl
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Newtonsoft.Json.JsonReader
+        name: JsonReader
+        nameWithType: JsonReader
+        qualifiedName: Newtonsoft.Json.JsonReader
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJsonImpl(Newtonsoft.Json.JsonReader,Newtonsoft.Json.JsonSerializer)
+  NodaTime.Serialization.JsonNet.NodaConverterBase{{T}}.ReadJsonImpl(Newtonsoft.Json.JsonReader,Newtonsoft.Json.JsonSerializer):
+    name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJsonImpl(Newtonsoft.Json.JsonReader,Newtonsoft.Json.JsonSerializer)
+        name: ReadJsonImpl
+        nameWithType: NodaConverterBase<T>.ReadJsonImpl
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase<T>.ReadJsonImpl
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Newtonsoft.Json.JsonReader
+        name: JsonReader
+        nameWithType: JsonReader
+        qualifiedName: Newtonsoft.Json.JsonReader
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJsonImpl(Newtonsoft.Json.JsonReader,Newtonsoft.Json.JsonSerializer)
+        name: ReadJsonImpl
+        nameWithType: NodaConverterBase(Of T).ReadJsonImpl
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase(Of T).ReadJsonImpl
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Newtonsoft.Json.JsonReader
+        name: JsonReader
+        nameWithType: JsonReader
+        qualifiedName: Newtonsoft.Json.JsonReader
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: NodaTime.Serialization.JsonNet.NodaConverterBase`1.ReadJsonImpl(Newtonsoft.Json.JsonReader,Newtonsoft.Json.JsonSerializer)
+    parent: NodaTime.Serialization.JsonNet.NodaConverterBase{{T}}
+    commentId: M:NodaTime.Serialization.JsonNet.NodaConverterBase{`0}.ReadJsonImpl(Newtonsoft.Json.JsonReader,Newtonsoft.Json.JsonSerializer)
+  NodaTime.Serialization.JsonNet.NodaPatternConverter`1.ReadJsonImpl*:
+    name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaPatternConverter`1.ReadJsonImpl*
+        name: ReadJsonImpl
+        nameWithType: NodaPatternConverter<T>.ReadJsonImpl
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaPatternConverter<T>.ReadJsonImpl
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaPatternConverter`1.ReadJsonImpl*
+        name: ReadJsonImpl
+        nameWithType: NodaPatternConverter(Of T).ReadJsonImpl
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaPatternConverter(Of T).ReadJsonImpl
+    isDefinition: true
+    commentId: Overload:NodaTime.Serialization.JsonNet.NodaPatternConverter`1.ReadJsonImpl
+  NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJsonImpl(Newtonsoft.Json.JsonWriter,`0,Newtonsoft.Json.JsonSerializer):
+    name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJsonImpl(Newtonsoft.Json.JsonWriter,`0,Newtonsoft.Json.JsonSerializer)
+        name: WriteJsonImpl
+        nameWithType: NodaConverterBase<T>.WriteJsonImpl
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase<T>.WriteJsonImpl
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Newtonsoft.Json.JsonWriter
+        name: JsonWriter
+        nameWithType: JsonWriter
+        qualifiedName: Newtonsoft.Json.JsonWriter
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJsonImpl(Newtonsoft.Json.JsonWriter,`0,Newtonsoft.Json.JsonSerializer)
+        name: WriteJsonImpl
+        nameWithType: NodaConverterBase(Of T).WriteJsonImpl
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase(Of T).WriteJsonImpl
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Newtonsoft.Json.JsonWriter
+        name: JsonWriter
+        nameWithType: JsonWriter
+        qualifiedName: Newtonsoft.Json.JsonWriter
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJsonImpl(Newtonsoft.Json.JsonWriter,`0,Newtonsoft.Json.JsonSerializer)
+  ? NodaTime.Serialization.JsonNet.NodaConverterBase{{T}}.WriteJsonImpl(Newtonsoft.Json.JsonWriter,{T},Newtonsoft.Json.JsonSerializer)
+  : name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJsonImpl(Newtonsoft.Json.JsonWriter,`0,Newtonsoft.Json.JsonSerializer)
+        name: WriteJsonImpl
+        nameWithType: NodaConverterBase<T>.WriteJsonImpl
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase<T>.WriteJsonImpl
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Newtonsoft.Json.JsonWriter
+        name: JsonWriter
+        nameWithType: JsonWriter
+        qualifiedName: Newtonsoft.Json.JsonWriter
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJsonImpl(Newtonsoft.Json.JsonWriter,`0,Newtonsoft.Json.JsonSerializer)
+        name: WriteJsonImpl
+        nameWithType: NodaConverterBase(Of T).WriteJsonImpl
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaConverterBase(Of T).WriteJsonImpl
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Newtonsoft.Json.JsonWriter
+        name: JsonWriter
+        nameWithType: JsonWriter
+        qualifiedName: Newtonsoft.Json.JsonWriter
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: Newtonsoft.Json.JsonSerializer
+        name: JsonSerializer
+        nameWithType: JsonSerializer
+        qualifiedName: Newtonsoft.Json.JsonSerializer
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: NodaTime.Serialization.JsonNet.NodaConverterBase`1.WriteJsonImpl(Newtonsoft.Json.JsonWriter,`0,Newtonsoft.Json.JsonSerializer)
+    parent: NodaTime.Serialization.JsonNet.NodaConverterBase{{T}}
+    commentId: M:NodaTime.Serialization.JsonNet.NodaConverterBase{`0}.WriteJsonImpl(Newtonsoft.Json.JsonWriter,`0,Newtonsoft.Json.JsonSerializer)
+  NodaTime.Serialization.JsonNet.NodaPatternConverter`1.WriteJsonImpl*:
+    name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaPatternConverter`1.WriteJsonImpl*
+        name: WriteJsonImpl
+        nameWithType: NodaPatternConverter<T>.WriteJsonImpl
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaPatternConverter<T>.WriteJsonImpl
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaPatternConverter`1.WriteJsonImpl*
+        name: WriteJsonImpl
+        nameWithType: NodaPatternConverter(Of T).WriteJsonImpl
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaPatternConverter(Of T).WriteJsonImpl
+    isDefinition: true
+    commentId: Overload:NodaTime.Serialization.JsonNet.NodaPatternConverter`1.WriteJsonImpl
+  NodaTime.Serialization.JsonNet.NodaPatternConverter`1:
+    name:
+      CSharp:
+      - id: NodaTime.Serialization.JsonNet.NodaPatternConverter`1
+        name: NodaPatternConverter
+        nameWithType: NodaPatternConverter
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaPatternConverter
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: NodaTime.Serialization.JsonNet.NodaPatternConverter`1
+        name: NodaPatternConverter
+        nameWithType: NodaPatternConverter
+        qualifiedName: NodaTime.Serialization.JsonNet.NodaPatternConverter
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:NodaTime.Serialization.JsonNet.NodaPatternConverter`1
