@@ -95,7 +95,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Duration
     path: src/NodaTime/Duration.cs
-    startLine: 55
+    startLine: 62
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -151,7 +151,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Zero
     path: src/NodaTime/Duration.cs
-    startLine: 84
+    startLine: 93
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -191,7 +191,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Epsilon
     path: src/NodaTime/Duration.cs
-    startLine: 90
+    startLine: 99
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -231,7 +231,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: MaxValue
     path: src/NodaTime/Duration.cs
-    startLine: 95
+    startLine: 104
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -270,7 +270,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: MinValue
     path: src/NodaTime/Duration.cs
-    startLine: 100
+    startLine: 109
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -309,7 +309,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Days
     path: src/NodaTime/Duration.cs
-    startLine: 197
+    startLine: 206
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -347,7 +347,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: NanosecondOfDay
     path: src/NodaTime/Duration.cs
-    startLine: 204
+    startLine: 213
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -385,7 +385,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Hours
     path: src/NodaTime/Duration.cs
-    startLine: 212
+    startLine: 221
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -423,7 +423,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Minutes
     path: src/NodaTime/Duration.cs
-    startLine: 218
+    startLine: 227
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -461,7 +461,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Seconds
     path: src/NodaTime/Duration.cs
-    startLine: 224
+    startLine: 233
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -499,7 +499,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Milliseconds
     path: src/NodaTime/Duration.cs
-    startLine: 230
+    startLine: 239
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -537,7 +537,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: SubsecondTicks
     path: src/NodaTime/Duration.cs
-    startLine: 236
+    startLine: 245
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -575,7 +575,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: SubsecondNanoseconds
     path: src/NodaTime/Duration.cs
-    startLine: 242
+    startLine: 251
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -613,7 +613,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: BclCompatibleTicks
     path: src/NodaTime/Duration.cs
-    startLine: 262
+    startLine: 271
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -659,7 +659,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: TotalDays
     path: src/NodaTime/Duration.cs
-    startLine: 285
+    startLine: 294
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -703,7 +703,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: TotalHours
     path: src/NodaTime/Duration.cs
-    startLine: 298
+    startLine: 307
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -742,7 +742,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: TotalMinutes
     path: src/NodaTime/Duration.cs
-    startLine: 310
+    startLine: 319
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -790,7 +790,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: TotalSeconds
     path: src/NodaTime/Duration.cs
-    startLine: 323
+    startLine: 332
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -829,7 +829,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: TotalMilliseconds
     path: src/NodaTime/Duration.cs
-    startLine: 335
+    startLine: 344
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -877,7 +877,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: TotalTicks
     path: src/NodaTime/Duration.cs
-    startLine: 349
+    startLine: 358
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -930,7 +930,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: TotalNanoseconds
     path: src/NodaTime/Duration.cs
-    startLine: 360
+    startLine: 369
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -976,7 +976,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Equals
     path: src/NodaTime/Duration.cs
-    startLine: 423
+    startLine: 432
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1018,7 +1018,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetHashCode
     path: src/NodaTime/Duration.cs
-    startLine: 432
+    startLine: 441
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1056,7 +1056,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ToString
     path: src/NodaTime/Duration.cs
-    startLine: 443
+    startLine: 452
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1094,7 +1094,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ToString
     path: src/NodaTime/Duration.cs
-    startLine: 458
+    startLine: 467
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1144,7 +1144,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_Addition
     path: src/NodaTime/Duration.cs
-    startLine: 469
+    startLine: 478
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1188,7 +1188,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Add
     path: src/NodaTime/Duration.cs
-    startLine: 495
+    startLine: 504
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1232,7 +1232,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Plus
     path: src/NodaTime/Duration.cs
-    startLine: 502
+    startLine: 511
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1271,7 +1271,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_Subtraction
     path: src/NodaTime/Duration.cs
-    startLine: 511
+    startLine: 520
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1315,7 +1315,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Subtract
     path: src/NodaTime/Duration.cs
-    startLine: 532
+    startLine: 541
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1359,7 +1359,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Minus
     path: src/NodaTime/Duration.cs
-    startLine: 539
+    startLine: 548
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1398,7 +1398,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_Division
     path: src/NodaTime/Duration.cs
-    startLine: 549
+    startLine: 558
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1445,7 +1445,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_Division
     path: src/NodaTime/Duration.cs
-    startLine: 575
+    startLine: 584
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1492,7 +1492,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_Division
     path: src/NodaTime/Duration.cs
-    startLine: 593
+    startLine: 602
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1539,7 +1539,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Divide
     path: src/NodaTime/Duration.cs
-    startLine: 610
+    startLine: 619
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1586,7 +1586,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Divide
     path: src/NodaTime/Duration.cs
-    startLine: 619
+    startLine: 628
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1633,7 +1633,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Divide
     path: src/NodaTime/Duration.cs
-    startLine: 628
+    startLine: 637
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1680,7 +1680,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_Multiply
     path: src/NodaTime/Duration.cs
-    startLine: 637
+    startLine: 646
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1727,7 +1727,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_Multiply
     path: src/NodaTime/Duration.cs
-    startLine: 654
+    startLine: 660
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1774,7 +1774,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_Multiply
     path: src/NodaTime/Duration.cs
-    startLine: 694
+    startLine: 702
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1821,7 +1821,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Multiply
     path: src/NodaTime/Duration.cs
-    startLine: 702
+    startLine: 710
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1865,7 +1865,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Multiply
     path: src/NodaTime/Duration.cs
-    startLine: 710
+    startLine: 718
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1909,7 +1909,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Multiply
     path: src/NodaTime/Duration.cs
-    startLine: 718
+    startLine: 726
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1953,7 +1953,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_Equality
     path: src/NodaTime/Duration.cs
-    startLine: 726
+    startLine: 734
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1997,7 +1997,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_Inequality
     path: src/NodaTime/Duration.cs
-    startLine: 735
+    startLine: 743
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2041,7 +2041,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_LessThan
     path: src/NodaTime/Duration.cs
-    startLine: 743
+    startLine: 751
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2085,7 +2085,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_LessThanOrEqual
     path: src/NodaTime/Duration.cs
-    startLine: 752
+    startLine: 760
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2129,7 +2129,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_GreaterThan
     path: src/NodaTime/Duration.cs
-    startLine: 761
+    startLine: 769
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2173,7 +2173,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_GreaterThanOrEqual
     path: src/NodaTime/Duration.cs
-    startLine: 770
+    startLine: 778
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2217,7 +2217,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_UnaryNegation
     path: src/NodaTime/Duration.cs
-    startLine: 778
+    startLine: 786
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2258,7 +2258,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Negate
     path: src/NodaTime/Duration.cs
-    startLine: 795
+    startLine: 803
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2299,7 +2299,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: CompareTo
     path: src/NodaTime/Duration.cs
-    startLine: 825
+    startLine: 833
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2341,7 +2341,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: System.IComparable.CompareTo
     path: src/NodaTime/Duration.cs
-    startLine: 842
+    startLine: 850
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2388,7 +2388,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Equals
     path: src/NodaTime/Duration.cs
-    startLine: 862
+    startLine: 870
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2429,7 +2429,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromDays
     path: src/NodaTime/Duration.cs
-    startLine: 871
+    startLine: 879
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2470,7 +2470,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromDays
     path: src/NodaTime/Duration.cs
-    startLine: 879
+    startLine: 887
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2511,7 +2511,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromHours
     path: src/NodaTime/Duration.cs
-    startLine: 894
+    startLine: 902
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2552,7 +2552,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromHours
     path: src/NodaTime/Duration.cs
-    startLine: 909
+    startLine: 910
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2593,7 +2593,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromMinutes
     path: src/NodaTime/Duration.cs
-    startLine: 924
+    startLine: 925
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2634,7 +2634,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromMinutes
     path: src/NodaTime/Duration.cs
-    startLine: 939
+    startLine: 933
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2675,7 +2675,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromSeconds
     path: src/NodaTime/Duration.cs
-    startLine: 954
+    startLine: 948
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2716,7 +2716,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromSeconds
     path: src/NodaTime/Duration.cs
-    startLine: 969
+    startLine: 956
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2757,7 +2757,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromMilliseconds
     path: src/NodaTime/Duration.cs
-    startLine: 984
+    startLine: 971
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2798,7 +2798,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromMilliseconds
     path: src/NodaTime/Duration.cs
-    startLine: 999
+    startLine: 979
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2839,7 +2839,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromTicks
     path: src/NodaTime/Duration.cs
-    startLine: 1014
+    startLine: 994
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2880,7 +2880,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromTicks
     path: src/NodaTime/Duration.cs
-    startLine: 1027
+    startLine: 1007
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2921,7 +2921,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromNanoseconds
     path: src/NodaTime/Duration.cs
-    startLine: 1042
+    startLine: 1022
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2962,7 +2962,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromNanoseconds
     path: src/NodaTime/Duration.cs
-    startLine: 1061
+    startLine: 1041
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -3003,7 +3003,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromNanoseconds
     path: src/NodaTime/Duration.cs
-    startLine: 1073
+    startLine: 1054
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -3044,7 +3044,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromTimeSpan
     path: src/NodaTime/Duration.cs
-    startLine: 1094
+    startLine: 1091
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -3085,7 +3085,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ToTimeSpan
     path: src/NodaTime/Duration.cs
-    startLine: 1109
+    startLine: 1125
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -3126,7 +3126,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: System.Xml.Serialization.IXmlSerializable.GetSchema
     path: src/NodaTime/Duration.cs
-    startLine: 1114
+    startLine: 1130
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -3160,7 +3160,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: System.Xml.Serialization.IXmlSerializable.ReadXml
     path: src/NodaTime/Duration.cs
-    startLine: 1117
+    startLine: 1133
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -3195,7 +3195,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: System.Xml.Serialization.IXmlSerializable.WriteXml
     path: src/NodaTime/Duration.cs
-    startLine: 1126
+    startLine: 1142
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -3229,7 +3229,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ToInt64Nanoseconds
     path: src/NodaTime/Duration.cs
-    startLine: 1139
+    startLine: 1155
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -3268,7 +3268,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ToBigIntegerNanoseconds
     path: src/NodaTime/Duration.cs
-    startLine: 1168
+    startLine: 1186
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -3304,7 +3304,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: System.Runtime.Serialization.ISerializable.GetObjectData
     path: src/NodaTime/Duration.cs
-    startLine: 1221
+    startLine: 1242
   assemblies:
   - NodaTime
   namespace: NodaTime

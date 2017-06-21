@@ -83,7 +83,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: CanConvert
     path: src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
-    startLine: 27
+    startLine: 37
   assemblies:
   - NodaTime.Serialization.JsonNet
   namespace: NodaTime.Serialization.JsonNet
@@ -130,7 +130,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ReadJson
     path: src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
-    startLine: 40
+    startLine: 50
   assemblies:
   - NodaTime.Serialization.JsonNet
   namespace: NodaTime.Serialization.JsonNet
@@ -187,7 +187,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ReadJsonImpl
     path: src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
-    startLine: 80
+    startLine: 90
   assemblies:
   - NodaTime.Serialization.JsonNet
   namespace: NodaTime.Serialization.JsonNet
@@ -233,7 +233,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: WriteJson
     path: src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
-    startLine: 88
+    startLine: 98
   assemblies:
   - NodaTime.Serialization.JsonNet
   namespace: NodaTime.Serialization.JsonNet
@@ -280,7 +280,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: WriteJsonImpl
     path: src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
-    startLine: 112
+    startLine: 122
   assemblies:
   - NodaTime.Serialization.JsonNet
   namespace: NodaTime.Serialization.JsonNet
