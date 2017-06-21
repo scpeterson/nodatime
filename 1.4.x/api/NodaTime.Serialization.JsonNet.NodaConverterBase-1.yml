@@ -19,12 +19,12 @@ items:
   type: Class
   source:
     remote:
-      path: 2.0.x/src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
+      path: 1.4.x/src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
       branch: history
       repo: https://github.com/nodatime/nodatime.git
     id: NodaConverterBase
     path: src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
-    startLine: 16
+    startLine: 15
   assemblies:
   - NodaTime.Serialization.JsonNet
   namespace: NodaTime.Serialization.JsonNet
@@ -78,12 +78,12 @@ items:
   type: Method
   source:
     remote:
-      path: 2.0.x/src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
+      path: 1.4.x/src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
       branch: history
       repo: https://github.com/nodatime/nodatime.git
     id: CanConvert
     path: src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
-    startLine: 27
+    startLine: 25
   assemblies:
   - NodaTime.Serialization.JsonNet
   namespace: NodaTime.Serialization.JsonNet
@@ -125,12 +125,12 @@ items:
   type: Method
   source:
     remote:
-      path: 2.0.x/src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
+      path: 1.4.x/src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
       branch: history
       repo: https://github.com/nodatime/nodatime.git
     id: ReadJson
     path: src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
-    startLine: 40
+    startLine: 39
   assemblies:
   - NodaTime.Serialization.JsonNet
   namespace: NodaTime.Serialization.JsonNet
@@ -182,12 +182,12 @@ items:
   type: Method
   source:
     remote:
-      path: 2.0.x/src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
+      path: 1.4.x/src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
       branch: history
       repo: https://github.com/nodatime/nodatime.git
     id: ReadJsonImpl
     path: src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
-    startLine: 80
+    startLine: 79
   assemblies:
   - NodaTime.Serialization.JsonNet
   namespace: NodaTime.Serialization.JsonNet
@@ -228,12 +228,12 @@ items:
   type: Method
   source:
     remote:
-      path: 2.0.x/src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
+      path: 1.4.x/src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
       branch: history
       repo: https://github.com/nodatime/nodatime.git
     id: WriteJson
     path: src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
-    startLine: 88
+    startLine: 87
   assemblies:
   - NodaTime.Serialization.JsonNet
   namespace: NodaTime.Serialization.JsonNet
@@ -275,12 +275,12 @@ items:
   type: Method
   source:
     remote:
-      path: 2.0.x/src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
+      path: 1.4.x/src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
       branch: history
       repo: https://github.com/nodatime/nodatime.git
     id: WriteJsonImpl
     path: src/NodaTime.Serialization.JsonNet/NodaConverterBase.cs
-    startLine: 112
+    startLine: 111
   assemblies:
   - NodaTime.Serialization.JsonNet
   namespace: NodaTime.Serialization.JsonNet
