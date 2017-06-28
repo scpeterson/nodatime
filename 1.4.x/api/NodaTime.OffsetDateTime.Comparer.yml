@@ -22,7 +22,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Comparer
     path: src/NodaTime/OffsetDateTime.cs
-    startLine: 363
+    startLine: 366
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -72,7 +72,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Local
     path: src/NodaTime/OffsetDateTime.cs
-    startLine: 374
+    startLine: 377
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -112,7 +112,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Instant
     path: src/NodaTime/OffsetDateTime.cs
-    startLine: 385
+    startLine: 388
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -152,7 +152,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Compare
     path: src/NodaTime/OffsetDateTime.cs
-    startLine: 420
+    startLine: 423
   assemblies:
   - NodaTime
   namespace: NodaTime

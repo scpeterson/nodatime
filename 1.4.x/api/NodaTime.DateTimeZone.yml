@@ -726,7 +726,10 @@ items:
   remarks: "\nThis implementation performs initial checks which would be common to all child implementations,\nand then delegates to <xref href=\"NodaTime.DateTimeZone.EqualsImpl(NodaTime.DateTimeZone)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
-    content: public bool Equals(DateTimeZone obj)
+    content: >-
+      [Obsolete("General DateTimeZone equality is not supported in 2.0")]
+
+      public bool Equals(DateTimeZone obj)
     parameters:
     - id: obj
       type: NodaTime.DateTimeZone
@@ -734,10 +737,19 @@ items:
     return:
       type: System.Boolean
       description: "\n<code>true</code> if the specified <xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> is equal to this instance;\notherwise, <code>false</code>.\n"
-    content.vb: Public Function Equals(obj As DateTimeZone) As Boolean
+    content.vb: >-
+      <Obsolete("General DateTimeZone equality is not supported in 2.0")>
+
+      Public Function Equals(obj As DateTimeZone) As Boolean
   overload: NodaTime.DateTimeZone.Equals*
   implements:
   - System.IEquatable{NodaTime.DateTimeZone}.Equals(NodaTime.DateTimeZone)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: General DateTimeZone equality is not supported in 2.0
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -760,14 +772,17 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: EqualsImpl
     path: src/NodaTime/DateTimeZone.cs
-    startLine: 593
+    startLine: 594
   assemblies:
   - NodaTime
   namespace: NodaTime
   summary: "\nImplements equality in derived classes.\n"
   example: []
   syntax:
-    content: protected abstract bool EqualsImpl(DateTimeZone zone)
+    content: >-
+      [Obsolete("General DateTimeZone equality is not supported in 2.0")]
+
+      protected abstract bool EqualsImpl(DateTimeZone zone)
     parameters:
     - id: zone
       type: NodaTime.DateTimeZone
@@ -778,8 +793,17 @@ items:
     return:
       type: System.Boolean
       description: "\n<code>true</code> if the specified <xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> is equal to this instance;\notherwise, <code>false</code>.\n"
-    content.vb: Protected MustOverride Function EqualsImpl(zone As DateTimeZone) As Boolean
+    content.vb: >-
+      <Obsolete("General DateTimeZone equality is not supported in 2.0")>
+
+      Protected MustOverride Function EqualsImpl(zone As DateTimeZone) As Boolean
   overload: NodaTime.DateTimeZone.EqualsImpl*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: General DateTimeZone equality is not supported in 2.0
   modifiers.csharp:
   - protected
   - abstract
@@ -804,7 +828,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetHashCode
     path: src/NodaTime/DateTimeZone.cs
-    startLine: 602
+    startLine: 604
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -844,7 +868,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetZoneIntervals
     path: src/NodaTime/DateTimeZone.cs
-    startLine: 618
+    startLine: 620
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -894,7 +918,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetZoneIntervals
     path: src/NodaTime/DateTimeZone.cs
-    startLine: 637
+    startLine: 639
   assemblies:
   - NodaTime
   namespace: NodaTime

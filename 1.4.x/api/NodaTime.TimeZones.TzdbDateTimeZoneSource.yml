@@ -59,6 +59,8 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  extensionMethods:
+  - NodaTime.TimeZones.IDateTimeZoneSource.NodaTime.TimeZones.DateTimeZoneSourceExtensions.GetSystemDefaultId
   modifiers.csharp:
   - public
   - sealed
@@ -540,7 +542,10 @@ items:
   summary: "\nReturns this source's corresponding ID for the given BCL time zone.\n"
   example: []
   syntax:
-    content: public string MapTimeZoneId(TimeZoneInfo zone)
+    content: >-
+      [Obsolete("Only the system default time zone can be mapped in 2.0, using GetSystemDefaultId. For other time zones, use source-specific members.")]
+
+      public string MapTimeZoneId(TimeZoneInfo zone)
     parameters:
     - id: zone
       type: System.TimeZoneInfo
@@ -548,10 +553,19 @@ items:
     return:
       type: System.String
       description: "\nThe ID for the given system time zone for this source, or null if the system time\nzone has no mapping in this source.\n"
-    content.vb: Public Function MapTimeZoneId(zone As TimeZoneInfo) As String
+    content.vb: >-
+      <Obsolete("Only the system default time zone can be mapped in 2.0, using GetSystemDefaultId. For other time zones, use source-specific members.")>
+
+      Public Function MapTimeZoneId(zone As TimeZoneInfo) As String
   overload: NodaTime.TimeZones.TzdbDateTimeZoneSource.MapTimeZoneId*
   implements:
   - NodaTime.TimeZones.IDateTimeZoneSource.MapTimeZoneId(System.TimeZoneInfo)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Only the system default time zone can be mapped in 2.0, using GetSystemDefaultId. For other time zones, use source-specific members.
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -574,7 +588,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Aliases
     path: src/NodaTime/TimeZones/TzdbDateTimeZoneSource.cs
-    startLine: 301
+    startLine: 302
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones
@@ -613,7 +627,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: CanonicalIdMap
     path: src/NodaTime/TimeZones/TzdbDateTimeZoneSource.cs
-    startLine: 314
+    startLine: 315
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones
@@ -652,7 +666,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ZoneLocations
     path: src/NodaTime/TimeZones/TzdbDateTimeZoneSource.cs
-    startLine: 333
+    startLine: 334
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones
@@ -697,7 +711,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: TzdbVersion
     path: src/NodaTime/TimeZones/TzdbDateTimeZoneSource.cs
-    startLine: 348
+    startLine: 349
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones
@@ -734,7 +748,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: WindowsMapping
     path: src/NodaTime/TimeZones/TzdbDateTimeZoneSource.cs
-    startLine: 354
+    startLine: 355
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones
@@ -771,7 +785,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Validate
     path: src/NodaTime/TimeZones/TzdbDateTimeZoneSource.cs
-    startLine: 367
+    startLine: 368
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones
@@ -1132,6 +1146,35 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: NodaTime.TimeZones.IDateTimeZoneSource.NodaTime.TimeZones.DateTimeZoneSourceExtensions.GetSystemDefaultId
+  commentId: M:NodaTime.TimeZones.DateTimeZoneSourceExtensions.GetSystemDefaultId(NodaTime.TimeZones.IDateTimeZoneSource)
+  parent: NodaTime.TimeZones.DateTimeZoneSourceExtensions
+  definition: NodaTime.TimeZones.DateTimeZoneSourceExtensions.GetSystemDefaultId(NodaTime.TimeZones.IDateTimeZoneSource)
+  name: GetSystemDefaultId()
+  nameWithType: DateTimeZoneSourceExtensions.GetSystemDefaultId()
+  fullName: NodaTime.TimeZones.DateTimeZoneSourceExtensions.GetSystemDefaultId()
+  spec.csharp:
+  - uid: NodaTime.TimeZones.DateTimeZoneSourceExtensions.GetSystemDefaultId
+    name: GetSystemDefaultId
+    nameWithType: DateTimeZoneSourceExtensions.GetSystemDefaultId
+    fullName: NodaTime.TimeZones.DateTimeZoneSourceExtensions.GetSystemDefaultId
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: NodaTime.TimeZones.DateTimeZoneSourceExtensions.GetSystemDefaultId
+    name: GetSystemDefaultId
+    nameWithType: DateTimeZoneSourceExtensions.GetSystemDefaultId
+    fullName: NodaTime.TimeZones.DateTimeZoneSourceExtensions.GetSystemDefaultId
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: NodaTime.DateTimeZone
   commentId: T:NodaTime.DateTimeZone
   parent: NodaTime
@@ -1145,6 +1188,49 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: NodaTime.TimeZones.DateTimeZoneSourceExtensions.GetSystemDefaultId(NodaTime.TimeZones.IDateTimeZoneSource)
+  commentId: M:NodaTime.TimeZones.DateTimeZoneSourceExtensions.GetSystemDefaultId(NodaTime.TimeZones.IDateTimeZoneSource)
+  isExternal: false
+  name: GetSystemDefaultId(IDateTimeZoneSource)
+  nameWithType: DateTimeZoneSourceExtensions.GetSystemDefaultId(IDateTimeZoneSource)
+  fullName: NodaTime.TimeZones.DateTimeZoneSourceExtensions.GetSystemDefaultId(NodaTime.TimeZones.IDateTimeZoneSource)
+  spec.csharp:
+  - uid: NodaTime.TimeZones.DateTimeZoneSourceExtensions.GetSystemDefaultId(NodaTime.TimeZones.IDateTimeZoneSource)
+    name: GetSystemDefaultId
+    nameWithType: DateTimeZoneSourceExtensions.GetSystemDefaultId
+    fullName: NodaTime.TimeZones.DateTimeZoneSourceExtensions.GetSystemDefaultId
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: NodaTime.TimeZones.IDateTimeZoneSource
+    name: IDateTimeZoneSource
+    nameWithType: IDateTimeZoneSource
+    fullName: NodaTime.TimeZones.IDateTimeZoneSource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: NodaTime.TimeZones.DateTimeZoneSourceExtensions.GetSystemDefaultId(NodaTime.TimeZones.IDateTimeZoneSource)
+    name: GetSystemDefaultId
+    nameWithType: DateTimeZoneSourceExtensions.GetSystemDefaultId
+    fullName: NodaTime.TimeZones.DateTimeZoneSourceExtensions.GetSystemDefaultId
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: NodaTime.TimeZones.IDateTimeZoneSource
+    name: IDateTimeZoneSource
+    nameWithType: IDateTimeZoneSource
+    fullName: NodaTime.TimeZones.IDateTimeZoneSource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: NodaTime.TimeZones.DateTimeZoneSourceExtensions
+  commentId: T:NodaTime.TimeZones.DateTimeZoneSourceExtensions
+  parent: NodaTime.TimeZones
+  isExternal: false
+  name: DateTimeZoneSourceExtensions
+  nameWithType: DateTimeZoneSourceExtensions
+  fullName: NodaTime.TimeZones.DateTimeZoneSourceExtensions
 - uid: NodaTime
   commentId: N:NodaTime
   isExternal: false

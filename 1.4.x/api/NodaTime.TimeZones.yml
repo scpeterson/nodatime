@@ -9,6 +9,7 @@ items:
   - NodaTime.TimeZones.BclDateTimeZoneSource
   - NodaTime.TimeZones.DateTimeZoneCache
   - NodaTime.TimeZones.DateTimeZoneNotFoundException
+  - NodaTime.TimeZones.DateTimeZoneSourceExtensions
   - NodaTime.TimeZones.IDateTimeZoneSource
   - NodaTime.TimeZones.InvalidDateTimeZoneSourceException
   - NodaTime.TimeZones.Resolvers
@@ -55,6 +56,13 @@ references:
   name: DateTimeZoneNotFoundException
   nameWithType: DateTimeZoneNotFoundException
   fullName: NodaTime.TimeZones.DateTimeZoneNotFoundException
+- uid: NodaTime.TimeZones.DateTimeZoneSourceExtensions
+  commentId: T:NodaTime.TimeZones.DateTimeZoneSourceExtensions
+  parent: NodaTime.TimeZones
+  isExternal: false
+  name: DateTimeZoneSourceExtensions
+  nameWithType: DateTimeZoneSourceExtensions
+  fullName: NodaTime.TimeZones.DateTimeZoneSourceExtensions
 - uid: NodaTime.TimeZones.AmbiguousTimeResolver
   commentId: T:NodaTime.TimeZones.AmbiguousTimeResolver
   parent: NodaTime.TimeZones

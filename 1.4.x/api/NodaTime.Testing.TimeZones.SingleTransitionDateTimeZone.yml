@@ -28,7 +28,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: SingleTransitionDateTimeZone
     path: src/NodaTime.Testing/TimeZones/SingleTransitionDateTimeZone.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -92,7 +92,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: EarlyInterval
     path: src/NodaTime.Testing/TimeZones/SingleTransitionDateTimeZone.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -129,7 +129,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: LateInterval
     path: src/NodaTime.Testing/TimeZones/SingleTransitionDateTimeZone.cs
-    startLine: 23
+    startLine: 24
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -166,7 +166,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Transition
     path: src/NodaTime.Testing/TimeZones/SingleTransitionDateTimeZone.cs
-    startLine: 28
+    startLine: 29
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -203,7 +203,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: .ctor
     path: src/NodaTime.Testing/TimeZones/SingleTransitionDateTimeZone.cs
-    startLine: 36
+    startLine: 37
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -245,7 +245,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: .ctor
     path: src/NodaTime.Testing/TimeZones/SingleTransitionDateTimeZone.cs
-    startLine: 47
+    startLine: 48
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -287,7 +287,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: .ctor
     path: src/NodaTime.Testing/TimeZones/SingleTransitionDateTimeZone.cs
-    startLine: 59
+    startLine: 60
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -332,7 +332,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetZoneInterval
     path: src/NodaTime.Testing/TimeZones/SingleTransitionDateTimeZone.cs
-    startLine: 72
+    startLine: 73
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -378,14 +378,17 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: EqualsImpl
     path: src/NodaTime.Testing/TimeZones/SingleTransitionDateTimeZone.cs
-    startLine: 78
+    startLine: 79
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
   summary: "\nImplements equality in derived classes.\n"
   example: []
   syntax:
-    content: protected override bool EqualsImpl(DateTimeZone zone)
+    content: >-
+      [Obsolete("General DateTimeZone equality is not supported in 2.0")]
+
+      protected override bool EqualsImpl(DateTimeZone zone)
     parameters:
     - id: zone
       type: NodaTime.DateTimeZone
@@ -396,9 +399,18 @@ items:
     return:
       type: System.Boolean
       description: "\n<code>true</code> if the specified <xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> is equal to this instance;\notherwise, <code>false</code>.\n"
-    content.vb: Protected Overrides Function EqualsImpl(zone As DateTimeZone) As Boolean
+    content.vb: >-
+      <Obsolete("General DateTimeZone equality is not supported in 2.0")>
+
+      Protected Overrides Function EqualsImpl(zone As DateTimeZone) As Boolean
   overridden: NodaTime.DateTimeZone.EqualsImpl(NodaTime.DateTimeZone)
   overload: NodaTime.Testing.TimeZones.SingleTransitionDateTimeZone.EqualsImpl*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: General DateTimeZone equality is not supported in 2.0
   modifiers.csharp:
   - protected
   - override
@@ -423,7 +435,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetHashCode
     path: src/NodaTime.Testing/TimeZones/SingleTransitionDateTimeZone.cs
-    startLine: 85
+    startLine: 87
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones

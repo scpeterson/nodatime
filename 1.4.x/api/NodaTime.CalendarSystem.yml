@@ -321,7 +321,10 @@ items:
   remarks: "\nAlthough the Gregorian calendar did not exist before 1582 CE, this\ncalendar system assumes it did, thus it is proleptic. This implementation also\nfixes the start of the year at January 1.\n"
   example: []
   syntax:
-    content: public static CalendarSystem GetGregorianCalendar(int minDaysInFirstWeek)
+    content: >-
+      [Obsolete("Use the Gregorian property, then WeekYearRules for specific week-year rules for compatibility with 2.0.")]
+
+      public static CalendarSystem GetGregorianCalendar(int minDaysInFirstWeek)
     parameters:
     - id: minDaysInFirstWeek
       type: System.Int32
@@ -337,8 +340,17 @@ items:
         A suitable Gregorian calendar reference; the same reference may be returned by several
 
         calls as the object is immutable and thread-safe.
-    content.vb: Public Shared Function GetGregorianCalendar(minDaysInFirstWeek As Integer) As CalendarSystem
+    content.vb: >-
+      <Obsolete("Use the Gregorian property, then WeekYearRules for specific week-year rules for compatibility with 2.0.")>
+
+      Public Shared Function GetGregorianCalendar(minDaysInFirstWeek As Integer) As CalendarSystem
   overload: NodaTime.CalendarSystem.GetGregorianCalendar*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use the Gregorian property, then WeekYearRules for specific week-year rules for compatibility with 2.0.
   modifiers.csharp:
   - public
   - static
@@ -363,7 +375,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetJulianCalendar
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 260
+    startLine: 261
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -371,7 +383,10 @@ items:
   remarks: "\nAlthough the Julian calendar did not exist before 45 BCE, this calendar\nassumes it did, thus it is proleptic. This implementation also fixes the\nstart of the year at January 1.\n"
   example: []
   syntax:
-    content: public static CalendarSystem GetJulianCalendar(int minDaysInFirstWeek)
+    content: >-
+      [Obsolete("Use the Julian property, then WeekYearRules for specific week-year rules for compatibility with 2.0.")]
+
+      public static CalendarSystem GetJulianCalendar(int minDaysInFirstWeek)
     parameters:
     - id: minDaysInFirstWeek
       type: System.Int32
@@ -387,8 +402,17 @@ items:
         A suitable Julian calendar reference; the same reference may be returned by several
 
         calls as the object is immutable and thread-safe.
-    content.vb: Public Shared Function GetJulianCalendar(minDaysInFirstWeek As Integer) As CalendarSystem
+    content.vb: >-
+      <Obsolete("Use the Julian property, then WeekYearRules for specific week-year rules for compatibility with 2.0.")>
+
+      Public Shared Function GetJulianCalendar(minDaysInFirstWeek As Integer) As CalendarSystem
   overload: NodaTime.CalendarSystem.GetJulianCalendar*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use the Julian property, then WeekYearRules for specific week-year rules for compatibility with 2.0.
   modifiers.csharp:
   - public
   - static
@@ -413,7 +437,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetCopticCalendar
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 290
+    startLine: 292
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -421,7 +445,10 @@ items:
   remarks: "\n<p>\nYear 1 in the Coptic calendar began on August 29, 284 CE (Julian), thus\nCoptic years do not begin at the same time as Julian years. This calendar\nis not proleptic, as it does not allow dates before the first Coptic year.\n</p>\n<p>\nThis implementation defines a day as midnight to midnight exactly as per\nthe ISO calendar. Some references indicate that a Coptic day starts at\nsunset on the previous ISO day, but this has not been confirmed and is not\nimplemented.\n</p>\n"
   example: []
   syntax:
-    content: public static CalendarSystem GetCopticCalendar(int minDaysInFirstWeek)
+    content: >-
+      [Obsolete("Use the Coptic property, then WeekYearRules for specific week-year rules for compatibility with 2.0.")]
+
+      public static CalendarSystem GetCopticCalendar(int minDaysInFirstWeek)
     parameters:
     - id: minDaysInFirstWeek
       type: System.Int32
@@ -437,8 +464,17 @@ items:
         A suitable Coptic calendar reference; the same reference may be returned by several
 
         calls as the object is immutable and thread-safe.
-    content.vb: Public Shared Function GetCopticCalendar(minDaysInFirstWeek As Integer) As CalendarSystem
+    content.vb: >-
+      <Obsolete("Use the Coptic property, then WeekYearRules for specific week-year rules for compatibility with 2.0.")>
+
+      Public Shared Function GetCopticCalendar(minDaysInFirstWeek As Integer) As CalendarSystem
   overload: NodaTime.CalendarSystem.GetCopticCalendar*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use the Coptic property, then WeekYearRules for specific week-year rules for compatibility with 2.0.
   modifiers.csharp:
   - public
   - static
@@ -463,7 +499,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetIslamicCalendar
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 353
+    startLine: 356
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -511,7 +547,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Id
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 456
+    startLine: 463
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -549,7 +585,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Name
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 464
+    startLine: 471
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -586,19 +622,31 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: UsesIsoDayOfWeek
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 471
+    startLine: 478
   assemblies:
   - NodaTime
   namespace: NodaTime
   summary: "\nReturns whether the day-of-week field refers to ISO days. If true, types such as <xref href=\"NodaTime.LocalDateTime\" data-throw-if-not-resolved=\"false\"></xref>\ncan use the <xref href=\"NodaTime.IsoDayOfWeek\" data-throw-if-not-resolved=\"false\"></xref> property to avoid using magic numbers.\nThis defaults to true, but can be overridden by specific calendars.\n"
   example: []
   syntax:
-    content: public bool UsesIsoDayOfWeek { get; }
+    content: >-
+      [Obsolete("Removed in 2.0 as all calendar systems are deemed to use ISO days.")]
+
+      public bool UsesIsoDayOfWeek { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public ReadOnly Property UsesIsoDayOfWeek As Boolean
+    content.vb: >-
+      <Obsolete("Removed in 2.0 as all calendar systems are deemed to use ISO days.")>
+
+      Public ReadOnly Property UsesIsoDayOfWeek As Boolean
   overload: NodaTime.CalendarSystem.UsesIsoDayOfWeek*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Removed in 2.0 as all calendar systems are deemed to use ISO days.
   modifiers.csharp:
   - public
   - get
@@ -623,7 +671,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: MinYear
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 476
+    startLine: 484
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -660,7 +708,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: MaxYear
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 481
+    startLine: 489
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -697,7 +745,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Eras
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 497
+    startLine: 509
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -734,7 +782,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetAbsoluteYear
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 514
+    startLine: 526
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -784,7 +832,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetMaxYearOfEra
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 525
+    startLine: 537
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -827,7 +875,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetMinYearOfEra
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 536
+    startLine: 548
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -870,7 +918,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ToString
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 627
+    startLine: 639
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -908,7 +956,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetDaysInMonth
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 656
+    startLine: 668
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -957,7 +1005,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: IsLeapYear
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 669
+    startLine: 681
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1005,7 +1053,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetMonthsInYear
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 684
+    startLine: 696
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1055,7 +1103,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetMaxMonth
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 696
+    startLine: 708
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1117,7 +1165,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Gregorian
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 867
+    startLine: 879
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1158,7 +1206,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Julian
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 885
+    startLine: 897
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1202,7 +1250,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Coptic
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 911
+    startLine: 923
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1246,7 +1294,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: IslamicBcl
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 923
+    startLine: 935
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1290,7 +1338,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: PersianSimple
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 934
+    startLine: 946
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1331,7 +1379,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: HebrewCivil
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 943
+    startLine: 955
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1377,7 +1425,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: HebrewScriptural
     path: src/NodaTime/CalendarSystem.cs
-    startLine: 950
+    startLine: 962
   assemblies:
   - NodaTime
   namespace: NodaTime

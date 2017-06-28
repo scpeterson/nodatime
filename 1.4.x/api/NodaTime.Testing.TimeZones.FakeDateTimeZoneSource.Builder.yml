@@ -27,7 +27,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Builder
     path: src/NodaTime.Testing/TimeZones/FakeDateTimeZoneSource.cs
-    startLine: 85
+    startLine: 86
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -77,7 +77,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: BclIdsToZoneIds
     path: src/NodaTime.Testing/TimeZones/FakeDateTimeZoneSource.cs
-    startLine: 94
+    startLine: 95
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -114,7 +114,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Zones
     path: src/NodaTime.Testing/TimeZones/FakeDateTimeZoneSource.cs
-    startLine: 100
+    startLine: 101
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -151,7 +151,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: VersionId
     path: src/NodaTime.Testing/TimeZones/FakeDateTimeZoneSource.cs
-    startLine: 105
+    startLine: 106
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -188,7 +188,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: .ctor
     path: src/NodaTime.Testing/TimeZones/FakeDateTimeZoneSource.cs
-    startLine: 110
+    startLine: 111
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -220,7 +220,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Add
     path: src/NodaTime.Testing/TimeZones/FakeDateTimeZoneSource.cs
-    startLine: 119
+    startLine: 120
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -256,7 +256,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetEnumerator
     path: src/NodaTime.Testing/TimeZones/FakeDateTimeZoneSource.cs
-    startLine: 130
+    startLine: 131
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -294,7 +294,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: System.Collections.IEnumerable.GetEnumerator
     path: src/NodaTime.Testing/TimeZones/FakeDateTimeZoneSource.cs
-    startLine: 139
+    startLine: 140
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -329,7 +329,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Build
     path: src/NodaTime.Testing/TimeZones/FakeDateTimeZoneSource.cs
-    startLine: 155
+    startLine: 156
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones

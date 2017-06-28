@@ -303,7 +303,10 @@ items:
   remarks: "\nThis implementation simply compares the underlying `TimeZoneInfo` values for\nreference equality.\n"
   example: []
   syntax:
-    content: protected override bool EqualsImpl(DateTimeZone zone)
+    content: >-
+      [Obsolete("General DateTimeZone equality is not supported in 2.0")]
+
+      protected override bool EqualsImpl(DateTimeZone zone)
     parameters:
     - id: zone
       type: NodaTime.DateTimeZone
@@ -314,9 +317,18 @@ items:
     return:
       type: System.Boolean
       description: "\n<code>true</code> if the specified <xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> is equal to this instance;\notherwise, <code>false</code>.\n"
-    content.vb: Protected Overrides Function EqualsImpl(zone As DateTimeZone) As Boolean
+    content.vb: >-
+      <Obsolete("General DateTimeZone equality is not supported in 2.0")>
+
+      Protected Overrides Function EqualsImpl(zone As DateTimeZone) As Boolean
   overridden: NodaTime.DateTimeZone.EqualsImpl(NodaTime.DateTimeZone)
   overload: NodaTime.TimeZones.BclDateTimeZone.EqualsImpl*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: General DateTimeZone equality is not supported in 2.0
   modifiers.csharp:
   - protected
   - override
@@ -341,7 +353,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetHashCode
     path: src/NodaTime/TimeZones/BclDateTimeZone.cs
-    startLine: 299
+    startLine: 300
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones

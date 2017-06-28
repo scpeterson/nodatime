@@ -27,7 +27,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ZonedClock
     path: src/NodaTime/ZonedClock.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -83,7 +83,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: .ctor
     path: src/NodaTime/ZonedClock.cs
-    startLine: 27
+    startLine: 28
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -126,21 +126,33 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: NodaTime.IClock.Now
     path: src/NodaTime/ZonedClock.cs
-    startLine: 38
+    startLine: 39
   assemblies:
   - NodaTime
   namespace: NodaTime
   summary: "\nExplicit interface implementation of <xref href=\"NodaTime.IClock.Now\" data-throw-if-not-resolved=\"false\"></xref>; use\n<xref href=\"NodaTime.ZonedClock.GetCurrentInstant\" data-throw-if-not-resolved=\"false\"></xref> in preference.\n"
   example: []
   syntax:
-    content: Instant IClock.Now { get; }
+    content: >-
+      [Obsolete("Use the GetCurrentInstant() extension method for compatibility with 2.0")]
+
+      Instant IClock.Now { get; }
     parameters: []
     return:
       type: NodaTime.Instant
-    content.vb: ReadOnly WriteOnly Property NodaTime.IClock.Now As Instant Implements IClock.Now
+    content.vb: >-
+      <Obsolete("Use the GetCurrentInstant() extension method for compatibility with 2.0")>
+
+      ReadOnly WriteOnly Property NodaTime.IClock.Now As Instant Implements IClock.Now
   overload: NodaTime.ZonedClock.NodaTime#IClock#Now*
   implements:
   - NodaTime.IClock.Now
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use the GetCurrentInstant() extension method for compatibility with 2.0
   nameWithType.vb: ZonedClock.NodaTime.IClock.Now
   modifiers.csharp:
   - get
@@ -165,7 +177,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetCurrentInstant
     path: src/NodaTime/ZonedClock.cs
-    startLine: 44
+    startLine: 46
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -200,7 +212,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetCurrentZonedDateTime
     path: src/NodaTime/ZonedClock.cs
-    startLine: 52
+    startLine: 54
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -238,7 +250,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetCurrentLocalDateTime
     path: src/NodaTime/ZonedClock.cs
-    startLine: 61
+    startLine: 63
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -276,7 +288,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetCurrentOffsetDateTime
     path: src/NodaTime/ZonedClock.cs
-    startLine: 70
+    startLine: 72
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -314,7 +326,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetCurrentDate
     path: src/NodaTime/ZonedClock.cs
-    startLine: 79
+    startLine: 81
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -352,7 +364,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetCurrentTimeOfDay
     path: src/NodaTime/ZonedClock.cs
-    startLine: 88
+    startLine: 90
   assemblies:
   - NodaTime
   namespace: NodaTime

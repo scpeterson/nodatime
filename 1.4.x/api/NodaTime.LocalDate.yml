@@ -569,12 +569,24 @@ items:
   remarks: "\n<p>\nThe WeekYear is the year that matches with the <xref href=\"NodaTime.LocalDate.WeekOfWeekYear\" data-throw-if-not-resolved=\"false\"></xref> field.\nIn the standard ISO8601 week algorithm, the first week of the year\nis that in which at least 4 days are in the year. As a result of this\ndefinition, day 1 of the first week may be in the previous year.\nThe WeekYear allows you to query the effective year for that day.\n</p>\n<p>\nFor example, January 1st 2011 was a Saturday, so only two days of that week\n(Saturday and Sunday) were in 2011. Therefore January 1st is part of\nweek 52 of WeekYear 2010. Conversely, December 31st 2012 is a Monday,\nso is part of week 1 of WeekYear 2013.\n</p>\n"
   example: []
   syntax:
-    content: public int WeekYear { get; }
+    content: >-
+      [Obsolete("Use WeekYearRules for specific week-year rules for compatibility with 2.0.")]
+
+      public int WeekYear { get; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public ReadOnly Property WeekYear As Integer
+    content.vb: >-
+      <Obsolete("Use WeekYearRules for specific week-year rules for compatibility with 2.0.")>
+
+      Public ReadOnly Property WeekYear As Integer
   overload: NodaTime.LocalDate.WeekYear*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use WeekYearRules for specific week-year rules for compatibility with 2.0.
   modifiers.csharp:
   - public
   - get
@@ -599,19 +611,31 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: WeekOfWeekYear
     path: src/NodaTime/LocalDate.cs
-    startLine: 162
+    startLine: 163
   assemblies:
   - NodaTime
   namespace: NodaTime
   summary: Gets the week within the WeekYear. See <xref href="NodaTime.LocalDate.WeekYear" data-throw-if-not-resolved="false"></xref> for more details.
   example: []
   syntax:
-    content: public int WeekOfWeekYear { get; }
+    content: >-
+      [Obsolete("Use WeekYearRules for specific week-year rules for compatibility with 2.0.")]
+
+      public int WeekOfWeekYear { get; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public ReadOnly Property WeekOfWeekYear As Integer
+    content.vb: >-
+      <Obsolete("Use WeekYearRules for specific week-year rules for compatibility with 2.0.")>
+
+      Public ReadOnly Property WeekOfWeekYear As Integer
   overload: NodaTime.LocalDate.WeekOfWeekYear*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use WeekYearRules for specific week-year rules for compatibility with 2.0.
   modifiers.csharp:
   - public
   - get
@@ -636,7 +660,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: YearOfCentury
     path: src/NodaTime/LocalDate.cs
-    startLine: 166
+    startLine: 168
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -644,12 +668,24 @@ items:
   remarks: This always returns a value in the range 0 to 99 inclusive.
   example: []
   syntax:
-    content: public int YearOfCentury { get; }
+    content: >-
+      [Obsolete("Century-based properties have been removed in 2.0")]
+
+      public int YearOfCentury { get; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public ReadOnly Property YearOfCentury As Integer
+    content.vb: >-
+      <Obsolete("Century-based properties have been removed in 2.0")>
+
+      Public ReadOnly Property YearOfCentury As Integer
   overload: NodaTime.LocalDate.YearOfCentury*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Century-based properties have been removed in 2.0
   modifiers.csharp:
   - public
   - get
@@ -674,7 +710,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: YearOfEra
     path: src/NodaTime/LocalDate.cs
-    startLine: 169
+    startLine: 172
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -711,7 +747,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Era
     path: src/NodaTime/LocalDate.cs
-    startLine: 172
+    startLine: 175
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -748,7 +784,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: DayOfYear
     path: src/NodaTime/LocalDate.cs
-    startLine: 175
+    startLine: 178
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -785,7 +821,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: AtMidnight
     path: src/NodaTime/LocalDate.cs
-    startLine: 182
+    startLine: 185
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -823,7 +859,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromWeekYearWeekAndDay
     path: src/NodaTime/LocalDate.cs
-    startLine: 196
+    startLine: 199
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -870,7 +906,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_Addition
     path: src/NodaTime/LocalDate.cs
-    startLine: 208
+    startLine: 211
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -914,7 +950,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Add
     path: src/NodaTime/LocalDate.cs
-    startLine: 221
+    startLine: 224
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -958,7 +994,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Plus
     path: src/NodaTime/LocalDate.cs
-    startLine: 231
+    startLine: 234
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -997,7 +1033,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_Addition
     path: src/NodaTime/LocalDate.cs
-    startLine: 244
+    startLine: 247
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1041,7 +1077,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_Subtraction
     path: src/NodaTime/LocalDate.cs
-    startLine: 257
+    startLine: 260
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1085,7 +1121,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Subtract
     path: src/NodaTime/LocalDate.cs
-    startLine: 270
+    startLine: 273
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1129,7 +1165,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Minus
     path: src/NodaTime/LocalDate.cs
-    startLine: 280
+    startLine: 283
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1168,7 +1204,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_Equality
     path: src/NodaTime/LocalDate.cs
-    startLine: 293
+    startLine: 296
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1212,7 +1248,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_Inequality
     path: src/NodaTime/LocalDate.cs
-    startLine: 304
+    startLine: 307
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1256,7 +1292,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_LessThan
     path: src/NodaTime/LocalDate.cs
-    startLine: 320
+    startLine: 323
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1301,7 +1337,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_LessThanOrEqual
     path: src/NodaTime/LocalDate.cs
-    startLine: 336
+    startLine: 339
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1346,7 +1382,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_GreaterThan
     path: src/NodaTime/LocalDate.cs
-    startLine: 352
+    startLine: 355
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1391,7 +1427,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_GreaterThanOrEqual
     path: src/NodaTime/LocalDate.cs
-    startLine: 368
+    startLine: 371
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1436,7 +1472,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: CompareTo
     path: src/NodaTime/LocalDate.cs
-    startLine: 387
+    startLine: 390
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1484,7 +1520,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: System.IComparable.CompareTo
     path: src/NodaTime/LocalDate.cs
-    startLine: 403
+    startLine: 406
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1531,7 +1567,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: GetHashCode
     path: src/NodaTime/LocalDate.cs
-    startLine: 417
+    startLine: 420
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1569,7 +1605,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Equals
     path: src/NodaTime/LocalDate.cs
-    startLine: 428
+    startLine: 431
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1611,7 +1647,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Equals
     path: src/NodaTime/LocalDate.cs
-    startLine: 443
+    startLine: 446
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1652,7 +1688,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: WithCalendar
     path: src/NodaTime/LocalDate.cs
-    startLine: 455
+    startLine: 458
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1691,7 +1727,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: PlusYears
     path: src/NodaTime/LocalDate.cs
-    startLine: 471
+    startLine: 474
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1731,7 +1767,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: PlusMonths
     path: src/NodaTime/LocalDate.cs
-    startLine: 493
+    startLine: 496
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1771,7 +1807,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: PlusDays
     path: src/NodaTime/LocalDate.cs
-    startLine: 510
+    startLine: 513
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1811,7 +1847,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: PlusWeeks
     path: src/NodaTime/LocalDate.cs
-    startLine: 521
+    startLine: 524
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1850,7 +1886,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Next
     path: src/NodaTime/LocalDate.cs
-    startLine: 537
+    startLine: 540
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1898,7 +1934,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Previous
     path: src/NodaTime/LocalDate.cs
-    startLine: 554
+    startLine: 557
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1946,7 +1982,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: At
     path: src/NodaTime/LocalDate.cs
-    startLine: 568
+    startLine: 571
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1985,7 +2021,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ToString
     path: src/NodaTime/LocalDate.cs
-    startLine: 582
+    startLine: 585
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2023,7 +2059,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ToString
     path: src/NodaTime/LocalDate.cs
-    startLine: 600
+    startLine: 603
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2074,7 +2110,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: System.Xml.Serialization.IXmlSerializable.GetSchema
     path: src/NodaTime/LocalDate.cs
-    startLine: 608
+    startLine: 611
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2108,7 +2144,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: System.Xml.Serialization.IXmlSerializable.ReadXml
     path: src/NodaTime/LocalDate.cs
-    startLine: 614
+    startLine: 617
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2143,7 +2179,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: System.Xml.Serialization.IXmlSerializable.WriteXml
     path: src/NodaTime/LocalDate.cs
-    startLine: 631
+    startLine: 634
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2178,7 +2214,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: System.Runtime.Serialization.ISerializable.GetObjectData
     path: src/NodaTime/LocalDate.cs
-    startLine: 663
+    startLine: 666
   assemblies:
   - NodaTime
   namespace: NodaTime

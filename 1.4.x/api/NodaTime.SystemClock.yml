@@ -122,15 +122,27 @@ items:
   summary: "\nGets the current time as an <xref href=\"NodaTime.Instant\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
-    content: public Instant Now { get; }
+    content: >-
+      [Obsolete("Use the GetCurrentInstant() extension method for compatibility with 2.0")]
+
+      public Instant Now { get; }
     parameters: []
     return:
       type: NodaTime.Instant
       description: The current time in ticks as an <xref href="NodaTime.Instant" data-throw-if-not-resolved="false"></xref>.
-    content.vb: Public ReadOnly Property Now As Instant
+    content.vb: >-
+      <Obsolete("Use the GetCurrentInstant() extension method for compatibility with 2.0")>
+
+      Public ReadOnly Property Now As Instant
   overload: NodaTime.SystemClock.Now*
   implements:
   - NodaTime.IClock.Now
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use the GetCurrentInstant() extension method for compatibility with 2.0
   modifiers.csharp:
   - public
   - get

@@ -157,13 +157,16 @@ namespace NodaTime
         /// so is part of week 1 of WeekYear 2013.
         /// </para>
         /// </remarks>
+        [Obsolete("Use WeekYearRules for specific week-year rules for compatibility with 2.0.")]
         public int WeekYear { get { return localTime.WeekYear; } }
 
         /// <summary>Gets the week within the WeekYear. See <see cref="WeekYear"/> for more details.</summary>
+        [Obsolete("Use WeekYearRules for specific week-year rules for compatibility with 2.0.")]
         public int WeekOfWeekYear { get { return localTime.WeekOfWeekYear; } }
 
         /// <summary>Gets the year of this local date within the century.</summary>
         /// <remarks>This always returns a value in the range 0 to 99 inclusive.</remarks>
+        [Obsolete("Century-based properties have been removed in 2.0")]
         public int YearOfCentury { get { return localTime.YearOfCentury; } }
 
         /// <summary>Gets the year of this local date within the era.</summary>

@@ -65,6 +65,12 @@
     name: IslamicEpoch
   - uid: NodaTime.Calendars.IslamicLeapYearPattern
     name: IslamicLeapYearPattern
+  - uid: NodaTime.Calendars.IWeekYearRule
+    name: IWeekYearRule
+  - uid: NodaTime.Calendars.WeekYearRuleExtensions
+    name: WeekYearRuleExtensions
+  - uid: NodaTime.Calendars.WeekYearRules
+    name: WeekYearRules
 - uid: NodaTime.Extensions
   name: NodaTime.Extensions
   items:
@@ -145,6 +151,8 @@
     name: DateTimeZoneCache
   - uid: NodaTime.TimeZones.DateTimeZoneNotFoundException
     name: DateTimeZoneNotFoundException
+  - uid: NodaTime.TimeZones.DateTimeZoneSourceExtensions
+    name: DateTimeZoneSourceExtensions
   - uid: NodaTime.TimeZones.IDateTimeZoneSource
     name: IDateTimeZoneSource
   - uid: NodaTime.TimeZones.InvalidDateTimeZoneSourceException

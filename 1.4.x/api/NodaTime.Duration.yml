@@ -1464,7 +1464,10 @@ items:
   summary: "\nReturns a <xref href=\"NodaTime.Duration\" data-throw-if-not-resolved=\"false\"></xref> that represents the given number of weeks, assuming a 'standard' week\nconsisting of seven 24-hour days.\n"
   example: []
   syntax:
-    content: public static Duration FromStandardWeeks(long weeks)
+    content: >-
+      [Obsolete("No equivalent exists in 2.0; use FromDays, multiplying the number of days by 7.")]
+
+      public static Duration FromStandardWeeks(long weeks)
     parameters:
     - id: weeks
       type: System.Int64
@@ -1472,8 +1475,17 @@ items:
     return:
       type: NodaTime.Duration
       description: A <xref href="NodaTime.Duration" data-throw-if-not-resolved="false"></xref> representing the given number of weeks.
-    content.vb: Public Shared Function FromStandardWeeks(weeks As Long) As Duration
+    content.vb: >-
+      <Obsolete("No equivalent exists in 2.0; use FromDays, multiplying the number of days by 7.")>
+
+      Public Shared Function FromStandardWeeks(weeks As Long) As Duration
   overload: NodaTime.Duration.FromStandardWeeks*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: No equivalent exists in 2.0; use FromDays, multiplying the number of days by 7.
   modifiers.csharp:
   - public
   - static
@@ -1498,7 +1510,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromDays
     path: src/NodaTime/Duration.cs
-    startLine: 517
+    startLine: 518
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1539,7 +1551,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromStandardDays
     path: src/NodaTime/Duration.cs
-    startLine: 525
+    startLine: 526
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1592,7 +1604,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromHours
     path: src/NodaTime/Duration.cs
-    startLine: 536
+    startLine: 537
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1633,7 +1645,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromHours
     path: src/NodaTime/Duration.cs
-    startLine: 543
+    startLine: 544
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1686,7 +1698,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromMinutes
     path: src/NodaTime/Duration.cs
-    startLine: 554
+    startLine: 555
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1727,7 +1739,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromSeconds
     path: src/NodaTime/Duration.cs
-    startLine: 564
+    startLine: 565
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1768,7 +1780,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromMilliseconds
     path: src/NodaTime/Duration.cs
-    startLine: 574
+    startLine: 575
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1809,7 +1821,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromTicks
     path: src/NodaTime/Duration.cs
-    startLine: 584
+    startLine: 585
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1850,7 +1862,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromTimeSpan
     path: src/NodaTime/Duration.cs
-    startLine: 595
+    startLine: 596
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1891,7 +1903,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ToTimeSpan
     path: src/NodaTime/Duration.cs
-    startLine: 605
+    startLine: 606
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1927,7 +1939,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: System.Xml.Serialization.IXmlSerializable.GetSchema
     path: src/NodaTime/Duration.cs
-    startLine: 613
+    startLine: 614
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1961,7 +1973,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: System.Xml.Serialization.IXmlSerializable.ReadXml
     path: src/NodaTime/Duration.cs
-    startLine: 619
+    startLine: 620
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1996,7 +2008,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: System.Xml.Serialization.IXmlSerializable.WriteXml
     path: src/NodaTime/Duration.cs
-    startLine: 628
+    startLine: 629
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2031,7 +2043,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: System.Runtime.Serialization.ISerializable.GetObjectData
     path: src/NodaTime/Duration.cs
-    startLine: 654
+    startLine: 655
   assemblies:
   - NodaTime
   namespace: NodaTime

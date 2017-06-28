@@ -198,6 +198,7 @@ namespace NodaTime
         /// <param name="tickWithinMillisecond">The tick within millisecond.</param>
         /// <returns>The resulting date/time.</returns>
         /// <exception cref="ArgumentOutOfRangeException">The parameters do not form a valid date/time.</exception>
+        [Obsolete("Construct with a LocalDate + LocalTime or construct to the millisecond and use PlusTicks for compatibiltiy with 2.0")]
         public LocalDateTime(int year, int month, int day, int hour, int minute, int second, int millisecond, int tickWithinMillisecond)
             : this(year, month, day, hour, minute, second, millisecond, tickWithinMillisecond, CalendarSystem.Iso)
         {
@@ -218,6 +219,7 @@ namespace NodaTime
         /// <param name="calendar">The calendar.</param>
         /// <returns>The resulting date/time.</returns>
         /// <exception cref="ArgumentOutOfRangeException">The parameters do not form a valid date/time.</exception>
+        [Obsolete("Construct with a LocalDate + LocalTime or construct to the millisecond and use PlusTicks for compatibiltiy with 2.0")]
         public LocalDateTime(int year, int month, int day, int hour, int minute, int second, int millisecond, int tickWithinMillisecond, [NotNull] CalendarSystem calendar)
         {
             Preconditions.CheckNotNull(calendar, "calendar");
@@ -234,6 +236,7 @@ namespace NodaTime
         }
 
         /// <summary>Gets the century within the era of this local date and time.</summary>
+        [Obsolete("Century-based properties have been removed in 2.0")]
         public int CenturyOfEra { get { return Calendar.GetCenturyOfEra(localInstant); } }
 
         /// <summary>Gets the year of this local date and time.</summary>
@@ -243,6 +246,7 @@ namespace NodaTime
 
         /// <summary>Gets the year of this local date and time within its century.</summary>
         /// <remarks>This always returns a value in the range 0 to 99 inclusive.</remarks>
+        [Obsolete("Century-based properties have been removed in 2.0")]
         public int YearOfCentury { get { return Calendar.GetYearOfCentury(localInstant); } }
 
         /// <summary>Gets the year of this local date and time within its era.</summary>
@@ -269,6 +273,7 @@ namespace NodaTime
         /// so is part of week 1 of WeekYear 2013.
         /// </para>
         /// </remarks>
+        [Obsolete("Use WeekYearRules for specific week-year rules for compatibility with 2.0.")]
         public int WeekYear { get { return Calendar.GetWeekYear(localInstant); } }
 
         /// <summary>
@@ -279,6 +284,7 @@ namespace NodaTime
         /// <summary>
         /// Gets the week within the WeekYear. See <see cref="WeekYear"/> for more details.
         /// </summary>
+        [Obsolete("Use WeekYearRules for specific week-year rules for compatibility with 2.0.")]
         public int WeekOfWeekYear { get { return Calendar.GetWeekOfWeekYear(localInstant); } }
 
         /// <summary>

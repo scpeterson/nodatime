@@ -162,6 +162,7 @@ namespace NodaTime
         public Era Era { get { return LocalDateTime.Era; } }
 
         /// <summary>Gets the century within the era of this zoned date and time.</summary>
+        [Obsolete("Century-based properties have been removed in 2.0")]
         public int CenturyOfEra { get { return LocalDateTime.CenturyOfEra; } }
 
         /// <summary>Gets the year of this zoned date and time.</summary>
@@ -171,6 +172,7 @@ namespace NodaTime
 
         /// <summary>Gets the year of this zoned date and time within its century.</summary>
         /// <remarks>This always returns a value in the range 0 to 99 inclusive.</remarks>
+        [Obsolete("Century-based properties have been removed in 2.0")]
         public int YearOfCentury { get { return LocalDateTime.YearOfCentury; } }
 
         /// <summary>Gets the year of this zoned date and time within its era.</summary>
@@ -194,12 +196,14 @@ namespace NodaTime
         /// so is part of week 1 of WeekYear 2013.
         /// </para>
         /// </remarks>
+        [Obsolete("Use WeekYearRules for specific week-year rules for compatibility with 2.0.")]
         public int WeekYear { get { return LocalDateTime.WeekYear; } }
 
         /// <summary>Gets the month of this zoned date and time within the year.</summary>
         public int Month { get { return LocalDateTime.Month; } }
 
         /// <summary>Gets the week within the WeekYear. See <see cref="WeekYear"/> for more details.</summary>
+        [Obsolete("Use WeekYearRules for specific week-year rules for compatibility with 2.0.")]
         public int WeekOfWeekYear { get { return LocalDateTime.WeekOfWeekYear; } }
 
         /// <summary>Gets the day of this zoned date and time within the year.</summary>
@@ -374,6 +378,7 @@ namespace NodaTime
         /// <param name="lhs">First operand of the comparison</param>
         /// <param name="rhs">Second operand of the comparison</param>
         /// <returns>true if the <paramref name="lhs"/> is strictly earlier than <paramref name="rhs"/>, false otherwise.</returns>
+        [Obsolete("Use ZonedDateTime.Comparer.Instant to compare values by instant for compatibility with 2.0. If calendar and time zone comparison is required, make those comparisons explicitly.")]
         public static bool operator <(ZonedDateTime lhs, ZonedDateTime rhs)
         {
             return lhs.ToInstant() < rhs.ToInstant() && Equals(lhs.LocalDateTime.Calendar, rhs.LocalDateTime.Calendar) && Equals(lhs.Zone, rhs.Zone);
@@ -390,6 +395,7 @@ namespace NodaTime
         /// <param name="lhs">First operand of the comparison</param>
         /// <param name="rhs">Second operand of the comparison</param>
         /// <returns>true if the <paramref name="lhs"/> is earlier than or equal to <paramref name="rhs"/>, false otherwise.</returns>
+        [Obsolete("Use ZonedDateTime.Comparer.Instant to compare values by instant for compatibility with 2.0. If calendar and time zone comparison is required, make those comparisons explicitly.")]
         public static bool operator <=(ZonedDateTime lhs, ZonedDateTime rhs)
         {
             return lhs.ToInstant() <= rhs.ToInstant() && Equals(lhs.LocalDateTime.Calendar, rhs.LocalDateTime.Calendar) && Equals(lhs.Zone, rhs.Zone);
@@ -406,6 +412,7 @@ namespace NodaTime
         /// <param name="lhs">First operand of the comparison</param>
         /// <param name="rhs">Second operand of the comparison</param>
         /// <returns>true if the <paramref name="lhs"/> is strictly later than <paramref name="rhs"/>, false otherwise.</returns>
+        [Obsolete("Use ZonedDateTime.Comparer.Instant to compare values by instant for compatibility with 2.0. If calendar and time zone comparison is required, make those comparisons explicitly.")]
         public static bool operator >(ZonedDateTime lhs, ZonedDateTime rhs)
         {
             return lhs.ToInstant() > rhs.ToInstant() && Equals(lhs.LocalDateTime.Calendar, rhs.LocalDateTime.Calendar) && Equals(lhs.Zone, rhs.Zone);
@@ -422,6 +429,7 @@ namespace NodaTime
         /// <param name="lhs">First operand of the comparison</param>
         /// <param name="rhs">Second operand of the comparison</param>
         /// <returns>true if the <paramref name="lhs"/> is later than or equal to <paramref name="rhs"/>, false otherwise.</returns>
+        [Obsolete("Use ZonedDateTime.Comparer.Instant to compare values by instant for compatibility with 2.0. If calendar and time zone comparison is required, make those comparisons explicitly.")]
         public static bool operator >=(ZonedDateTime lhs, ZonedDateTime rhs)
         {
             return lhs.ToInstant() >= rhs.ToInstant() && Equals(lhs.LocalDateTime.Calendar, rhs.LocalDateTime.Calendar) && Equals(lhs.Zone, rhs.Zone);
@@ -437,6 +445,7 @@ namespace NodaTime
         /// <returns>A value less than zero if the instant represented by this zoned date/time is earlier than the one in
         /// <paramref name="other"/>; zero if the instant is the same as the one in <paramref name="other"/>;
         /// a value greater than zero if the instant is later than the one in <paramref name="other"/>.</returns>
+        [Obsolete("Use ZonedDateTime.Comparer.Instant to compare values by instant for compatibility with 2.0.")]
         public int CompareTo(ZonedDateTime other)
         {
             return ToInstant().CompareTo(other.ToInstant());
@@ -453,6 +462,7 @@ namespace NodaTime
         /// <returns>The result of comparing this ZonedDateTime with another one; see <see cref="CompareTo(NodaTime.ZonedDateTime)"/> for general details.
         /// If <paramref name="obj"/> is null, this method returns a value greater than 0.
         /// </returns>
+        [Obsolete("Use ZonedDateTime.Comparer.Instant to compare values by instant for compatibility with 2.0.")]
         int IComparable.CompareTo(object obj)
         {
             if (obj == null)

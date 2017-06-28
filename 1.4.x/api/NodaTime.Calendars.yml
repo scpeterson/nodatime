@@ -8,6 +8,9 @@ items:
   - NodaTime.Calendars.HebrewMonthNumbering
   - NodaTime.Calendars.IslamicEpoch
   - NodaTime.Calendars.IslamicLeapYearPattern
+  - NodaTime.Calendars.IWeekYearRule
+  - NodaTime.Calendars.WeekYearRuleExtensions
+  - NodaTime.Calendars.WeekYearRules
   langs:
   - csharp
   - vb
@@ -46,6 +49,26 @@ references:
   name: IslamicLeapYearPattern
   nameWithType: IslamicLeapYearPattern
   fullName: NodaTime.Calendars.IslamicLeapYearPattern
+- uid: NodaTime.Calendars.IWeekYearRule
+  commentId: T:NodaTime.Calendars.IWeekYearRule
+  parent: NodaTime.Calendars
+  isExternal: false
+  name: IWeekYearRule
+  nameWithType: IWeekYearRule
+  fullName: NodaTime.Calendars.IWeekYearRule
+- uid: NodaTime.Calendars.WeekYearRuleExtensions
+  commentId: T:NodaTime.Calendars.WeekYearRuleExtensions
+  parent: NodaTime.Calendars
+  isExternal: false
+  name: WeekYearRuleExtensions
+  nameWithType: WeekYearRuleExtensions
+  fullName: NodaTime.Calendars.WeekYearRuleExtensions
+- uid: NodaTime.Calendars.WeekYearRules
+  commentId: T:NodaTime.Calendars.WeekYearRules
+  isExternal: false
+  name: WeekYearRules
+  nameWithType: WeekYearRules
+  fullName: NodaTime.Calendars.WeekYearRules
 - uid: NodaTime.Calendars
   commentId: N:NodaTime.Calendars
   isExternal: false

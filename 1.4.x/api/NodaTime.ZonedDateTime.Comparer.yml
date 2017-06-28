@@ -22,7 +22,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Comparer
     path: src/NodaTime/ZonedDateTime.cs
-    startLine: 684
+    startLine: 694
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -72,7 +72,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Local
     path: src/NodaTime/ZonedDateTime.cs
-    startLine: 695
+    startLine: 705
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -112,7 +112,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Instant
     path: src/NodaTime/ZonedDateTime.cs
-    startLine: 708
+    startLine: 718
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -152,7 +152,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Compare
     path: src/NodaTime/ZonedDateTime.cs
-    startLine: 744
+    startLine: 754
   assemblies:
   - NodaTime
   namespace: NodaTime

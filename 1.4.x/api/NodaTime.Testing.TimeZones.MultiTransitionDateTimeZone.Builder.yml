@@ -29,7 +29,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Builder
     path: src/NodaTime.Testing/TimeZones/MultiTransitionDateTimeZone.cs
-    startLine: 86
+    startLine: 87
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -78,7 +78,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Id
     path: src/NodaTime.Testing/TimeZones/MultiTransitionDateTimeZone.cs
-    startLine: 97
+    startLine: 98
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -115,7 +115,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: .ctor
     path: src/NodaTime.Testing/TimeZones/MultiTransitionDateTimeZone.cs
-    startLine: 103
+    startLine: 104
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -147,7 +147,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: .ctor
     path: src/NodaTime.Testing/TimeZones/MultiTransitionDateTimeZone.cs
-    startLine: 113
+    startLine: 114
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -186,7 +186,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: .ctor
     path: src/NodaTime.Testing/TimeZones/MultiTransitionDateTimeZone.cs
-    startLine: 123
+    startLine: 124
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -225,7 +225,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: .ctor
     path: src/NodaTime.Testing/TimeZones/MultiTransitionDateTimeZone.cs
-    startLine: 135
+    startLine: 136
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -267,7 +267,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Add
     path: src/NodaTime.Testing/TimeZones/MultiTransitionDateTimeZone.cs
-    startLine: 149
+    startLine: 150
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -306,7 +306,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Add
     path: src/NodaTime.Testing/TimeZones/MultiTransitionDateTimeZone.cs
-    startLine: 161
+    startLine: 162
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -348,7 +348,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Add
     path: src/NodaTime.Testing/TimeZones/MultiTransitionDateTimeZone.cs
-    startLine: 174
+    startLine: 175
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -393,7 +393,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Build
     path: src/NodaTime.Testing/TimeZones/MultiTransitionDateTimeZone.cs
-    startLine: 189
+    startLine: 190
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
@@ -429,7 +429,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: System.Collections.IEnumerable.GetEnumerator
     path: src/NodaTime.Testing/TimeZones/MultiTransitionDateTimeZone.cs
-    startLine: 209
+    startLine: 210
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones

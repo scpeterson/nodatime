@@ -249,7 +249,10 @@ items:
   summary: "\nReturns this source's corresponding ID for the given BCL time zone.\n"
   example: []
   syntax:
-    content: public string MapTimeZoneId(TimeZoneInfo timeZone)
+    content: >-
+      [Obsolete("Only the system default time zone can be mapped in 2.0, using GetSystemDefaultId. For other time zones, use source-specific members.")]
+
+      public string MapTimeZoneId(TimeZoneInfo timeZone)
     parameters:
     - id: timeZone
       type: System.TimeZoneInfo
@@ -257,10 +260,19 @@ items:
     return:
       type: System.String
       description: "\nThe ID for the given system time zone for this source, or null if the system time\nzone has no mapping in this source.\n"
-    content.vb: Public Function MapTimeZoneId(timeZone As TimeZoneInfo) As String
+    content.vb: >-
+      <Obsolete("Only the system default time zone can be mapped in 2.0, using GetSystemDefaultId. For other time zones, use source-specific members.")>
+
+      Public Function MapTimeZoneId(timeZone As TimeZoneInfo) As String
   overload: NodaTime.Testing.TimeZones.FakeDateTimeZoneSource.MapTimeZoneId*
   implements:
   - NodaTime.TimeZones.IDateTimeZoneSource.MapTimeZoneId(System.TimeZoneInfo)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Only the system default time zone can be mapped in 2.0, using GetSystemDefaultId. For other time zones, use source-specific members.
   modifiers.csharp:
   - public
   modifiers.vb:

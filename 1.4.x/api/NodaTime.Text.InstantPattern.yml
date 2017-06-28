@@ -529,7 +529,10 @@ items:
   summary: "\nCreates a \"numeric\" pattern for the given culture. The numeric format gives the\nnumber of ticks in decimal format, with or without thousands separators.\n"
   example: []
   syntax:
-    content: public static InstantPattern CreateNumericPattern(CultureInfo cultureInfo, bool includeThousandsSeparators)
+    content: >-
+      [Obsolete("Numeric patterns are not supported in 2.0")]
+
+      public static InstantPattern CreateNumericPattern(CultureInfo cultureInfo, bool includeThousandsSeparators)
     parameters:
     - id: cultureInfo
       type: System.Globalization.CultureInfo
@@ -540,8 +543,17 @@ items:
     return:
       type: NodaTime.Text.InstantPattern
       description: A numeric pattern for the configuration
-    content.vb: Public Shared Function CreateNumericPattern(cultureInfo As CultureInfo, includeThousandsSeparators As Boolean) As InstantPattern
+    content.vb: >-
+      <Obsolete("Numeric patterns are not supported in 2.0")>
+
+      Public Shared Function CreateNumericPattern(cultureInfo As CultureInfo, includeThousandsSeparators As Boolean) As InstantPattern
   overload: NodaTime.Text.InstantPattern.CreateNumericPattern*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Numeric patterns are not supported in 2.0
   modifiers.csharp:
   - public
   - static
@@ -566,7 +578,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: WithCulture
     path: src/NodaTime/Text/InstantPattern.cs
-    startLine: 244
+    startLine: 245
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
@@ -605,14 +617,17 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: WithMinMaxLabels
     path: src/NodaTime/Text/InstantPattern.cs
-    startLine: 257
+    startLine: 258
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
   summary: "\nCreates a new pattern for the same original pattern text and culture as this pattern, but\nwith the given min/max labels.\n"
   example: []
   syntax:
-    content: public InstantPattern WithMinMaxLabels(string minLabel, string maxLabel)
+    content: >-
+      [Obsolete("Start/end of time instants are not supported in 2.0")]
+
+      public InstantPattern WithMinMaxLabels(string minLabel, string maxLabel)
     parameters:
     - id: minLabel
       type: System.String
@@ -623,11 +638,20 @@ items:
     return:
       type: NodaTime.Text.InstantPattern
       description: A new pattern with the given min/max labels.
-    content.vb: Public Function WithMinMaxLabels(minLabel As String, maxLabel As String) As InstantPattern
+    content.vb: >-
+      <Obsolete("Start/end of time instants are not supported in 2.0")>
+
+      Public Function WithMinMaxLabels(minLabel As String, maxLabel As String) As InstantPattern
   overload: NodaTime.Text.InstantPattern.WithMinMaxLabels*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Start/end of time instants are not supported in 2.0
   modifiers.csharp:
   - public
   modifiers.vb:
