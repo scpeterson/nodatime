@@ -236,12 +236,12 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_Equality
     path: src/NodaTime/DateInterval.cs
-    startLine: 81
+    startLine: 79
   assemblies:
   - NodaTime
   namespace: NodaTime
   summary: "\nCompares two <xref href=\"NodaTime.DateInterval\" data-throw-if-not-resolved=\"false\"></xref> values for equality.\n"
-  remarks: "\nDate intervals are equal if they have the same start and end dates and are both end-inclusive or both end-exclusive:\nan end-exclusive date interval of [2001-01-01, 2001-02-01) is not equal to the end-inclusive date interval of\n[2001-01-01, 2001-01-31], even though both contain the same range of dates.\n"
+  remarks: "\nDate intervals are equal if they have the same start and end dates.\n"
   example: []
   syntax:
     content: public static bool operator ==(DateInterval lhs, DateInterval rhs)
@@ -281,12 +281,12 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_Inequality
     path: src/NodaTime/DateInterval.cs
-    startLine: 105
+    startLine: 101
   assemblies:
   - NodaTime
   namespace: NodaTime
   summary: "\nCompares two <xref href=\"NodaTime.DateInterval\" data-throw-if-not-resolved=\"false\"></xref> values for inequality.\n"
-  remarks: "\nDate intervals are equal if they have the same start and end dates and are both end-inclusive or both exclusive:\nan end-exclusive date interval of [2001-01-01, 2001-02-01) is not equal to the end-inclusive date interval of\n[2001-01-01, 2001-01-31], even though both contain the same range of dates.\n"
+  remarks: "\nDate intervals are equal if they have the same start and end dates.\n"
   example: []
   syntax:
     content: public static bool operator !=(DateInterval lhs, DateInterval rhs)
@@ -299,7 +299,7 @@ items:
       description: The second value to compare
     return:
       type: System.Boolean
-      description: False if the two date intervals have the same properties; true otherwise.
+      description: False if the two date intervals have the same start and end date; true otherwise.
     content.vb: Public Shared Operator <>(lhs As DateInterval, rhs As DateInterval) As Boolean
   overload: NodaTime.DateInterval.op_Inequality*
   modifiers.csharp:
@@ -326,12 +326,12 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Equals
     path: src/NodaTime/DateInterval.cs
-    startLine: 117
+    startLine: 111
   assemblies:
   - NodaTime
   namespace: NodaTime
   summary: "\nCompares the given date interval for equality with this one.\n"
-  remarks: "\nDate intervals are equal if they have the same start and end dates and are both end-inclusive or both end-exclusive:\nan end-exclusive date interval of [2001-01-01, 2001-02-01) is not equal to the end-inclusive date interval of\n[2001-01-01, 2001-01-31], even though both contain the same range of dates.\n"
+  remarks: "\nDate intervals are equal if they have the same start and end dates.\n"
   example: []
   syntax:
     content: public bool Equals(DateInterval other)
@@ -341,7 +341,7 @@ items:
       description: The date interval to compare this one with.
     return:
       type: System.Boolean
-      description: True if this date interval has the same properties as the one specified.
+      description: True if this date interval has the same same start and end date as the one specified.
     content.vb: Public Function Equals(other As DateInterval) As Boolean
   overload: NodaTime.DateInterval.Equals*
   implements:
@@ -368,7 +368,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Equals
     path: src/NodaTime/DateInterval.cs
-    startLine: 124
+    startLine: 118
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -410,7 +410,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Contains
     path: src/NodaTime/DateInterval.cs
-    startLine: 135
+    startLine: 129
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -455,7 +455,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Length
     path: src/NodaTime/DateInterval.cs
-    startLine: 146
+    startLine: 140
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -493,7 +493,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ToString
     path: src/NodaTime/DateInterval.cs
-    startLine: 158
+    startLine: 152
   assemblies:
   - NodaTime
   namespace: NodaTime
