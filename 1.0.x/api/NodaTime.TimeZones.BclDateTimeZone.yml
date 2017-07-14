@@ -252,14 +252,14 @@ items:
   - NodaTime
   namespace: NodaTime.TimeZones
   summary: "\nReturns a time zone converted from the BCL representation of the system local time zone.\nIf this method is called more than once, it may return the same reference multiple times if\nthe local time zone has not changed.\n"
-  remarks: "\nWhen the source of a <xref href=\"NodaTime.TimeZones.DateTimeZoneCache\" data-throw-if-not-resolved=\"false\"></xref> is set to an instance of <xref href=\"NodaTime.TimeZones.BclDateTimeZoneSource\" data-throw-if-not-resolved=\"false\"></xref> it\nis highly likely that <xref href=\"NodaTime.TimeZones.DateTimeZoneCache.GetSystemDefault\" data-throw-if-not-resolved=\"false\"></xref> will succeed - but in\nrare cases (such as the set of system time zones changing after the source is installed, or the local zone\nnot being a normal \"system\" one) it is possible that it wouldn't be mapped. By contrast, this method will\nalways succeed.\n"
+  remarks: "\nWhen the source of a <xref href=\"NodaTime.TimeZones.DateTimeZoneCache\" data-throw-if-not-resolved=\"false\"></xref> is set to an instance of <xref href=\"NodaTime.TimeZones.BclDateTimeZoneSource\" data-throw-if-not-resolved=\"false\"></xref> it\nis highly likely that <xref href=\"NodaTime.TimeZones.DateTimeZoneCache.GetSystemDefault\" data-throw-if-not-resolved=\"false\"></xref> will succeed - but in\nrare cases (such as the set of system time zones changing after the source is installed, or the local zone\nnot being a normal &quot;system&quot; one) it is possible that it wouldn&apos;t be mapped. By contrast, this method will\nalways succeed.\n"
   example: []
   syntax:
     content: public static BclDateTimeZone ForSystemDefault()
     return:
       type: NodaTime.TimeZones.BclDateTimeZone
       description: >-
-        A <xref href="NodaTime.TimeZones.BclDateTimeZone" data-throw-if-not-resolved="false"></xref> wrapping the "local" (system) time zone as returned by
+        A <xref href="NodaTime.TimeZones.BclDateTimeZone" data-throw-if-not-resolved="false"></xref> wrapping the &quot;local&quot; (system) time zone as returned by
 
         <xref href="System.TimeZoneInfo.Local" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function ForSystemDefault As BclDateTimeZone

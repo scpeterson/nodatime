@@ -80,7 +80,7 @@ items:
   assemblies:
   - NodaTime.Serialization.JsonNet
   namespace: NodaTime.Serialization.JsonNet
-  summary: "\nConverter for instants, using the ISO-8601 date/time pattern, extended as required to accommodate milliseconds and ticks, and\nspecifying 'Z' at the end to show it's effectively in UTC.\n"
+  summary: "\nConverter for instants, using the ISO-8601 date/time pattern, extended as required to accommodate milliseconds and ticks, and\nspecifying &apos;Z&apos; at the end to show it&apos;s effectively in UTC.\n"
   example: []
   syntax:
     content: public static JsonConverter InstantConverter { get; }
@@ -513,7 +513,7 @@ items:
   assemblies:
   - NodaTime.Serialization.JsonNet
   namespace: NodaTime.Serialization.JsonNet
-  summary: "\nRound-tripping converter for periods. Use this when you really want to preserve information,\nand don't need interoperability with systems expecting ISO.\n"
+  summary: "\nRound-tripping converter for periods. Use this when you really want to preserve information,\nand don&apos;t need interoperability with systems expecting ISO.\n"
   example: []
   syntax:
     content: public static JsonConverter RoundtripPeriodConverter { get; }
@@ -552,7 +552,7 @@ items:
   assemblies:
   - NodaTime.Serialization.JsonNet
   namespace: NodaTime.Serialization.JsonNet
-  summary: "\nNormalizing ISO converter for periods. Use this when you want compatibility with systems expecting\nISO durations (~= Noda Time periods). However, note that Noda Time can have negative periods. Note that\nthis converter losees information - after serialization and deserialization, \"90 minutes\" will become \"an hour and 30 minutes\".\n"
+  summary: "\nNormalizing ISO converter for periods. Use this when you want compatibility with systems expecting\nISO durations (~= Noda Time periods). However, note that Noda Time can have negative periods. Note that\nthis converter losees information - after serialization and deserialization, &quot;90 minutes&quot; will become &quot;an hour and 30 minutes&quot;.\n"
   example: []
   syntax:
     content: public static JsonConverter NormalizingIsoPeriodConverter { get; }

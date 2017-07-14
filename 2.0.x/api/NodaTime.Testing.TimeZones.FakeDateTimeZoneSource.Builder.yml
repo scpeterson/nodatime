@@ -160,14 +160,14 @@ items:
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
-  summary: "\nGets the version ID to advertise; defaults to \"TestZones\".\n"
+  summary: "\nGets the version ID to advertise; defaults to &quot;TestZones&quot;.\n"
   example: []
   syntax:
     content: public string VersionId { get; set; }
     parameters: []
     return:
       type: System.String
-      description: The version ID to advertise; defaults to "TestZones".
+      description: The version ID to advertise; defaults to &quot;TestZones&quot;.
     content.vb: Public Property VersionId As String
   overload: NodaTime.Testing.TimeZones.FakeDateTimeZoneSource.Builder.VersionId*
   modifiers.csharp:
@@ -340,7 +340,7 @@ items:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
   summary: "\nBuilds a time zone source from this builder. The returned\nbuilder will be independent of this builder; further changes\nto this builder will not be reflected in the returned source.\n"
-  remarks: "\nThis method performs some sanity checks, and throws exceptions if\nthey're violated. Those exceptions are not documented here, and you\nshouldn't be catching them anyway. (This is aimed at testing...)\n"
+  remarks: "\nThis method performs some sanity checks, and throws exceptions if\nthey&apos;re violated. Those exceptions are not documented here, and you\nshouldn&apos;t be catching them anyway. (This is aimed at testing...)\n"
   example: []
   syntax:
     content: public FakeDateTimeZoneSource Build()

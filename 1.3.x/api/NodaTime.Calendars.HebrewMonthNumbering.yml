@@ -59,7 +59,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Calendars
-  summary: "\n<p>\nThe numbering system where month 1 is Tishri. This has the advantage of familiarity with other\ncalendars where the first month is 1; it is easier to tell which date comes before which, aside\nfrom anything else. It is also the  numbering system used by the BCL.\n</p>\n<p>The main disadvantage is that due to leap years effectively \"splitting\" Adar into Adar I\nand Adar II, the months after that (Nisan, Iyyar and so on) have month numberings which depend\non the year.</p>\n"
+  summary: "\n<p>\nThe numbering system where month 1 is Tishri. This has the advantage of familiarity with other\ncalendars where the first month is 1; it is easier to tell which date comes before which, aside\nfrom anything else. It is also the  numbering system used by the BCL.\n</p>\n<p>The main disadvantage is that due to leap years effectively &quot;splitting&quot; Adar into Adar I\nand Adar II, the months after that (Nisan, Iyyar and so on) have month numberings which depend\non the year.</p>\n"
   example: []
   syntax:
     content: Civil = 1

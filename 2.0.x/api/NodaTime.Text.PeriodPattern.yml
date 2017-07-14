@@ -77,7 +77,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nPattern which uses the normal ISO format for all the supported ISO\nfields, but extends the time part with \"s\" for milliseconds, \"t\" for ticks and \"n\" for nanoseconds.\nNo normalization is carried out, and a period may contain weeks as well as years, months and days.\nEach element may also be negative, independently of other elements. This pattern round-trips its\nvalues: a parse/format cycle will produce an identical period, including units.\n"
+  summary: "\nPattern which uses the normal ISO format for all the supported ISO\nfields, but extends the time part with &quot;s&quot; for milliseconds, &quot;t&quot; for ticks and &quot;n&quot; for nanoseconds.\nNo normalization is carried out, and a period may contain weeks as well as years, months and days.\nEach element may also be negative, independently of other elements. This pattern round-trips its\nvalues: a parse/format cycle will produce an identical period, including units.\n"
   example: []
   syntax:
     content: public static PeriodPattern Roundtrip { get; }
@@ -116,7 +116,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nA \"normalizing\" pattern which abides by the ISO-8601 duration format as far as possible.\nWeeks are added to the number of days (after multiplying by 7). Time units are normalized\n(extending into days where necessary), and fractions of seconds are represented within the\nseconds part. Unlike ISO-8601, which pattern allows for negative values within a period.\n"
+  summary: "\nA &quot;normalizing&quot; pattern which abides by the ISO-8601 duration format as far as possible.\nWeeks are added to the number of days (after multiplying by 7). Time units are normalized\n(extending into days where necessary), and fractions of seconds are represented within the\nseconds part. Unlike ISO-8601, which pattern allows for negative values within a period.\n"
   remarks: "\nNote that normalizing the period when formatting will cause an <xref href=\"System.OverflowException\" data-throw-if-not-resolved=\"false\"></xref>\nif the period contains more than <xref href=\"System.Int64.MaxValue\" data-throw-if-not-resolved=\"false\"></xref> ticks when the\ncombined weeks/days/time portions are considered. Such a period could never\nbe useful anyway, however.\n"
   example: []
   syntax:

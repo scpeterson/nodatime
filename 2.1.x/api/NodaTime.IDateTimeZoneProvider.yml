@@ -101,7 +101,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nGets the list of valid time zone ids advertised by this provider.\n"
-  remarks: "\n<p>\nThis list will be sorted in ordinal lexicographic order. It cannot be modified by callers, and\nmust not be modified by the provider either: client code can safely treat it as thread-safe\nand deeply immutable.\n</p>\n<p>\nIn addition to the list returned here, providers always support the fixed-offset timezones with IDs \"UTC\"\nand \"UTC+/-Offset\". These may or may not be included explicitly in this list.\n</p>\n"
+  remarks: "\n<p>\nThis list will be sorted in ordinal lexicographic order. It cannot be modified by callers, and\nmust not be modified by the provider either: client code can safely treat it as thread-safe\nand deeply immutable.\n</p>\n<p>\nIn addition to the list returned here, providers always support the fixed-offset timezones with IDs &quot;UTC&quot;\nand &quot;UTC+/-Offset&quot;. These may or may not be included explicitly in this list.\n</p>\n"
   example: []
   syntax:
     content: ReadOnlyCollection<string> Ids { get; }
@@ -138,7 +138,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nGets the time zone from this provider that matches the system default time zone, if a matching time zone is\navailable.\n"
-  remarks: "\n<p>\nCallers should be aware that this method will throw <xref href=\"NodaTime.TimeZones.DateTimeZoneNotFoundException\" data-throw-if-not-resolved=\"false\"></xref> if no matching\ntime zone is found. For the built-in Noda Time providers, this is unlikely to occur in practice (assuming\nthe system is using a standard Windows time zone), but can occur even then, if no mapping is found. The TZDB\nsource contains mappings for almost all Windows system time zones, but a few (such as \"Mid-Atlantic Standard Time\")\nare unmappable.\n</p>\n<p>\nIf it is necessary to handle this case, callers can construct a\n<xref href=\"NodaTime.TimeZones.BclDateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> via <xref href=\"NodaTime.TimeZones.BclDateTimeZone.ForSystemDefault\" data-throw-if-not-resolved=\"false\"></xref>, which returns a\n<xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> that wraps the system local <xref href=\"System.TimeZoneInfo\" data-throw-if-not-resolved=\"false\"></xref>, and which always\nsucceeds. Note that <code>BclDateTimeZone</code> is not available on the .NET Standard 1.3 build of Noda Time, so\nthis fallback strategy can only be used with the desktop version.\n</p>\n"
+  remarks: "\n<p>\nCallers should be aware that this method will throw <xref href=\"NodaTime.TimeZones.DateTimeZoneNotFoundException\" data-throw-if-not-resolved=\"false\"></xref> if no matching\ntime zone is found. For the built-in Noda Time providers, this is unlikely to occur in practice (assuming\nthe system is using a standard Windows time zone), but can occur even then, if no mapping is found. The TZDB\nsource contains mappings for almost all Windows system time zones, but a few (such as &quot;Mid-Atlantic Standard Time&quot;)\nare unmappable.\n</p>\n<p>\nIf it is necessary to handle this case, callers can construct a\n<xref href=\"NodaTime.TimeZones.BclDateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> via <xref href=\"NodaTime.TimeZones.BclDateTimeZone.ForSystemDefault\" data-throw-if-not-resolved=\"false\"></xref>, which returns a\n<xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> that wraps the system local <xref href=\"System.TimeZoneInfo\" data-throw-if-not-resolved=\"false\"></xref>, and which always\nsucceeds. Note that <code>BclDateTimeZone</code> is not available on the .NET Standard 1.3 build of Noda Time, so\nthis fallback strategy can only be used with the desktop version.\n</p>\n"
   example: []
   syntax:
     content: DateTimeZone GetSystemDefault()
@@ -176,8 +176,8 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nReturns the time zone for the given ID, if it's available.\n"
-  remarks: "\n<p>\nNote that this may return a <xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> that has a different ID to that requested, if the ID\nprovided is an alias.\n</p>\n<p>\nNote also that this method is not required to return the same <xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> instance for\nsuccessive requests for the same ID; however, all instances returned for a given ID must compare\nas equal.\n</p>\n<p>\nThe fixed-offset timezones with IDs \"UTC\" and \"UTC+/-Offset\" are always available.\n</p>\n"
+  summary: "\nReturns the time zone for the given ID, if it&apos;s available.\n"
+  remarks: "\n<p>\nNote that this may return a <xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> that has a different ID to that requested, if the ID\nprovided is an alias.\n</p>\n<p>\nNote also that this method is not required to return the same <xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> instance for\nsuccessive requests for the same ID; however, all instances returned for a given ID must compare\nas equal.\n</p>\n<p>\nThe fixed-offset timezones with IDs &quot;UTC&quot; and &quot;UTC+/-Offset&quot; are always available.\n</p>\n"
   example: []
   syntax:
     content: DateTimeZone GetZoneOrNull(string id)
@@ -216,7 +216,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nReturns the time zone for the given ID.\n"
-  remarks: "\n<p>\nUnlike <xref href=\"NodaTime.IDateTimeZoneProvider.GetZoneOrNull(System.String)\" data-throw-if-not-resolved=\"false\"></xref>, this indexer will never return a null reference. If the ID is not\nsupported by this provider, it will throw <xref href=\"NodaTime.TimeZones.DateTimeZoneNotFoundException\" data-throw-if-not-resolved=\"false\"></xref>.\n</p>\n<p>\nNote that this may return a <xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> that has a different ID to that requested, if the ID\nprovided is an alias.\n</p>\n<p>\nNote also that this method is not required to return the same <xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> instance for\nsuccessive requests for the same ID; however, all instances returned for a given ID must compare\nas equal.\n</p>\n<p>\nThe fixed-offset timezones with IDs \"UTC\" and \"UTC+/-Offset\" are always available.\n</p>\n"
+  remarks: "\n<p>\nUnlike <xref href=\"NodaTime.IDateTimeZoneProvider.GetZoneOrNull(System.String)\" data-throw-if-not-resolved=\"false\"></xref>, this indexer will never return a null reference. If the ID is not\nsupported by this provider, it will throw <xref href=\"NodaTime.TimeZones.DateTimeZoneNotFoundException\" data-throw-if-not-resolved=\"false\"></xref>.\n</p>\n<p>\nNote that this may return a <xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> that has a different ID to that requested, if the ID\nprovided is an alias.\n</p>\n<p>\nNote also that this method is not required to return the same <xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> instance for\nsuccessive requests for the same ID; however, all instances returned for a given ID must compare\nas equal.\n</p>\n<p>\nThe fixed-offset timezones with IDs &quot;UTC&quot; and &quot;UTC+/-Offset&quot; are always available.\n</p>\n"
   example: []
   syntax:
     content: DateTimeZone this[string id] { get; }

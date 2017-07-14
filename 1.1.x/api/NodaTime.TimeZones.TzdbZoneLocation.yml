@@ -30,7 +30,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones
-  summary: "\nA location entry generated from the \"zone.tab\" file in a TZDB release. This can be used to provide\nusers with a choice of time zone, although it is not internationalized.\n"
+  summary: "\nA location entry generated from the &quot;zone.tab&quot; file in a TZDB release. This can be used to provide\nusers with a choice of time zone, although it is not internationalized.\n"
   example: []
   syntax:
     content: public sealed class TzdbZoneLocation

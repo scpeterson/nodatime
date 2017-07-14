@@ -40,7 +40,7 @@ items:
   - NodaTime
   namespace: NodaTime.TimeZones
   summary: "\nProvides an implementation of a <xref href=\"NodaTime.TimeZones.IDateTimeZoneSource\" data-throw-if-not-resolved=\"false\"></xref> that loads data originating from the\n<a href=\"http://www.iana.org/time-zones\">TZDB (also known as IANA, Olson, or zoneinfo)</a> time zone database.\n"
-  remarks: "\nAll calls to <xref href=\"NodaTime.TimeZones.TzdbDateTimeZoneSource.ForId(System.String)\" data-throw-if-not-resolved=\"false\"></xref> for fixed-offset IDs advertised by the source (i.e. \"UTC\" and \"UTC+/-Offset\")\nwill return zones equal to those returned by <xref href=\"NodaTime.DateTimeZone.ForOffset(NodaTime.Offset)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  remarks: "\nAll calls to <xref href=\"NodaTime.TimeZones.TzdbDateTimeZoneSource.ForId(System.String)\" data-throw-if-not-resolved=\"false\"></xref> for fixed-offset IDs advertised by the source (i.e. &quot;UTC&quot; and &quot;UTC+/-Offset&quot;)\nwill return zones equal to those returned by <xref href=\"NodaTime.DateTimeZone.ForOffset(NodaTime.Offset)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
     content: 'public sealed class TzdbDateTimeZoneSource : IDateTimeZoneSource'
@@ -387,7 +387,7 @@ items:
     description: Reading from the stream failed.
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
-    description: The supplied stream doesn't support reading.
+    description: The supplied stream doesn&apos;t support reading.
   modifiers.csharp:
   - public
   - static
@@ -571,7 +571,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones
-  summary: "\nReturns a lookup from canonical ID (e.g. \"Europe/London\") to a group of aliases\n(e.g. {\"Europe/Belfast\", \"Europe/Guernsey\", \"Europe/Jersey\", \"Europe/Isle_of_Man\", \"GB\", \"GB-Eire\"}).\n"
+  summary: "\nReturns a lookup from canonical ID (e.g. &quot;Europe/London&quot;) to a group of aliases\n(e.g. {&quot;Europe/Belfast&quot;, &quot;Europe/Guernsey&quot;, &quot;Europe/Jersey&quot;, &quot;Europe/Isle_of_Man&quot;, &quot;GB&quot;, &quot;GB-Eire&quot;}).\n"
   remarks: "\nThe group of values for a key never contains the canonical ID, only aliases. Any time zone\nID which is itself an alias or has no aliases linking to it will not be present in the lookup.\nThe aliases within a group are returned in alphabetical (ordinal) order.\n"
   example: []
   syntax:
@@ -610,7 +610,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones
-  summary: "\nReturns a read-only map from time zone ID to the canonical ID. For example, the key \"Europe/Jersey\"\nwould be associated with the value \"Europe/London\".\n"
+  summary: "\nReturns a read-only map from time zone ID to the canonical ID. For example, the key &quot;Europe/Jersey&quot;\nwould be associated with the value &quot;Europe/London&quot;.\n"
   remarks: "\n<p>This map contains an entry for every ID returned by <xref href=\"NodaTime.TimeZones.TzdbDateTimeZoneSource.GetIds\" data-throw-if-not-resolved=\"false\"></xref>, where\ncanonical IDs map to themselves.</p>\n<p>The returned map is read-only; any attempts to call a mutating method will throw\n<xref href=\"System.NotSupportedException\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
   example: []
   syntax:
@@ -650,7 +650,7 @@ items:
   - NodaTime
   namespace: NodaTime.TimeZones
   summary: "\nReturns a read-only list of zone locations known to this source.\n"
-  remarks: "\n<p>\nEvery zone location's time zone ID is guaranteed to be valid within this source (assuming the source\nhas been validated).\n</p>\n<p>\nThe legacy resource format does not include location information,\nand this property will throw an exception if the information is requested. It is expected\nthat callers who wish to use newer features will not be attempting to use legacy formats\nfor time zone data.\n</p>\n"
+  remarks: "\n<p>\nEvery zone location&apos;s time zone ID is guaranteed to be valid within this source (assuming the source\nhas been validated).\n</p>\n<p>\nThe legacy resource format does not include location information,\nand this property will throw an exception if the information is requested. It is expected\nthat callers who wish to use newer features will not be attempting to use legacy formats\nfor time zone data.\n</p>\n"
   example: []
   syntax:
     content: public IList<TzdbZoneLocation> ZoneLocations { get; }
@@ -694,7 +694,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones
-  summary: "\nReturns just the TZDB version (e.g. \"2013a\") of the source data.\n"
+  summary: "\nReturns just the TZDB version (e.g. &quot;2013a&quot;) of the source data.\n"
   example: []
   syntax:
     content: public string TzdbVersion { get; }
@@ -769,7 +769,7 @@ items:
   - NodaTime
   namespace: NodaTime.TimeZones
   summary: "\nValidates that the data within this source is consistent with itself.\n"
-  remarks: "\nSource data is not validated automatically when it's loaded, but any source\nloaded from data produced by ZoneInfoCompiler (including the data shipped with Noda Time)\nwill already have been validated when it was originally produced. This method should\nonly normally be used if you have data from a source you're unsure of.\n"
+  remarks: "\nSource data is not validated automatically when it&apos;s loaded, but any source\nloaded from data produced by ZoneInfoCompiler (including the data shipped with Noda Time)\nwill already have been validated when it was originally produced. This method should\nonly normally be used if you have data from a source you&apos;re unsure of.\n"
   example: []
   syntax:
     content: public void Validate()

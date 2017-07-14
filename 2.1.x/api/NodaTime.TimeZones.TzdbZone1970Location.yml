@@ -29,7 +29,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones
-  summary: "\nA location entry generated from the \"zone1970.tab\" file in a TZDB release. This can be used to provide\nusers with a choice of time zone, although it is not internationalized. This is equivalent to\n<xref href=\"NodaTime.TimeZones.TzdbZoneLocation\" data-throw-if-not-resolved=\"false\"></xref>, except that multiple countries may be represented.\n"
+  summary: "\nA location entry generated from the &quot;zone1970.tab&quot; file in a TZDB release. This can be used to provide\nusers with a choice of time zone, although it is not internationalized. This is equivalent to\n<xref href=\"NodaTime.TimeZones.TzdbZoneLocation\" data-throw-if-not-resolved=\"false\"></xref>, except that multiple countries may be represented.\n"
   example: []
   syntax:
     content: public sealed class TzdbZone1970Location
@@ -153,7 +153,7 @@ items:
   - NodaTime
   namespace: NodaTime.TimeZones
   summary: "\nGets the list of countries associated with this location.\n"
-  remarks: "\nThe list is immutable, and will always contain at least one entry. The list is\nin the order specified in \"zone1970.tab\", so the first entry is always the\ncountry containing the position indicated by the latitude and longitude, and\nis the most populous country in the list. No entry in this list is ever null.\n"
+  remarks: "\nThe list is immutable, and will always contain at least one entry. The list is\nin the order specified in &quot;zone1970.tab&quot;, so the first entry is always the\ncountry containing the position indicated by the latitude and longitude, and\nis the most populous country in the list. No entry in this list is ever null.\n"
   example: []
   syntax:
     content: public IList<TzdbZone1970Location.Country> Countries { get; }

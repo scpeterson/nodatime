@@ -268,7 +268,7 @@ items:
     return:
       type: NodaTime.TimeZones.BclDateTimeZone
       description: >-
-        A <xref href="NodaTime.TimeZones.BclDateTimeZone" data-throw-if-not-resolved="false"></xref> wrapping the "local" (system) time zone as returned by
+        A <xref href="NodaTime.TimeZones.BclDateTimeZone" data-throw-if-not-resolved="false"></xref> wrapping the &quot;local&quot; (system) time zone as returned by
 
         <xref href="System.TimeZoneInfo.Local" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function ForSystemDefault As BclDateTimeZone

@@ -260,11 +260,7 @@ items:
     return:
       type: System.Boolean
       description: >-
-        <pre>
-
-        <code>true</code>
-
-        </pre> if the current value occurs within the given year;
+        <pre><code>true</code></pre> if the current value occurs within the given year;
 
         <pre><code>false</code></pre> otherwise.
     content.vb: Public Function IsValidYear(year As Integer) As Boolean

@@ -84,7 +84,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nReturns an invariant local date pattern which is ISO-8601 compatible.\nThis corresponds to the text pattern \"yyyy'-'MM'-'dd\".\n"
+  summary: "\nReturns an invariant local date pattern which is ISO-8601 compatible.\nThis corresponds to the text pattern &quot;yyyy&apos;-&apos;MM&apos;-&apos;dd&quot;.\n"
   example: []
   syntax:
     content: public static LocalDatePattern Iso { get; }
@@ -123,7 +123,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nReturns an invariant local date pattern which is ISO-8601 compatible.\nThis corresponds to the text pattern \"yyyy'-'MM'-'dd\".\n"
+  summary: "\nReturns an invariant local date pattern which is ISO-8601 compatible.\nThis corresponds to the text pattern &quot;yyyy&apos;-&apos;MM&apos;-&apos;dd&quot;.\n"
   example: []
   syntax:
     content: >-
@@ -432,7 +432,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nCreates a pattern for the given pattern text in the current thread's current culture.\n"
+  summary: "\nCreates a pattern for the given pattern text in the current thread&apos;s current culture.\n"
   remarks: "\nSee the user guide for the available pattern text options. Note that the current culture\nis captured at the time this method is called - it is not captured at the point of parsing\nor formatting values.\n"
   example: []
   syntax:

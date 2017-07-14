@@ -87,7 +87,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nReturns an zoned local date/time pattern based on ISO-8601 (down to the second) including offset from UTC and zone ID.\nThe calendar system is not formatted as part of this pattern, and it cannot be used for parsing.\nIt corresponds to a custom pattern of \"yyyy'-'MM'-'dd'T'HH':'mm':'ss z '('o&lt;g&gt;')'\" and is available\nas the 'G' standard pattern.\n"
+  summary: "\nReturns an zoned local date/time pattern based on ISO-8601 (down to the second) including offset from UTC and zone ID.\nThe calendar system is not formatted as part of this pattern, and it cannot be used for parsing.\nIt corresponds to a custom pattern of &quot;yyyy&apos;-&apos;MM&apos;-&apos;dd&apos;T&apos;HH&apos;:&apos;mm&apos;:&apos;ss z &apos;(&apos;o&lt;g>&apos;)&apos;&quot; and is available\nas the &apos;G&apos; standard pattern.\n"
   example: []
   syntax:
     content: public static ZonedDateTimePattern GeneralFormatOnlyIsoPattern { get; }
@@ -126,7 +126,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nReturns an invariant zoned date/time pattern based on ISO-8601 (down to the tick) including offset from UTC and zone ID.\nThe calendar system is not formatted as part of this pattern, and it cannot be used for parsing.\nIt corresponds to a custom pattern of \"yyyy'-'MM'-'dd'T'HH':'mm':'ss;FFFFFFF z '('o&lt;g&gt;')'\" and is available\nas the 'F' standard pattern.\n"
+  summary: "\nReturns an invariant zoned date/time pattern based on ISO-8601 (down to the tick) including offset from UTC and zone ID.\nThe calendar system is not formatted as part of this pattern, and it cannot be used for parsing.\nIt corresponds to a custom pattern of &quot;yyyy&apos;-&apos;MM&apos;-&apos;dd&apos;T&apos;HH&apos;:&apos;mm&apos;:&apos;ss;FFFFFFF z &apos;(&apos;o&lt;g>&apos;)&apos;&quot; and is available\nas the &apos;F&apos; standard pattern.\n"
   example: []
   syntax:
     content: public static ZonedDateTimePattern ExtendedFormatOnlyIsoPattern { get; }
@@ -239,7 +239,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nReturns the resolver which is used to map local date/times to zoned date/times,\nhandling skipped and ambiguous times appropriately (where the offset isn't specified in the pattern).\n"
+  summary: "\nReturns the resolver which is used to map local date/times to zoned date/times,\nhandling skipped and ambiguous times appropriately (where the offset isn&apos;t specified in the pattern).\n"
   example: []
   syntax:
     content: public ZoneLocalMappingResolver Resolver { get; }
@@ -455,7 +455,7 @@ items:
   - NodaTime
   namespace: NodaTime.Text
   summary: "\nCreates a pattern for the given pattern text and time zone provider, using a strict resolver, the invariant\nculture, and a default template value of midnight January 1st 2000 UTC.\n"
-  remarks: "\nThe resolver is only used if the pattern text doesn't include an offset.\nIf <span class=\"paramref\">zoneProvider</span> is null, the resulting pattern can be used for formatting\nbut not parsing.\n"
+  remarks: "\nThe resolver is only used if the pattern text doesn&apos;t include an offset.\nIf <span class=\"paramref\">zoneProvider</span> is null, the resulting pattern can be used for formatting\nbut not parsing.\n"
   example: []
   syntax:
     content: public static ZonedDateTimePattern CreateWithInvariantCulture(string patternText, IDateTimeZoneProvider zoneProvider)

@@ -90,7 +90,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nGets an zoned local date/time pattern based on ISO-8601 (down to the second) including offset from UTC and zone ID.\nIt corresponds to a custom pattern of \"uuuu'-'MM'-'dd'T'HH':'mm':'ss z '('o&lt;g&gt;')'\" and is available\nas the 'G' standard pattern.\n"
+  summary: "\nGets an zoned local date/time pattern based on ISO-8601 (down to the second) including offset from UTC and zone ID.\nIt corresponds to a custom pattern of &quot;uuuu&apos;-&apos;MM&apos;-&apos;dd&apos;T&apos;HH&apos;:&apos;mm&apos;:&apos;ss z &apos;(&apos;o&lt;g>&apos;)&apos;&quot; and is available\nas the &apos;G&apos; standard pattern.\n"
   remarks: "\nThe calendar system is not formatted as part of this pattern, and it cannot be used for parsing as no time zone\nprovider is included. Call <xref href=\"NodaTime.Text.ZonedDateTimePattern.WithZoneProvider(NodaTime.IDateTimeZoneProvider)\" data-throw-if-not-resolved=\"false\"></xref> on the value of this property to obtain a\npattern which can be used for parsing.\n"
   example: []
   syntax:
@@ -131,7 +131,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nReturns an invariant zoned date/time pattern based on ISO-8601 (down to the nanosecond) including offset from UTC and zone ID.\nIt corresponds to a custom pattern of \"uuuu'-'MM'-'dd'T'HH':'mm':'ss;FFFFFFFFF z '('o&lt;g&gt;')'\" and is available\nas the 'F' standard pattern.\n"
+  summary: "\nReturns an invariant zoned date/time pattern based on ISO-8601 (down to the nanosecond) including offset from UTC and zone ID.\nIt corresponds to a custom pattern of &quot;uuuu&apos;-&apos;MM&apos;-&apos;dd&apos;T&apos;HH&apos;:&apos;mm&apos;:&apos;ss;FFFFFFFFF z &apos;(&apos;o&lt;g>&apos;)&apos;&quot; and is available\nas the &apos;F&apos; standard pattern.\n"
   remarks: "\nThe calendar system is not formatted as part of this pattern, and it cannot be used for parsing as no time zone\nprovider is included. Call <xref href=\"NodaTime.Text.ZonedDateTimePattern.WithZoneProvider(NodaTime.IDateTimeZoneProvider)\" data-throw-if-not-resolved=\"false\"></xref> on the value of this property to obtain a\npattern which can be used for parsing.\n"
   example: []
   syntax:
@@ -248,7 +248,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nGets the resolver which is used to map local date/times to zoned date/times,\nhandling skipped and ambiguous times appropriately (where the offset isn't specified in the pattern).\n"
+  summary: "\nGets the resolver which is used to map local date/times to zoned date/times,\nhandling skipped and ambiguous times appropriately (where the offset isn&apos;t specified in the pattern).\n"
   example: []
   syntax:
     content: public ZoneLocalMappingResolver Resolver { get; }
@@ -513,7 +513,7 @@ items:
   - NodaTime
   namespace: NodaTime.Text
   summary: "\nCreates a pattern for the given pattern text and time zone provider, using a strict resolver, the invariant\nculture, and a default template value of midnight January 1st 2000 UTC.\n"
-  remarks: "\nThe resolver is only used if the pattern text doesn't include an offset.\nIf <span class=\"paramref\">zoneProvider</span> is null, the resulting pattern can be used for formatting\nbut not parsing.\n"
+  remarks: "\nThe resolver is only used if the pattern text doesn&apos;t include an offset.\nIf <span class=\"paramref\">zoneProvider</span> is null, the resulting pattern can be used for formatting\nbut not parsing.\n"
   example: []
   syntax:
     content: public static ZonedDateTimePattern CreateWithInvariantCulture(string patternText, IDateTimeZoneProvider zoneProvider)
@@ -558,7 +558,7 @@ items:
   - NodaTime
   namespace: NodaTime.Text
   summary: "\nCreates a pattern for the given pattern text and time zone provider, using a strict resolver, the current\nculture, and a default template value of midnight January 1st 2000 UTC.\n"
-  remarks: "\nThe resolver is only used if the pattern text doesn't include an offset.\nIf <span class=\"paramref\">zoneProvider</span> is null, the resulting pattern can be used for formatting\nbut not parsing. Note that the current culture is captured at the time this method is called\n- it is not captured at the point of parsing or formatting values.\n"
+  remarks: "\nThe resolver is only used if the pattern text doesn&apos;t include an offset.\nIf <span class=\"paramref\">zoneProvider</span> is null, the resulting pattern can be used for formatting\nbut not parsing. Note that the current culture is captured at the time this method is called\n- it is not captured at the point of parsing or formatting values.\n"
   example: []
   syntax:
     content: public static ZonedDateTimePattern CreateWithCurrentCulture(string patternText, IDateTimeZoneProvider zoneProvider)
@@ -799,7 +799,7 @@ items:
   - NodaTime
   namespace: NodaTime.Text
   summary: "\nCreates a pattern like this one, but with the template value modified to use\nthe specified calendar system.\n"
-  remarks: "\n<p>\nCare should be taken in two (relatively rare) scenarios. Although the default template value\nis supported by all Noda Time calendar systems, if a pattern is created with a different\ntemplate value and then this method is called with a calendar system which doesn't support that\ndate, an exception will be thrown. Additionally, if the pattern only specifies some date fields,\nit's possible that the new template value will not be suitable for all values.\n</p>\n"
+  remarks: "\n<p>\nCare should be taken in two (relatively rare) scenarios. Although the default template value\nis supported by all Noda Time calendar systems, if a pattern is created with a different\ntemplate value and then this method is called with a calendar system which doesn&apos;t support that\ndate, an exception will be thrown. Additionally, if the pattern only specifies some date fields,\nit&apos;s possible that the new template value will not be suitable for all values.\n</p>\n"
   example: []
   syntax:
     content: public ZonedDateTimePattern WithCalendar(CalendarSystem calendar)

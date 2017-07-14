@@ -29,7 +29,7 @@ items:
   - NodaTime
   namespace: NodaTime.TimeZones
   summary: "\nAn <xref href=\"NodaTime.TimeZones.IDateTimeZoneSource\" data-throw-if-not-resolved=\"false\"></xref> implementation which uses <xref href=\"System.TimeZoneInfo\" data-throw-if-not-resolved=\"false\"></xref> from\n.NET 3.5 and later.\n"
-  remarks: "\nAll calls to <xref href=\"NodaTime.TimeZones.BclDateTimeZoneSource.ForId(System.String)\" data-throw-if-not-resolved=\"false\"></xref> return instances of <xref href=\"NodaTime.TimeZones.BclDateTimeZone\" data-throw-if-not-resolved=\"false\"></xref>, including for fixed-offset IDs\n(i.e. \"UTC\" and \"UTC+/-Offset\").\n"
+  remarks: "\nAll calls to <xref href=\"NodaTime.TimeZones.BclDateTimeZoneSource.ForId(System.String)\" data-throw-if-not-resolved=\"false\"></xref> return instances of <xref href=\"NodaTime.TimeZones.BclDateTimeZone\" data-throw-if-not-resolved=\"false\"></xref>, including for fixed-offset IDs\n(i.e. &quot;UTC&quot; and &quot;UTC+/-Offset&quot;).\n"
   example: []
   syntax:
     content: 'public sealed class BclDateTimeZoneSource : IDateTimeZoneSource'
@@ -208,7 +208,7 @@ items:
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: The given zone doesn't exist
+    description: The given zone doesn&apos;t exist
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -235,7 +235,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones
-  summary: "\nMaps the BCL ID to \"our\" ID as an identity projection.\n"
+  summary: "\nMaps the BCL ID to &quot;our&quot; ID as an identity projection.\n"
   example: []
   syntax:
     content: public string MapTimeZoneId(TimeZoneInfo timeZone)

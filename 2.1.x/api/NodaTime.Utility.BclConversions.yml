@@ -25,7 +25,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Utility
-  summary: "\nConversion methods which don't naturally fit into any other types - for example, for\nenums which can't specify any other code. In most cases, conversions to and from BCL types\nare provided within the type itself - such as <xref href=\"NodaTime.LocalDateTime.ToDateTimeUnspecified\" data-throw-if-not-resolved=\"false\"></xref>\nand <xref href=\"NodaTime.LocalDateTime.FromDateTime(System.DateTime)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  summary: "\nConversion methods which don&apos;t naturally fit into any other types - for example, for\nenums which can&apos;t specify any other code. In most cases, conversions to and from BCL types\nare provided within the type itself - such as <xref href=\"NodaTime.LocalDateTime.ToDateTimeUnspecified\" data-throw-if-not-resolved=\"false\"></xref>\nand <xref href=\"NodaTime.LocalDateTime.FromDateTime(System.DateTime)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   remarks: "\nThese methods are also available in the form of extension methods in the <code>NodaTime.Extensions</code> namespace.\n"
   example: []
   syntax:

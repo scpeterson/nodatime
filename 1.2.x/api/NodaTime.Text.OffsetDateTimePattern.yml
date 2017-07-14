@@ -83,7 +83,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nReturns an invariant offset date/time pattern based on ISO-8601 (down to the second), including offset from UTC.\nThe calendar system is not parsed or formatted as part of this pattern. It corresponds to a custom pattern of\n\"yyyy'-'MM'-'dd'T'HH':'mm':'sso&lt;G&gt;\". This pattern is available as the \"G\"\nstandard pattern (even though it is invariant).\n"
+  summary: "\nReturns an invariant offset date/time pattern based on ISO-8601 (down to the second), including offset from UTC.\nThe calendar system is not parsed or formatted as part of this pattern. It corresponds to a custom pattern of\n&quot;yyyy&apos;-&apos;MM&apos;-&apos;dd&apos;T&apos;HH&apos;:&apos;mm&apos;:&apos;sso&lt;G>&quot;. This pattern is available as the &quot;G&quot;\nstandard pattern (even though it is invariant).\n"
   example: []
   syntax:
     content: public static OffsetDateTimePattern GeneralIsoPattern { get; }
@@ -122,7 +122,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nReturns an invariant offset date/time pattern based on ISO-8601 (down to the tick), including offset from UTC.\nThe calendar system is not parsed or formatted as part of this pattern. It corresponds to a custom pattern of\n\"yyyy'-'MM'-'dd'T'HH':'mm':'ss;FFFFFFFo&lt;G&gt;\". This will round-trip any values\nin the ISO calendar, and is available as the \"o\" standard pattern.\n"
+  summary: "\nReturns an invariant offset date/time pattern based on ISO-8601 (down to the tick), including offset from UTC.\nThe calendar system is not parsed or formatted as part of this pattern. It corresponds to a custom pattern of\n&quot;yyyy&apos;-&apos;MM&apos;-&apos;dd&apos;T&apos;HH&apos;:&apos;mm&apos;:&apos;ss;FFFFFFFo&lt;G>&quot;. This will round-trip any values\nin the ISO calendar, and is available as the &quot;o&quot; standard pattern.\n"
   example: []
   syntax:
     content: public static OffsetDateTimePattern ExtendedIsoPattern { get; }
@@ -161,7 +161,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nReturns an invariant offset date/time pattern based on ISO-8601 (down to the tick)\nincluding offset from UTC and calendar ID. It corresponds to a custom pattern of\n\"yyyy'-'MM'-'dd'T'HH':'mm':'ss;FFFFFFFo&lt;G&gt; '('c')'\". This will round-trip any value in any calendar,\nand is available as the \"r\" standard pattern.\n"
+  summary: "\nReturns an invariant offset date/time pattern based on ISO-8601 (down to the tick)\nincluding offset from UTC and calendar ID. It corresponds to a custom pattern of\n&quot;yyyy&apos;-&apos;MM&apos;-&apos;dd&apos;T&apos;HH&apos;:&apos;mm&apos;:&apos;ss;FFFFFFFo&lt;G> &apos;(&apos;c&apos;)&apos;&quot;. This will round-trip any value in any calendar,\nand is available as the &quot;r&quot; standard pattern.\n"
   example: []
   syntax:
     content: public static OffsetDateTimePattern FullRoundtripPattern { get; }

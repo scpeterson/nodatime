@@ -32,7 +32,7 @@ items:
   - NodaTime
   namespace: NodaTime.TimeZones
   summary: "\nProvides an implementation of a <xref href=\"NodaTime.TimeZones.IDateTimeZoneSource\" data-throw-if-not-resolved=\"false\"></xref> that looks\nfor its time zone definitions from a named resource in an assembly.\n"
-  remarks: "\nAll calls to <xref href=\"NodaTime.TimeZones.TzdbDateTimeZoneSource.ForId(System.String)\" data-throw-if-not-resolved=\"false\"></xref> for fixed-offset IDs advertised by the source (i.e. \"UTC\" and \"UTC+/-Offset\")\nwill return zones equal to those returned by <xref href=\"NodaTime.DateTimeZone.ForOffset(NodaTime.Offset)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  remarks: "\nAll calls to <xref href=\"NodaTime.TimeZones.TzdbDateTimeZoneSource.ForId(System.String)\" data-throw-if-not-resolved=\"false\"></xref> for fixed-offset IDs advertised by the source (i.e. &quot;UTC&quot; and &quot;UTC+/-Offset&quot;)\nwill return zones equal to those returned by <xref href=\"NodaTime.DateTimeZone.ForOffset(NodaTime.Offset)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
     content: 'public sealed class TzdbDateTimeZoneSource : IDateTimeZoneSource'

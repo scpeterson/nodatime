@@ -85,7 +85,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nGets an invariant local date pattern which is ISO-8601 compatible.\nThis corresponds to the text pattern \"uuuu'-'MM'-'dd\".\n"
+  summary: "\nGets an invariant local date pattern which is ISO-8601 compatible.\nThis corresponds to the text pattern &quot;uuuu&apos;-&apos;MM&apos;-&apos;dd&quot;.\n"
   example: []
   syntax:
     content: public static LocalDatePattern Iso { get; }
@@ -429,7 +429,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nCreates a pattern for the given pattern text in the current thread's current culture.\n"
+  summary: "\nCreates a pattern for the given pattern text in the current thread&apos;s current culture.\n"
   remarks: "\nSee the user guide for the available pattern text options. Note that the current culture\nis captured at the time this method is called - it is not captured at the point of parsing\nor formatting values.\n"
   example: []
   syntax:
@@ -600,7 +600,7 @@ items:
   - NodaTime
   namespace: NodaTime.Text
   summary: "\nCreates a pattern like this one, but with the template value modified to use\nthe specified calendar system.\n"
-  remarks: "\n<p>\nCare should be taken in two (relatively rare) scenarios. Although the default template value\nis supported by all Noda Time calendar systems, if a pattern is created with a different\ntemplate value and then this method is called with a calendar system which doesn't support that\ndate, an exception will be thrown. Additionally, if the pattern only specifies some date fields,\nit's possible that the new template value will not be suitable for all values.\n</p>\n"
+  remarks: "\n<p>\nCare should be taken in two (relatively rare) scenarios. Although the default template value\nis supported by all Noda Time calendar systems, if a pattern is created with a different\ntemplate value and then this method is called with a calendar system which doesn&apos;t support that\ndate, an exception will be thrown. Additionally, if the pattern only specifies some date fields,\nit&apos;s possible that the new template value will not be suitable for all values.\n</p>\n"
   example: []
   syntax:
     content: public LocalDatePattern WithCalendar(CalendarSystem calendar)

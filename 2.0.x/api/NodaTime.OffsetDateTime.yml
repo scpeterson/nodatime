@@ -80,7 +80,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nA local date and time in a particular calendar system, combined with an offset from UTC. This is\nbroadly similar to <xref href=\"System.DateTimeOffset\" data-throw-if-not-resolved=\"false\"></xref> in the BCL.\n"
-  remarks: "\n<p>\nA value of this type unambiguously represents both a local time and an instant on the timeline,\nbut does not have a well-defined time zone. This means you cannot reliably know what the local\ntime would be five minutes later, for example. While this doesn't sound terribly useful, it's very common\nin text representations.\n</p>\n"
+  remarks: "\n<p>\nA value of this type unambiguously represents both a local time and an instant on the timeline,\nbut does not have a well-defined time zone. This means you cannot reliably know what the local\ntime would be five minutes later, for example. While this doesn&apos;t sound terribly useful, it&apos;s very common\nin text representations.\n</p>\n"
   example: []
   syntax:
     content: >-
@@ -212,7 +212,7 @@ items:
   namespace: NodaTime
   summary: Gets the year of this offset date and time.
   remarks: >-
-    This returns the "absolute year", so, for the ISO calendar,
+    This returns the &quot;absolute year&quot;, so, for the ISO calendar,
 
     a value of 0 means 1 BC, for example.
   example: []
@@ -1057,7 +1057,7 @@ items:
       description: >-
         A DateTimeOffset with the same local date/time and offset as this. The <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> part of
 
-        the result always has a "kind" of Unspecified.
+        the result always has a &quot;kind&quot; of Unspecified.
     content.vb: Public Function ToDateTimeOffset As DateTimeOffset
   overload: NodaTime.OffsetDateTime.ToDateTimeOffset*
   exceptions:
@@ -1425,7 +1425,7 @@ items:
     content: public override string ToString()
     return:
       type: System.String
-      description: "\nThe value of the current instance in the default format pattern (\"G\"), using the current thread's\nculture to obtain a format provider.\n"
+      description: "\nThe value of the current instance in the default format pattern (&quot;G&quot;), using the current thread&apos;s\nculture to obtain a format provider.\n"
     content.vb: Public Overrides Function ToString As String
   overridden: System.ValueType.ToString
   overload: NodaTime.OffsetDateTime.ToString*
@@ -1467,13 +1467,13 @@ items:
       description: >
         The <xref href="System.String" data-throw-if-not-resolved="false"></xref> specifying the pattern to use,
 
-        or null to use the default format pattern ("G").
+        or null to use the default format pattern (&quot;G&quot;).
     - id: formatProvider
       type: System.IFormatProvider
       description: >
         The <xref href="System.IFormatProvider" data-throw-if-not-resolved="false"></xref> to use when formatting the value,
 
-        or null to use the current thread's culture to obtain a format provider.
+        or null to use the current thread&apos;s culture to obtain a format provider.
     return:
       type: System.String
       description: "\nA <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> containing the value of the current instance in the specified format.\n"
@@ -1885,7 +1885,7 @@ items:
       description: The duration to subtract.
     return:
       type: NodaTime.OffsetDateTime
-      description: A new value with the time "rewound" by the given duration, in the same calendar system and with the same offset.
+      description: A new value with the time &quot;rewound&quot; by the given duration, in the same calendar system and with the same offset.
     content.vb: Public Shared Function Subtract(offsetDateTime As OffsetDateTime, duration As Duration) As OffsetDateTime
   overload: NodaTime.OffsetDateTime.Subtract*
   modifiers.csharp:
@@ -1969,7 +1969,7 @@ items:
       description: The duration to subtract.
     return:
       type: NodaTime.OffsetDateTime
-      description: A new value with the time "rewound" by the given duration, in the same calendar system and with the same offset.
+      description: A new value with the time &quot;rewound&quot; by the given duration, in the same calendar system and with the same offset.
     content.vb: Public Shared Operator -(offsetDateTime As OffsetDateTime, duration As Duration) As OffsetDateTime
   overload: NodaTime.OffsetDateTime.op_Subtraction*
   modifiers.csharp:

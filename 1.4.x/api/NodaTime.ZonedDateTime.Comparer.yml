@@ -27,7 +27,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nBase class for <xref href=\"NodaTime.ZonedDateTime\" data-throw-if-not-resolved=\"false\"></xref> comparers.\n"
-  remarks: "\n<p>Use the static properties of this class to obtain instances.</p>\n<p>For the curious: this class only exists so that in the future, it can expose more functionality - probably\nimplementing <xref href=\"System.Collections.Generic.IEqualityComparer%601\" data-throw-if-not-resolved=\"false\"></xref>. If we simply provided properties on ZonedDateTime of type\n<xref href=\"System.Collections.Generic.IComparer%601\" data-throw-if-not-resolved=\"false\"></xref> we'd have no backward-compatible way of adding to the set of implemented interfaces.</p>\n"
+  remarks: "\n<p>Use the static properties of this class to obtain instances.</p>\n<p>For the curious: this class only exists so that in the future, it can expose more functionality - probably\nimplementing <xref href=\"System.Collections.Generic.IEqualityComparer%601\" data-throw-if-not-resolved=\"false\"></xref>. If we simply provided properties on ZonedDateTime of type\n<xref href=\"System.Collections.Generic.IComparer%601\" data-throw-if-not-resolved=\"false\"></xref> we&apos;d have no backward-compatible way of adding to the set of implemented interfaces.</p>\n"
   example: []
   syntax:
     content: 'public abstract class Comparer : IComparer<ZonedDateTime>'

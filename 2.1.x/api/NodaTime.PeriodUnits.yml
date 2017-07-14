@@ -40,7 +40,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nThe units within a <xref href=\"NodaTime.Period\" data-throw-if-not-resolved=\"false\"></xref>. When a period is created to find the difference between two local values,\nthe caller may specify which units are required - for example, you can ask for the difference between two dates\nin \"years and weeks\". Units are always applied largest-first in arithmetic.\n"
+  summary: "\nThe units within a <xref href=\"NodaTime.Period\" data-throw-if-not-resolved=\"false\"></xref>. When a period is created to find the difference between two local values,\nthe caller may specify which units are required - for example, you can ask for the difference between two dates\nin &quot;years and weeks&quot;. Units are always applied largest-first in arithmetic.\n"
   example: []
   syntax:
     content: >-

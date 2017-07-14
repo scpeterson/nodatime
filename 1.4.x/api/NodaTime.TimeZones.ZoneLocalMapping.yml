@@ -31,7 +31,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones
-  summary: "\nThe result of mapping a <xref href=\"NodaTime.LocalDateTime\" data-throw-if-not-resolved=\"false\"></xref> within a time zone, i.e. finding out\nat what \"global\" time the \"local\" time occurred.\n"
+  summary: "\nThe result of mapping a <xref href=\"NodaTime.LocalDateTime\" data-throw-if-not-resolved=\"false\"></xref> within a time zone, i.e. finding out\nat what &quot;global&quot; time the &quot;local&quot; time occurred.\n"
   remarks: "\n<p>\nThis class is used as the return type of <xref href=\"NodaTime.DateTimeZone.MapLocal(NodaTime.LocalDateTime)\" data-throw-if-not-resolved=\"false\"></xref>. It allows for\nfinely-grained handling of the three possible results:\n</p>\n<ul><li>Unambiguous mappingThe local time occurs exactly once in the target time zone.</li><li>Ambiguous mapping\n      The local time occurs twice in the target time zone, due to the offset from UTC\n      changing. This usually occurs for an autumnal daylight saving transition, where the clocks\n      are put back by an hour. If the clocks change from 2am to 1am for example, then 1:30am occurs\n      twice - once before the transition and once afterwards.\n</li><li>Impossible mapping\n  The local time does not occur at all in the target time zone, due to the offset from UTC\n  changing. This usually occurs for a vernal (spring-time) daylight saving transition, where the clocks\n  are put forward by an hour. If the clocks change from 1am to 2am for example, then 1:30am is\n  skipped entirely.\n</li></ul>\n"
   example: []
   syntax:

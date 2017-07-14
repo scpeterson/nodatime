@@ -35,7 +35,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nAn interval between two dates.\n"
-  remarks: "\n<p>\nThe two dates must be in the same calendar, and the end date must not be earlier than the start date.\n</p>\n<p>\nThe end date is deemed to be part of the range, as this matches many real life uses of\ndate ranges. For example, if someone says \"I'm going to be on holiday from Monday to Friday,\" they\nusually mean that Friday is part of their holiday.\n</p>\n"
+  remarks: "\n<p>\nThe two dates must be in the same calendar, and the end date must not be earlier than the start date.\n</p>\n<p>\nThe end date is deemed to be part of the range, as this matches many real life uses of\ndate ranges. For example, if someone says &quot;I&apos;m going to be on holiday from Monday to Friday,&quot; they\nusually mean that Friday is part of their holiday.\n</p>\n"
   example: []
   syntax:
     content: 'public sealed class DateInterval : IEquatable<DateInterval>'
@@ -503,7 +503,7 @@ items:
     content: public override string ToString()
     return:
       type: System.String
-      description: "\nA string representation of this interval, as <code>[start, end]</code>,\nwhere \"start\" and \"end\" are the dates formatted using an ISO-8601 compatible pattern.\n"
+      description: "\nA string representation of this interval, as <code>[start, end]</code>,\nwhere &quot;start&quot; and &quot;end&quot; are the dates formatted using an ISO-8601 compatible pattern.\n"
     content.vb: Public Overrides Function ToString As String
   overridden: System.Object.ToString
   overload: NodaTime.DateInterval.ToString*

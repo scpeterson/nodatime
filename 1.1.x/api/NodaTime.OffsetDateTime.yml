@@ -58,7 +58,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nA local date and time in a particular calendar system, combined with an offset from UTC. This is\nbroadly similar to <xref href=\"System.DateTimeOffset\" data-throw-if-not-resolved=\"false\"></xref> in the BCL.\n"
-  remarks: "\n<p>\nA value of this type unambiguously represents both a local time and an instant on the timeline,\nbut does not have a well-defined time zone. This means you cannot reliably know what the local\ntime would be five minutes later, for example. While this doesn't sound terribly useful, it's very common\nin text representations.\n</p>\n<p>\nCurrently there is no real text handling support for this type.\n</p>\n"
+  remarks: "\n<p>\nA value of this type unambiguously represents both a local time and an instant on the timeline,\nbut does not have a well-defined time zone. This means you cannot reliably know what the local\ntime would be five minutes later, for example. While this doesn&apos;t sound terribly useful, it&apos;s very common\nin text representations.\n</p>\n<p>\nCurrently there is no real text handling support for this type.\n</p>\n"
   example: []
   syntax:
     content: 'public struct OffsetDateTime : IEquatable<OffsetDateTime>'
@@ -177,7 +177,7 @@ items:
   namespace: NodaTime
   summary: Gets the year of this offset date and time.
   remarks: >-
-    This returns the "absolute year", so, for the ISO calendar,
+    This returns the &quot;absolute year&quot;, so, for the ISO calendar,
 
     a value of 0 means 1 BC, for example.
   example: []
@@ -302,7 +302,7 @@ items:
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
-    description: The underlying calendar doesn't use ISO days of the week.
+    description: The underlying calendar doesn&apos;t use ISO days of the week.
   seealso:
   - linkId: NodaTime.OffsetDateTime.DayOfWeek
     commentId: P:NodaTime.OffsetDateTime.DayOfWeek
@@ -375,7 +375,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nGets the \"week year\" of this offset date and time.\n"
+  summary: "\nGets the &quot;week year&quot; of this offset date and time.\n"
   remarks: "\n<p>\nThe WeekYear is the year that matches with the <xref href=\"NodaTime.OffsetDateTime.WeekOfWeekYear\" data-throw-if-not-resolved=\"false\"></xref> field.\nIn the standard ISO8601 week algorithm, the first week of the year\nis that in which at least 4 days are in the year. As a result of this\ndefinition, day 1 of the first week may be in the previous year.\nThe WeekYear allows you to query the effective year for that day.\n</p>\n<p>\nFor example, January 1st 2011 was a Saturday, so only two days of that week\n(Saturday and Sunday) were in 2011. Therefore January 1st is part of\nweek 52 of WeekYear 2010. Conversely, December 31st 2012 is a Monday,\nso is part of week 1 of WeekYear 2013.\n</p>\n"
   example: []
   syntax:
@@ -1086,7 +1086,7 @@ items:
       description: >-
         A DateTimeOffset with the same local date/time and offset as this. The <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> part of
 
-        the result always has a "kind" of Unspecified.
+        the result always has a &quot;kind&quot; of Unspecified.
     content.vb: Public Function ToDateTimeOffset As DateTimeOffset
   overload: NodaTime.OffsetDateTime.ToDateTimeOffset*
   modifiers.csharp:
@@ -1278,7 +1278,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nCurrently returns a string representation of this value according to ISO-8601,\nextended where necessary to include fractional seconds, and using a colon within the offset\nwhere hour/minute or minute/second separators are required.\n"
-  remarks: "\n<p>\nAn offset of 0 is represented by \"Z\", otherwise the offset is the number of hours\nand optionally minutes, e.g. \"01\" or \"01:30\".\n</p>\n<p>\nThis representation is a temporary measure until full support for parsing and formatting\n<xref href=\"NodaTime.OffsetDateTime\" data-throw-if-not-resolved=\"false\"></xref> values is implemented. It is provided in order to make diagnostics\nsimpler, but is likely to be changed in future releases.\n</p>\n"
+  remarks: "\n<p>\nAn offset of 0 is represented by &quot;Z&quot;, otherwise the offset is the number of hours\nand optionally minutes, e.g. &quot;01&quot; or &quot;01:30&quot;.\n</p>\n<p>\nThis representation is a temporary measure until full support for parsing and formatting\n<xref href=\"NodaTime.OffsetDateTime\" data-throw-if-not-resolved=\"false\"></xref> values is implemented. It is provided in order to make diagnostics\nsimpler, but is likely to be changed in future releases.\n</p>\n"
   example: []
   syntax:
     content: public override string ToString()

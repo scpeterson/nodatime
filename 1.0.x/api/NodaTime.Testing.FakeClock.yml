@@ -38,7 +38,7 @@ items:
   - NodaTime.Testing
   namespace: NodaTime.Testing
   summary: "\nClock which can be constructed with an initial instant, and then advanced programmatically.\nThis class is designed to be used when testing classes which take an <xref href=\"NodaTime.IClock\" data-throw-if-not-resolved=\"false\"></xref> as a dependency.\n"
-  remarks: "\nThis class is somewhere between a fake and a stub, depending on how it's used - if it's set to\n<xref href=\"NodaTime.Testing.FakeClock.AutoAdvance\" data-throw-if-not-resolved=\"false\"></xref> then time will pass, but in a pretty odd way (i.e. dependent on how\noften it's consulted).\n"
+  remarks: "\nThis class is somewhere between a fake and a stub, depending on how it&apos;s used - if it&apos;s set to\n<xref href=\"NodaTime.Testing.FakeClock.AutoAdvance\" data-throw-if-not-resolved=\"false\"></xref> then time will pass, but in a pretty odd way (i.e. dependent on how\noften it&apos;s consulted).\n"
   example: []
   syntax:
     content: 'public sealed class FakeClock : IClock'
@@ -531,7 +531,7 @@ items:
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing
-  summary: "\nReturns the \"current time\" for this clock. Unlike a normal clock, this\nproperty will return the same value from repeated calls until one of the methods\nto change the time is called.\n"
+  summary: "\nReturns the &quot;current time&quot; for this clock. Unlike a normal clock, this\nproperty will return the same value from repeated calls until one of the methods\nto change the time is called.\n"
   example: []
   syntax:
     content: public Instant Now { get; }
@@ -571,7 +571,7 @@ items:
   - NodaTime.Testing
   namespace: NodaTime.Testing
   summary: "\nAmount of time to advance the clock by each time <xref href=\"NodaTime.Testing.FakeClock.Now\" data-throw-if-not-resolved=\"false\"></xref> is fetched.\n"
-  remarks: "\nThis defaults to zero, in which case the clock doesn't change other than by calls\nto <xref href=\"NodaTime.Testing.FakeClock.Reset(NodaTime.Instant)\" data-throw-if-not-resolved=\"false\"></xref>. The value may be negative, to simulate particularly odd\nsystem clock effects.\n"
+  remarks: "\nThis defaults to zero, in which case the clock doesn&apos;t change other than by calls\nto <xref href=\"NodaTime.Testing.FakeClock.Reset(NodaTime.Instant)\" data-throw-if-not-resolved=\"false\"></xref>. The value may be negative, to simulate particularly odd\nsystem clock effects.\n"
   example: []
   syntax:
     content: public Duration AutoAdvance { get; set; }

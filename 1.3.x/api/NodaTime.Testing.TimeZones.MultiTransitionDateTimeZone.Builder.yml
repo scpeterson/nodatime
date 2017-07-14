@@ -119,7 +119,7 @@ items:
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
-  summary: "\nConstructs a builder using an ID of \"MultiZone\", an initial offset of zero (standard and savings),\nand an initial name of \"First\".\n"
+  summary: "\nConstructs a builder using an ID of &quot;MultiZone&quot;, an initial offset of zero (standard and savings),\nand an initial name of &quot;First&quot;.\n"
   example: []
   syntax:
     content: public Builder()
@@ -151,7 +151,7 @@ items:
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
-  summary: "\nConstructs a builder using the given first name, standard offset, and a daylight saving\noffset of 0. The ID is initially \"MultiZone\".\n"
+  summary: "\nConstructs a builder using the given first name, standard offset, and a daylight saving\noffset of 0. The ID is initially &quot;MultiZone&quot;.\n"
   example: []
   syntax:
     content: public Builder(int firstOffsetHours, string firstName)
@@ -190,7 +190,7 @@ items:
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
-  summary: "\nConstructs a builder using the given standard offset and saving offset. The ID is initially \"MultiZone\".\n"
+  summary: "\nConstructs a builder using the given standard offset and saving offset. The ID is initially &quot;MultiZone&quot;.\n"
   example: []
   syntax:
     content: public Builder(int firstStandardOffsetHours, int firstSavingOffsetHours)
@@ -229,7 +229,7 @@ items:
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
-  summary: "\nConstructs a builder using the given first name, standard offset, and daylight saving offset.\nThe ID is initially \"MultiZone\".\n"
+  summary: "\nConstructs a builder using the given first name, standard offset, and daylight saving offset.\nThe ID is initially &quot;MultiZone&quot;.\n"
   example: []
   syntax:
     content: public Builder(int firstStandardOffsetHours, int firstSavingOffsetHours, string firstName)
@@ -433,7 +433,7 @@ items:
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
-  summary: "\nWe don't *really* want to implement this, but we want the collection initializer...\n"
+  summary: "\nWe don&apos;t *really* want to implement this, but we want the collection initializer...\n"
   example: []
   syntax:
     content: IEnumerator IEnumerable.GetEnumerator()

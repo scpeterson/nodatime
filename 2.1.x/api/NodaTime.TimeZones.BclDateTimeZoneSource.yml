@@ -30,7 +30,7 @@ items:
   - NodaTime
   namespace: NodaTime.TimeZones
   summary: "\nProvides an implementation of <xref href=\"NodaTime.TimeZones.IDateTimeZoneSource\" data-throw-if-not-resolved=\"false\"></xref> that loads data from the BCL\n<xref href=\"System.TimeZoneInfo\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
-  remarks: "\n<p>\nAll calls to <xref href=\"NodaTime.TimeZones.BclDateTimeZoneSource.ForId(System.String)\" data-throw-if-not-resolved=\"false\"></xref> return instances of <xref href=\"NodaTime.TimeZones.BclDateTimeZone\" data-throw-if-not-resolved=\"false\"></xref>, including for fixed-offset IDs\n(i.e. \"UTC\" and \"UTC+/-Offset\").\n</p>\n<p>\nThis class is not available in the .NET Standard 1.3 version.\n</p>\n"
+  remarks: "\n<p>\nAll calls to <xref href=\"NodaTime.TimeZones.BclDateTimeZoneSource.ForId(System.String)\" data-throw-if-not-resolved=\"false\"></xref> return instances of <xref href=\"NodaTime.TimeZones.BclDateTimeZone\" data-throw-if-not-resolved=\"false\"></xref>, including for fixed-offset IDs\n(i.e. &quot;UTC&quot; and &quot;UTC+/-Offset&quot;).\n</p>\n<p>\nThis class is not available in the .NET Standard 1.3 version.\n</p>\n"
   example: []
   syntax:
     content: 'public sealed class BclDateTimeZoneSource : IDateTimeZoneSource'
@@ -149,7 +149,7 @@ items:
   - NodaTime
   namespace: NodaTime.TimeZones
   summary: "\nReturns an appropriate version ID for diagnostic purposes, which must not be null.\n"
-  remarks: "\nThis source returns a string such as \"TimeZoneInfo: 3.5.0.0\" corresponding to the version of the assembly\ncontaining <xref href=\"System.TimeZoneInfo\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  remarks: "\nThis source returns a string such as &quot;TimeZoneInfo: 3.5.0.0&quot; corresponding to the version of the assembly\ncontaining <xref href=\"System.TimeZoneInfo\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
     content: public string VersionId { get; }
@@ -244,7 +244,7 @@ items:
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: The given zone doesn't exist.
+    description: The given zone doesn&apos;t exist.
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -271,7 +271,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones
-  summary: "\nReturns this source's ID for the system default time zone.\n"
+  summary: "\nReturns this source&apos;s ID for the system default time zone.\n"
   example: []
   syntax:
     content: public string GetSystemDefaultId()

@@ -109,7 +109,7 @@ items:
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: If <code><span class="paramref">start</span> &gt;= <span class="paramref">end</span></code>.
+    description: If <code><span class="paramref">start</span> >= <span class="paramref">end</span></code>.
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -479,7 +479,7 @@ items:
   - NodaTime
   namespace: NodaTime.TimeZones
   summary: "\nDetermines whether this period contains the given Instant in its range.\n"
-  remarks: "\nUsually this is half-open, i.e. the end is exclusive, but an interval with an end point of \"the end of time\" \nis deemed to be inclusive at the end.\n"
+  remarks: "\nUsually this is half-open, i.e. the end is exclusive, but an interval with an end point of &quot;the end of time&quot; \nis deemed to be inclusive at the end.\n"
   example: []
   syntax:
     content: public bool Contains(Instant instant)

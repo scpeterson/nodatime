@@ -80,7 +80,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Calendars
-  summary: "\nThe \"Common\" era (CE), also known as Anno Domini (AD). This is used in the ISO, Gregorian and Julian calendars.\n"
+  summary: "\nThe &quot;Common&quot; era (CE), also known as Anno Domini (AD). This is used in the ISO, Gregorian and Julian calendars.\n"
   example: []
   syntax:
     content: public static readonly Era Common
@@ -117,7 +117,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Calendars
-  summary: "\nThe \"before common\" era (BCE), also known as Before Christ (BC). This is used in the ISO, Gregorian and Julian calendars.\n"
+  summary: "\nThe &quot;before common&quot; era (BCE), also known as Before Christ (BC). This is used in the ISO, Gregorian and Julian calendars.\n"
   example: []
   syntax:
     content: public static readonly Era BeforeCommon
@@ -154,7 +154,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Calendars
-  summary: "\nThe \"Anno Martyrum\" or \"Era of the Martyrs\". This is the sole era used in the Coptic calendar.\n"
+  summary: "\nThe &quot;Anno Martyrum&quot; or &quot;Era of the Martyrs&quot;. This is the sole era used in the Coptic calendar.\n"
   example: []
   syntax:
     content: public static readonly Era AnnoMartyrum
@@ -191,7 +191,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Calendars
-  summary: "\nThe \"Anno Martyrum\" or \"Era of the Martyrs\". This is the sole era used in the Coptic calendar.\n"
+  summary: "\nThe &quot;Anno Martyrum&quot; or &quot;Era of the Martyrs&quot;. This is the sole era used in the Coptic calendar.\n"
   example: []
   syntax:
     content: >-
@@ -240,7 +240,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Calendars
-  summary: "\nThe \"Anno Hegira\" era. This is the sole era used in the Hijri (Islamic) calendar.\n"
+  summary: "\nThe &quot;Anno Hegira&quot; era. This is the sole era used in the Hijri (Islamic) calendar.\n"
   example: []
   syntax:
     content: public static readonly Era AnnoHegirae
@@ -277,7 +277,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Calendars
-  summary: "\nReturns the name of this era, e.g. \"CE\" or \"BCE\".\n"
+  summary: "\nReturns the name of this era, e.g. &quot;CE&quot; or &quot;BCE&quot;.\n"
   example: []
   syntax:
     content: public string Name { get; }

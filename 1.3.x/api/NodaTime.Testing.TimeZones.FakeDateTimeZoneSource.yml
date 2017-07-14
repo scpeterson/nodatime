@@ -34,7 +34,7 @@ items:
 
     using the StandardName property instead of the Id property, as the Id
 
-    property isn't available. The standard name is almost always the same
+    property isn&apos;t available. The standard name is almost always the same
 
     anyway, known exceptions including Jerusalem and the Malay Peninsula.
   example: []
@@ -121,7 +121,7 @@ items:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
   summary: "\nReturns an unordered enumeration of the IDs available from this source.\n"
-  remarks: "\n<p>\nEvery value in this enumeration must return a valid time zone from <xref href=\"NodaTime.TimeZones.IDateTimeZoneSource.ForId(System.String)\" data-throw-if-not-resolved=\"false\"></xref> for the life of the source.\nThe enumeration may be empty, but must not be null, and must not contain any elements which are null.  It\nshould not contain duplicates: this is not enforced, and while it may not have a significant impact on\nclients in some cases, it is generally unfriendly.  The built-in implementations never return duplicates.\n</p>\n<p>\nThe source is not required to provide the IDs in any particular order, although they should be distinct.\n</p>\n<p>\nNote that this list may optionally contain any of the fixed-offset timezones (with IDs \"UTC\" and\n\"UTC+/-Offset\"), but there is no requirement they be included.\n</p>\n"
+  remarks: "\n<p>\nEvery value in this enumeration must return a valid time zone from <xref href=\"NodaTime.TimeZones.IDateTimeZoneSource.ForId(System.String)\" data-throw-if-not-resolved=\"false\"></xref> for the life of the source.\nThe enumeration may be empty, but must not be null, and must not contain any elements which are null.  It\nshould not contain duplicates: this is not enforced, and while it may not have a significant impact on\nclients in some cases, it is generally unfriendly.  The built-in implementations never return duplicates.\n</p>\n<p>\nThe source is not required to provide the IDs in any particular order, although they should be distinct.\n</p>\n<p>\nNote that this list may optionally contain any of the fixed-offset timezones (with IDs &quot;UTC&quot; and\n&quot;UTC+/-Offset&quot;), but there is no requirement they be included.\n</p>\n"
   example: []
   syntax:
     content: public IEnumerable<string> GetIds()
@@ -158,7 +158,7 @@ items:
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
-  summary: "\nReturns an appropriate version ID for diagnostic purposes, which must not be null.\nThis doesn't have any specific format; it's solely for diagnostic purposes.\nThe included sources return strings of the format \"source identifier: source version\" indicating where the\ninformation comes from and which version of the source information has been loaded.\n"
+  summary: "\nReturns an appropriate version ID for diagnostic purposes, which must not be null.\nThis doesn&apos;t have any specific format; it&apos;s solely for diagnostic purposes.\nThe included sources return strings of the format &quot;source identifier: source version&quot; indicating where the\ninformation comes from and which version of the source information has been loaded.\n"
   example: []
   syntax:
     content: public string VersionId { get; }
@@ -198,7 +198,7 @@ items:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
   summary: "\nReturns the time zone definition associated with the given ID.\n"
-  remarks: "\n<p>\nNote that this is permitted to return a <xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> that has a different ID to that\nrequested, if the ID provided is an alias.\n</p>\n<p>\nNote also that this method is not required to return the same <xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> instance for\nsuccessive requests for the same ID; however, all instances returned for a given ID must compare as equal.\n</p>\n<p>\nIt is advised that sources should document their behaviour regarding any fixed-offset timezones\n(i.e. \"UTC\" and \"UTC+/-Offset\") that are included in the list returned by <xref href=\"NodaTime.TimeZones.IDateTimeZoneSource.GetIds\" data-throw-if-not-resolved=\"false\"></xref>.\n(These IDs will not be requested by <xref href=\"NodaTime.TimeZones.DateTimeZoneCache\" data-throw-if-not-resolved=\"false\"></xref>, but any users calling\ninto the source directly may care.)\n</p>\n<p>\nThe source need not attempt to cache time zones; caching is typically provided by\n<xref href=\"NodaTime.TimeZones.DateTimeZoneCache\" data-throw-if-not-resolved=\"false\"></xref>.\n</p>\n"
+  remarks: "\n<p>\nNote that this is permitted to return a <xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> that has a different ID to that\nrequested, if the ID provided is an alias.\n</p>\n<p>\nNote also that this method is not required to return the same <xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> instance for\nsuccessive requests for the same ID; however, all instances returned for a given ID must compare as equal.\n</p>\n<p>\nIt is advised that sources should document their behaviour regarding any fixed-offset timezones\n(i.e. &quot;UTC&quot; and &quot;UTC+/-Offset&quot;) that are included in the list returned by <xref href=\"NodaTime.TimeZones.IDateTimeZoneSource.GetIds\" data-throw-if-not-resolved=\"false\"></xref>.\n(These IDs will not be requested by <xref href=\"NodaTime.TimeZones.DateTimeZoneCache\" data-throw-if-not-resolved=\"false\"></xref>, but any users calling\ninto the source directly may care.)\n</p>\n<p>\nThe source need not attempt to cache time zones; caching is typically provided by\n<xref href=\"NodaTime.TimeZones.DateTimeZoneCache\" data-throw-if-not-resolved=\"false\"></xref>.\n</p>\n"
   example: []
   syntax:
     content: public DateTimeZone ForId(string id)
@@ -246,7 +246,7 @@ items:
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing.TimeZones
-  summary: "\nReturns this source's corresponding ID for the given BCL time zone.\n"
+  summary: "\nReturns this source&apos;s corresponding ID for the given BCL time zone.\n"
   example: []
   syntax:
     content: public string MapTimeZoneId(TimeZoneInfo timeZone)

@@ -985,7 +985,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nImplements the operator &gt; (greater than).\n"
+  summary: "\nImplements the operator > (greater than).\n"
   example: []
   syntax:
     content: public static bool operator>(Offset left, Offset right)
@@ -1029,7 +1029,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nImplements the operator &gt;= (greater than or equal).\n"
+  summary: "\nImplements the operator >= (greater than or equal).\n"
   example: []
   syntax:
     content: public static bool operator >=(Offset left, Offset right)
@@ -1083,7 +1083,7 @@ items:
       description: An object to compare with this object.
     return:
       type: System.Int32
-      description: "\nA 32-bit signed integer that indicates the relative order of the objects being compared.\nThe return value has the following meanings:\n<table><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody><tr><td>&lt; 0</td><td>This object is less than the <span class=\"paramref\">other</span> parameter.</td></tr><tr><td>0</td><td>This object is equal to <span class=\"paramref\">other</span>.</td></tr><tr><td>&gt; 0</td><td>This object is greater than <span class=\"paramref\">other</span>.</td></tr></tbody></table>\n"
+      description: "\nA 32-bit signed integer that indicates the relative order of the objects being compared.\nThe return value has the following meanings:\n<table><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody><tr><td>&lt; 0</td><td>This object is less than the <span class=\"paramref\">other</span> parameter.</td></tr><tr><td>0</td><td>This object is equal to <span class=\"paramref\">other</span>.</td></tr><tr><td>> 0</td><td>This object is greater than <span class=\"paramref\">other</span>.</td></tr></tbody></table>\n"
     content.vb: Public Function CompareTo(other As Offset) As Integer
   overload: NodaTime.Offset.CompareTo*
   implements:
@@ -1289,7 +1289,7 @@ items:
     content: public override string ToString()
     return:
       type: System.String
-      description: "\nThe value of the current instance in the default format pattern (\"g\"), using the current thread's\nculture to obtain a format provider.\n"
+      description: "\nThe value of the current instance in the default format pattern (&quot;g&quot;), using the current thread&apos;s\nculture to obtain a format provider.\n"
     content.vb: Public Overrides Function ToString As String
   overridden: System.ValueType.ToString
   overload: NodaTime.Offset.ToString*
@@ -1331,13 +1331,13 @@ items:
       description: >
         The <xref href="System.String" data-throw-if-not-resolved="false"></xref> specifying the pattern to use,
 
-        or null to use the default format pattern ("g").
+        or null to use the default format pattern (&quot;g&quot;).
     - id: formatProvider
       type: System.IFormatProvider
       description: >
         The <xref href="System.IFormatProvider" data-throw-if-not-resolved="false"></xref> to use when formatting the value,
 
-        or null to use the current thread's culture to obtain a format provider.
+        or null to use the current thread&apos;s culture to obtain a format provider.
     return:
       type: System.String
       description: "\nA <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> containing the value of the current instance in the specified format.\n"
@@ -1508,7 +1508,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nCreates an offset with the specified number of hours and minutes.\n"
-  remarks: "\nThe result simply takes the hours and minutes and converts each component into milliseconds\nseparately. As a result, a negative offset should usually be obtained by making both arguments\nnegative. For example, to obtain \"three hours and ten minutes behind UTC\" you might call\n<code>Offset.FromHoursAndMinutes(-3, -10)</code>.\n"
+  remarks: "\nThe result simply takes the hours and minutes and converts each component into milliseconds\nseparately. As a result, a negative offset should usually be obtained by making both arguments\nnegative. For example, to obtain &quot;three hours and ten minutes behind UTC&quot; you might call\n<code>Offset.FromHoursAndMinutes(-3, -10)</code>.\n"
   example: []
   syntax:
     content: public static Offset FromHoursAndMinutes(int hours, int minutes)

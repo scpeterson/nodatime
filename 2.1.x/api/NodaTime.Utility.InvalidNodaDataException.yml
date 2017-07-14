@@ -26,7 +26,7 @@ items:
   - NodaTime
   namespace: NodaTime.Utility
   summary: "\nException thrown when data read by Noda Time (such as serialized time zone data) is invalid. This includes\ndata which is truncated, i.e. we expect more data than we can read.\n"
-  remarks: "\nThis type only exists as <code>InvalidDataException</code> didn't exist in Portable Class Libraries.\nThat does exist in netstandard1.3, but as we shipped 2.0 without realizing this, we're stuck with the\nnew exception type.\nUnfortunately, <code>InvalidDataException</code> itself is sealed, so we can't derive from it for the sake\nof backward compatibility.\n"
+  remarks: "\nThis type only exists as <code>InvalidDataException</code> didn&apos;t exist in Portable Class Libraries.\nThat does exist in netstandard1.3, but as we shipped 2.0 without realizing this, we&apos;re stuck with the\nnew exception type.\nUnfortunately, <code>InvalidDataException</code> itself is sealed, so we can&apos;t derive from it for the sake\nof backward compatibility.\n"
   example: []
   syntax:
     content: >-

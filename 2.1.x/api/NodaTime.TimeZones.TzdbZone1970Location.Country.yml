@@ -30,7 +30,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones
-  summary: "\nA country represented within an entry in the \"zone1970.tab\" file, with the English name\nmapped from the \"iso3166.tab\" file.\n"
+  summary: "\nA country represented within an entry in the &quot;zone1970.tab&quot; file, with the English name\nmapped from the &quot;iso3166.tab&quot; file.\n"
   example: []
   syntax:
     content: 'public sealed class Country : IEquatable<TzdbZone1970Location.Country>'

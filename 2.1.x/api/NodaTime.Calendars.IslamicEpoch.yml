@@ -26,7 +26,7 @@ items:
   - NodaTime
   namespace: NodaTime.Calendars
   summary: "\nThe epoch to use when constructing an Islamic calendar.\n"
-  remarks: "\nThe Islamic, or Hijri, calendar can either be constructed\nstarting on July 15th 622CE (in the Julian calendar) or on the following day.\nThe former is the \"astronomical\" or \"Thursday\" epoch; the latter is the \"civil\" or \"Friday\" epoch.\n"
+  remarks: "\nThe Islamic, or Hijri, calendar can either be constructed\nstarting on July 15th 622CE (in the Julian calendar) or on the following day.\nThe former is the &quot;astronomical&quot; or &quot;Thursday&quot; epoch; the latter is the &quot;civil&quot; or &quot;Friday&quot; epoch.\n"
   example: []
   syntax:
     content: public enum IslamicEpoch

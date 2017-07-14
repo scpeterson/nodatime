@@ -63,7 +63,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nRepresents a period of time expressed in human chronological terms: hours, days,\nweeks, months and so on.\n"
-  remarks: "\n<p>\nA <xref href=\"NodaTime.Period\" data-throw-if-not-resolved=\"false\"></xref> contains a set of properties such as <xref href=\"NodaTime.Period.Years\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"NodaTime.Period.Months\" data-throw-if-not-resolved=\"false\"></xref>, and so on\nthat return the number of each unit contained within this period. Note that these properties are not normalized in\nany way by default, and so a <xref href=\"NodaTime.Period\" data-throw-if-not-resolved=\"false\"></xref> may contain values such as \"2 hours and 90 minutes\". The\n<xref href=\"NodaTime.Period.Normalize\" data-throw-if-not-resolved=\"false\"></xref> method will convert equivalent periods into a standard representation.\n</p>\n<p>\nPeriods can contain negative units as well as positive units (\"+2 hours, -43 minutes, +10 seconds\"), but do not\ndifferentiate between properties that are zero and those that are absent (i.e. a period created as \"10 years\"\nand one created as \"10 years, zero months\" are equal periods; the <xref href=\"NodaTime.Period.Months\" data-throw-if-not-resolved=\"false\"></xref> property returns zero in\nboth cases).\n</p>\n<p>\n<xref href=\"NodaTime.Period\" data-throw-if-not-resolved=\"false\"></xref> equality is implemented by comparing each property's values individually.\n</p>\n<p>\nPeriods operate on calendar-related types such as\n<xref href=\"NodaTime.LocalDateTime\" data-throw-if-not-resolved=\"false\"></xref> whereas <xref href=\"NodaTime.Duration\" data-throw-if-not-resolved=\"false\"></xref> operates on instants\non the time line. (Note that although <xref href=\"NodaTime.ZonedDateTime\" data-throw-if-not-resolved=\"false\"></xref> includes both concepts, it only supports\nduration-based arithmetic.)\n</p>\n"
+  remarks: "\n<p>\nA <xref href=\"NodaTime.Period\" data-throw-if-not-resolved=\"false\"></xref> contains a set of properties such as <xref href=\"NodaTime.Period.Years\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"NodaTime.Period.Months\" data-throw-if-not-resolved=\"false\"></xref>, and so on\nthat return the number of each unit contained within this period. Note that these properties are not normalized in\nany way by default, and so a <xref href=\"NodaTime.Period\" data-throw-if-not-resolved=\"false\"></xref> may contain values such as &quot;2 hours and 90 minutes&quot;. The\n<xref href=\"NodaTime.Period.Normalize\" data-throw-if-not-resolved=\"false\"></xref> method will convert equivalent periods into a standard representation.\n</p>\n<p>\nPeriods can contain negative units as well as positive units (&quot;+2 hours, -43 minutes, +10 seconds&quot;), but do not\ndifferentiate between properties that are zero and those that are absent (i.e. a period created as &quot;10 years&quot;\nand one created as &quot;10 years, zero months&quot; are equal periods; the <xref href=\"NodaTime.Period.Months\" data-throw-if-not-resolved=\"false\"></xref> property returns zero in\nboth cases).\n</p>\n<p>\n<xref href=\"NodaTime.Period\" data-throw-if-not-resolved=\"false\"></xref> equality is implemented by comparing each property&apos;s values individually.\n</p>\n<p>\nPeriods operate on calendar-related types such as\n<xref href=\"NodaTime.LocalDateTime\" data-throw-if-not-resolved=\"false\"></xref> whereas <xref href=\"NodaTime.Duration\" data-throw-if-not-resolved=\"false\"></xref> operates on instants\non the time line. (Note that although <xref href=\"NodaTime.ZonedDateTime\" data-throw-if-not-resolved=\"false\"></xref> includes both concepts, it only supports\nduration-based arithmetic.)\n</p>\n"
   example: []
   syntax:
     content: 'public sealed class Period : IEquatable<Period>'
@@ -655,8 +655,8 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nCreates an <xref href=\"System.Collections.Generic.IComparer%601\" data-throw-if-not-resolved=\"false\"></xref> for periods, using the given \"base\" local date/time.\n"
-  remarks: "\nCertain periods can't naturally be compared without more context - how \"one month\" compares to\n\"30 days\" depends on where you start. In order to compare two periods, the returned comparer\neffectively adds both periods to the \"base\" specified by <span class=\"paramref\">baseDateTime</span> and compares\nthe results. In some cases this arithmetic isn't actually required - when two periods can be\nconverted to durations, the comparer uses that conversion for efficiency.\n"
+  summary: "\nCreates an <xref href=\"System.Collections.Generic.IComparer%601\" data-throw-if-not-resolved=\"false\"></xref> for periods, using the given &quot;base&quot; local date/time.\n"
+  remarks: "\nCertain periods can&apos;t naturally be compared without more context - how &quot;one month&quot; compares to\n&quot;30 days&quot; depends on where you start. In order to compare two periods, the returned comparer\neffectively adds both periods to the &quot;base&quot; specified by <span class=\"paramref\">baseDateTime</span> and compares\nthe results. In some cases this arithmetic isn&apos;t actually required - when two periods can be\nconverted to durations, the comparer uses that conversion for efficiency.\n"
   example: []
   syntax:
     content: public static IComparer<Period> CreateComparer(LocalDateTime baseDateTime)
@@ -715,7 +715,7 @@ items:
 
         units of the result will be the union of both periods, even if the subtraction caused some properties to
 
-        become zero (so "2 weeks, 1 days" minus "2 weeks" is "zero weeks, 1 days", not "1 days").
+        become zero (so &quot;2 weeks, 1 days&quot; minus &quot;2 weeks&quot; is &quot;zero weeks, 1 days&quot;, not &quot;1 days&quot;).
     content.vb: Public Shared Operator -(minuend As Period, subtrahend As Period) As Period
   overload: NodaTime.Period.op_Subtraction*
   modifiers.csharp:
@@ -747,7 +747,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nReturns the period between a start and an end date/time, using only the given units.\n"
-  remarks: "\nIf <span class=\"paramref\">end</span> is before <span class=\"paramref\">start</span>, each property in the returned period\nwill be negative. If the given set of units cannot exactly reach the end point (e.g. finding\nthe difference between 1am and 3:15am in hours) the result will be such that adding it to <span class=\"paramref\">start</span>\nwill give a value between <span class=\"paramref\">start</span> and <span class=\"paramref\">end</span>. In other words,\nany rounding is \"towards start\"; this is true whether the resulting period is negative or positive.\n"
+  remarks: "\nIf <span class=\"paramref\">end</span> is before <span class=\"paramref\">start</span>, each property in the returned period\nwill be negative. If the given set of units cannot exactly reach the end point (e.g. finding\nthe difference between 1am and 3:15am in hours) the result will be such that adding it to <span class=\"paramref\">start</span>\nwill give a value between <span class=\"paramref\">start</span> and <span class=\"paramref\">end</span>. In other words,\nany rounding is &quot;towards start&quot;; this is true whether the resulting period is negative or positive.\n"
   example: []
   syntax:
     content: public static Period Between(LocalDateTime start, LocalDateTime end, PeriodUnits units)
@@ -847,7 +847,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nReturns the period between a start and an end date, using only the given units.\n"
-  remarks: "\nIf <span class=\"paramref\">end</span> is before <span class=\"paramref\">start</span>, each property in the returned period\nwill be negative. If the given set of units cannot exactly reach the end point (e.g. finding\nthe difference between 12th February and 15th March in months) the result will be such that adding it to <span class=\"paramref\">start</span>\nwill give a value between <span class=\"paramref\">start</span> and <span class=\"paramref\">end</span>. In other words,\nany rounding is \"towards start\"; this is true whether the resulting period is negative or positive.\n"
+  remarks: "\nIf <span class=\"paramref\">end</span> is before <span class=\"paramref\">start</span>, each property in the returned period\nwill be negative. If the given set of units cannot exactly reach the end point (e.g. finding\nthe difference between 12th February and 15th March in months) the result will be such that adding it to <span class=\"paramref\">start</span>\nwill give a value between <span class=\"paramref\">start</span> and <span class=\"paramref\">end</span>. In other words,\nany rounding is &quot;towards start&quot;; this is true whether the resulting period is negative or positive.\n"
   example: []
   syntax:
     content: public static Period Between(LocalDate start, LocalDate end, PeriodUnits units)
@@ -947,7 +947,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nReturns the period between a start and an end time, using only the given units.\n"
-  remarks: "\nIf <span class=\"paramref\">end</span> is before <span class=\"paramref\">start</span>, each property in the returned period\nwill be negative. If the given set of units cannot exactly reach the end point (e.g. finding\nthe difference between 3am and 4.30am in hours) the result will be such that adding it to <span class=\"paramref\">start</span>\nwill give a value between <span class=\"paramref\">start</span> and <span class=\"paramref\">end</span>. In other words,\nany rounding is \"towards start\"; this is true whether the resulting period is negative or positive.\n"
+  remarks: "\nIf <span class=\"paramref\">end</span> is before <span class=\"paramref\">start</span>, each property in the returned period\nwill be negative. If the given set of units cannot exactly reach the end point (e.g. finding\nthe difference between 3am and 4.30am in hours) the result will be such that adding it to <span class=\"paramref\">start</span>\nwill give a value between <span class=\"paramref\">start</span> and <span class=\"paramref\">end</span>. In other words,\nany rounding is &quot;towards start&quot;; this is true whether the resulting period is negative or positive.\n"
   example: []
   syntax:
     content: public static Period Between(LocalTime start, LocalTime end, PeriodUnits units)
@@ -1136,13 +1136,13 @@ items:
   - type: System.OverflowException
     commentId: T:System.OverflowException
     description: >-
-      The period doesn't have years or months, but the calculation
+      The period doesn&apos;t have years or months, but the calculation
 
       overflows the bounds of <xref href="NodaTime.Duration" data-throw-if-not-resolved="false"></xref>. In some cases this may occur even though the theoretical
 
       result would be valid due to balancing positive and negative values, but for simplicity there is
 
-      no attempt to work around this - in realistic periods, it shouldn't be a problem.
+      no attempt to work around this - in realistic periods, it shouldn&apos;t be a problem.
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -1205,7 +1205,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nReturns a normalized version of this period, such that equivalent (but potentially non-equal) periods are\nchanged to the same representation.\n"
-  remarks: "\nMonths and years are unchanged\n(as they can vary in length), but weeks are multiplied by 7 and added to the\nDays property, and all time properties are normalized to their natural range\n(where ticks are \"within a millisecond\"), adding to the larger property where\nnecessary. So for example, a period of 25 hours becomes a period of 1 day\nand 1 hour. Aside from months and years, either all the properties\nend up positive, or they all end up negative.\n"
+  remarks: "\nMonths and years are unchanged\n(as they can vary in length), but weeks are multiplied by 7 and added to the\nDays property, and all time properties are normalized to their natural range\n(where ticks are &quot;within a millisecond&quot;), adding to the larger property where\nnecessary. So for example, a period of 25 hours becomes a period of 1 day\nand 1 hour. Aside from months and years, either all the properties\nend up positive, or they all end up negative.\n"
   example: []
   syntax:
     content: public Period Normalize()
@@ -1218,7 +1218,7 @@ items:
   - type: System.OverflowException
     commentId: T:System.OverflowException
     description: >-
-      The period doesn't have years or months, but it contains more than
+      The period doesn&apos;t have years or months, but it contains more than
 
       <xref href="System.Int64.MaxValue" data-throw-if-not-resolved="false"></xref> ticks when the combined weeks/days/time portions are considered. Such a period
 
@@ -1228,7 +1228,7 @@ items:
 
       negative values, but for simplicity there is no attempt to work around this - in realistic periods, it
 
-      shouldn't be a problem.
+      shouldn&apos;t be a problem.
   seealso:
   - linkId: NodaTime.Period.NormalizingEqualityComparer
     commentId: P:NodaTime.Period.NormalizingEqualityComparer
@@ -1719,7 +1719,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nCompares the given period for equality with this one.\n"
-  remarks: "\nPeriods are equal if they contain the same values for the same properties.\nHowever, no normalization takes place, so \"one hour\" is not equal to \"sixty minutes\".\n"
+  remarks: "\nPeriods are equal if they contain the same values for the same properties.\nHowever, no normalization takes place, so &quot;one hour&quot; is not equal to &quot;sixty minutes&quot;.\n"
   example: []
   syntax:
     content: public bool Equals(Period other)

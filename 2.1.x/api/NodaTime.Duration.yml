@@ -100,7 +100,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nRepresents a fixed (and calendar-independent) length of time.\n"
-  remarks: "\n<p>\nA duration is a length of time defined by an integral number of nanoseconds.\nAlthough durations are usually used with a positive number of nanoseconds, negative durations are valid, and may occur\nnaturally when e.g. subtracting an earlier <xref href=\"NodaTime.Instant\" data-throw-if-not-resolved=\"false\"></xref> from a later one.\n</p>\n<p>\nA duration represents a fixed length of elapsed time along the time line that occupies the same amount of\ntime regardless of when it is applied. In contrast, <xref href=\"NodaTime.Period\" data-throw-if-not-resolved=\"false\"></xref> represents a period of time in\ncalendrical terms (years, months, days, and so on) that may vary in elapsed time when applied.\n</p>\n<p>\nIn general, use <xref href=\"NodaTime.Duration\" data-throw-if-not-resolved=\"false\"></xref> to represent durations applied to global types like <xref href=\"NodaTime.Instant\" data-throw-if-not-resolved=\"false\"></xref>\nand <xref href=\"NodaTime.ZonedDateTime\" data-throw-if-not-resolved=\"false\"></xref>; use <code>Period</code> to represent a period applied to local types like\n<xref href=\"NodaTime.LocalDateTime\" data-throw-if-not-resolved=\"false\"></xref>.\n</p>\n<p>\nThe range of valid values of a <code>Duration</code> is greater than the span of time supported by Noda Time - so for\nexample, subtracting one <xref href=\"NodaTime.Instant\" data-throw-if-not-resolved=\"false\"></xref> from another will always give a valid <code>Duration</code>. The range\nis also greater than that of <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> (<xref href=\"System.Int64.MinValue\" data-throw-if-not-resolved=\"false\"></xref> ticks to <xref href=\"System.Int64.MaxValue\" data-throw-if-not-resolved=\"false\"></xref> ticks).\nSee the user guide for more details of the exact range, but it is not expected that this will ever be exceeded in normal code.\n</p>\n<p>\nVarious operations accept or return a <xref href=\"System.Double\" data-throw-if-not-resolved=\"false\"></xref>, in-keeping with durations often being natural lengths\nof time which are imprecisely measured anyway. The implementation of these operations should never result in a not-a-number\nor infinite value, nor do any operations accept not-a-number or infinite values. Additionally, operations involving\n<code>Double</code> have initially been implemented fairly naïvely; it's possible that future releases will improve the accuracy\nor performance (or both) of various operations.\n</p>\n"
+  remarks: "\n<p>\nA duration is a length of time defined by an integral number of nanoseconds.\nAlthough durations are usually used with a positive number of nanoseconds, negative durations are valid, and may occur\nnaturally when e.g. subtracting an earlier <xref href=\"NodaTime.Instant\" data-throw-if-not-resolved=\"false\"></xref> from a later one.\n</p>\n<p>\nA duration represents a fixed length of elapsed time along the time line that occupies the same amount of\ntime regardless of when it is applied. In contrast, <xref href=\"NodaTime.Period\" data-throw-if-not-resolved=\"false\"></xref> represents a period of time in\ncalendrical terms (years, months, days, and so on) that may vary in elapsed time when applied.\n</p>\n<p>\nIn general, use <xref href=\"NodaTime.Duration\" data-throw-if-not-resolved=\"false\"></xref> to represent durations applied to global types like <xref href=\"NodaTime.Instant\" data-throw-if-not-resolved=\"false\"></xref>\nand <xref href=\"NodaTime.ZonedDateTime\" data-throw-if-not-resolved=\"false\"></xref>; use <code>Period</code> to represent a period applied to local types like\n<xref href=\"NodaTime.LocalDateTime\" data-throw-if-not-resolved=\"false\"></xref>.\n</p>\n<p>\nThe range of valid values of a <code>Duration</code> is greater than the span of time supported by Noda Time - so for\nexample, subtracting one <xref href=\"NodaTime.Instant\" data-throw-if-not-resolved=\"false\"></xref> from another will always give a valid <code>Duration</code>. The range\nis also greater than that of <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> (<xref href=\"System.Int64.MinValue\" data-throw-if-not-resolved=\"false\"></xref> ticks to <xref href=\"System.Int64.MaxValue\" data-throw-if-not-resolved=\"false\"></xref> ticks).\nSee the user guide for more details of the exact range, but it is not expected that this will ever be exceeded in normal code.\n</p>\n<p>\nVarious operations accept or return a <xref href=\"System.Double\" data-throw-if-not-resolved=\"false\"></xref>, in-keeping with durations often being natural lengths\nof time which are imprecisely measured anyway. The implementation of these operations should never result in a not-a-number\nor infinite value, nor do any operations accept not-a-number or infinite values. Additionally, operations involving\n<code>Double</code> have initially been implemented fairly naïvely; it&apos;s possible that future releases will improve the accuracy\nor performance (or both) of various operations.\n</p>\n"
   example: []
   syntax:
     content: >-
@@ -313,7 +313,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nGets the whole number of standard (24 hour) days within this duration. This is truncated towards zero;\nfor example, \"-1.75 days\" and \"1.75 days\" would have results of -1 and 1 respectively.\n"
+  summary: "\nGets the whole number of standard (24 hour) days within this duration. This is truncated towards zero;\nfor example, &quot;-1.75 days&quot; and &quot;1.75 days&quot; would have results of -1 and 1 respectively.\n"
   example: []
   syntax:
     content: public int Days { get; }
@@ -889,7 +889,7 @@ items:
 
     is because <xref href="NodaTime.Duration" data-throw-if-not-resolved="false"></xref> has a precision of nanoseconds, and also because the range
 
-    of 64-bit integers doesn't cover the number of possible ticks in a <xref href="NodaTime.Duration" data-throw-if-not-resolved="false"></xref>. (The
+    of 64-bit integers doesn&apos;t cover the number of possible ticks in a <xref href="NodaTime.Duration" data-throw-if-not-resolved="false"></xref>. (The
 
     latter is only an issue in durations outside the range of <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref> - in other words,
 
@@ -1066,7 +1066,7 @@ items:
     content: public override string ToString()
     return:
       type: System.String
-      description: "\nThe value of the current instance in the default format pattern (\"o\"), using the current thread's\nculture to obtain a format provider.\n"
+      description: "\nThe value of the current instance in the default format pattern (&quot;o&quot;), using the current thread&apos;s\nculture to obtain a format provider.\n"
     content.vb: Public Overrides Function ToString As String
   overridden: System.ValueType.ToString
   overload: NodaTime.Duration.ToString*
@@ -1108,13 +1108,13 @@ items:
       description: >
         The <xref href="System.String" data-throw-if-not-resolved="false"></xref> specifying the pattern to use,
 
-        or null to use the default format pattern ("o").
+        or null to use the default format pattern (&quot;o&quot;).
     - id: formatProvider
       type: System.IFormatProvider
       description: >
         The <xref href="System.IFormatProvider" data-throw-if-not-resolved="false"></xref> to use when formatting the value,
 
-        or null to use the current thread's culture to obtain a format provider.
+        or null to use the current thread&apos;s culture to obtain a format provider.
     return:
       type: System.String
       description: "\nA <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> containing the value of the current instance in the specified format.\n"
@@ -2133,7 +2133,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nImplements the operator &gt; (greater than).\n"
+  summary: "\nImplements the operator > (greater than).\n"
   example: []
   syntax:
     content: public static bool operator>(Duration left, Duration right)
@@ -2177,7 +2177,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nImplements the operator &gt;= (greater than or equal).\n"
+  summary: "\nImplements the operator >= (greater than or equal).\n"
   example: []
   syntax:
     content: public static bool operator >=(Duration left, Duration right)
@@ -2313,7 +2313,7 @@ items:
       description: An object to compare with this object.
     return:
       type: System.Int32
-      description: "\nA 32-bit signed integer that indicates the relative order of the objects being compared.\nThe return value has the following meanings:\n<table><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody><tr><td>&lt; 0</td><td>This object is less than the <span class=\"paramref\">other</span> parameter.</td></tr><tr><td>0</td><td>This object is equal to <span class=\"paramref\">other</span>.</td></tr><tr><td>&gt; 0</td><td>This object is greater than <span class=\"paramref\">other</span>.</td></tr></tbody></table>\n"
+      description: "\nA 32-bit signed integer that indicates the relative order of the objects being compared.\nThe return value has the following meanings:\n<table><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody><tr><td>&lt; 0</td><td>This object is less than the <span class=\"paramref\">other</span> parameter.</td></tr><tr><td>0</td><td>This object is equal to <span class=\"paramref\">other</span>.</td></tr><tr><td>> 0</td><td>This object is greater than <span class=\"paramref\">other</span>.</td></tr></tbody></table>\n"
     content.vb: Public Function CompareTo(other As Duration) As Integer
   overload: NodaTime.Duration.CompareTo*
   implements:
@@ -2433,7 +2433,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nReturns a <xref href=\"NodaTime.Duration\" data-throw-if-not-resolved=\"false\"></xref> that represents the given number of days, assuming a 'standard' 24-hour\nday.\n"
+  summary: "\nReturns a <xref href=\"NodaTime.Duration\" data-throw-if-not-resolved=\"false\"></xref> that represents the given number of days, assuming a &apos;standard&apos; 24-hour\nday.\n"
   example: []
   syntax:
     content: public static Duration FromDays(int days)
@@ -2474,7 +2474,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nReturns a <xref href=\"NodaTime.Duration\" data-throw-if-not-resolved=\"false\"></xref> that represents the given number of days, assuming a 'standard' 24-hour\nday.\n"
+  summary: "\nReturns a <xref href=\"NodaTime.Duration\" data-throw-if-not-resolved=\"false\"></xref> that represents the given number of days, assuming a &apos;standard&apos; 24-hour\nday.\n"
   example: []
   syntax:
     content: public static Duration FromDays(double days)

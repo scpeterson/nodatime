@@ -40,7 +40,7 @@ items:
   - NodaTime
   namespace: NodaTime.TimeZones
   summary: "\nProvides an implementation of <xref href=\"NodaTime.TimeZones.IDateTimeZoneSource\" data-throw-if-not-resolved=\"false\"></xref> that loads data originating from the\n<a href=\"http://www.iana.org/time-zones\">tz database</a> (also known as the IANA Time Zone database, or zoneinfo\nor Olson database).\n"
-  remarks: "\nAll calls to <xref href=\"NodaTime.TimeZones.TzdbDateTimeZoneSource.ForId(System.String)\" data-throw-if-not-resolved=\"false\"></xref> for fixed-offset IDs advertised by the source (i.e. \"UTC\" and \"UTC+/-Offset\")\nwill return zones equal to those returned by <xref href=\"NodaTime.DateTimeZone.ForOffset(NodaTime.Offset)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  remarks: "\nAll calls to <xref href=\"NodaTime.TimeZones.TzdbDateTimeZoneSource.ForId(System.String)\" data-throw-if-not-resolved=\"false\"></xref> for fixed-offset IDs advertised by the source (i.e. &quot;UTC&quot; and &quot;UTC+/-Offset&quot;)\nwill return zones equal to those returned by <xref href=\"NodaTime.DateTimeZone.ForOffset(NodaTime.Offset)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
     content: 'public sealed class TzdbDateTimeZoneSource : IDateTimeZoneSource'
@@ -381,7 +381,7 @@ items:
     description: Reading from the stream failed.
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
-    description: The supplied stream doesn't support reading.
+    description: The supplied stream doesn&apos;t support reading.
   modifiers.csharp:
   - public
   - static
@@ -411,7 +411,7 @@ items:
   - NodaTime
   namespace: NodaTime.TimeZones
   summary: "\nReturns the time zone definition associated with the given ID.\n"
-  remarks: "\n<p>\nNote that this is permitted to return a <xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> that has a different ID to that\nrequested, if the ID provided is an alias.\n</p>\n<p>\nNote also that this method is not required to return the same <xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> instance for\nsuccessive requests for the same ID; however, all instances returned for a given ID must compare as equal.\n</p>\n<p>\nIt is advised that sources should document their behaviour regarding any fixed-offset timezones\n(i.e. \"UTC\" and \"UTC+/-Offset\") that are included in the list returned by <xref href=\"NodaTime.TimeZones.IDateTimeZoneSource.GetIds\" data-throw-if-not-resolved=\"false\"></xref>.\n(These IDs will not be requested by <xref href=\"NodaTime.TimeZones.DateTimeZoneCache\" data-throw-if-not-resolved=\"false\"></xref>, but any users calling\ninto the source directly may care.)\n</p>\n<p>\nThe source need not attempt to cache time zones; caching is typically provided by\n<xref href=\"NodaTime.TimeZones.DateTimeZoneCache\" data-throw-if-not-resolved=\"false\"></xref>.\n</p>\n"
+  remarks: "\n<p>\nNote that this is permitted to return a <xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> that has a different ID to that\nrequested, if the ID provided is an alias.\n</p>\n<p>\nNote also that this method is not required to return the same <xref href=\"NodaTime.DateTimeZone\" data-throw-if-not-resolved=\"false\"></xref> instance for\nsuccessive requests for the same ID; however, all instances returned for a given ID must compare as equal.\n</p>\n<p>\nIt is advised that sources should document their behaviour regarding any fixed-offset timezones\n(i.e. &quot;UTC&quot; and &quot;UTC+/-Offset&quot;) that are included in the list returned by <xref href=\"NodaTime.TimeZones.IDateTimeZoneSource.GetIds\" data-throw-if-not-resolved=\"false\"></xref>.\n(These IDs will not be requested by <xref href=\"NodaTime.TimeZones.DateTimeZoneCache\" data-throw-if-not-resolved=\"false\"></xref>, but any users calling\ninto the source directly may care.)\n</p>\n<p>\nThe source need not attempt to cache time zones; caching is typically provided by\n<xref href=\"NodaTime.TimeZones.DateTimeZoneCache\" data-throw-if-not-resolved=\"false\"></xref>.\n</p>\n"
   example: []
   syntax:
     content: public DateTimeZone ForId(string id)
@@ -460,7 +460,7 @@ items:
   - NodaTime
   namespace: NodaTime.TimeZones
   summary: "\nReturns an unordered enumeration of the IDs available from this source.\n"
-  remarks: "\n<p>\nEvery value in this enumeration must return a valid time zone from <xref href=\"NodaTime.TimeZones.IDateTimeZoneSource.ForId(System.String)\" data-throw-if-not-resolved=\"false\"></xref> for the life of the source.\nThe enumeration may be empty, but must not be null, and must not contain any elements which are null.  It\nshould not contain duplicates: this is not enforced, and while it may not have a significant impact on\nclients in some cases, it is generally unfriendly.  The built-in implementations never return duplicates.\n</p>\n<p>\nThe source is not required to provide the IDs in any particular order, although they should be distinct.\n</p>\n<p>\nNote that this list may optionally contain any of the fixed-offset timezones (with IDs \"UTC\" and\n\"UTC+/-Offset\"), but there is no requirement they be included.\n</p>\n"
+  remarks: "\n<p>\nEvery value in this enumeration must return a valid time zone from <xref href=\"NodaTime.TimeZones.IDateTimeZoneSource.ForId(System.String)\" data-throw-if-not-resolved=\"false\"></xref> for the life of the source.\nThe enumeration may be empty, but must not be null, and must not contain any elements which are null.  It\nshould not contain duplicates: this is not enforced, and while it may not have a significant impact on\nclients in some cases, it is generally unfriendly.  The built-in implementations never return duplicates.\n</p>\n<p>\nThe source is not required to provide the IDs in any particular order, although they should be distinct.\n</p>\n<p>\nNote that this list may optionally contain any of the fixed-offset timezones (with IDs &quot;UTC&quot; and\n&quot;UTC+/-Offset&quot;), but there is no requirement they be included.\n</p>\n"
   example: []
   syntax:
     content: public IEnumerable<string> GetIds()
@@ -497,8 +497,8 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones
-  summary: "\nReturns an appropriate version ID for diagnostic purposes, which must not be null.\nThis doesn't have any specific format; it's solely for diagnostic purposes.\nThe included sources return strings of the format \"source identifier: source version\" indicating where the\ninformation comes from and which version of the source information has been loaded.\n"
-  remarks: "\n<p>\nThis source returns a string such as \"TZDB: 2013b (mapping: 8274)\" corresponding to the versions of the tz\ndatabase and the CLDR Windows zones mapping file.\n</p>\n<p>\nNote that there is no need to parse this string to extract any of the above information, as it is available\ndirectly from the <xref href=\"NodaTime.TimeZones.TzdbDateTimeZoneSource.TzdbVersion\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"NodaTime.TimeZones.Cldr.WindowsZones.Version\" data-throw-if-not-resolved=\"false\"></xref> properties.\n</p>\n"
+  summary: "\nReturns an appropriate version ID for diagnostic purposes, which must not be null.\nThis doesn&apos;t have any specific format; it&apos;s solely for diagnostic purposes.\nThe included sources return strings of the format &quot;source identifier: source version&quot; indicating where the\ninformation comes from and which version of the source information has been loaded.\n"
+  remarks: "\n<p>\nThis source returns a string such as &quot;TZDB: 2013b (mapping: 8274)&quot; corresponding to the versions of the tz\ndatabase and the CLDR Windows zones mapping file.\n</p>\n<p>\nNote that there is no need to parse this string to extract any of the above information, as it is available\ndirectly from the <xref href=\"NodaTime.TimeZones.TzdbDateTimeZoneSource.TzdbVersion\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"NodaTime.TimeZones.Cldr.WindowsZones.Version\" data-throw-if-not-resolved=\"false\"></xref> properties.\n</p>\n"
   example: []
   syntax:
     content: public string VersionId { get; }
@@ -537,7 +537,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones
-  summary: "\nReturns this source's corresponding ID for the given BCL time zone.\n"
+  summary: "\nReturns this source&apos;s corresponding ID for the given BCL time zone.\n"
   example: []
   syntax:
     content: public string MapTimeZoneId(TimeZoneInfo zone)
@@ -578,7 +578,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones
-  summary: "\nReturns a lookup from canonical time zone ID (e.g. \"Europe/London\") to a group of aliases for that time zone\n(e.g. {\"Europe/Belfast\", \"Europe/Guernsey\", \"Europe/Jersey\", \"Europe/Isle_of_Man\", \"GB\", \"GB-Eire\"}).\n"
+  summary: "\nReturns a lookup from canonical time zone ID (e.g. &quot;Europe/London&quot;) to a group of aliases for that time zone\n(e.g. {&quot;Europe/Belfast&quot;, &quot;Europe/Guernsey&quot;, &quot;Europe/Jersey&quot;, &quot;Europe/Isle_of_Man&quot;, &quot;GB&quot;, &quot;GB-Eire&quot;}).\n"
   remarks: "\nThe group of values for a key never contains the canonical ID, only aliases. Any time zone\nID which is itself an alias or has no aliases linking to it will not be present in the lookup.\nThe aliases within a group are returned in alphabetical (ordinal) order.\n"
   example: []
   syntax:
@@ -617,7 +617,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones
-  summary: "\nReturns a read-only map from time zone ID to the canonical ID. For example, the key \"Europe/Jersey\"\nwould be associated with the value \"Europe/London\".\n"
+  summary: "\nReturns a read-only map from time zone ID to the canonical ID. For example, the key &quot;Europe/Jersey&quot;\nwould be associated with the value &quot;Europe/London&quot;.\n"
   remarks: "\n<p>This map contains an entry for every ID returned by <xref href=\"NodaTime.TimeZones.TzdbDateTimeZoneSource.GetIds\" data-throw-if-not-resolved=\"false\"></xref>, where\ncanonical IDs map to themselves.</p>\n<p>The returned map is read-only; any attempts to call a mutating method will throw\n<xref href=\"System.NotSupportedException\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
   example: []
   syntax:
@@ -657,7 +657,7 @@ items:
   - NodaTime
   namespace: NodaTime.TimeZones
   summary: "\nReturns a read-only list of zone locations known to this source.\n"
-  remarks: "\n<p>\nEvery zone location's time zone ID is guaranteed to be valid within this source (assuming the source\nhas been validated).\n</p>\n<p>\nThe legacy resource format does not include location information,\nand this property will throw an exception if the information is requested. It is expected\nthat callers who wish to use newer features will not be attempting to use legacy formats\nfor time zone data.\n</p>\n"
+  remarks: "\n<p>\nEvery zone location&apos;s time zone ID is guaranteed to be valid within this source (assuming the source\nhas been validated).\n</p>\n<p>\nThe legacy resource format does not include location information,\nand this property will throw an exception if the information is requested. It is expected\nthat callers who wish to use newer features will not be attempting to use legacy formats\nfor time zone data.\n</p>\n"
   example: []
   syntax:
     content: public IList<TzdbZoneLocation> ZoneLocations { get; }
@@ -701,7 +701,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones
-  summary: "\nReturns just the TZDB version (e.g. \"2013a\") of the source data.\n"
+  summary: "\nReturns just the TZDB version (e.g. &quot;2013a&quot;) of the source data.\n"
   example: []
   syntax:
     content: public string TzdbVersion { get; }
@@ -738,7 +738,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.TimeZones
-  summary: "\nGets the Windows time zone mapping information provided in the CLDR\nsupplemental \"windowsZones.xml\" file.\n"
+  summary: "\nGets the Windows time zone mapping information provided in the CLDR\nsupplemental &quot;windowsZones.xml&quot; file.\n"
   example: []
   syntax:
     content: public WindowsZones WindowsMapping { get; }
@@ -776,7 +776,7 @@ items:
   - NodaTime
   namespace: NodaTime.TimeZones
   summary: "\nValidates that the data within this source is consistent with itself.\n"
-  remarks: "\nSource data is not validated automatically when it's loaded, but any source\nloaded from data produced by <code>NodaTime.TzdbCompiler</code> (including the data shipped with Noda Time)\nwill already have been validated via this method when it was originally produced. This method should\nonly normally be called explicitly if you have data from a source you're unsure of.\n"
+  remarks: "\nSource data is not validated automatically when it&apos;s loaded, but any source\nloaded from data produced by <code>NodaTime.TzdbCompiler</code> (including the data shipped with Noda Time)\nwill already have been validated via this method when it was originally produced. This method should\nonly normally be called explicitly if you have data from a source you&apos;re unsure of.\n"
   example: []
   syntax:
     content: public void Validate()

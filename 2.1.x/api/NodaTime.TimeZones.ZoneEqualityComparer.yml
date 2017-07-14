@@ -120,7 +120,7 @@ items:
   - NodaTime
   namespace: NodaTime.TimeZones
   summary: "\nReturns a comparer operating over the same interval as this one, but with the given\nset of options.\n"
-  remarks: "\nThis method does not modify the comparer on which it's called.\n"
+  remarks: "\nThis method does not modify the comparer on which it&apos;s called.\n"
   example: []
   syntax:
     content: public ZoneEqualityComparer WithOptions(ZoneEqualityComparer.Options options)

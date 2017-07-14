@@ -214,7 +214,7 @@ items:
     parameters:
     - id: failureValue
       type: '{T}'
-      description: The "default" value to set in <span class="paramref">result</span> if parsing failed.
+      description: The &quot;default&quot; value to set in <span class="paramref">result</span> if parsing failed.
     - id: result
       type: '{T}'
       description: The parameter to store the parsed value in on success.
@@ -303,7 +303,7 @@ items:
       description: >-
         The projection to apply for the value of this result,
 
-        if it's a success result.
+        if it&apos;s a success result.
     typeParameters:
     - id: TTarget
     return:
@@ -387,7 +387,7 @@ items:
   remarks: >-
     When T is a reference type, <span class="paramref">value</span> should not be null,
 
-    but this isn't currently checked.
+    but this isn&apos;t currently checked.
   example: []
   syntax:
     content: public static ParseResult<T> ForValue(T value)
@@ -434,9 +434,9 @@ items:
   remarks: >-
     This method accepts a delegate rather than the exception itself, as creating an
 
-    exception can be relatively slow: if the client doesn't need the actual exception, just the information
+    exception can be relatively slow: if the client doesn&apos;t need the actual exception, just the information
 
-    that the parse failed, there's no point in creating the exception.
+    that the parse failed, there&apos;s no point in creating the exception.
   example: []
   syntax:
     content: public static ParseResult<T> ForException(Func<Exception> exceptionProvider)

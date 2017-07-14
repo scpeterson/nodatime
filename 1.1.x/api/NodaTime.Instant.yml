@@ -65,7 +65,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nRepresents an instant on the global timeline.\n"
-  remarks: "\n<p>\nAn instant is defined by an integral number of 'ticks' since the Unix epoch (typically described as January 1st\n1970, midnight, UTC, ISO calendar), where a tick is equal to 100 nanoseconds. There are 10,000 ticks in a\nmillisecond.\n</p>\n<p>\nAn <xref href=\"NodaTime.Instant\" data-throw-if-not-resolved=\"false\"></xref> has no concept of a particular time zone or calendar: it simply represents a point in\ntime that can be globally agreed-upon.\n</p>\n"
+  remarks: "\n<p>\nAn instant is defined by an integral number of &apos;ticks&apos; since the Unix epoch (typically described as January 1st\n1970, midnight, UTC, ISO calendar), where a tick is equal to 100 nanoseconds. There are 10,000 ticks in a\nmillisecond.\n</p>\n<p>\nAn <xref href=\"NodaTime.Instant\" data-throw-if-not-resolved=\"false\"></xref> has no concept of a particular time zone or calendar: it simply represents a point in\ntime that can be globally agreed-upon.\n</p>\n"
   example: []
   syntax:
     content: 'public struct Instant : IEquatable<Instant>, IComparable<Instant>, IFormattable, IComparable'
@@ -110,7 +110,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nRepresents the smallest possible <xref href=\"NodaTime.Instant\" data-throw-if-not-resolved=\"false\"></xref>.\n"
-  remarks: "\nWithin Noda Time, this is also used to represent 'the beginning of time'.\n"
+  remarks: "\nWithin Noda Time, this is also used to represent &apos;the beginning of time&apos;.\n"
   example: []
   syntax:
     content: public static readonly Instant MinValue
@@ -148,7 +148,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nRepresents the largest possible <xref href=\"NodaTime.Instant\" data-throw-if-not-resolved=\"false\"></xref>.\n"
-  remarks: "\nWithin Noda Time, this is also used to represent 'the end of time'.\n"
+  remarks: "\nWithin Noda Time, this is also used to represent &apos;the end of time&apos;.\n"
   example: []
   syntax:
     content: public static readonly Instant MaxValue
@@ -273,7 +273,7 @@ items:
       description: An object to compare with this object.
     return:
       type: System.Int32
-      description: "\nA 32-bit signed integer that indicates the relative order of the objects being compared.\nThe return value has the following meanings:\n<table><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody><tr><td>&lt; 0</td><td>This object is less than the <span class=\"paramref\">other</span> parameter.</td></tr><tr><td>0</td><td>This object is equal to <span class=\"paramref\">other</span>.</td></tr><tr><td>&gt; 0</td><td>This object is greater than <span class=\"paramref\">other</span>.</td></tr></tbody></table>\n"
+      description: "\nA 32-bit signed integer that indicates the relative order of the objects being compared.\nThe return value has the following meanings:\n<table><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody><tr><td>&lt; 0</td><td>This object is less than the <span class=\"paramref\">other</span> parameter.</td></tr><tr><td>0</td><td>This object is equal to <span class=\"paramref\">other</span>.</td></tr><tr><td>> 0</td><td>This object is greater than <span class=\"paramref\">other</span>.</td></tr></tbody></table>\n"
     content.vb: Public Function CompareTo(other As Instant) As Integer
   overload: NodaTime.Instant.CompareTo*
   implements:
@@ -1028,7 +1028,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nImplements the operator &gt; (greater than).\n"
+  summary: "\nImplements the operator > (greater than).\n"
   example: []
   syntax:
     content: public static bool operator>(Instant left, Instant right)
@@ -1072,7 +1072,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nImplements the operator &gt;= (greater than or equal).\n"
+  summary: "\nImplements the operator >= (greater than or equal).\n"
   example: []
   syntax:
     content: public static bool operator >=(Instant left, Instant right)
@@ -1124,7 +1124,7 @@ items:
     - id: year
       type: System.Int32
       description: >-
-        The year. This is the "absolute year",
+        The year. This is the &quot;absolute year&quot;,
 
         so a value of 0 means 1 BC, for example.
     - id: monthOfYear
@@ -1180,7 +1180,7 @@ items:
     - id: year
       type: System.Int32
       description: >-
-        The year. This is the "absolute year",
+        The year. This is the &quot;absolute year&quot;,
 
         so a value of 0 means 1 BC, for example.
     - id: monthOfYear
@@ -1325,7 +1325,7 @@ items:
     content: public override string ToString()
     return:
       type: System.String
-      description: "\nThe value of the current instance in the standard format pattern, using the current thread's\nculture to obtain a format provider.\n"
+      description: "\nThe value of the current instance in the standard format pattern, using the current thread&apos;s\nculture to obtain a format provider.\n"
     content.vb: Public Overrides Function ToString As String
   overridden: System.ValueType.ToString
   overload: NodaTime.Instant.ToString*
@@ -1373,7 +1373,7 @@ items:
       description: >
         The <xref href="System.IFormatProvider" data-throw-if-not-resolved="false"></xref> to use when formatting the value,
 
-        or null to use the current thread's culture to obtain a format provider.
+        or null to use the current thread&apos;s culture to obtain a format provider.
     return:
       type: System.String
       description: "\nA <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> containing the value of the current instance in the specified format.\n"
@@ -1454,7 +1454,7 @@ items:
     content: public DateTime ToDateTimeUtc()
     return:
       type: System.DateTime
-      description: A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> representing the same instant in time as this value, with a kind of "universal".
+      description: A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> representing the same instant in time as this value, with a kind of &quot;universal&quot;.
     content.vb: Public Function ToDateTimeUtc As Date
   overload: NodaTime.Instant.ToDateTimeUtc*
   modifiers.csharp:

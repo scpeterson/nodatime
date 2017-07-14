@@ -85,7 +85,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nReturns the general pattern, which always uses an invariant culture. The general pattern represents\nan instant as a UTC date/time in ISO-8601 style \"yyyy-MM-ddTHH:mm:ss'Z'\".\n"
+  summary: "\nReturns the general pattern, which always uses an invariant culture. The general pattern represents\nan instant as a UTC date/time in ISO-8601 style &quot;yyyy-MM-ddTHH:mm:ss&apos;Z&apos;&quot;.\n"
   example: []
   syntax:
     content: public static InstantPattern General { get; }
@@ -124,7 +124,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nReturns the general pattern, which always uses an invariant culture. The general pattern represents\nan instant as a UTC date/time in ISO-8601 style \"yyyy-MM-ddTHH:mm:ss'Z'\".\n"
+  summary: "\nReturns the general pattern, which always uses an invariant culture. The general pattern represents\nan instant as a UTC date/time in ISO-8601 style &quot;yyyy-MM-ddTHH:mm:ss&apos;Z&apos;&quot;.\n"
   example: []
   syntax:
     content: >-
@@ -175,7 +175,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nReturns an invariant instant pattern which is ISO-8601 compatible, providing up to 7 decimal places\nof sub-second accuracy. (These digits are omitted when unnecessary.)\nThis corresponds to the text pattern \"yyyy'-'MM'-'dd'T'HH':'mm':'ss;FFFFFFF'Z'\".\n"
+  summary: "\nReturns an invariant instant pattern which is ISO-8601 compatible, providing up to 7 decimal places\nof sub-second accuracy. (These digits are omitted when unnecessary.)\nThis corresponds to the text pattern &quot;yyyy&apos;-&apos;MM&apos;-&apos;dd&apos;T&apos;HH&apos;:&apos;mm&apos;:&apos;ss;FFFFFFF&apos;Z&apos;&quot;.\n"
   example: []
   syntax:
     content: public static InstantPattern ExtendedIso { get; }
@@ -214,7 +214,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nReturns an invariant instant pattern which is ISO-8601 compatible, providing up to 7 decimal places\nof sub-second accuracy. (These digits are omitted when unnecessary.)\nThis corresponds to the text pattern \"yyyy'-'MM'-'dd'T'HH':'mm':'ss;FFFFFFF'Z'\".\n"
+  summary: "\nReturns an invariant instant pattern which is ISO-8601 compatible, providing up to 7 decimal places\nof sub-second accuracy. (These digits are omitted when unnecessary.)\nThis corresponds to the text pattern &quot;yyyy&apos;-&apos;MM&apos;-&apos;dd&apos;T&apos;HH&apos;:&apos;mm&apos;:&apos;ss;FFFFFFF&apos;Z&apos;&quot;.\n"
   example: []
   syntax:
     content: >-
@@ -434,7 +434,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nCreates a pattern for the given pattern text in the current thread's current culture.\n"
+  summary: "\nCreates a pattern for the given pattern text in the current thread&apos;s current culture.\n"
   remarks: "\nSee the user guide for the available pattern text options. Note that the current culture\nis captured at the time this method is called - it is not captured at the point of parsing\nor formatting values.\n"
   example: []
   syntax:
@@ -526,7 +526,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nCreates a \"numeric\" pattern for the given culture. The numeric format gives the\nnumber of ticks in decimal format, with or without thousands separators.\n"
+  summary: "\nCreates a &quot;numeric&quot; pattern for the given culture. The numeric format gives the\nnumber of ticks in decimal format, with or without thousands separators.\n"
   example: []
   syntax:
     content: >-

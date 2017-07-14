@@ -38,7 +38,7 @@ items:
   - NodaTime.Testing
   namespace: NodaTime.Testing
   summary: "\nClock which can be constructed with an initial instant, and then advanced programmatically (and optionally,\nautomatically advanced on each read).\nThis class is designed to be used when testing classes which take an <xref href=\"NodaTime.IClock\" data-throw-if-not-resolved=\"false\"></xref> as a dependency.\n"
-  remarks: "\nThis class is somewhere between a fake and a stub, depending on how it's used - if it's set to\n<xref href=\"NodaTime.Testing.FakeClock.AutoAdvance\" data-throw-if-not-resolved=\"false\"></xref> then time will pass, but in a pretty odd way (i.e. dependent on how\noften it's consulted).\n"
+  remarks: "\nThis class is somewhere between a fake and a stub, depending on how it&apos;s used - if it&apos;s set to\n<xref href=\"NodaTime.Testing.FakeClock.AutoAdvance\" data-throw-if-not-resolved=\"false\"></xref> then time will pass, but in a pretty odd way (i.e. dependent on how\noften it&apos;s consulted).\n"
   example: []
   syntax:
     content: 'public sealed class FakeClock : IClock'
@@ -173,7 +173,7 @@ items:
     - id: year
       type: System.Int32
       description: >-
-        The year. This is the "absolute year",
+        The year. This is the &quot;absolute year&quot;,
 
         so a value of 0 means 1 BC, for example.
     - id: monthOfYear
@@ -223,7 +223,7 @@ items:
     - id: year
       type: System.Int32
       description: >-
-        The year. This is the "absolute year",
+        The year. This is the &quot;absolute year&quot;,
 
         so a value of 0 means 1 BC, for example.
     - id: monthOfYear
@@ -583,7 +583,7 @@ items:
   assemblies:
   - NodaTime.Testing
   namespace: NodaTime.Testing
-  summary: "\nReturns the \"current time\" for this clock. Unlike a normal clock, this\nproperty may return the same value from repeated calls until one of the methods\nto change the time is called.\n"
+  summary: "\nReturns the &quot;current time&quot; for this clock. Unlike a normal clock, this\nproperty may return the same value from repeated calls until one of the methods\nto change the time is called.\n"
   remarks: "\nIf the value of the <xref href=\"NodaTime.Testing.FakeClock.AutoAdvance\" data-throw-if-not-resolved=\"false\"></xref> property is non-zero, then every\ncall to this method will advance the current time by that value.\n"
   example: []
   syntax:

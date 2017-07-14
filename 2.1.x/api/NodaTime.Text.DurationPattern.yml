@@ -81,7 +81,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nGets the general pattern for durations using the invariant culture, with a format string of \"-D:hh:mm:ss.FFFFFFFFF\".\nThis pattern round-trips.\n"
+  summary: "\nGets the general pattern for durations using the invariant culture, with a format string of &quot;-D:hh:mm:ss.FFFFFFFFF&quot;.\nThis pattern round-trips.\n"
   example: []
   syntax:
     content: public static DurationPattern Roundtrip { get; }
@@ -335,7 +335,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nCreates a pattern for the given pattern text in the current thread's current culture.\n"
+  summary: "\nCreates a pattern for the given pattern text in the current thread&apos;s current culture.\n"
   remarks: "\nSee the user guide for the available pattern text options. Note that the current culture\nis captured at the time this method is called - it is not captured at the point of parsing\nor formatting values.\n"
   example: []
   syntax:

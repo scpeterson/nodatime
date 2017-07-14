@@ -73,7 +73,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nA <xref href=\"NodaTime.ZonedDateTime.LocalDateTime\" data-throw-if-not-resolved=\"false\"></xref> in a specific time zone and with a particular offset to distinguish between otherwise-ambiguous\ninstants. A <xref href=\"NodaTime.ZonedDateTime\" data-throw-if-not-resolved=\"false\"></xref> is global, in that it maps to a single <xref href=\"NodaTime.Instant\" data-throw-if-not-resolved=\"false\"></xref>.\n"
-  remarks: "\n<p>Although <xref href=\"NodaTime.ZonedDateTime\" data-throw-if-not-resolved=\"false\"></xref> includes both local and global concepts, it only supports\nduration-based - and not calendar-based - arithmetic. This avoids ambiguities\nand skipped date/time values becoming a problem within a series of calculations; instead,\nthese can be considered just once, at the point of conversion to a <xref href=\"NodaTime.ZonedDateTime\" data-throw-if-not-resolved=\"false\"></xref>.\n</p>\n<p>Comparisons of values can be handled in a way which is either calendar and zone sensitive or insensitive.\nNoda Time implements all the operators (and the <xref href=\"NodaTime.ZonedDateTime.Equals(NodaTime.ZonedDateTime)\" data-throw-if-not-resolved=\"false\"></xref> method) such that all operators other than <xref href=\"NodaTime.ZonedDateTime.op_Inequality(NodaTime.ZonedDateTime%2cNodaTime.ZonedDateTime)\" data-throw-if-not-resolved=\"false\"></xref>\nwill return false if asked to compare two values in different calendar systems or time zones.\n</p>\n<p>\nHowever, the <xref href=\"NodaTime.ZonedDateTime.CompareTo(NodaTime.ZonedDateTime)\" data-throw-if-not-resolved=\"false\"></xref> method (implementing <xref href=\"System.IComparable%601\" data-throw-if-not-resolved=\"false\"></xref>) is calendar and zone insensitive; it compares the two\nglobal instants in terms of when they actually occurred.\n</p>\n<p>\nIt's unclear at the time of this writing whether this is the most appropriate approach, and it may change in future versions. In general,\nit would be a good idea for users to avoid comparing dates in different calendar systems, and indeed most users are unlikely to ever explicitly\nconsider which calendar system they're working in anyway.\n</p>\n<p>\nCurrently there is no real text handling support for this type.\n</p>\n"
+  remarks: "\n<p>Although <xref href=\"NodaTime.ZonedDateTime\" data-throw-if-not-resolved=\"false\"></xref> includes both local and global concepts, it only supports\nduration-based - and not calendar-based - arithmetic. This avoids ambiguities\nand skipped date/time values becoming a problem within a series of calculations; instead,\nthese can be considered just once, at the point of conversion to a <xref href=\"NodaTime.ZonedDateTime\" data-throw-if-not-resolved=\"false\"></xref>.\n</p>\n<p>Comparisons of values can be handled in a way which is either calendar and zone sensitive or insensitive.\nNoda Time implements all the operators (and the <xref href=\"NodaTime.ZonedDateTime.Equals(NodaTime.ZonedDateTime)\" data-throw-if-not-resolved=\"false\"></xref> method) such that all operators other than <xref href=\"NodaTime.ZonedDateTime.op_Inequality(NodaTime.ZonedDateTime%2cNodaTime.ZonedDateTime)\" data-throw-if-not-resolved=\"false\"></xref>\nwill return false if asked to compare two values in different calendar systems or time zones.\n</p>\n<p>\nHowever, the <xref href=\"NodaTime.ZonedDateTime.CompareTo(NodaTime.ZonedDateTime)\" data-throw-if-not-resolved=\"false\"></xref> method (implementing <xref href=\"System.IComparable%601\" data-throw-if-not-resolved=\"false\"></xref>) is calendar and zone insensitive; it compares the two\nglobal instants in terms of when they actually occurred.\n</p>\n<p>\nIt&apos;s unclear at the time of this writing whether this is the most appropriate approach, and it may change in future versions. In general,\nit would be a good idea for users to avoid comparing dates in different calendar systems, and indeed most users are unlikely to ever explicitly\nconsider which calendar system they&apos;re working in anyway.\n</p>\n<p>\nCurrently there is no real text handling support for this type.\n</p>\n"
   example: []
   syntax:
     content: 'public struct ZonedDateTime : IEquatable<ZonedDateTime>, IComparable<ZonedDateTime>'
@@ -438,7 +438,7 @@ items:
   namespace: NodaTime
   summary: Gets the year of this zoned date and time.
   remarks: >-
-    This returns the "absolute year", so, for the ISO calendar,
+    This returns the &quot;absolute year&quot;, so, for the ISO calendar,
 
     a value of 0 means 1 BC, for example.
   example: []
@@ -552,7 +552,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nGets the \"week year\" of this date and time.\n"
+  summary: "\nGets the &quot;week year&quot; of this date and time.\n"
   remarks: "\n<p>\nThe WeekYear is the year that matches with the <xref href=\"NodaTime.ZonedDateTime.WeekOfWeekYear\" data-throw-if-not-resolved=\"false\"></xref> field.\nIn the standard ISO-8601 week algorithm, the first week of the year\nis that in which at least 4 days are in the year. As a result of this\ndefinition, day 1 of the first week may be in the previous year.\nThe WeekYear allows you to query the effective year for that day.\n</p>\n<p>\nFor example, January 1st 2011 was a Saturday, so only two days of that week\n(Saturday and Sunday) were in 2011. Therefore January 1st is part of\nweek 52 of WeekYear 2010. Conversely, December 31st 2012 is a Monday,\nso is part of week 1 of WeekYear 2013.\n</p>\n"
   example: []
   syntax:
@@ -750,7 +750,7 @@ items:
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
-    description: The underlying calendar doesn't use ISO days of the week.
+    description: The underlying calendar doesn&apos;t use ISO days of the week.
   seealso:
   - linkId: NodaTime.ZonedDateTime.DayOfWeek
     commentId: P:NodaTime.ZonedDateTime.DayOfWeek
@@ -1738,7 +1738,7 @@ items:
       description: The duration to subtract.
     return:
       type: NodaTime.ZonedDateTime
-      description: A new value with the time "rewound" by the given duration, in the same calendar system and time zone.
+      description: A new value with the time &quot;rewound&quot; by the given duration, in the same calendar system and time zone.
     content.vb: Public Shared Function Subtract(zonedDateTime As ZonedDateTime, duration As Duration) As ZonedDateTime
   overload: NodaTime.ZonedDateTime.Subtract*
   modifiers.csharp:
@@ -1822,7 +1822,7 @@ items:
       description: The duration to subtract.
     return:
       type: NodaTime.ZonedDateTime
-      description: A new value with the time "rewound" by the given duration, in the same calendar system and time zone.
+      description: A new value with the time &quot;rewound&quot; by the given duration, in the same calendar system and time zone.
     content.vb: Public Shared Operator -(zonedDateTime As ZonedDateTime, duration As Duration) As ZonedDateTime
   overload: NodaTime.ZonedDateTime.op_Subtraction*
   modifiers.csharp:
@@ -1892,7 +1892,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nConstructs a <xref href=\"System.DateTimeOffset\" data-throw-if-not-resolved=\"false\"></xref> value with the same local time and offset from\nUTC as this value.\n"
-  remarks: "\nAn offset does not convey as much information as a time zone; a <xref href=\"System.DateTimeOffset\" data-throw-if-not-resolved=\"false\"></xref>\nrepresents an instant in time along with an associated local time, but it doesn't allow you\nto find out what the local time would be for another instant.\n"
+  remarks: "\nAn offset does not convey as much information as a time zone; a <xref href=\"System.DateTimeOffset\" data-throw-if-not-resolved=\"false\"></xref>\nrepresents an instant in time along with an associated local time, but it doesn&apos;t allow you\nto find out what the local time would be for another instant.\n"
   example: []
   syntax:
     content: public DateTimeOffset ToDateTimeOffset()
@@ -1975,7 +1975,7 @@ items:
     return:
       type: System.DateTime
       description: >-
-        A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> representation of this value with a "universal" kind, with the same
+        A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> representation of this value with a &quot;universal&quot; kind, with the same
 
         instant of time as this value.
     content.vb: Public Function ToDateTimeUtc As Date
@@ -2007,14 +2007,14 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nConstructs a <xref href=\"System.DateTime\" data-throw-if-not-resolved=\"false\"></xref> from this <xref href=\"NodaTime.ZonedDateTime\" data-throw-if-not-resolved=\"false\"></xref> which has a\n<xref href=\"System.DateTime.Kind\" data-throw-if-not-resolved=\"false\"></xref> of <xref href=\"System.DateTimeKind.Unspecified\" data-throw-if-not-resolved=\"false\"></xref> and represents the same local time as\nthis value rather than the same instant in time.\n"
-  remarks: "\n<xref href=\"System.DateTimeKind.Unspecified\" data-throw-if-not-resolved=\"false\"></xref> is slightly odd - it can be treated as UTC if you use <xref href=\"System.DateTime.ToLocalTime\" data-throw-if-not-resolved=\"false\"></xref>\nor as system local time if you use <xref href=\"System.DateTime.ToUniversalTime\" data-throw-if-not-resolved=\"false\"></xref>, but it's the only kind which allows\nyou to construct a <xref href=\"System.DateTimeOffset\" data-throw-if-not-resolved=\"false\"></xref> with an arbitrary offset.\n"
+  remarks: "\n<xref href=\"System.DateTimeKind.Unspecified\" data-throw-if-not-resolved=\"false\"></xref> is slightly odd - it can be treated as UTC if you use <xref href=\"System.DateTime.ToLocalTime\" data-throw-if-not-resolved=\"false\"></xref>\nor as system local time if you use <xref href=\"System.DateTime.ToUniversalTime\" data-throw-if-not-resolved=\"false\"></xref>, but it&apos;s the only kind which allows\nyou to construct a <xref href=\"System.DateTimeOffset\" data-throw-if-not-resolved=\"false\"></xref> with an arbitrary offset.\n"
   example: []
   syntax:
     content: public DateTime ToDateTimeUnspecified()
     return:
       type: System.DateTime
       description: >-
-        A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> representation of this value with an "unspecified" kind, with the same
+        A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> representation of this value with an &quot;unspecified&quot; kind, with the same
 
         local date and time as this value.
     content.vb: Public Function ToDateTimeUnspecified As Date
@@ -2045,7 +2045,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nConstructs an <xref href=\"NodaTime.OffsetDateTime\" data-throw-if-not-resolved=\"false\"></xref> with the same local date and time, and the same offset\nas this zoned date and time, effectively just \"removing\" the time zone itself.\n"
+  summary: "\nConstructs an <xref href=\"NodaTime.OffsetDateTime\" data-throw-if-not-resolved=\"false\"></xref> with the same local date and time, and the same offset\nas this zoned date and time, effectively just &quot;removing&quot; the time zone itself.\n"
   example: []
   syntax:
     content: public OffsetDateTime ToOffsetDateTime()

@@ -39,7 +39,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nAn interval between two instants in time (start and end).\n"
-  remarks: "\n<p>\nThe interval includes the start instant and excludes the end instant, unless the end instant\nis <xref href=\"NodaTime.Instant.MaxValue\" data-throw-if-not-resolved=\"false\"></xref> in which case it's deemed to be inclusive.\n(An interval stretching to infinity includes the end of time.)\n</p>\n<p>\nThe end may equal the start (resulting in an empty interval), but will not be before the start.\n</p>\n"
+  remarks: "\n<p>\nThe interval includes the start instant and excludes the end instant, unless the end instant\nis <xref href=\"NodaTime.Instant.MaxValue\" data-throw-if-not-resolved=\"false\"></xref> in which case it&apos;s deemed to be inclusive.\n(An interval stretching to infinity includes the end of time.)\n</p>\n<p>\nThe end may equal the start (resulting in an empty interval), but will not be before the start.\n</p>\n"
   example: []
   syntax:
     content: >-
@@ -252,7 +252,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nReturns whether or not this interval contains the given instant.\n"
-  remarks: "\nThe interval is considered to include the <xref href=\"NodaTime.Interval.Start\" data-throw-if-not-resolved=\"false\"></xref> instant but\nnot the <xref href=\"NodaTime.Interval.End\" data-throw-if-not-resolved=\"false\"></xref> instant - unless the end is <xref href=\"NodaTime.Instant.MaxValue\" data-throw-if-not-resolved=\"false\"></xref>, in\nwhich case it's considered to be infinite from the start point onwards.\n"
+  remarks: "\nThe interval is considered to include the <xref href=\"NodaTime.Interval.Start\" data-throw-if-not-resolved=\"false\"></xref> instant but\nnot the <xref href=\"NodaTime.Interval.End\" data-throw-if-not-resolved=\"false\"></xref> instant - unless the end is <xref href=\"NodaTime.Instant.MaxValue\" data-throw-if-not-resolved=\"false\"></xref>, in\nwhich case it&apos;s considered to be infinite from the start point onwards.\n"
   example: []
   syntax:
     content: public bool Contains(Instant instant)
@@ -412,7 +412,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nReturns a string representation of this interval, in extended ISO-8601 format: the format\nis \"start/end\" where each instant uses a format of \"yyyy'-'MM'-'dd'T'HH':'mm':'ss;FFFFFFF'Z'\".\n"
+  summary: "\nReturns a string representation of this interval, in extended ISO-8601 format: the format\nis &quot;start/end&quot; where each instant uses a format of &quot;yyyy&apos;-&apos;MM&apos;-&apos;dd&apos;T&apos;HH&apos;:&apos;mm&apos;:&apos;ss;FFFFFFF&apos;Z&apos;&quot;.\n"
   example: []
   syntax:
     content: public override string ToString()

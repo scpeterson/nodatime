@@ -25,7 +25,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nRepresents a clock which can return the current time as an <xref href=\"NodaTime.Instant\" data-throw-if-not-resolved=\"false\"></xref>.\n"
-  remarks: "\n<xref href=\"NodaTime.IClock\" data-throw-if-not-resolved=\"false\"></xref> is intended for use anywhere you need to have access to the current time.\nAlthough it's not strictly incorrect to call <code>SystemClock.Instance.Now</code> directly,\nin the same way as you might call <xref href=\"System.DateTime.UtcNow\" data-throw-if-not-resolved=\"false\"></xref>, it's strongly discouraged\nas a matter of style for production code. We recommend providing an instance of <xref href=\"NodaTime.IClock\" data-throw-if-not-resolved=\"false\"></xref>\nto anything that needs it, which allows you to write tests using the stub clock in the NodaTime.Testing\nassembly (or your own implementation).\n"
+  remarks: "\n<xref href=\"NodaTime.IClock\" data-throw-if-not-resolved=\"false\"></xref> is intended for use anywhere you need to have access to the current time.\nAlthough it&apos;s not strictly incorrect to call <code>SystemClock.Instance.Now</code> directly,\nin the same way as you might call <xref href=\"System.DateTime.UtcNow\" data-throw-if-not-resolved=\"false\"></xref>, it&apos;s strongly discouraged\nas a matter of style for production code. We recommend providing an instance of <xref href=\"NodaTime.IClock\" data-throw-if-not-resolved=\"false\"></xref>\nto anything that needs it, which allows you to write tests using the stub clock in the NodaTime.Testing\nassembly (or your own implementation).\n"
   example: []
   syntax:
     content: public interface IClock

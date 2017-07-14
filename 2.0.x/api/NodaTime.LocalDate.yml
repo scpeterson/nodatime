@@ -141,7 +141,7 @@ items:
     parameters:
     - id: year
       type: System.Int32
-      description: The year. This is the "absolute year", so a value of 0 means 1 BC, for example.
+      description: The year. This is the &quot;absolute year&quot;, so a value of 0 means 1 BC, for example.
     - id: month
       type: System.Int32
       description: The month of year.
@@ -188,7 +188,7 @@ items:
     - id: year
       type: System.Int32
       description: >-
-        The year. This is the "absolute year", so, for
+        The year. This is the &quot;absolute year&quot;, so, for
 
         the ISO calendar, a value of 0 means 1 BC, for example.
     - id: month
@@ -373,7 +373,7 @@ items:
   namespace: NodaTime
   summary: Gets the year of this local date.
   remarks: >-
-    This returns the "absolute year", so, for the ISO calendar,
+    This returns the &quot;absolute year&quot;, so, for the ISO calendar,
 
     a value of 0 means 1 BC, for example.
   example: []
@@ -680,7 +680,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nConstructs a <xref href=\"System.DateTime\" data-throw-if-not-resolved=\"false\"></xref> from this value which has a <xref href=\"System.DateTime.Kind\" data-throw-if-not-resolved=\"false\"></xref>\nof <xref href=\"System.DateTimeKind.Unspecified\" data-throw-if-not-resolved=\"false\"></xref>. The result is midnight on the day represented\nby this value.\n"
-  remarks: "\n<xref href=\"System.DateTimeKind.Unspecified\" data-throw-if-not-resolved=\"false\"></xref> is slightly odd - it can be treated as UTC if you use <xref href=\"System.DateTime.ToLocalTime\" data-throw-if-not-resolved=\"false\"></xref>\nor as system local time if you use <xref href=\"System.DateTime.ToUniversalTime\" data-throw-if-not-resolved=\"false\"></xref>, but it's the only kind which allows\nyou to construct a <xref href=\"System.DateTimeOffset\" data-throw-if-not-resolved=\"false\"></xref> with an arbitrary offset, which makes it as close to\nthe Noda Time non-system-specific \"local\" concept as exists in .NET.\n"
+  remarks: "\n<xref href=\"System.DateTimeKind.Unspecified\" data-throw-if-not-resolved=\"false\"></xref> is slightly odd - it can be treated as UTC if you use <xref href=\"System.DateTime.ToLocalTime\" data-throw-if-not-resolved=\"false\"></xref>\nor as system local time if you use <xref href=\"System.DateTime.ToUniversalTime\" data-throw-if-not-resolved=\"false\"></xref>, but it&apos;s the only kind which allows\nyou to construct a <xref href=\"System.DateTimeOffset\" data-throw-if-not-resolved=\"false\"></xref> with an arbitrary offset, which makes it as close to\nthe Noda Time non-system-specific &quot;local&quot; concept as exists in .NET.\n"
   example: []
   syntax:
     content: public DateTime ToDateTimeUnspecified()
@@ -715,7 +715,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nConverts a <xref href=\"System.DateTime\" data-throw-if-not-resolved=\"false\"></xref> of any kind to a LocalDate in the ISO calendar, ignoring the time of day.\nThis does not perform any time zone conversions, so a DateTime with a <xref href=\"System.DateTime.Kind\" data-throw-if-not-resolved=\"false\"></xref> of\n<xref href=\"System.DateTimeKind.Utc\" data-throw-if-not-resolved=\"false\"></xref> will still represent the same year/month/day - it won't be converted into the local system time.\n"
+  summary: "\nConverts a <xref href=\"System.DateTime\" data-throw-if-not-resolved=\"false\"></xref> of any kind to a LocalDate in the ISO calendar, ignoring the time of day.\nThis does not perform any time zone conversions, so a DateTime with a <xref href=\"System.DateTime.Kind\" data-throw-if-not-resolved=\"false\"></xref> of\n<xref href=\"System.DateTimeKind.Utc\" data-throw-if-not-resolved=\"false\"></xref> will still represent the same year/month/day - it won&apos;t be converted into the local system time.\n"
   example: []
   syntax:
     content: public static LocalDate FromDateTime(DateTime dateTime)
@@ -756,7 +756,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nConverts a <xref href=\"System.DateTime\" data-throw-if-not-resolved=\"false\"></xref> of any kind to a LocalDate in the specified calendar, ignoring the time of day.\nThis does not perform any time zone conversions, so a DateTime with a <xref href=\"System.DateTime.Kind\" data-throw-if-not-resolved=\"false\"></xref> of\n<xref href=\"System.DateTimeKind.Utc\" data-throw-if-not-resolved=\"false\"></xref> will still represent the same year/month/day - it won't be converted into the local system time.\n"
+  summary: "\nConverts a <xref href=\"System.DateTime\" data-throw-if-not-resolved=\"false\"></xref> of any kind to a LocalDate in the specified calendar, ignoring the time of day.\nThis does not perform any time zone conversions, so a DateTime with a <xref href=\"System.DateTime.Kind\" data-throw-if-not-resolved=\"false\"></xref> of\n<xref href=\"System.DateTimeKind.Utc\" data-throw-if-not-resolved=\"false\"></xref> will still represent the same year/month/day - it won&apos;t be converted into the local system time.\n"
   example: []
   syntax:
     content: public static LocalDate FromDateTime(DateTime dateTime, CalendarSystem calendar)
@@ -800,7 +800,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nReturns the local date corresponding to the given \"week year\", \"week of week year\", and \"day of week\"\nin the ISO calendar system, using the ISO week-year rules.\n"
+  summary: "\nReturns the local date corresponding to the given &quot;week year&quot;, &quot;week of week year&quot;, and &quot;day of week&quot;\nin the ISO calendar system, using the ISO week-year rules.\n"
   example: []
   syntax:
     content: public static LocalDate FromWeekYearWeekAndDay(int weekYear, int weekOfWeekYear, IsoDayOfWeek dayOfWeek)
@@ -847,8 +847,8 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nReturns the local date corresponding to a particular occurrence of a day-of-week\nwithin a year and month. For example, this method can be used to ask for \"the third Monday in April 2012\".\n"
-  remarks: "\nThe returned date is always in the ISO calendar. This method is unrelated to week-years and any rules for\n\"business weeks\" and the like - if a month begins on a Friday, then asking for the first Friday will give\nthat day, for example.\n"
+  summary: "\nReturns the local date corresponding to a particular occurrence of a day-of-week\nwithin a year and month. For example, this method can be used to ask for &quot;the third Monday in April 2012&quot;.\n"
+  remarks: "\nThe returned date is always in the ISO calendar. This method is unrelated to week-years and any rules for\n&quot;business weeks&quot; and the like - if a month begins on a Friday, then asking for the first Friday will give\nthat day, for example.\n"
   example: []
   syntax:
     content: public static LocalDate FromYearMonthWeekAndDay(int year, int month, int occurrence, IsoDayOfWeek dayOfWeek)
@@ -2100,7 +2100,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nReturns the next <xref href=\"NodaTime.LocalDate\" data-throw-if-not-resolved=\"false\"></xref> falling on the specified <xref href=\"NodaTime.IsoDayOfWeek\" data-throw-if-not-resolved=\"false\"></xref>.\nThis is a strict \"next\" - if this date on already falls on the target\nday of the week, the returned value will be a week later.\n"
+  summary: "\nReturns the next <xref href=\"NodaTime.LocalDate\" data-throw-if-not-resolved=\"false\"></xref> falling on the specified <xref href=\"NodaTime.IsoDayOfWeek\" data-throw-if-not-resolved=\"false\"></xref>.\nThis is a strict &quot;next&quot; - if this date on already falls on the target\nday of the week, the returned value will be a week later.\n"
   example: []
   syntax:
     content: public LocalDate Next(IsoDayOfWeek targetDayOfWeek)
@@ -2116,7 +2116,7 @@ items:
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
-    description: The underlying calendar doesn't use ISO days of the week.
+    description: The underlying calendar doesn&apos;t use ISO days of the week.
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
     description: >-
@@ -2148,7 +2148,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nReturns the previous <xref href=\"NodaTime.LocalDate\" data-throw-if-not-resolved=\"false\"></xref> falling on the specified <xref href=\"NodaTime.IsoDayOfWeek\" data-throw-if-not-resolved=\"false\"></xref>.\nThis is a strict \"previous\" - if this date on already falls on the target\nday of the week, the returned value will be a week earlier.\n"
+  summary: "\nReturns the previous <xref href=\"NodaTime.LocalDate\" data-throw-if-not-resolved=\"false\"></xref> falling on the specified <xref href=\"NodaTime.IsoDayOfWeek\" data-throw-if-not-resolved=\"false\"></xref>.\nThis is a strict &quot;previous&quot; - if this date on already falls on the target\nday of the week, the returned value will be a week earlier.\n"
   example: []
   syntax:
     content: public LocalDate Previous(IsoDayOfWeek targetDayOfWeek)
@@ -2164,7 +2164,7 @@ items:
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
-    description: The underlying calendar doesn't use ISO days of the week.
+    description: The underlying calendar doesn&apos;t use ISO days of the week.
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
     description: >-
@@ -2284,7 +2284,7 @@ items:
     content: public override string ToString()
     return:
       type: System.String
-      description: "\nThe value of the current instance in the default format pattern (\"D\"), using the current thread's\nculture to obtain a format provider.\n"
+      description: "\nThe value of the current instance in the default format pattern (&quot;D&quot;), using the current thread&apos;s\nculture to obtain a format provider.\n"
     content.vb: Public Overrides Function ToString As String
   overridden: System.ValueType.ToString
   overload: NodaTime.LocalDate.ToString*
@@ -2326,13 +2326,13 @@ items:
       description: >
         The <xref href="System.String" data-throw-if-not-resolved="false"></xref> specifying the pattern to use,
 
-        or null to use the default format pattern ("D").
+        or null to use the default format pattern (&quot;D&quot;).
     - id: formatProvider
       type: System.IFormatProvider
       description: >
         The <xref href="System.IFormatProvider" data-throw-if-not-resolved="false"></xref> to use when formatting the value,
 
-        or null to use the current thread's culture to obtain a format provider.
+        or null to use the current thread&apos;s culture to obtain a format provider.
     return:
       type: System.String
       description: "\nA <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> containing the value of the current instance in the specified format.\n"

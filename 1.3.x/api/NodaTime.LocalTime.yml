@@ -1839,7 +1839,7 @@ items:
     content: public override string ToString()
     return:
       type: System.String
-      description: "\nThe value of the current instance in the default format pattern (\"T\"), using the current thread's\nculture to obtain a format provider.\n"
+      description: "\nThe value of the current instance in the default format pattern (&quot;T&quot;), using the current thread&apos;s\nculture to obtain a format provider.\n"
     content.vb: Public Overrides Function ToString As String
   overridden: System.ValueType.ToString
   overload: NodaTime.LocalTime.ToString*
@@ -1881,13 +1881,13 @@ items:
       description: >
         The <xref href="System.String" data-throw-if-not-resolved="false"></xref> specifying the pattern to use,
 
-        or null to use the default format pattern ("T").
+        or null to use the default format pattern (&quot;T&quot;).
     - id: formatProvider
       type: System.IFormatProvider
       description: >
         The <xref href="System.IFormatProvider" data-throw-if-not-resolved="false"></xref> to use when formatting the value,
 
-        or null to use the current thread's culture to obtain a format provider.
+        or null to use the current thread&apos;s culture to obtain a format provider.
     return:
       type: System.String
       description: "\nA <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> containing the value of the current instance in the specified format.\n"

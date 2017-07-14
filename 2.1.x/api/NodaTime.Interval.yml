@@ -560,7 +560,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nReturns a string representation of this interval, in extended ISO-8601 format: the format\nis \"start/end\" where each instant uses a format of \"uuuu'-'MM'-'dd'T'HH':'mm':'ss;FFFFFFFFF'Z'\".\nIf the start or end is infinite, the relevant part uses \"StartOfTime\" or \"EndOfTime\" to\nrepresent this.\n"
+  summary: "\nReturns a string representation of this interval, in extended ISO-8601 format: the format\nis &quot;start/end&quot; where each instant uses a format of &quot;uuuu&apos;-&apos;MM&apos;-&apos;dd&apos;T&apos;HH&apos;:&apos;mm&apos;:&apos;ss;FFFFFFFFF&apos;Z&apos;&quot;.\nIf the start or end is infinite, the relevant part uses &quot;StartOfTime&quot; or &quot;EndOfTime&quot; to\nrepresent this.\n"
   example: []
   syntax:
     content: public override string ToString()
