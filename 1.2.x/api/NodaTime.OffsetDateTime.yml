@@ -1190,7 +1190,7 @@ items:
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: <span class="paramref">calendarSystem</span> is null.
+    description: <code data-dev-comment-type="paramref" class="paramref">calendarSystem</code> is null.
   modifiers.csharp:
   - public
   modifiers.vb:

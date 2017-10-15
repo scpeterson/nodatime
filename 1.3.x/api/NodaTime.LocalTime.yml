@@ -1257,7 +1257,7 @@ items:
       description: Second operand of the comparison
     return:
       type: System.Boolean
-      description: true if the <span class="paramref">lhs</span> is strictly earlier than <span class="paramref">rhs</span>, false otherwise.
+      description: true if the <code data-dev-comment-type="paramref" class="paramref">lhs</code> is strictly earlier than <code data-dev-comment-type="paramref" class="paramref">rhs</code>, false otherwise.
     content.vb: Public Shared Operator <(lhs As LocalTime, rhs As LocalTime) As Boolean
   overload: NodaTime.LocalTime.op_LessThan*
   modifiers.csharp:
@@ -1301,7 +1301,7 @@ items:
       description: Second operand of the comparison
     return:
       type: System.Boolean
-      description: true if the <span class="paramref">lhs</span> is earlier than or equal to <span class="paramref">rhs</span>, false otherwise.
+      description: true if the <code data-dev-comment-type="paramref" class="paramref">lhs</code> is earlier than or equal to <code data-dev-comment-type="paramref" class="paramref">rhs</code>, false otherwise.
     content.vb: Public Shared Operator <=(lhs As LocalTime, rhs As LocalTime) As Boolean
   overload: NodaTime.LocalTime.op_LessThanOrEqual*
   modifiers.csharp:
@@ -1345,7 +1345,7 @@ items:
       description: Second operand of the comparison
     return:
       type: System.Boolean
-      description: true if the <span class="paramref">lhs</span> is strictly later than <span class="paramref">rhs</span>, false otherwise.
+      description: true if the <code data-dev-comment-type="paramref" class="paramref">lhs</code> is strictly later than <code data-dev-comment-type="paramref" class="paramref">rhs</code>, false otherwise.
     content.vb: Public Shared Operator>(lhs As LocalTime, rhs As LocalTime) As Boolean
   overload: NodaTime.LocalTime.op_GreaterThan*
   modifiers.csharp:
@@ -1389,7 +1389,7 @@ items:
       description: Second operand of the comparison
     return:
       type: System.Boolean
-      description: true if the <span class="paramref">lhs</span> is later than or equal to <span class="paramref">rhs</span>, false otherwise.
+      description: true if the <code data-dev-comment-type="paramref" class="paramref">lhs</code> is later than or equal to <code data-dev-comment-type="paramref" class="paramref">rhs</code>, false otherwise.
     content.vb: Public Shared Operator >=(lhs As LocalTime, rhs As LocalTime) As Boolean
   overload: NodaTime.LocalTime.op_GreaterThanOrEqual*
   modifiers.csharp:
@@ -1431,11 +1431,11 @@ items:
     return:
       type: System.Int32
       description: >-
-        A value less than zero if this time is earlier than <span class="paramref">other</span>;
+        A value less than zero if this time is earlier than <code data-dev-comment-type="paramref" class="paramref">other</code>;
 
-        zero if this time is the same as <span class="paramref">other</span>; a value greater than zero if this time is
+        zero if this time is the same as <code data-dev-comment-type="paramref" class="paramref">other</code>; a value greater than zero if this time is
 
-        later than <span class="paramref">other</span>.
+        later than <code data-dev-comment-type="paramref" class="paramref">other</code>.
     content.vb: Public Function CompareTo(other As LocalTime) As Integer
   overload: NodaTime.LocalTime.CompareTo*
   implements:
@@ -1481,13 +1481,13 @@ items:
       description: >
         The result of comparing this LocalTime with another one; see <xref href="NodaTime.LocalTime.CompareTo(NodaTime.LocalTime)" data-throw-if-not-resolved="false"></xref> for general details.
 
-        If <span class="paramref">obj</span> is null, this method returns a value greater than 0.
+        If <code data-dev-comment-type="paramref" class="paramref">obj</code> is null, this method returns a value greater than 0.
     content.vb: Function System.IComparable.CompareTo(obj As Object) As Integer Implements IComparable.CompareTo
   overload: NodaTime.LocalTime.System#IComparable#CompareTo*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: <span class="paramref">obj</span> is non-null but does not refer to an instance of <xref href="NodaTime.LocalTime" data-throw-if-not-resolved="false"></xref>.
+    description: <code data-dev-comment-type="paramref" class="paramref">obj</code> is non-null but does not refer to an instance of <xref href="NodaTime.LocalTime" data-throw-if-not-resolved="false"></xref>.
   implements:
   - System.IComparable.CompareTo(System.Object)
   nameWithType.vb: LocalTime.System.IComparable.CompareTo(Object)

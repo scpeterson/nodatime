@@ -148,10 +148,10 @@ items:
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: <span class="paramref">id</span> is null.
+    description: <code data-dev-comment-type="paramref" class="paramref">id</code> is null.
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: <span class="paramref">id</span> is not supported by this source.
+    description: <code data-dev-comment-type="paramref" class="paramref">id</code> is not supported by this source.
 - uid: NodaTime.TimeZones.IDateTimeZoneSource.MapTimeZoneId(System.TimeZoneInfo)
   commentId: M:NodaTime.TimeZones.IDateTimeZoneSource.MapTimeZoneId(System.TimeZoneInfo)
   id: MapTimeZoneId(System.TimeZoneInfo)

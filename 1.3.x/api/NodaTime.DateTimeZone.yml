@@ -848,7 +848,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nReturns all the zone intervals which occur for any instant in the interval [<span class=\"paramref\">start</span>, <span class=\"paramref\">end</span>).\n"
+  summary: "\nReturns all the zone intervals which occur for any instant in the interval [<code data-dev-comment-type=\"paramref\" class=\"paramref\">start</code>, <code data-dev-comment-type=\"paramref\" class=\"paramref\">end</code>).\n"
   remarks: "\n<p>This method is simply a convenience method for calling <xref href=\"NodaTime.DateTimeZone.GetZoneIntervals(NodaTime.Interval)\" data-throw-if-not-resolved=\"false\"></xref> without\nexplicitly constructing the interval beforehand.\n</p>\n"
   example: []
   syntax:
@@ -868,7 +868,7 @@ items:
   exceptions:
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: <span class="paramref">end</span> is earlier than <span class="paramref">start</span>.
+    description: <code data-dev-comment-type="paramref" class="paramref">end</code> is earlier than <code data-dev-comment-type="paramref" class="paramref">start</code>.
   seealso:
   - linkId: NodaTime.DateTimeZone.GetZoneInterval(NodaTime.Instant)
     commentId: M:NodaTime.DateTimeZone.GetZoneInterval(NodaTime.Instant)

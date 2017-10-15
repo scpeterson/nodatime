@@ -1049,7 +1049,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nCreates an <xref href=\"System.Collections.Generic.IComparer%601\" data-throw-if-not-resolved=\"false\"></xref> for periods, using the given &quot;base&quot; local date/time.\n"
-  remarks: "\nCertain periods can&apos;t naturally be compared without more context - how &quot;one month&quot; compares to\n&quot;30 days&quot; depends on where you start. In order to compare two periods, the returned comparer\neffectively adds both periods to the &quot;base&quot; specified by <span class=\"paramref\">baseDateTime</span> and compares\nthe results. In some cases this arithmetic isn&apos;t actually required - when two periods can be\nconverted to durations, the comparer uses that conversion for efficiency.\n"
+  remarks: "\nCertain periods can&apos;t naturally be compared without more context - how &quot;one month&quot; compares to\n&quot;30 days&quot; depends on where you start. In order to compare two periods, the returned comparer\neffectively adds both periods to the &quot;base&quot; specified by <code data-dev-comment-type=\"paramref\" class=\"paramref\">baseDateTime</code> and compares\nthe results. In some cases this arithmetic isn&apos;t actually required - when two periods can be\nconverted to durations, the comparer uses that conversion for efficiency.\n"
   example: []
   syntax:
     content: public static IComparer<Period> CreateComparer(LocalDateTime baseDateTime)
@@ -1140,7 +1140,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nReturns the period between a start and an end date/time, using only the given units.\n"
-  remarks: "\nIf <span class=\"paramref\">end</span> is before <span class=\"paramref\">start</span>, each property in the returned period\nwill be negative. If the given set of units cannot exactly reach the end point (e.g. finding\nthe difference between 1am and 3:15am in hours) the result will be such that adding it to <span class=\"paramref\">start</span>\nwill give a value between <span class=\"paramref\">start</span> and <span class=\"paramref\">end</span>. In other words,\nany rounding is &quot;towards start&quot;; this is true whether the resulting period is negative or positive.\n"
+  remarks: "\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">end</code> is before <code data-dev-comment-type=\"paramref\" class=\"paramref\">start</code>, each property in the returned period\nwill be negative. If the given set of units cannot exactly reach the end point (e.g. finding\nthe difference between 1am and 3:15am in hours) the result will be such that adding it to <code data-dev-comment-type=\"paramref\" class=\"paramref\">start</code>\nwill give a value between <code data-dev-comment-type=\"paramref\" class=\"paramref\">start</code> and <code data-dev-comment-type=\"paramref\" class=\"paramref\">end</code>. In other words,\nany rounding is &quot;towards start&quot;; this is true whether the resulting period is negative or positive.\n"
   example: []
   syntax:
     content: public static Period Between(LocalDateTime start, LocalDateTime end, PeriodUnits units)
@@ -1162,10 +1162,10 @@ items:
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: <span class="paramref">units</span> is empty or contained unknown values.
+    description: <code data-dev-comment-type="paramref" class="paramref">units</code> is empty or contained unknown values.
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: <span class="paramref">start</span> and <span class="paramref">end</span> use different calendars.
+    description: <code data-dev-comment-type="paramref" class="paramref">start</code> and <code data-dev-comment-type="paramref" class="paramref">end</code> use different calendars.
   modifiers.csharp:
   - public
   - static
@@ -1195,7 +1195,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nReturns the exact difference between two date/times.\n"
-  remarks: "\nIf <span class=\"paramref\">end</span> is before <span class=\"paramref\">start</span>, each property in the returned period\nwill be negative.\n"
+  remarks: "\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">end</code> is before <code data-dev-comment-type=\"paramref\" class=\"paramref\">start</code>, each property in the returned period\nwill be negative.\n"
   example: []
   syntax:
     content: public static Period Between(LocalDateTime start, LocalDateTime end)
@@ -1240,7 +1240,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nReturns the period between a start and an end date, using only the given units.\n"
-  remarks: "\nIf <span class=\"paramref\">end</span> is before <span class=\"paramref\">start</span>, each property in the returned period\nwill be negative. If the given set of units cannot exactly reach the end point (e.g. finding\nthe difference between 12th February and 15th March in months) the result will be such that adding it to <span class=\"paramref\">start</span>\nwill give a value between <span class=\"paramref\">start</span> and <span class=\"paramref\">end</span>. In other words,\nany rounding is &quot;towards start&quot;; this is true whether the resulting period is negative or positive.\n"
+  remarks: "\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">end</code> is before <code data-dev-comment-type=\"paramref\" class=\"paramref\">start</code>, each property in the returned period\nwill be negative. If the given set of units cannot exactly reach the end point (e.g. finding\nthe difference between 12th February and 15th March in months) the result will be such that adding it to <code data-dev-comment-type=\"paramref\" class=\"paramref\">start</code>\nwill give a value between <code data-dev-comment-type=\"paramref\" class=\"paramref\">start</code> and <code data-dev-comment-type=\"paramref\" class=\"paramref\">end</code>. In other words,\nany rounding is &quot;towards start&quot;; this is true whether the resulting period is negative or positive.\n"
   example: []
   syntax:
     content: public static Period Between(LocalDate start, LocalDate end, PeriodUnits units)
@@ -1262,10 +1262,10 @@ items:
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: <span class="paramref">units</span> contains time units, is empty or contains unknown values.
+    description: <code data-dev-comment-type="paramref" class="paramref">units</code> contains time units, is empty or contains unknown values.
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: <span class="paramref">start</span> and <span class="paramref">end</span> use different calendars.
+    description: <code data-dev-comment-type="paramref" class="paramref">start</code> and <code data-dev-comment-type="paramref" class="paramref">end</code> use different calendars.
   modifiers.csharp:
   - public
   - static
@@ -1295,7 +1295,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nReturns the exact difference between two dates.\n"
-  remarks: "\nIf <span class=\"paramref\">end</span> is before <span class=\"paramref\">start</span>, each property in the returned period\nwill be negative.\n"
+  remarks: "\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">end</code> is before <code data-dev-comment-type=\"paramref\" class=\"paramref\">start</code>, each property in the returned period\nwill be negative.\n"
   example: []
   syntax:
     content: public static Period Between(LocalDate start, LocalDate end)
@@ -1340,7 +1340,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nReturns the period between a start and an end time, using only the given units.\n"
-  remarks: "\nIf <span class=\"paramref\">end</span> is before <span class=\"paramref\">start</span>, each property in the returned period\nwill be negative. If the given set of units cannot exactly reach the end point (e.g. finding\nthe difference between 3am and 4.30am in hours) the result will be such that adding it to <span class=\"paramref\">start</span>\nwill give a value between <span class=\"paramref\">start</span> and <span class=\"paramref\">end</span>. In other words,\nany rounding is &quot;towards start&quot;; this is true whether the resulting period is negative or positive.\n"
+  remarks: "\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">end</code> is before <code data-dev-comment-type=\"paramref\" class=\"paramref\">start</code>, each property in the returned period\nwill be negative. If the given set of units cannot exactly reach the end point (e.g. finding\nthe difference between 3am and 4.30am in hours) the result will be such that adding it to <code data-dev-comment-type=\"paramref\" class=\"paramref\">start</code>\nwill give a value between <code data-dev-comment-type=\"paramref\" class=\"paramref\">start</code> and <code data-dev-comment-type=\"paramref\" class=\"paramref\">end</code>. In other words,\nany rounding is &quot;towards start&quot;; this is true whether the resulting period is negative or positive.\n"
   example: []
   syntax:
     content: public static Period Between(LocalTime start, LocalTime end, PeriodUnits units)
@@ -1362,10 +1362,10 @@ items:
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: <span class="paramref">units</span> contains date units, is empty or contains unknown values.
+    description: <code data-dev-comment-type="paramref" class="paramref">units</code> contains date units, is empty or contains unknown values.
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: <span class="paramref">start</span> and <span class="paramref">end</span> use different calendars.
+    description: <code data-dev-comment-type="paramref" class="paramref">start</code> and <code data-dev-comment-type="paramref" class="paramref">end</code> use different calendars.
   modifiers.csharp:
   - public
   - static
@@ -1395,7 +1395,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nReturns the exact difference between two times.\n"
-  remarks: "\nIf <span class=\"paramref\">end</span> is before <span class=\"paramref\">start</span>, each property in the returned period\nwill be negative.\n"
+  remarks: "\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">end</code> is before <code data-dev-comment-type=\"paramref\" class=\"paramref\">start</code>, each property in the returned period\nwill be negative.\n"
   example: []
   syntax:
     content: public static Period Between(LocalTime start, LocalTime end)

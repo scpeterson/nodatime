@@ -1416,9 +1416,9 @@ items:
     return:
       type: NodaTime.Duration
       description: >-
-        A new <xref href="NodaTime.Duration" data-throw-if-not-resolved="false"></xref> representing the result of dividing <span class="paramref">left</span> by
+        A new <xref href="NodaTime.Duration" data-throw-if-not-resolved="false"></xref> representing the result of dividing <code data-dev-comment-type="paramref" class="paramref">left</code> by
 
-        <span class="paramref">right</span>.
+        <code data-dev-comment-type="paramref" class="paramref">right</code>.
     content.vb: Public Shared Operator /(left As Duration, right As Long) As Duration
   overload: NodaTime.Duration.op_Division*
   modifiers.csharp:
@@ -1463,9 +1463,9 @@ items:
     return:
       type: NodaTime.Duration
       description: >-
-        A new <xref href="NodaTime.Duration" data-throw-if-not-resolved="false"></xref> representing the result of dividing <span class="paramref">left</span> by
+        A new <xref href="NodaTime.Duration" data-throw-if-not-resolved="false"></xref> representing the result of dividing <code data-dev-comment-type="paramref" class="paramref">left</code> by
 
-        <span class="paramref">right</span>.
+        <code data-dev-comment-type="paramref" class="paramref">right</code>.
     content.vb: Public Shared Operator /(left As Duration, right As Double) As Duration
   overload: NodaTime.Duration.op_Division*
   modifiers.csharp:
@@ -1510,9 +1510,9 @@ items:
     return:
       type: System.Double
       description: >-
-        The <xref href="System.Double" data-throw-if-not-resolved="false"></xref> representing the result of dividing <span class="paramref">left</span> by
+        The <xref href="System.Double" data-throw-if-not-resolved="false"></xref> representing the result of dividing <code data-dev-comment-type="paramref" class="paramref">left</code> by
 
-        <span class="paramref">right</span>.
+        <code data-dev-comment-type="paramref" class="paramref">right</code>.
     content.vb: Public Shared Operator /(left As Duration, right As Duration) As Double
   overload: NodaTime.Duration.op_Division*
   modifiers.csharp:
@@ -1557,9 +1557,9 @@ items:
     return:
       type: NodaTime.Duration
       description: >-
-        A new <xref href="NodaTime.Duration" data-throw-if-not-resolved="false"></xref> representing the result of dividing <span class="paramref">left</span> by
+        A new <xref href="NodaTime.Duration" data-throw-if-not-resolved="false"></xref> representing the result of dividing <code data-dev-comment-type="paramref" class="paramref">left</code> by
 
-        <span class="paramref">right</span>.
+        <code data-dev-comment-type="paramref" class="paramref">right</code>.
     content.vb: Public Shared Function Divide(left As Duration, right As Long) As Duration
   overload: NodaTime.Duration.Divide*
   modifiers.csharp:
@@ -1604,9 +1604,9 @@ items:
     return:
       type: NodaTime.Duration
       description: >-
-        A new <xref href="NodaTime.Duration" data-throw-if-not-resolved="false"></xref> representing the result of dividing <span class="paramref">left</span> by
+        A new <xref href="NodaTime.Duration" data-throw-if-not-resolved="false"></xref> representing the result of dividing <code data-dev-comment-type="paramref" class="paramref">left</code> by
 
-        <span class="paramref">right</span>.
+        <code data-dev-comment-type="paramref" class="paramref">right</code>.
     content.vb: Public Shared Function Divide(left As Duration, right As Double) As Duration
   overload: NodaTime.Duration.Divide*
   modifiers.csharp:
@@ -1651,9 +1651,9 @@ items:
     return:
       type: System.Double
       description: >-
-        The <xref href="System.Double" data-throw-if-not-resolved="false"></xref> representing the result of dividing <span class="paramref">left</span> by
+        The <xref href="System.Double" data-throw-if-not-resolved="false"></xref> representing the result of dividing <code data-dev-comment-type="paramref" class="paramref">left</code> by
 
-        <span class="paramref">right</span>.
+        <code data-dev-comment-type="paramref" class="paramref">right</code>.
     content.vb: Public Shared Function Divide(left As Duration, right As Duration) As Double
   overload: NodaTime.Duration.Divide*
   modifiers.csharp:
@@ -1698,9 +1698,9 @@ items:
     return:
       type: NodaTime.Duration
       description: >-
-        A new <xref href="NodaTime.Duration" data-throw-if-not-resolved="false"></xref> representing the result of multiplying <span class="paramref">left</span> by
+        A new <xref href="NodaTime.Duration" data-throw-if-not-resolved="false"></xref> representing the result of multiplying <code data-dev-comment-type="paramref" class="paramref">left</code> by
 
-        <span class="paramref">right</span>.
+        <code data-dev-comment-type="paramref" class="paramref">right</code>.
     content.vb: Public Shared Operator *(left As Duration, right As Double) As Duration
   overload: NodaTime.Duration.op_Multiply*
   modifiers.csharp:
@@ -1745,9 +1745,9 @@ items:
     return:
       type: NodaTime.Duration
       description: >-
-        A new <xref href="NodaTime.Duration" data-throw-if-not-resolved="false"></xref> representing the result of multiplying <span class="paramref">left</span> by
+        A new <xref href="NodaTime.Duration" data-throw-if-not-resolved="false"></xref> representing the result of multiplying <code data-dev-comment-type="paramref" class="paramref">left</code> by
 
-        <span class="paramref">right</span>.
+        <code data-dev-comment-type="paramref" class="paramref">right</code>.
     content.vb: Public Shared Operator *(left As Duration, right As Long) As Duration
   overload: NodaTime.Duration.op_Multiply*
   modifiers.csharp:
@@ -1792,9 +1792,9 @@ items:
     return:
       type: NodaTime.Duration
       description: >-
-        A new <xref href="NodaTime.Duration" data-throw-if-not-resolved="false"></xref> representing the result of multiplying <span class="paramref">left</span> by
+        A new <xref href="NodaTime.Duration" data-throw-if-not-resolved="false"></xref> representing the result of multiplying <code data-dev-comment-type="paramref" class="paramref">left</code> by
 
-        <span class="paramref">right</span>.
+        <code data-dev-comment-type="paramref" class="paramref">right</code>.
     content.vb: Public Shared Operator *(left As Long, right As Duration) As Duration
   overload: NodaTime.Duration.op_Multiply*
   modifiers.csharp:
@@ -2313,7 +2313,7 @@ items:
       description: An object to compare with this object.
     return:
       type: System.Int32
-      description: "\nA 32-bit signed integer that indicates the relative order of the objects being compared.\nThe return value has the following meanings:\n<table><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody><tr><td>&lt; 0</td><td>This object is less than the <span class=\"paramref\">other</span> parameter.</td></tr><tr><td>0</td><td>This object is equal to <span class=\"paramref\">other</span>.</td></tr><tr><td>> 0</td><td>This object is greater than <span class=\"paramref\">other</span>.</td></tr></tbody></table>\n"
+      description: "\nA 32-bit signed integer that indicates the relative order of the objects being compared.\nThe return value has the following meanings:\n<table><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody><tr><td>&lt; 0</td><td>This object is less than the <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code> parameter.</td></tr><tr><td>0</td><td>This object is equal to <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code>.</td></tr><tr><td>> 0</td><td>This object is greater than <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code>.</td></tr></tbody></table>\n"
     content.vb: Public Function CompareTo(other As Duration) As Integer
   overload: NodaTime.Duration.CompareTo*
   implements:
@@ -2359,13 +2359,13 @@ items:
       description: >
         The result of comparing this instant with another one; see <xref href="NodaTime.Duration.CompareTo(NodaTime.Duration)" data-throw-if-not-resolved="false"></xref> for general details.
 
-        If <span class="paramref">obj</span> is null, this method returns a value greater than 0.
+        If <code data-dev-comment-type="paramref" class="paramref">obj</code> is null, this method returns a value greater than 0.
     content.vb: Function System.IComparable.CompareTo(obj As Object) As Integer Implements IComparable.CompareTo
   overload: NodaTime.Duration.System#IComparable#CompareTo*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: <span class="paramref">obj</span> is non-null but does not refer to an instance of <xref href="NodaTime.Duration" data-throw-if-not-resolved="false"></xref>.
+    description: <code data-dev-comment-type="paramref" class="paramref">obj</code> is non-null but does not refer to an instance of <xref href="NodaTime.Duration" data-throw-if-not-resolved="false"></xref>.
   implements:
   - System.IComparable.CompareTo(System.Object)
   nameWithType.vb: Duration.System.IComparable.CompareTo(Object)
@@ -2402,7 +2402,7 @@ items:
       description: An object to compare with this object.
     return:
       type: System.Boolean
-      description: "\ntrue if the current object is equal to the <span class=\"paramref\">other</span> parameter;\notherwise, false.\n"
+      description: "\ntrue if the current object is equal to the <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code> parameter;\notherwise, false.\n"
     content.vb: Public Function Equals(other As Duration) As Boolean
   overload: NodaTime.Duration.Equals*
   implements:

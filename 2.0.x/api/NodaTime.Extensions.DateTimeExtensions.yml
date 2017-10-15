@@ -81,7 +81,7 @@ items:
       description: The <code>DateTime</code> to convert.
     return:
       type: NodaTime.LocalDateTime
-      description: A new <xref href="NodaTime.LocalDateTime" data-throw-if-not-resolved="false"></xref> with the same values as <span class="paramref">dateTime</span>.
+      description: A new <xref href="NodaTime.LocalDateTime" data-throw-if-not-resolved="false"></xref> with the same values as <code data-dev-comment-type="paramref" class="paramref">dateTime</code>.
     content.vb: >-
       <ExtensionAttribute>
 
@@ -127,7 +127,7 @@ items:
       description: The <code>DateTime</code> to convert.
     return:
       type: NodaTime.Instant
-      description: An <xref href="NodaTime.Instant" data-throw-if-not-resolved="false"></xref> value representing the same instant in time as <span class="paramref">dateTime</span>.
+      description: An <xref href="NodaTime.Instant" data-throw-if-not-resolved="false"></xref> value representing the same instant in time as <code data-dev-comment-type="paramref" class="paramref">dateTime</code>.
     content.vb: >-
       <ExtensionAttribute>
 
@@ -136,7 +136,7 @@ items:
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: <span class="paramref">dateTime</span> does not have a kind of <code>Utc</code>.
+    description: <code data-dev-comment-type="paramref" class="paramref">dateTime</code> does not have a kind of <code>Utc</code>.
   modifiers.csharp:
   - public
   - static

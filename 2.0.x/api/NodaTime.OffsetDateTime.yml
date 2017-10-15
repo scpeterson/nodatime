@@ -1827,7 +1827,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nReturns a new <xref href=\"NodaTime.OffsetDateTime\" data-throw-if-not-resolved=\"false\"></xref> with the time advanced by the given duration.\n"
-  remarks: "\nThe returned value retains the calendar system and offset of the <span class=\"paramref\">offsetDateTime</span>.\n"
+  remarks: "\nThe returned value retains the calendar system and offset of the <code data-dev-comment-type=\"paramref\" class=\"paramref\">offsetDateTime</code>.\n"
   example: []
   syntax:
     content: public static OffsetDateTime operator +(OffsetDateTime offsetDateTime, Duration duration)
@@ -1956,7 +1956,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nReturns a new <xref href=\"NodaTime.OffsetDateTime\" data-throw-if-not-resolved=\"false\"></xref> with the duration subtracted.\n"
-  remarks: "\nThe returned value retains the calendar system and offset of the <span class=\"paramref\">offsetDateTime</span>.\n"
+  remarks: "\nThe returned value retains the calendar system and offset of the <code data-dev-comment-type=\"paramref\" class=\"paramref\">offsetDateTime</code>.\n"
   example: []
   syntax:
     content: public static OffsetDateTime operator -(OffsetDateTime offsetDateTime, Duration duration)
@@ -2009,15 +2009,15 @@ items:
     - id: end
       type: NodaTime.OffsetDateTime
       description: >-
-        The offset date and time value to subtract from; if this is later than <span class="paramref">start</span>
+        The offset date and time value to subtract from; if this is later than <code data-dev-comment-type="paramref" class="paramref">start</code>
 
         then the result will be positive.
     - id: start
       type: NodaTime.OffsetDateTime
-      description: The offset date and time to subtract from <span class="paramref">end</span>.
+      description: The offset date and time to subtract from <code data-dev-comment-type="paramref" class="paramref">end</code>.
     return:
       type: NodaTime.Duration
-      description: The elapsed duration from <span class="paramref">start</span> to <span class="paramref">end</span>.
+      description: The elapsed duration from <code data-dev-comment-type="paramref" class="paramref">start</code> to <code data-dev-comment-type="paramref" class="paramref">end</code>.
     content.vb: Public Shared Function Subtract(end As OffsetDateTime, start As OffsetDateTime) As Duration
   overload: NodaTime.OffsetDateTime.Subtract*
   modifiers.csharp:
@@ -2059,7 +2059,7 @@ items:
       description: The offset date and time to subtract from this one.
     return:
       type: NodaTime.Duration
-      description: The elapsed duration from <span class="paramref">other</span> to this value.
+      description: The elapsed duration from <code data-dev-comment-type="paramref" class="paramref">other</code> to this value.
     content.vb: Public Function Minus(other As OffsetDateTime) As Duration
   overload: NodaTime.OffsetDateTime.Minus*
   modifiers.csharp:
@@ -2097,15 +2097,15 @@ items:
     - id: end
       type: NodaTime.OffsetDateTime
       description: >-
-        The offset date and time value to subtract from; if this is later than <span class="paramref">start</span>
+        The offset date and time value to subtract from; if this is later than <code data-dev-comment-type="paramref" class="paramref">start</code>
 
         then the result will be positive.
     - id: start
       type: NodaTime.OffsetDateTime
-      description: The offset date and time to subtract from <span class="paramref">end</span>.
+      description: The offset date and time to subtract from <code data-dev-comment-type="paramref" class="paramref">end</code>.
     return:
       type: NodaTime.Duration
-      description: The elapsed duration from <span class="paramref">start</span> to <span class="paramref">end</span>.
+      description: The elapsed duration from <code data-dev-comment-type="paramref" class="paramref">start</code> to <code data-dev-comment-type="paramref" class="paramref">end</code>.
     content.vb: Public Shared Operator -(end As OffsetDateTime, start As OffsetDateTime) As Duration
   overload: NodaTime.OffsetDateTime.op_Subtraction*
   modifiers.csharp:

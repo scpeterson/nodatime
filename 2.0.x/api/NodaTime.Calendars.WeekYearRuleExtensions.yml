@@ -93,13 +93,13 @@ items:
       description: >-
         The week of week-year of the new date. Valid values for this parameter
 
-        may vary depending on <span class="paramref">weekYear</span>, as the length of a year in weeks varies.
+        may vary depending on <code data-dev-comment-type="paramref" class="paramref">weekYear</code>, as the length of a year in weeks varies.
     - id: dayOfWeek
       type: NodaTime.IsoDayOfWeek
       description: >-
         The day-of-week of the new date. Valid values for this parameter may vary
 
-        depending on <span class="paramref">weekYear</span> and <span class="paramref">weekOfWeekYear</span>.
+        depending on <code data-dev-comment-type="paramref" class="paramref">weekYear</code> and <code data-dev-comment-type="paramref" class="paramref">weekOfWeekYear</code>.
     return:
       type: NodaTime.LocalDate
       description: A <xref href="NodaTime.LocalDate" data-throw-if-not-resolved="false"></xref> corresponding to the specified values.

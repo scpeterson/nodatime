@@ -113,7 +113,7 @@ items:
   - NodaTime
   namespace: NodaTime.Calendars
   summary: "\nCreates a week year rule where the boundary between one week-year and the next\nis parameterized in terms of how many days of the first week of the week\nyear have to be in the new calendar year. In rules created by this method, \nweeks are always deemed to begin on an Monday.\n"
-  remarks: "\n<span class=\"paramref\">minDaysInFirstWeek</span> determines when the first week of the week-year starts.\nFor any given calendar year X, consider the Monday-to-Sunday week that includes the first day of the\ncalendar year. Usually, some days of that week are in calendar year X, and some are in calendar year \nX-1. If <span class=\"paramref\">minDaysInFirstWeek</span> or more of the days are in year X, then the week is\ndeemed to be the first week of week-year X. Otherwise, the week is deemed to be the last week of\nweek-year X-1, and the first week of week-year X starts on the following Monday.\n"
+  remarks: "\n<code data-dev-comment-type=\"paramref\" class=\"paramref\">minDaysInFirstWeek</code> determines when the first week of the week-year starts.\nFor any given calendar year X, consider the Monday-to-Sunday week that includes the first day of the\ncalendar year. Usually, some days of that week are in calendar year X, and some are in calendar year \nX-1. If <code data-dev-comment-type=\"paramref\" class=\"paramref\">minDaysInFirstWeek</code> or more of the days are in year X, then the week is\ndeemed to be the first week of week-year X. Otherwise, the week is deemed to be the last week of\nweek-year X-1, and the first week of week-year X starts on the following Monday.\n"
   example: []
   syntax:
     content: public static IWeekYearRule ForMinDaysInFirstWeek(int minDaysInFirstWeek)
@@ -163,7 +163,7 @@ items:
   - NodaTime
   namespace: NodaTime.Calendars
   summary: "\nCreates a week year rule where the boundary between one week-year and the next\nis parameterized in terms of how many days of the first week of the week\nyear have to be in the new calendar year, and also by which day is deemed\nto be the first day of the week.\n"
-  remarks: "\n<span class=\"paramref\">minDaysInFirstWeek</span> determines when the first week of the week-year starts.\nFor any given calendar year X, consider the week that includes the first day of the\ncalendar year. Usually, some days of that week are in calendar year X, and some are in calendar year \nX-1. If <span class=\"paramref\">minDaysInFirstWeek</span> or more of the days are in year X, then the week is\ndeemed to be the first week of week-year X. Otherwise, the week is deemed to be the last week of\nweek-year X-1, and the first week of week-year X starts on the following <span class=\"paramref\">firstDayOfWeek</span>.\n"
+  remarks: "\n<code data-dev-comment-type=\"paramref\" class=\"paramref\">minDaysInFirstWeek</code> determines when the first week of the week-year starts.\nFor any given calendar year X, consider the week that includes the first day of the\ncalendar year. Usually, some days of that week are in calendar year X, and some are in calendar year \nX-1. If <code data-dev-comment-type=\"paramref\" class=\"paramref\">minDaysInFirstWeek</code> or more of the days are in year X, then the week is\ndeemed to be the first week of week-year X. Otherwise, the week is deemed to be the last week of\nweek-year X-1, and the first week of week-year X starts on the following <code data-dev-comment-type=\"paramref\" class=\"paramref\">firstDayOfWeek</code>.\n"
   example: []
   syntax:
     content: public static IWeekYearRule ForMinDaysInFirstWeek(int minDaysInFirstWeek, IsoDayOfWeek firstDayOfWeek)
@@ -173,7 +173,7 @@ items:
       description: >
         The minimum number of days in the first week (starting on
 
-        <span class="paramref">firstDayOfWeek</span>) which have to be in the new calendar year for that week
+        <code data-dev-comment-type="paramref" class="paramref">firstDayOfWeek</code>) which have to be in the new calendar year for that week
 
         to count as being in that week-year. Must be in the range 1 to 7 inclusive.
     - id: firstDayOfWeek

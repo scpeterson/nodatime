@@ -529,10 +529,10 @@ items:
   exceptions:
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: <span class="paramref">yearOfEra</span> is out of the range of years for the given era.
+    description: <code data-dev-comment-type="paramref" class="paramref">yearOfEra</code> is out of the range of years for the given era.
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: <span class="paramref">era</span> is not an era used in this calendar.
+    description: <code data-dev-comment-type="paramref" class="paramref">era</code> is not an era used in this calendar.
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -583,7 +583,7 @@ items:
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: <span class="paramref">era</span> is not an era used in this calendar.
+    description: <code data-dev-comment-type="paramref" class="paramref">era</code> is not an era used in this calendar.
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -634,7 +634,7 @@ items:
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: <span class="paramref">era</span> is not an era used in this calendar.
+    description: <code data-dev-comment-type="paramref" class="paramref">era</code> is not an era used in this calendar.
   modifiers.csharp:
   - public
   modifiers.vb:

@@ -94,10 +94,10 @@ items:
       description: The name of this offset period (e.g. PST or PDT).
     - id: start
       type: NodaTime.Instant
-      description: The first <xref href="NodaTime.Instant" data-throw-if-not-resolved="false"></xref> that the <span class="paramref">wallOffset</span> applies.
+      description: The first <xref href="NodaTime.Instant" data-throw-if-not-resolved="false"></xref> that the <code data-dev-comment-type="paramref" class="paramref">wallOffset</code> applies.
     - id: end
       type: NodaTime.Instant
-      description: The last <xref href="NodaTime.Instant" data-throw-if-not-resolved="false"></xref> (exclusive) that the <span class="paramref">wallOffset</span> applies.
+      description: The last <xref href="NodaTime.Instant" data-throw-if-not-resolved="false"></xref> (exclusive) that the <code data-dev-comment-type="paramref" class="paramref">wallOffset</code> applies.
     - id: wallOffset
       type: NodaTime.Offset
       description: The <xref href="NodaTime.TimeZones.ZoneInterval.WallOffset" data-throw-if-not-resolved="false"></xref> from UTC for this period including any daylight savings.
@@ -109,10 +109,10 @@ items:
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: If <code><span class="paramref">start</span> >= <span class="paramref">end</span></code>.
+    description: If <code><code data-dev-comment-type="paramref" class="paramref">start</code> >= <code data-dev-comment-type="paramref" class="paramref">end</code></code>.
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: <span class="paramref">name</span> is null.
+    description: <code data-dev-comment-type="paramref" class="paramref">name</code> is null.
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -532,7 +532,7 @@ items:
         An object to compare with this object.
     return:
       type: System.Boolean
-      description: "\ntrue if the current object is equal to the <span class=\"paramref\">other</span> parameter; otherwise, false.\n"
+      description: "\ntrue if the current object is equal to the <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code> parameter; otherwise, false.\n"
     content.vb: Public Function Equals(other As ZoneInterval) As Boolean
   overload: NodaTime.TimeZones.ZoneInterval.Equals*
   implements:

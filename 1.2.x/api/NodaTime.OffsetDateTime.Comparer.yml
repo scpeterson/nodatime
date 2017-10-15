@@ -170,9 +170,9 @@ items:
     return:
       type: System.Int32
       description: >
-        A signed integer that indicates the relative values of <span class="paramref">x</span> and <span class="paramref">y</span>, as shown in the following table.
+        A signed integer that indicates the relative values of <code data-dev-comment-type="paramref" class="paramref">x</code> and <code data-dev-comment-type="paramref" class="paramref">y</code>, as shown in the following table.
 
-        <table><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody><tr><td>Less than zero</td><td><span class="paramref">x</span> is less than <span class="paramref">y</span>.</td></tr><tr><td>Zero</td><td><span class="paramref">x</span> is equals to <span class="paramref">y</span>.</td></tr><tr><td>Greater than zero</td><td><span class="paramref">x</span> is greater than <span class="paramref">y</span>.</td></tr></tbody></table>
+        <table><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody><tr><td>Less than zero</td><td><code data-dev-comment-type="paramref" class="paramref">x</code> is less than <code data-dev-comment-type="paramref" class="paramref">y</code>.</td></tr><tr><td>Zero</td><td><code data-dev-comment-type="paramref" class="paramref">x</code> is equals to <code data-dev-comment-type="paramref" class="paramref">y</code>.</td></tr><tr><td>Greater than zero</td><td><code data-dev-comment-type="paramref" class="paramref">x</code> is greater than <code data-dev-comment-type="paramref" class="paramref">y</code>.</td></tr></tbody></table>
     content.vb: Public MustOverride Function Compare(x As OffsetDateTime, y As OffsetDateTime) As Integer
   overload: NodaTime.OffsetDateTime.Comparer.Compare*
   implements:

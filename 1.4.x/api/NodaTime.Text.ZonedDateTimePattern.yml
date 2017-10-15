@@ -506,7 +506,7 @@ items:
   - NodaTime
   namespace: NodaTime.Text
   summary: "\nCreates a pattern for the given pattern text, culture, resolver, time zone provider, and template value.\n"
-  remarks: "\nSee the user guide for the available pattern text options.\nIf <span class=\"paramref\">zoneProvider</span> is null, the resulting pattern can be used for formatting\nbut not parsing.\n"
+  remarks: "\nSee the user guide for the available pattern text options.\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">zoneProvider</code> is null, the resulting pattern can be used for formatting\nbut not parsing.\n"
   example: []
   syntax:
     content: public static ZonedDateTimePattern Create(string patternText, CultureInfo cultureInfo, ZoneLocalMappingResolver resolver, IDateTimeZoneProvider zoneProvider, ZonedDateTime templateValue)
@@ -564,7 +564,7 @@ items:
   - NodaTime
   namespace: NodaTime.Text
   summary: "\nCreates a pattern for the given pattern text and time zone provider, using a strict resolver, the invariant\nculture, and a default template value of midnight January 1st 2000 UTC.\n"
-  remarks: "\nThe resolver is only used if the pattern text doesn&apos;t include an offset.\nIf <span class=\"paramref\">zoneProvider</span> is null, the resulting pattern can be used for formatting\nbut not parsing.\n"
+  remarks: "\nThe resolver is only used if the pattern text doesn&apos;t include an offset.\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">zoneProvider</code> is null, the resulting pattern can be used for formatting\nbut not parsing.\n"
   example: []
   syntax:
     content: public static ZonedDateTimePattern CreateWithInvariantCulture(string patternText, IDateTimeZoneProvider zoneProvider)
@@ -609,7 +609,7 @@ items:
   - NodaTime
   namespace: NodaTime.Text
   summary: "\nCreates a pattern for the given pattern text and time zone provider, using a strict resolver, the current\nculture, and a default template value of midnight January 1st 2000 UTC.\n"
-  remarks: "\nThe resolver is only used if the pattern text doesn&apos;t include an offset.\nIf <span class=\"paramref\">zoneProvider</span> is null, the resulting pattern can be used for formatting\nbut not parsing. Note that the current culture is captured at the time this method is called\n- it is not captured at the point of parsing or formatting values.\n"
+  remarks: "\nThe resolver is only used if the pattern text doesn&apos;t include an offset.\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">zoneProvider</code> is null, the resulting pattern can be used for formatting\nbut not parsing. Note that the current culture is captured at the time this method is called\n- it is not captured at the point of parsing or formatting values.\n"
   example: []
   syntax:
     content: public static ZonedDateTimePattern CreateWithCurrentCulture(string patternText, IDateTimeZoneProvider zoneProvider)
@@ -771,7 +771,7 @@ items:
   - NodaTime
   namespace: NodaTime.Text
   summary: "\nCreates a pattern for the same original pattern text as this pattern, but with the specified\ntime zone provider.\n"
-  remarks: "\nIf <span class=\"paramref\">newZoneProvider</span> is null, the resulting pattern can be used for formatting\nbut not parsing.\n"
+  remarks: "\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">newZoneProvider</code> is null, the resulting pattern can be used for formatting\nbut not parsing.\n"
   example: []
   syntax:
     content: public ZonedDateTimePattern WithZoneProvider(IDateTimeZoneProvider newZoneProvider)

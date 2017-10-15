@@ -174,7 +174,7 @@ items:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: >
-      <span class="paramref">end</span> is earlier than <span class="paramref">start</span>
+      <code data-dev-comment-type="paramref" class="paramref">end</code> is earlier than <code data-dev-comment-type="paramref" class="paramref">start</code>
           or the two dates are in different calendars.
   modifiers.csharp:
   - public
@@ -424,14 +424,14 @@ items:
       description: The date to check for containment within this interval.
     return:
       type: System.Boolean
-      description: <code>true</code> if <span class="paramref">date</span> is within this interval; <code>false</code> otherwise.
+      description: <code>true</code> if <code data-dev-comment-type="paramref" class="paramref">date</code> is within this interval; <code>false</code> otherwise.
     content.vb: Public Function Contains(date As LocalDate) As Boolean
   overload: NodaTime.DateInterval.Contains*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: >-
-      <span class="paramref">date</span> is not in the same
+      <code data-dev-comment-type="paramref" class="paramref">date</code> is not in the same
           calendar as the start and end date of this interval.
   modifiers.csharp:
   - public

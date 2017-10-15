@@ -167,7 +167,7 @@ items:
     return:
       type: System.Func{NodaTime.LocalDate,NodaTime.LocalDate}
       description: >-
-        An adjuster which changes the day to <span class="paramref">day</span>,
+        An adjuster which changes the day to <code data-dev-comment-type="paramref" class="paramref">day</code>,
 
         retaining the same year and month.
     content.vb: Public Shared Function DayOfMonth(day As Integer) As Func(Of LocalDate, LocalDate)
@@ -212,7 +212,7 @@ items:
     return:
       type: System.Func{NodaTime.LocalDate,NodaTime.LocalDate}
       description: >-
-        An adjuster which changes the month to <span class="paramref">month</span>,
+        An adjuster which changes the month to <code data-dev-comment-type="paramref" class="paramref">month</code>,
 
         retaining the same year and day of month.
     content.vb: Public Shared Function Month(month As Integer) As Func(Of LocalDate, LocalDate)

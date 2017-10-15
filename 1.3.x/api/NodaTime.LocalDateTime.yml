@@ -1557,7 +1557,7 @@ items:
       description: An object to compare with this object.
     return:
       type: System.Boolean
-      description: "\ntrue if the current object is equal to the <span class=\"paramref\">other</span> parameter; otherwise, false.\n"
+      description: "\ntrue if the current object is equal to the <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code> parameter; otherwise, false.\n"
     content.vb: Public Function Equals(other As LocalDateTime) As Boolean
   overload: NodaTime.LocalDateTime.Equals*
   implements:
@@ -1690,7 +1690,7 @@ items:
       description: Second operand of the comparison
     return:
       type: System.Boolean
-      description: true if the <span class="paramref">lhs</span> is strictly earlier than <span class="paramref">rhs</span>, false otherwise.
+      description: true if the <code data-dev-comment-type="paramref" class="paramref">lhs</code> is strictly earlier than <code data-dev-comment-type="paramref" class="paramref">rhs</code>, false otherwise.
     content.vb: Public Shared Operator <(lhs As LocalDateTime, rhs As LocalDateTime) As Boolean
   overload: NodaTime.LocalDateTime.op_LessThan*
   modifiers.csharp:
@@ -1735,7 +1735,7 @@ items:
       description: Second operand of the comparison
     return:
       type: System.Boolean
-      description: true if the <span class="paramref">lhs</span> is earlier than or equal to <span class="paramref">rhs</span>, false otherwise.
+      description: true if the <code data-dev-comment-type="paramref" class="paramref">lhs</code> is earlier than or equal to <code data-dev-comment-type="paramref" class="paramref">rhs</code>, false otherwise.
     content.vb: Public Shared Operator <=(lhs As LocalDateTime, rhs As LocalDateTime) As Boolean
   overload: NodaTime.LocalDateTime.op_LessThanOrEqual*
   modifiers.csharp:
@@ -1780,7 +1780,7 @@ items:
       description: Second operand of the comparison
     return:
       type: System.Boolean
-      description: true if the <span class="paramref">lhs</span> is strictly later than <span class="paramref">rhs</span>, false otherwise.
+      description: true if the <code data-dev-comment-type="paramref" class="paramref">lhs</code> is strictly later than <code data-dev-comment-type="paramref" class="paramref">rhs</code>, false otherwise.
     content.vb: Public Shared Operator>(lhs As LocalDateTime, rhs As LocalDateTime) As Boolean
   overload: NodaTime.LocalDateTime.op_GreaterThan*
   modifiers.csharp:
@@ -1825,7 +1825,7 @@ items:
       description: Second operand of the comparison
     return:
       type: System.Boolean
-      description: true if the <span class="paramref">lhs</span> is later than or equal to <span class="paramref">rhs</span>, false otherwise.
+      description: true if the <code data-dev-comment-type="paramref" class="paramref">lhs</code> is later than or equal to <code data-dev-comment-type="paramref" class="paramref">rhs</code>, false otherwise.
     content.vb: Public Shared Operator >=(lhs As LocalDateTime, rhs As LocalDateTime) As Boolean
   overload: NodaTime.LocalDateTime.op_GreaterThanOrEqual*
   modifiers.csharp:
@@ -1868,11 +1868,11 @@ items:
     return:
       type: System.Int32
       description: >-
-        A value less than zero if this date/time is earlier than <span class="paramref">other</span>;
+        A value less than zero if this date/time is earlier than <code data-dev-comment-type="paramref" class="paramref">other</code>;
 
-        zero if this date/time is the same as <span class="paramref">other</span>; a value greater than zero if this date/time is
+        zero if this date/time is the same as <code data-dev-comment-type="paramref" class="paramref">other</code>; a value greater than zero if this date/time is
 
-        later than <span class="paramref">other</span>.
+        later than <code data-dev-comment-type="paramref" class="paramref">other</code>.
     content.vb: Public Function CompareTo(other As LocalDateTime) As Integer
   overload: NodaTime.LocalDateTime.CompareTo*
   implements:
@@ -1918,13 +1918,13 @@ items:
       description: >
         The result of comparing this LocalDateTime with another one; see <xref href="NodaTime.LocalDateTime.CompareTo(NodaTime.LocalDateTime)" data-throw-if-not-resolved="false"></xref> for general details.
 
-        If <span class="paramref">obj</span> is null, this method returns a value greater than 0.
+        If <code data-dev-comment-type="paramref" class="paramref">obj</code> is null, this method returns a value greater than 0.
     content.vb: Function System.IComparable.CompareTo(obj As Object) As Integer Implements IComparable.CompareTo
   overload: NodaTime.LocalDateTime.System#IComparable#CompareTo*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: <span class="paramref">obj</span> is non-null but does not refer to an instance of <xref href="NodaTime.LocalDateTime" data-throw-if-not-resolved="false"></xref>.
+    description: <code data-dev-comment-type="paramref" class="paramref">obj</code> is non-null but does not refer to an instance of <xref href="NodaTime.LocalDateTime" data-throw-if-not-resolved="false"></xref>.
   implements:
   - System.IComparable.CompareTo(System.Object)
   nameWithType.vb: LocalDateTime.System.IComparable.CompareTo(Object)
@@ -2698,7 +2698,7 @@ items:
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
     description: >-
-      <span class="paramref">targetDayOfWeek</span> is not a valid day of the
+      <code data-dev-comment-type="paramref" class="paramref">targetDayOfWeek</code> is not a valid day of the
           week (Monday to Sunday).
   modifiers.csharp:
   - public
@@ -2746,7 +2746,7 @@ items:
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
     description: >-
-      <span class="paramref">targetDayOfWeek</span> is not a valid day of the
+      <code data-dev-comment-type="paramref" class="paramref">targetDayOfWeek</code> is not a valid day of the
           week (Monday to Sunday).
   modifiers.csharp:
   - public

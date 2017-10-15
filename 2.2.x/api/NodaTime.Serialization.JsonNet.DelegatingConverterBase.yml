@@ -80,7 +80,7 @@ items:
   assemblies:
   - NodaTime.Serialization.JsonNet
   namespace: NodaTime.Serialization.JsonNet
-  summary: "\nConstructs a converter delegating to <span class=\"paramref\">original</span>.\n"
+  summary: "\nConstructs a converter delegating to <code data-dev-comment-type=\"paramref\" class=\"paramref\">original</code>.\n"
   example: []
   syntax:
     content: protected DelegatingConverterBase(JsonConverter original)

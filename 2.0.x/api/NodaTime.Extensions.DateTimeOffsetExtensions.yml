@@ -82,7 +82,7 @@ items:
       description: The <code>DateTimeOffset</code> to convert.
     return:
       type: NodaTime.OffsetDateTime
-      description: A new <xref href="NodaTime.OffsetDateTime" data-throw-if-not-resolved="false"></xref> with the same values as <span class="paramref">dateTimeOffset</span>.
+      description: A new <xref href="NodaTime.OffsetDateTime" data-throw-if-not-resolved="false"></xref> with the same values as <code data-dev-comment-type="paramref" class="paramref">dateTimeOffset</code>.
     content.vb: >-
       <ExtensionAttribute>
 
@@ -129,7 +129,7 @@ items:
     return:
       type: NodaTime.ZonedDateTime
       description: >-
-        A new <xref href="NodaTime.ZonedDateTime" data-throw-if-not-resolved="false"></xref> with the same values as <span class="paramref">dateTimeOffset</span>,
+        A new <xref href="NodaTime.ZonedDateTime" data-throw-if-not-resolved="false"></xref> with the same values as <code data-dev-comment-type="paramref" class="paramref">dateTimeOffset</code>,
 
         using a fixed-offset time zone.
     content.vb: >-
@@ -177,7 +177,7 @@ items:
       description: The <code>DateTimeOffset</code> to convert.
     return:
       type: NodaTime.Instant
-      description: An <xref href="NodaTime.Instant" data-throw-if-not-resolved="false"></xref> value representing the same instant in time as <span class="paramref">dateTimeOffset</span>.
+      description: An <xref href="NodaTime.Instant" data-throw-if-not-resolved="false"></xref> value representing the same instant in time as <code data-dev-comment-type="paramref" class="paramref">dateTimeOffset</code>.
     content.vb: >-
       <ExtensionAttribute>
 

@@ -218,7 +218,7 @@ items:
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: <span class="paramref">calendar</span> is null.
+    description: <code data-dev-comment-type="paramref" class="paramref">calendar</code> is null.
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
     description: The parameters do not form a valid date/time
@@ -340,7 +340,7 @@ items:
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: <span class="paramref">calendar</span> is null.
+    description: <code data-dev-comment-type="paramref" class="paramref">calendar</code> is null.
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
     description: The parameters do not form a valid date/time
@@ -468,7 +468,7 @@ items:
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: <span class="paramref">calendar</span> is null.
+    description: <code data-dev-comment-type="paramref" class="paramref">calendar</code> is null.
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
     description: The parameters do not form a valid date/time
@@ -602,7 +602,7 @@ items:
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: <span class="paramref">calendar</span> is null.
+    description: <code data-dev-comment-type="paramref" class="paramref">calendar</code> is null.
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
     description: The parameters do not form a valid date/time
@@ -1550,7 +1550,7 @@ items:
       description: An object to compare with this object.
     return:
       type: System.Boolean
-      description: "\ntrue if the current object is equal to the <span class=\"paramref\">other</span> parameter; otherwise, false.\n"
+      description: "\ntrue if the current object is equal to the <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code> parameter; otherwise, false.\n"
     content.vb: Public Function Equals(other As LocalDateTime) As Boolean
   overload: NodaTime.LocalDateTime.Equals*
   implements:
@@ -1683,7 +1683,7 @@ items:
       description: Second operand of the comparison
     return:
       type: System.Boolean
-      description: true if the <span class="paramref">lhs</span> is strictly earlier than <span class="paramref">rhs</span>, false otherwise.
+      description: true if the <code data-dev-comment-type="paramref" class="paramref">lhs</code> is strictly earlier than <code data-dev-comment-type="paramref" class="paramref">rhs</code>, false otherwise.
     content.vb: Public Shared Operator <(lhs As LocalDateTime, rhs As LocalDateTime) As Boolean
   overload: NodaTime.LocalDateTime.op_LessThan*
   modifiers.csharp:
@@ -1728,7 +1728,7 @@ items:
       description: Second operand of the comparison
     return:
       type: System.Boolean
-      description: true if the <span class="paramref">lhs</span> is earlier than or equal to <span class="paramref">rhs</span>, false otherwise.
+      description: true if the <code data-dev-comment-type="paramref" class="paramref">lhs</code> is earlier than or equal to <code data-dev-comment-type="paramref" class="paramref">rhs</code>, false otherwise.
     content.vb: Public Shared Operator <=(lhs As LocalDateTime, rhs As LocalDateTime) As Boolean
   overload: NodaTime.LocalDateTime.op_LessThanOrEqual*
   modifiers.csharp:
@@ -1773,7 +1773,7 @@ items:
       description: Second operand of the comparison
     return:
       type: System.Boolean
-      description: true if the <span class="paramref">lhs</span> is strictly later than <span class="paramref">rhs</span>, false otherwise.
+      description: true if the <code data-dev-comment-type="paramref" class="paramref">lhs</code> is strictly later than <code data-dev-comment-type="paramref" class="paramref">rhs</code>, false otherwise.
     content.vb: Public Shared Operator>(lhs As LocalDateTime, rhs As LocalDateTime) As Boolean
   overload: NodaTime.LocalDateTime.op_GreaterThan*
   modifiers.csharp:
@@ -1818,7 +1818,7 @@ items:
       description: Second operand of the comparison
     return:
       type: System.Boolean
-      description: true if the <span class="paramref">lhs</span> is later than or equal to <span class="paramref">rhs</span>, false otherwise.
+      description: true if the <code data-dev-comment-type="paramref" class="paramref">lhs</code> is later than or equal to <code data-dev-comment-type="paramref" class="paramref">rhs</code>, false otherwise.
     content.vb: Public Shared Operator >=(lhs As LocalDateTime, rhs As LocalDateTime) As Boolean
   overload: NodaTime.LocalDateTime.op_GreaterThanOrEqual*
   modifiers.csharp:
@@ -1860,11 +1860,11 @@ items:
     return:
       type: System.Int32
       description: >-
-        A value less than zero if this date/time is earlier than <span class="paramref">other</span>;
+        A value less than zero if this date/time is earlier than <code data-dev-comment-type="paramref" class="paramref">other</code>;
 
-        zero if this date/time is the same as <span class="paramref">other</span>; a value greater than zero if this date/time is
+        zero if this date/time is the same as <code data-dev-comment-type="paramref" class="paramref">other</code>; a value greater than zero if this date/time is
 
-        later than <span class="paramref">other</span>.
+        later than <code data-dev-comment-type="paramref" class="paramref">other</code>.
     content.vb: Public Function CompareTo(other As LocalDateTime) As Integer
   overload: NodaTime.LocalDateTime.CompareTo*
   implements:
@@ -2245,7 +2245,7 @@ items:
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: <span class="paramref">calendarSystem</span> is null.
+    description: <code data-dev-comment-type="paramref" class="paramref">calendarSystem</code> is null.
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -2646,7 +2646,7 @@ items:
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
     description: >-
-      <span class="paramref">targetDayOfWeek</span> is not a valid day of the
+      <code data-dev-comment-type="paramref" class="paramref">targetDayOfWeek</code> is not a valid day of the
           week (Monday to Sunday).
   modifiers.csharp:
   - public
@@ -2694,7 +2694,7 @@ items:
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
     description: >-
-      <span class="paramref">targetDayOfWeek</span> is not a valid day of the
+      <code data-dev-comment-type="paramref" class="paramref">targetDayOfWeek</code> is not a valid day of the
           week (Monday to Sunday).
   modifiers.csharp:
   - public
@@ -2739,7 +2739,7 @@ items:
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: <span class="paramref">zone</span> is null
+    description: <code data-dev-comment-type="paramref" class="paramref">zone</code> is null
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -2783,7 +2783,7 @@ items:
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: <span class="paramref">zone</span> is null
+    description: <code data-dev-comment-type="paramref" class="paramref">zone</code> is null
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -2830,7 +2830,7 @@ items:
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: <span class="paramref">zone</span> or <span class="paramref">resolver</span> is null
+    description: <code data-dev-comment-type="paramref" class="paramref">zone</code> or <code data-dev-comment-type="paramref" class="paramref">resolver</code> is null
   modifiers.csharp:
   - public
   modifiers.vb:

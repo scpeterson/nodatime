@@ -69,7 +69,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nGets the current <xref href=\"NodaTime.Instant\" data-throw-if-not-resolved=\"false\"></xref> on the time line according to <span class=\"paramref\">clock</span>.\n"
+  summary: "\nGets the current <xref href=\"NodaTime.Instant\" data-throw-if-not-resolved=\"false\"></xref> on the time line according to <code data-dev-comment-type=\"paramref\" class=\"paramref\">clock</code>.\n"
   remarks: >-
     This extension method in 1.4 is an instance method in 2.0, replacing the
 

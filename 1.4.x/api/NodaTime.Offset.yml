@@ -317,7 +317,7 @@ items:
       description: The second offset
     return:
       type: NodaTime.Offset
-      description: The greater offset of <span class="paramref">x</span> and <span class="paramref">y</span>.
+      description: The greater offset of <code data-dev-comment-type="paramref" class="paramref">x</code> and <code data-dev-comment-type="paramref" class="paramref">y</code>.
     content.vb: Public Shared Function Max(x As Offset, y As Offset) As Offset
   overload: NodaTime.Offset.Max*
   modifiers.csharp:
@@ -361,7 +361,7 @@ items:
       description: The second offset
     return:
       type: NodaTime.Offset
-      description: The lower offset of <span class="paramref">x</span> and <span class="paramref">y</span>.
+      description: The lower offset of <code data-dev-comment-type="paramref" class="paramref">x</code> and <code data-dev-comment-type="paramref" class="paramref">y</code>.
     content.vb: Public Shared Function Min(x As Offset, y As Offset) As Offset
   overload: NodaTime.Offset.Min*
   modifiers.csharp:
@@ -1083,7 +1083,7 @@ items:
       description: An object to compare with this object.
     return:
       type: System.Int32
-      description: "\nA 32-bit signed integer that indicates the relative order of the objects being compared.\nThe return value has the following meanings:\n<table><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody><tr><td>&lt; 0</td><td>This object is less than the <span class=\"paramref\">other</span> parameter.</td></tr><tr><td>0</td><td>This object is equal to <span class=\"paramref\">other</span>.</td></tr><tr><td>> 0</td><td>This object is greater than <span class=\"paramref\">other</span>.</td></tr></tbody></table>\n"
+      description: "\nA 32-bit signed integer that indicates the relative order of the objects being compared.\nThe return value has the following meanings:\n<table><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody><tr><td>&lt; 0</td><td>This object is less than the <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code> parameter.</td></tr><tr><td>0</td><td>This object is equal to <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code>.</td></tr><tr><td>> 0</td><td>This object is greater than <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code>.</td></tr></tbody></table>\n"
     content.vb: Public Function CompareTo(other As Offset) As Integer
   overload: NodaTime.Offset.CompareTo*
   implements:
@@ -1129,13 +1129,13 @@ items:
       description: >
         The result of comparing this instant with another one; see <xref href="NodaTime.Offset.CompareTo(NodaTime.Offset)" data-throw-if-not-resolved="false"></xref> for general details.
 
-        If <span class="paramref">obj</span> is null, this method returns a value greater than 0.
+        If <code data-dev-comment-type="paramref" class="paramref">obj</code> is null, this method returns a value greater than 0.
     content.vb: Function System.IComparable.CompareTo(obj As Object) As Integer Implements IComparable.CompareTo
   overload: NodaTime.Offset.System#IComparable#CompareTo*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: <span class="paramref">obj</span> is non-null but does not refer to an instance of <xref href="NodaTime.Offset" data-throw-if-not-resolved="false"></xref>.
+    description: <code data-dev-comment-type="paramref" class="paramref">obj</code> is non-null but does not refer to an instance of <xref href="NodaTime.Offset" data-throw-if-not-resolved="false"></xref>.
   implements:
   - System.IComparable.CompareTo(System.Object)
   nameWithType.vb: Offset.System.IComparable.CompareTo(Object)
@@ -1172,7 +1172,7 @@ items:
       description: An object to compare with this object.
     return:
       type: System.Boolean
-      description: "\ntrue if the current object is equal to the <span class=\"paramref\">other</span> parameter;\notherwise, false.\n"
+      description: "\ntrue if the current object is equal to the <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code> parameter;\notherwise, false.\n"
     content.vb: Public Function Equals(other As Offset) As Boolean
   overload: NodaTime.Offset.Equals*
   implements:

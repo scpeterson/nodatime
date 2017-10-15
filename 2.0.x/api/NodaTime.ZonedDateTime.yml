@@ -239,7 +239,7 @@ items:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: >-
-      <span class="paramref">offset</span> is not a valid offset at the given
+      <code data-dev-comment-type="paramref" class="paramref">offset</code> is not a valid offset at the given
           local date and time.
   modifiers.csharp:
   - public
@@ -1234,7 +1234,7 @@ items:
       description: An object to compare with this object.
     return:
       type: System.Boolean
-      description: "\ntrue if the current object is equal to the <span class=\"paramref\">other</span> parameter; otherwise, false.\n"
+      description: "\ntrue if the current object is equal to the <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code> parameter; otherwise, false.\n"
     content.vb: Public Function Equals(other As ZonedDateTime) As Boolean
   overload: NodaTime.ZonedDateTime.Equals*
   implements:
@@ -1275,7 +1275,7 @@ items:
       description: Another object to compare to.
     return:
       type: System.Boolean
-      description: "\ntrue if <span class=\"paramref\">obj</span> and this instance are the same type and represent the same value; otherwise, false.\n"
+      description: "\ntrue if <code data-dev-comment-type=\"paramref\" class=\"paramref\">obj</code> and this instance are the same type and represent the same value; otherwise, false.\n"
     content.vb: Public Overrides Function Equals(obj As Object) As Boolean
   overridden: System.ValueType.Equals(System.Object)
   overload: NodaTime.ZonedDateTime.Equals*
@@ -1753,7 +1753,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nReturns a new <xref href=\"NodaTime.ZonedDateTime\" data-throw-if-not-resolved=\"false\"></xref> with the time advanced by the given duration. Note that\ndue to daylight saving time changes this may not advance the local time by the same amount.\n"
-  remarks: "\nThe returned value retains the calendar system and time zone of <span class=\"paramref\">zonedDateTime</span>.\n"
+  remarks: "\nThe returned value retains the calendar system and time zone of <code data-dev-comment-type=\"paramref\" class=\"paramref\">zonedDateTime</code>.\n"
   example: []
   syntax:
     content: public static ZonedDateTime operator +(ZonedDateTime zonedDateTime, Duration duration)
@@ -1882,7 +1882,7 @@ items:
   - NodaTime
   namespace: NodaTime
   summary: "\nReturns a new <xref href=\"NodaTime.ZonedDateTime\" data-throw-if-not-resolved=\"false\"></xref> with the duration subtracted. Note that\ndue to daylight saving time changes this may not change the local time by the same amount.\n"
-  remarks: "\nThe returned value retains the calendar system and time zone of <span class=\"paramref\">zonedDateTime</span>.\n"
+  remarks: "\nThe returned value retains the calendar system and time zone of <code data-dev-comment-type=\"paramref\" class=\"paramref\">zonedDateTime</code>.\n"
   example: []
   syntax:
     content: public static ZonedDateTime operator -(ZonedDateTime zonedDateTime, Duration duration)
@@ -1935,15 +1935,15 @@ items:
     - id: end
       type: NodaTime.ZonedDateTime
       description: >-
-        The zoned date and time value to subtract from; if this is later than <span class="paramref">start</span>
+        The zoned date and time value to subtract from; if this is later than <code data-dev-comment-type="paramref" class="paramref">start</code>
 
         then the result will be positive.
     - id: start
       type: NodaTime.ZonedDateTime
-      description: The zoned date and time to subtract from <span class="paramref">end</span>.
+      description: The zoned date and time to subtract from <code data-dev-comment-type="paramref" class="paramref">end</code>.
     return:
       type: NodaTime.Duration
-      description: The elapsed duration from <span class="paramref">start</span> to <span class="paramref">end</span>.
+      description: The elapsed duration from <code data-dev-comment-type="paramref" class="paramref">start</code> to <code data-dev-comment-type="paramref" class="paramref">end</code>.
     content.vb: Public Shared Function Subtract(end As ZonedDateTime, start As ZonedDateTime) As Duration
   overload: NodaTime.ZonedDateTime.Subtract*
   modifiers.csharp:
@@ -1985,7 +1985,7 @@ items:
       description: The zoned date and time to subtract from this one.
     return:
       type: NodaTime.Duration
-      description: The elapsed duration from <span class="paramref">other</span> to this value.
+      description: The elapsed duration from <code data-dev-comment-type="paramref" class="paramref">other</code> to this value.
     content.vb: Public Function Minus(other As ZonedDateTime) As Duration
   overload: NodaTime.ZonedDateTime.Minus*
   modifiers.csharp:
@@ -2023,15 +2023,15 @@ items:
     - id: end
       type: NodaTime.ZonedDateTime
       description: >-
-        The zoned date and time value to subtract from; if this is later than <span class="paramref">start</span>
+        The zoned date and time value to subtract from; if this is later than <code data-dev-comment-type="paramref" class="paramref">start</code>
 
         then the result will be positive.
     - id: start
       type: NodaTime.ZonedDateTime
-      description: The zoned date and time to subtract from <span class="paramref">end</span>.
+      description: The zoned date and time to subtract from <code data-dev-comment-type="paramref" class="paramref">end</code>.
     return:
       type: NodaTime.Duration
-      description: The elapsed duration from <span class="paramref">start</span> to <span class="paramref">end</span>.
+      description: The elapsed duration from <code data-dev-comment-type="paramref" class="paramref">start</code> to <code data-dev-comment-type="paramref" class="paramref">end</code>.
     content.vb: Public Shared Operator -(end As ZonedDateTime, start As ZonedDateTime) As Duration
   overload: NodaTime.ZonedDateTime.op_Subtraction*
   modifiers.csharp:

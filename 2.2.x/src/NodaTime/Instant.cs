@@ -248,6 +248,8 @@ namespace NodaTime
 
         /// <summary>
         /// Adds the given offset to this instant, to return a <see cref="LocalInstant" />.
+        /// A positive offset indicates that the local instant represents a "later local time" than the UTC
+        /// representation of this instant.
         /// </summary>
         /// <remarks>
         /// This was previously an operator+ implementation, but operators can't be internal.
@@ -324,7 +326,7 @@ namespace NodaTime
         /// <param name="left">The left hand side of the operator.</param>
         /// <param name="right">The right hand side of the operator.</param>
         /// <returns>A new <see cref="Instant" /> representing the difference of the given values.</returns>
-        public static Instant operator -(Instant left, Duration right) => new Instant(left.duration - right);
+        public static Instant operator -(Instant left, Duration right) => FromUntrustedDuration(left.duration - right);
 
         /// <summary>
         ///   Subtracts one instant from another. Friendly alternative to <c>operator-()</c>.

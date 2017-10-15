@@ -430,7 +430,7 @@ items:
       description: The <code>StringBuilder</code> to append to.
     return:
       type: System.Text.StringBuilder
-      description: The builder passed in as <span class="paramref">builder</span>.
+      description: The builder passed in as <code data-dev-comment-type="paramref" class="paramref">builder</code>.
     content.vb: Public Function AppendFormat(value As OffsetDateTime, builder As StringBuilder) As StringBuilder
   overload: NodaTime.Text.OffsetDateTimePattern.AppendFormat*
   implements:

@@ -220,7 +220,7 @@ items:
       description: An object to compare with this object.
     return:
       type: System.Int32
-      description: "\nA 32-bit signed integer that indicates the relative order of the objects being compared.\nThe return value has the following meanings:\n<table><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody><tr><td>&lt; 0</td><td>This object is less than the <span class=\"paramref\">other</span> parameter.</td></tr><tr><td>0</td><td>This object is equal to <span class=\"paramref\">other</span>.</td></tr><tr><td>> 0</td><td>This object is greater than <span class=\"paramref\">other</span>.</td></tr></tbody></table>\n"
+      description: "\nA 32-bit signed integer that indicates the relative order of the objects being compared.\nThe return value has the following meanings:\n<table><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody><tr><td>&lt; 0</td><td>This object is less than the <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code> parameter.</td></tr><tr><td>0</td><td>This object is equal to <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code>.</td></tr><tr><td>> 0</td><td>This object is greater than <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code>.</td></tr></tbody></table>\n"
     content.vb: Public Function CompareTo(other As Instant) As Integer
   overload: NodaTime.Instant.CompareTo*
   implements:
@@ -266,13 +266,13 @@ items:
       description: >
         The result of comparing this instant with another one; see <xref href="NodaTime.Instant.CompareTo(NodaTime.Instant)" data-throw-if-not-resolved="false"></xref> for general details.
 
-        If <span class="paramref">obj</span> is null, this method returns a value greater than 0.
+        If <code data-dev-comment-type="paramref" class="paramref">obj</code> is null, this method returns a value greater than 0.
     content.vb: Function System.IComparable.CompareTo(obj As Object) As Integer Implements IComparable.CompareTo
   overload: NodaTime.Instant.System#IComparable#CompareTo*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: <span class="paramref">obj</span> is non-null but does not refer to an instance of <xref href="NodaTime.Instant" data-throw-if-not-resolved="false"></xref>.
+    description: <code data-dev-comment-type="paramref" class="paramref">obj</code> is non-null but does not refer to an instance of <xref href="NodaTime.Instant" data-throw-if-not-resolved="false"></xref>.
   implements:
   - System.IComparable.CompareTo(System.Object)
   nameWithType.vb: Instant.System.IComparable.CompareTo(Object)
@@ -1230,7 +1230,7 @@ items:
       description: The second instant to compare.
     return:
       type: NodaTime.Instant
-      description: The later instant of <span class="paramref">x</span> or <span class="paramref">y</span>.
+      description: The later instant of <code data-dev-comment-type="paramref" class="paramref">x</code> or <code data-dev-comment-type="paramref" class="paramref">y</code>.
     content.vb: Public Shared Function Max(x As Instant, y As Instant) As Instant
   overload: NodaTime.Instant.Max*
   modifiers.csharp:
@@ -1274,7 +1274,7 @@ items:
       description: The second instant to compare.
     return:
       type: NodaTime.Instant
-      description: The earlier instant of <span class="paramref">x</span> or <span class="paramref">y</span>.
+      description: The earlier instant of <code data-dev-comment-type="paramref" class="paramref">x</code> or <code data-dev-comment-type="paramref" class="paramref">y</code>.
     content.vb: Public Shared Function Min(x As Instant, y As Instant) As Instant
   overload: NodaTime.Instant.Min*
   modifiers.csharp:
@@ -1403,7 +1403,7 @@ items:
       description: The value to compare with this instance.
     return:
       type: System.Boolean
-      description: "\ntrue if the value of this instant is equal to the value of the <span class=\"paramref\">other</span> parameter;\notherwise, false.\n"
+      description: "\ntrue if the value of this instant is equal to the value of the <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code> parameter;\notherwise, false.\n"
     content.vb: Public Function Equals(other As Instant) As Boolean
   overload: NodaTime.Instant.Equals*
   implements:
@@ -1600,7 +1600,7 @@ items:
       description: The number of days since the Julian Epoch to convert into an <xref href="NodaTime.Instant" data-throw-if-not-resolved="false"></xref>.
     return:
       type: NodaTime.Instant
-      description: An <xref href="NodaTime.Instant" data-throw-if-not-resolved="false"></xref> value which is <span class="paramref">julianDate</span> days after the Julian Epoch.
+      description: An <xref href="NodaTime.Instant" data-throw-if-not-resolved="false"></xref> value which is <code data-dev-comment-type="paramref" class="paramref">julianDate</code> days after the Julian Epoch.
     content.vb: Public Shared Function FromJulianDate(julianDate As Double) As Instant
   overload: NodaTime.Instant.FromJulianDate*
   modifiers.csharp:
@@ -1648,7 +1648,7 @@ items:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: >-
-      <span class="paramref">dateTime</span> is not of <xref href="System.DateTime.Kind" data-throw-if-not-resolved="false"></xref>
+      <code data-dev-comment-type="paramref" class="paramref">dateTime</code> is not of <xref href="System.DateTime.Kind" data-throw-if-not-resolved="false"></xref>
 
       <xref href="System.DateTimeKind.Utc" data-throw-if-not-resolved="false"></xref>.
   modifiers.csharp:

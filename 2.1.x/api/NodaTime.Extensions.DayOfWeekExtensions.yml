@@ -80,7 +80,7 @@ items:
       description: The <code>DayOfWeek</code> to convert.
     return:
       type: NodaTime.IsoDayOfWeek
-      description: The <code>IsoDayOfWeek</code> equivalent to <span class="paramref">dayOfWeek</span>
+      description: The <code>IsoDayOfWeek</code> equivalent to <code data-dev-comment-type="paramref" class="paramref">dayOfWeek</code>
     content.vb: >-
       <ExtensionAttribute>
 

@@ -512,10 +512,10 @@ items:
     parameters:
     - id: minLabel
       type: System.String
-      description: Text to use for <xref href="NodaTime.Instant.MinValue" data-throw-if-not-resolved="false"></xref>. Must be non-empty, and not the same as <span class="paramref">maxLabel</span>.
+      description: Text to use for <xref href="NodaTime.Instant.MinValue" data-throw-if-not-resolved="false"></xref>. Must be non-empty, and not the same as <code data-dev-comment-type="paramref" class="paramref">maxLabel</code>.
     - id: maxLabel
       type: System.String
-      description: Text to use for <xref href="NodaTime.Instant.MaxValue" data-throw-if-not-resolved="false"></xref>. Must be non-empty, and not the same as <span class="paramref">minLabel</span>
+      description: Text to use for <xref href="NodaTime.Instant.MaxValue" data-throw-if-not-resolved="false"></xref>. Must be non-empty, and not the same as <code data-dev-comment-type="paramref" class="paramref">minLabel</code>
     return:
       type: NodaTime.Text.InstantPattern
       description: A new pattern with the given min/max labels.

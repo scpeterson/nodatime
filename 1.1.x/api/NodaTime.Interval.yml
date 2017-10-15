@@ -74,7 +74,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nInitializes a new instance of the <xref href=\"NodaTime.Interval\" data-throw-if-not-resolved=\"false\"></xref> struct.\nThe interval includes the <span class=\"paramref\">start</span> instant and excludes the\n<span class=\"paramref\">end</span> instant. The end may equal the start (resulting in an empty interval), but must not be before the start.\n"
+  summary: "\nInitializes a new instance of the <xref href=\"NodaTime.Interval\" data-throw-if-not-resolved=\"false\"></xref> struct.\nThe interval includes the <code data-dev-comment-type=\"paramref\" class=\"paramref\">start</code> instant and excludes the\n<code data-dev-comment-type=\"paramref\" class=\"paramref\">end</code> instant. The end may equal the start (resulting in an empty interval), but must not be before the start.\n"
   example: []
   syntax:
     content: public Interval(Instant start, Instant end)
@@ -90,7 +90,7 @@ items:
   exceptions:
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: <span class="paramref">end</span> is earlier than <span class="paramref">start</span>.
+    description: <code data-dev-comment-type="paramref" class="paramref">end</code> is earlier than <code data-dev-comment-type="paramref" class="paramref">start</code>.
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -244,7 +244,7 @@ items:
       description: The value to compare with this instance.
     return:
       type: System.Boolean
-      description: "\ntrue if the value of this instant is equal to the value of the <span class=\"paramref\">other</span> parameter;\notherwise, false.\n"
+      description: "\ntrue if the value of this instant is equal to the value of the <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code> parameter;\notherwise, false.\n"
     content.vb: Public Function Equals(other As Interval) As Boolean
   overload: NodaTime.Interval.Equals*
   implements:

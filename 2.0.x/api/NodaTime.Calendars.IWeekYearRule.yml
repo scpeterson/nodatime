@@ -85,13 +85,13 @@ items:
       description: >-
         The week of week-year of the new date. Valid values for this parameter
 
-        may vary depending on <span class="paramref">weekYear</span>, as the length of a year in weeks varies.
+        may vary depending on <code data-dev-comment-type="paramref" class="paramref">weekYear</code>, as the length of a year in weeks varies.
     - id: dayOfWeek
       type: NodaTime.IsoDayOfWeek
       description: >-
         The day-of-week of the new date. Valid values for this parameter may vary
 
-        depending on <span class="paramref">weekYear</span> and <span class="paramref">weekOfWeekYear</span>.
+        depending on <code data-dev-comment-type="paramref" class="paramref">weekYear</code> and <code data-dev-comment-type="paramref" class="paramref">weekOfWeekYear</code>.
     - id: calendar
       type: NodaTime.CalendarSystem
       description: The calendar system for the date.
@@ -136,7 +136,7 @@ items:
       description: The date to compute the week-year of.
     return:
       type: System.Int32
-      description: The week-year of <span class="paramref">date</span>, according to this rule.
+      description: The week-year of <code data-dev-comment-type="paramref" class="paramref">date</code>, according to this rule.
     content.vb: Function GetWeekYear(date As LocalDate) As Integer
   overload: NodaTime.Calendars.IWeekYearRule.GetWeekYear*
 - uid: NodaTime.Calendars.IWeekYearRule.GetWeekOfWeekYear(NodaTime.LocalDate)
@@ -171,7 +171,7 @@ items:
       description: The date to compute the week of.
     return:
       type: System.Int32
-      description: The week of the week-year of <span class="paramref">date</span>, according to this rule.
+      description: The week of the week-year of <code data-dev-comment-type="paramref" class="paramref">date</code>, according to this rule.
     content.vb: Function GetWeekOfWeekYear(date As LocalDate) As Integer
   overload: NodaTime.Calendars.IWeekYearRule.GetWeekOfWeekYear*
 - uid: NodaTime.Calendars.IWeekYearRule.GetWeeksInWeekYear(System.Int32,NodaTime.CalendarSystem)

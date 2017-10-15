@@ -392,9 +392,9 @@ items:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
     description: >-
-      <span class="paramref">ambiguousTimeResolver</span> or
+      <code data-dev-comment-type="paramref" class="paramref">ambiguousTimeResolver</code> or
 
-      <span class="paramref">skippedTimeResolver</span> is null.
+      <code data-dev-comment-type="paramref" class="paramref">skippedTimeResolver</code> is null.
   modifiers.csharp:
   - public
   - static

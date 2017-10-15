@@ -220,7 +220,7 @@ items:
       description: An object to compare with this object.
     return:
       type: System.Int32
-      description: "\nA 32-bit signed integer that indicates the relative order of the objects being compared.\nThe return value has the following meanings:\n<table><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody><tr><td>&lt; 0</td><td>This object is less than the <span class=\"paramref\">other</span> parameter.</td></tr><tr><td>0</td><td>This object is equal to <span class=\"paramref\">other</span>.</td></tr><tr><td>> 0</td><td>This object is greater than <span class=\"paramref\">other</span>.</td></tr></tbody></table>\n"
+      description: "\nA 32-bit signed integer that indicates the relative order of the objects being compared.\nThe return value has the following meanings:\n<table><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody><tr><td>&lt; 0</td><td>This object is less than the <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code> parameter.</td></tr><tr><td>0</td><td>This object is equal to <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code>.</td></tr><tr><td>> 0</td><td>This object is greater than <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code>.</td></tr></tbody></table>\n"
     content.vb: Public Function CompareTo(other As Instant) As Integer
   overload: NodaTime.Instant.CompareTo*
   implements:
@@ -266,13 +266,13 @@ items:
       description: >
         The result of comparing this instant with another one; see <xref href="NodaTime.Instant.CompareTo(NodaTime.Instant)" data-throw-if-not-resolved="false"></xref> for general details.
 
-        If <span class="paramref">obj</span> is null, this method returns a value greater than 0.
+        If <code data-dev-comment-type="paramref" class="paramref">obj</code> is null, this method returns a value greater than 0.
     content.vb: Function System.IComparable.CompareTo(obj As Object) As Integer Implements IComparable.CompareTo
   overload: NodaTime.Instant.System#IComparable#CompareTo*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: <span class="paramref">obj</span> is non-null but does not refer to an instance of <xref href="NodaTime.Instant" data-throw-if-not-resolved="false"></xref>.
+    description: <code data-dev-comment-type="paramref" class="paramref">obj</code> is non-null but does not refer to an instance of <xref href="NodaTime.Instant" data-throw-if-not-resolved="false"></xref>.
   implements:
   - System.IComparable.CompareTo(System.Object)
   nameWithType.vb: Instant.System.IComparable.CompareTo(Object)
@@ -497,7 +497,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Add
     path: src/NodaTime/Instant.cs
-    startLine: 302
+    startLine: 304
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -541,7 +541,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Plus
     path: src/NodaTime/Instant.cs
-    startLine: 309
+    startLine: 311
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -580,7 +580,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_Subtraction
     path: src/NodaTime/Instant.cs
-    startLine: 318
+    startLine: 320
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -624,7 +624,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_Subtraction
     path: src/NodaTime/Instant.cs
-    startLine: 326
+    startLine: 328
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -668,7 +668,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Subtract
     path: src/NodaTime/Instant.cs
-    startLine: 334
+    startLine: 336
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -712,7 +712,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Minus
     path: src/NodaTime/Instant.cs
-    startLine: 341
+    startLine: 343
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -751,7 +751,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Subtract
     path: src/NodaTime/Instant.cs
-    startLine: 350
+    startLine: 352
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -795,7 +795,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Minus
     path: src/NodaTime/Instant.cs
-    startLine: 358
+    startLine: 360
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -834,7 +834,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_Equality
     path: src/NodaTime/Instant.cs
-    startLine: 367
+    startLine: 369
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -878,7 +878,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_Inequality
     path: src/NodaTime/Instant.cs
-    startLine: 375
+    startLine: 377
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -922,7 +922,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_LessThan
     path: src/NodaTime/Instant.cs
-    startLine: 383
+    startLine: 385
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -966,7 +966,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_LessThanOrEqual
     path: src/NodaTime/Instant.cs
-    startLine: 391
+    startLine: 393
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1010,7 +1010,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_GreaterThan
     path: src/NodaTime/Instant.cs
-    startLine: 399
+    startLine: 401
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1054,7 +1054,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: op_GreaterThanOrEqual
     path: src/NodaTime/Instant.cs
-    startLine: 407
+    startLine: 409
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1098,7 +1098,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromUtc
     path: src/NodaTime/Instant.cs
-    startLine: 424
+    startLine: 426
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1154,7 +1154,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromUtc
     path: src/NodaTime/Instant.cs
-    startLine: 446
+    startLine: 448
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1213,7 +1213,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Max
     path: src/NodaTime/Instant.cs
-    startLine: 459
+    startLine: 461
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1230,7 +1230,7 @@ items:
       description: The second instant to compare.
     return:
       type: NodaTime.Instant
-      description: The later instant of <span class="paramref">x</span> or <span class="paramref">y</span>.
+      description: The later instant of <code data-dev-comment-type="paramref" class="paramref">x</code> or <code data-dev-comment-type="paramref" class="paramref">y</code>.
     content.vb: Public Shared Function Max(x As Instant, y As Instant) As Instant
   overload: NodaTime.Instant.Max*
   modifiers.csharp:
@@ -1257,7 +1257,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Min
     path: src/NodaTime/Instant.cs
-    startLine: 470
+    startLine: 472
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1274,7 +1274,7 @@ items:
       description: The second instant to compare.
     return:
       type: NodaTime.Instant
-      description: The earlier instant of <span class="paramref">x</span> or <span class="paramref">y</span>.
+      description: The earlier instant of <code data-dev-comment-type="paramref" class="paramref">x</code> or <code data-dev-comment-type="paramref" class="paramref">y</code>.
     content.vb: Public Shared Function Min(x As Instant, y As Instant) As Instant
   overload: NodaTime.Instant.Min*
   modifiers.csharp:
@@ -1301,7 +1301,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ToString
     path: src/NodaTime/Instant.cs
-    startLine: 481
+    startLine: 483
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1339,7 +1339,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ToString
     path: src/NodaTime/Instant.cs
-    startLine: 496
+    startLine: 498
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1389,7 +1389,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: Equals
     path: src/NodaTime/Instant.cs
-    startLine: 509
+    startLine: 511
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1403,7 +1403,7 @@ items:
       description: The value to compare with this instance.
     return:
       type: System.Boolean
-      description: "\ntrue if the value of this instant is equal to the value of the <span class=\"paramref\">other</span> parameter;\notherwise, false.\n"
+      description: "\ntrue if the value of this instant is equal to the value of the <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code> parameter;\notherwise, false.\n"
     content.vb: Public Function Equals(other As Instant) As Boolean
   overload: NodaTime.Instant.Equals*
   implements:
@@ -1430,7 +1430,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ToJulianDate
     path: src/NodaTime/Instant.cs
-    startLine: 517
+    startLine: 519
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1465,7 +1465,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ToDateTimeUtc
     path: src/NodaTime/Instant.cs
-    startLine: 533
+    startLine: 535
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1505,7 +1505,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ToDateTimeOffset
     path: src/NodaTime/Instant.cs
-    startLine: 554
+    startLine: 556
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1545,7 +1545,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromDateTimeOffset
     path: src/NodaTime/Instant.cs
-    startLine: 570
+    startLine: 572
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1586,7 +1586,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromJulianDate
     path: src/NodaTime/Instant.cs
-    startLine: 580
+    startLine: 582
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1600,7 +1600,7 @@ items:
       description: The number of days since the Julian Epoch to convert into an <xref href="NodaTime.Instant" data-throw-if-not-resolved="false"></xref>.
     return:
       type: NodaTime.Instant
-      description: An <xref href="NodaTime.Instant" data-throw-if-not-resolved="false"></xref> value which is <span class="paramref">julianDate</span> days after the Julian Epoch.
+      description: An <xref href="NodaTime.Instant" data-throw-if-not-resolved="false"></xref> value which is <code data-dev-comment-type="paramref" class="paramref">julianDate</code> days after the Julian Epoch.
     content.vb: Public Shared Function FromJulianDate(julianDate As Double) As Instant
   overload: NodaTime.Instant.FromJulianDate*
   modifiers.csharp:
@@ -1627,7 +1627,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromDateTimeUtc
     path: src/NodaTime/Instant.cs
-    startLine: 590
+    startLine: 592
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1648,7 +1648,7 @@ items:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: >-
-      <span class="paramref">dateTime</span> is not of <xref href="System.DateTime.Kind" data-throw-if-not-resolved="false"></xref>
+      <code data-dev-comment-type="paramref" class="paramref">dateTime</code> is not of <xref href="System.DateTime.Kind" data-throw-if-not-resolved="false"></xref>
 
       <xref href="System.DateTimeKind.Utc" data-throw-if-not-resolved="false"></xref>.
   modifiers.csharp:
@@ -1675,7 +1675,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromUnixTimeSeconds
     path: src/NodaTime/Instant.cs
-    startLine: 603
+    startLine: 605
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1720,7 +1720,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromUnixTimeMilliseconds
     path: src/NodaTime/Instant.cs
-    startLine: 616
+    startLine: 618
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1765,7 +1765,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: FromUnixTimeTicks
     path: src/NodaTime/Instant.cs
-    startLine: 628
+    startLine: 630
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1806,7 +1806,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ToUnixTimeSeconds
     path: src/NodaTime/Instant.cs
-    startLine: 641
+    startLine: 643
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1842,7 +1842,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ToUnixTimeMilliseconds
     path: src/NodaTime/Instant.cs
-    startLine: 653
+    startLine: 655
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1878,7 +1878,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: ToUnixTimeTicks
     path: src/NodaTime/Instant.cs
-    startLine: 666
+    startLine: 668
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1914,7 +1914,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: InUtc
     path: src/NodaTime/Instant.cs
-    startLine: 678
+    startLine: 680
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1952,7 +1952,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: InZone
     path: src/NodaTime/Instant.cs
-    startLine: 694
+    startLine: 696
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -1994,7 +1994,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: InZone
     path: src/NodaTime/Instant.cs
-    startLine: 707
+    startLine: 709
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2039,7 +2039,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: WithOffset
     path: src/NodaTime/Instant.cs
-    startLine: 722
+    startLine: 724
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2081,7 +2081,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: WithOffset
     path: src/NodaTime/Instant.cs
-    startLine: 733
+    startLine: 735
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2127,7 +2127,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: System.Xml.Serialization.IXmlSerializable.GetSchema
     path: src/NodaTime/Instant.cs
-    startLine: 742
+    startLine: 744
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2161,7 +2161,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: System.Xml.Serialization.IXmlSerializable.ReadXml
     path: src/NodaTime/Instant.cs
-    startLine: 745
+    startLine: 747
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2196,7 +2196,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: System.Xml.Serialization.IXmlSerializable.WriteXml
     path: src/NodaTime/Instant.cs
-    startLine: 754
+    startLine: 756
   assemblies:
   - NodaTime
   namespace: NodaTime
@@ -2231,7 +2231,7 @@ items:
       repo: https://github.com/nodatime/nodatime.git
     id: System.Runtime.Serialization.ISerializable.GetObjectData
     path: src/NodaTime/Instant.cs
-    startLine: 785
+    startLine: 787
   assemblies:
   - NodaTime
   namespace: NodaTime

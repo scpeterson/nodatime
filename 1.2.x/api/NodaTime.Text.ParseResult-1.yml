@@ -210,7 +210,7 @@ items:
     parameters:
     - id: failureValue
       type: '{T}'
-      description: The &quot;default&quot; value to set in <span class="paramref">result</span> if parsing failed.
+      description: The &quot;default&quot; value to set in <code data-dev-comment-type="paramref" class="paramref">result</code> if parsing failed.
     - id: result
       type: '{T}'
       description: The parameter to store the parsed value in on success.

@@ -521,7 +521,7 @@ items:
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: <span class="paramref">resolver</span> is null
+    description: <code data-dev-comment-type="paramref" class="paramref">resolver</code> is null
   modifiers.csharp:
   - public
   modifiers.vb:

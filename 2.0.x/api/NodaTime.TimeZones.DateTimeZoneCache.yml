@@ -179,7 +179,7 @@ items:
   exceptions:
   - type: NodaTime.TimeZones.InvalidDateTimeZoneSourceException
     commentId: T:NodaTime.TimeZones.InvalidDateTimeZoneSourceException
-    description: <span class="paramref">source</span> violates its contract.
+    description: <code data-dev-comment-type="paramref" class="paramref">source</code> violates its contract.
   modifiers.csharp:
   - public
   modifiers.vb:

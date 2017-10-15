@@ -85,7 +85,7 @@ items:
       description: The time zone provider to use when parsing time zones and zoned date/times.
     return:
       type: Newtonsoft.Json.JsonSerializerSettings
-      description: The original <span class="paramref">settings</span> value, for further chaining.
+      description: The original <code data-dev-comment-type="paramref" class="paramref">settings</code> value, for further chaining.
     content.vb: >-
       <ExtensionAttribute>
 
@@ -133,7 +133,7 @@ items:
       description: The time zone provider to use when parsing time zones and zoned date/times.
     return:
       type: Newtonsoft.Json.JsonSerializer
-      description: The original <span class="paramref">serializer</span> value, for further chaining.
+      description: The original <code data-dev-comment-type="paramref" class="paramref">serializer</code> value, for further chaining.
     content.vb: >-
       <ExtensionAttribute>
 
@@ -178,7 +178,7 @@ items:
       description: The existing serializer settings to add Noda Time converters to.
     return:
       type: Newtonsoft.Json.JsonSerializerSettings
-      description: The original <span class="paramref">settings</span> value, for further chaining.
+      description: The original <code data-dev-comment-type="paramref" class="paramref">settings</code> value, for further chaining.
     content.vb: >-
       <ExtensionAttribute>
 
@@ -223,7 +223,7 @@ items:
       description: The existing serializer to add Noda Time converters to.
     return:
       type: Newtonsoft.Json.JsonSerializer
-      description: The original <span class="paramref">serializer</span> value, for further chaining.
+      description: The original <code data-dev-comment-type="paramref" class="paramref">serializer</code> value, for further chaining.
     content.vb: >-
       <ExtensionAttribute>
 

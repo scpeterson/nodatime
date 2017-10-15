@@ -157,7 +157,7 @@ items:
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: <span class="paramref">zone</span> or <span class="paramref">calendar</span> is null.
+    description: <code data-dev-comment-type="paramref" class="paramref">zone</code> or <code data-dev-comment-type="paramref" class="paramref">calendar</code> is null.
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -242,11 +242,11 @@ items:
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: <span class="paramref">zone</span> is null.
+    description: <code data-dev-comment-type="paramref" class="paramref">zone</code> is null.
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: >-
-      <span class="paramref">offset</span> is not a valid offset at the given
+      <code data-dev-comment-type="paramref" class="paramref">offset</code> is not a valid offset at the given
           local date and time.
   modifiers.csharp:
   - public
@@ -1268,7 +1268,7 @@ items:
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: <span class="paramref">targetZone</span> is null.
+    description: <code data-dev-comment-type="paramref" class="paramref">targetZone</code> is null.
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -1305,7 +1305,7 @@ items:
       description: An object to compare with this object.
     return:
       type: System.Boolean
-      description: "\ntrue if the current object is equal to the <span class=\"paramref\">other</span> parameter; otherwise, false.\n"
+      description: "\ntrue if the current object is equal to the <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code> parameter; otherwise, false.\n"
     content.vb: Public Function Equals(other As ZonedDateTime) As Boolean
   overload: NodaTime.ZonedDateTime.Equals*
   implements:
@@ -1346,7 +1346,7 @@ items:
       description: Another object to compare to.
     return:
       type: System.Boolean
-      description: "\ntrue if <span class=\"paramref\">obj</span> and this instance are the same type and represent the same value; otherwise, false.\n"
+      description: "\ntrue if <code data-dev-comment-type=\"paramref\" class=\"paramref\">obj</code> and this instance are the same type and represent the same value; otherwise, false.\n"
     content.vb: Public Overrides Function Equals(obj As Object) As Boolean
   overridden: System.ValueType.Equals(System.Object)
   overload: NodaTime.ZonedDateTime.Equals*
@@ -1518,7 +1518,7 @@ items:
       description: Second operand of the comparison
     return:
       type: System.Boolean
-      description: true if the <span class="paramref">lhs</span> is strictly earlier than <span class="paramref">rhs</span>, false otherwise.
+      description: true if the <code data-dev-comment-type="paramref" class="paramref">lhs</code> is strictly earlier than <code data-dev-comment-type="paramref" class="paramref">rhs</code>, false otherwise.
     content.vb: Public Shared Operator <(lhs As ZonedDateTime, rhs As ZonedDateTime) As Boolean
   overload: NodaTime.ZonedDateTime.op_LessThan*
   modifiers.csharp:
@@ -1563,7 +1563,7 @@ items:
       description: Second operand of the comparison
     return:
       type: System.Boolean
-      description: true if the <span class="paramref">lhs</span> is earlier than or equal to <span class="paramref">rhs</span>, false otherwise.
+      description: true if the <code data-dev-comment-type="paramref" class="paramref">lhs</code> is earlier than or equal to <code data-dev-comment-type="paramref" class="paramref">rhs</code>, false otherwise.
     content.vb: Public Shared Operator <=(lhs As ZonedDateTime, rhs As ZonedDateTime) As Boolean
   overload: NodaTime.ZonedDateTime.op_LessThanOrEqual*
   modifiers.csharp:
@@ -1608,7 +1608,7 @@ items:
       description: Second operand of the comparison
     return:
       type: System.Boolean
-      description: true if the <span class="paramref">lhs</span> is strictly later than <span class="paramref">rhs</span>, false otherwise.
+      description: true if the <code data-dev-comment-type="paramref" class="paramref">lhs</code> is strictly later than <code data-dev-comment-type="paramref" class="paramref">rhs</code>, false otherwise.
     content.vb: Public Shared Operator>(lhs As ZonedDateTime, rhs As ZonedDateTime) As Boolean
   overload: NodaTime.ZonedDateTime.op_GreaterThan*
   modifiers.csharp:
@@ -1653,7 +1653,7 @@ items:
       description: Second operand of the comparison
     return:
       type: System.Boolean
-      description: true if the <span class="paramref">lhs</span> is later than or equal to <span class="paramref">rhs</span>, false otherwise.
+      description: true if the <code data-dev-comment-type="paramref" class="paramref">lhs</code> is later than or equal to <code data-dev-comment-type="paramref" class="paramref">rhs</code>, false otherwise.
     content.vb: Public Shared Operator >=(lhs As ZonedDateTime, rhs As ZonedDateTime) As Boolean
   overload: NodaTime.ZonedDateTime.op_GreaterThanOrEqual*
   modifiers.csharp:
@@ -1698,9 +1698,9 @@ items:
       description: >-
         A value less than zero if the instant represented by this zoned date/time is earlier than the one in
 
-        <span class="paramref">other</span>; zero if the instant is the same as the one in <span class="paramref">other</span>;
+        <code data-dev-comment-type="paramref" class="paramref">other</code>; zero if the instant is the same as the one in <code data-dev-comment-type="paramref" class="paramref">other</code>;
 
-        a value greater than zero if the instant is later than the one in <span class="paramref">other</span>.
+        a value greater than zero if the instant is later than the one in <code data-dev-comment-type="paramref" class="paramref">other</code>.
     content.vb: Public Function CompareTo(other As ZonedDateTime) As Integer
   overload: NodaTime.ZonedDateTime.CompareTo*
   implements:
@@ -1746,13 +1746,13 @@ items:
       description: >
         The result of comparing this ZonedDateTime with another one; see <xref href="NodaTime.ZonedDateTime.CompareTo(NodaTime.ZonedDateTime)" data-throw-if-not-resolved="false"></xref> for general details.
 
-        If <span class="paramref">obj</span> is null, this method returns a value greater than 0.
+        If <code data-dev-comment-type="paramref" class="paramref">obj</code> is null, this method returns a value greater than 0.
     content.vb: Function System.IComparable.CompareTo(obj As Object) As Integer Implements IComparable.CompareTo
   overload: NodaTime.ZonedDateTime.System#IComparable#CompareTo*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: <span class="paramref">obj</span> is non-null but does not refer to an instance of <xref href="NodaTime.ZonedDateTime" data-throw-if-not-resolved="false"></xref>.
+    description: <code data-dev-comment-type="paramref" class="paramref">obj</code> is non-null but does not refer to an instance of <xref href="NodaTime.ZonedDateTime" data-throw-if-not-resolved="false"></xref>.
   implements:
   - System.IComparable.CompareTo(System.Object)
   nameWithType.vb: ZonedDateTime.System.IComparable.CompareTo(Object)

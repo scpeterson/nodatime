@@ -80,7 +80,7 @@ items:
       description: The <code>IsoDayOfWeek</code> to convert.
     return:
       type: System.DayOfWeek
-      description: The <code>DayOfWeek</code> equivalent to <span class="paramref">isoDayOfWeek</span>
+      description: The <code>DayOfWeek</code> equivalent to <code data-dev-comment-type="paramref" class="paramref">isoDayOfWeek</code>
     content.vb: >-
       <ExtensionAttribute>
 

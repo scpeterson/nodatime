@@ -81,7 +81,7 @@ items:
       description: The <code>TimeSpan</code> to convert.
     return:
       type: NodaTime.Duration
-      description: A <code>Duration</code> representing the same length of time as <span class="paramref">timeSpan</span>.
+      description: A <code>Duration</code> representing the same length of time as <code data-dev-comment-type="paramref" class="paramref">timeSpan</code>.
     content.vb: >-
       <ExtensionAttribute>
 
@@ -127,7 +127,7 @@ items:
       description: The <code>TimeSpan</code> to convert.
     return:
       type: NodaTime.Offset
-      description: An <code>Offset</code> representing the same length of time as <span class="paramref">timeSpan</span>.
+      description: An <code>Offset</code> representing the same length of time as <code data-dev-comment-type="paramref" class="paramref">timeSpan</code>.
     content.vb: >-
       <ExtensionAttribute>
 
@@ -137,7 +137,7 @@ items:
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
     description: >-
-      <span class="paramref">timeSpan</span> is too large or small to
+      <code data-dev-comment-type="paramref" class="paramref">timeSpan</code> is too large or small to
           be represented as an <code>Offset</code>.
   modifiers.csharp:
   - public

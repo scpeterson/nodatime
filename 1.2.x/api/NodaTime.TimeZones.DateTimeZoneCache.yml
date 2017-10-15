@@ -96,10 +96,10 @@ items:
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: <span class="paramref">source</span> is null.
+    description: <code data-dev-comment-type="paramref" class="paramref">source</code> is null.
   - type: NodaTime.TimeZones.InvalidDateTimeZoneSourceException
     commentId: T:NodaTime.TimeZones.InvalidDateTimeZoneSourceException
-    description: <span class="paramref">source</span> violates its contract.
+    description: <code data-dev-comment-type="paramref" class="paramref">source</code> violates its contract.
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -271,7 +271,7 @@ items:
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: <span class="paramref">id</span> is null.
+    description: <code data-dev-comment-type="paramref" class="paramref">id</code> is null.
   implements:
   - NodaTime.IDateTimeZoneProvider.GetZoneOrNull(System.String)
   modifiers.csharp:
@@ -320,7 +320,7 @@ items:
     description: This provider does not support the given ID.
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: <span class="paramref">id</span> is null.
+    description: <code data-dev-comment-type="paramref" class="paramref">id</code> is null.
   implements:
   - NodaTime.IDateTimeZoneProvider.Item(System.String)
   nameWithType.vb: DateTimeZoneCache.Item(String)

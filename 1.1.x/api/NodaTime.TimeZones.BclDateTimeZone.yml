@@ -230,7 +230,7 @@ items:
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: <span class="paramref">bclZone</span> is null.
+    description: <code data-dev-comment-type="paramref" class="paramref">bclZone</code> is null.
   modifiers.csharp:
   - public
   - static

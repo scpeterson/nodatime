@@ -87,7 +87,7 @@ items:
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
     description: >-
-      The <span class="paramref">isoDayOfWeek</span> parameter
+      The <code data-dev-comment-type="paramref" class="paramref">isoDayOfWeek</code> parameter
 
       is not a valid day of the week.
   modifiers.csharp:
@@ -135,7 +135,7 @@ items:
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
     description: >-
-      The <span class="paramref">dayOfWeek</span> parameter
+      The <code data-dev-comment-type="paramref" class="paramref">dayOfWeek</code> parameter
 
       is not a valid day of the week.
   modifiers.csharp:

@@ -101,7 +101,7 @@ items:
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: <span class="paramref">pattern</span> is null.
+    description: <code data-dev-comment-type="paramref" class="paramref">pattern</code> is null.
   nameWithType.vb: NodaPatternConverter(Of T).NodaPatternConverter(IPattern(Of T))
   modifiers.csharp:
   - public
@@ -147,7 +147,7 @@ items:
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: <span class="paramref">pattern</span> is null.
+    description: <code data-dev-comment-type="paramref" class="paramref">pattern</code> is null.
   nameWithType.vb: NodaPatternConverter(Of T).NodaPatternConverter(IPattern(Of T), Action(Of T))
   modifiers.csharp:
   - public
