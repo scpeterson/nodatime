@@ -249,7 +249,7 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime
-  summary: "\nChecks whether the specified year forms a valid date with the month/day in this\nvalue, without any truncation. This will always return <pre><code>true</code></pre> except\nfor values representing February 29th, where the specified year is a non leap year.\n"
+  summary: "\nChecks whether the specified year forms a valid date with the month/day in this\nvalue, without any truncation. This will always return <code>true</code> except\nfor values representing February 29th, where the specified year is a non leap year.\n"
   example: []
   syntax:
     content: public bool IsValidYear(int year)
@@ -260,9 +260,9 @@ items:
     return:
       type: System.Boolean
       description: >-
-        <pre><code>true</code></pre> if the current value occurs within the given year;
+        <code>true</code> if the current value occurs within the given year;
 
-        <pre><code>false</code></pre> otherwise.
+        <code>false</code> otherwise.
     content.vb: Public Function IsValidYear(year As Integer) As Boolean
   overload: NodaTime.AnnualDate.IsValidYear*
   modifiers.csharp:
