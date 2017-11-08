@@ -84,14 +84,14 @@ items:
   assemblies:
   - NodaTime
   namespace: NodaTime.Text
-  summary: "\nGets an invariant local time pattern which is ISO-8601 compatible, providing up to 7 decimal places.\n(These digits are omitted when unnecessary.)\nThis corresponds to the text pattern &quot;HH&apos;:&apos;mm&apos;:&apos;ss;FFFFFFF&quot;.\n"
+  summary: "\nGets an invariant local time pattern which is ISO-8601 compatible, providing up to 9 decimal places.\n(These digits are omitted when unnecessary.)\nThis corresponds to the text pattern &quot;HH&apos;:&apos;mm&apos;:&apos;ss;FFFFFFFFF&quot;.\n"
   example: []
   syntax:
     content: public static LocalTimePattern ExtendedIso { get; }
     parameters: []
     return:
       type: NodaTime.Text.LocalTimePattern
-      description: An invariant local time pattern which is ISO-8601 compatible, providing up to 7 decimal places.
+      description: An invariant local time pattern which is ISO-8601 compatible, providing up to 9 decimal places.
     content.vb: Public Shared ReadOnly Property ExtendedIso As LocalTimePattern
   overload: NodaTime.Text.LocalTimePattern.ExtendedIso*
   modifiers.csharp:
